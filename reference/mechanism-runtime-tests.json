@@ -1,0 +1,11 @@
+{
+	"checks": 104,
+	"consumablesPhysics": false,
+	"failures": [],
+	"headsetTested": false,
+	"kind": "Source-qualified mechanism constraints, transforms and derived light/path software fixture",
+	"result": "PASS",
+	"schemaVersion": 1,
+	"sourceInventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+	"sourceMechanisms": 35
+}

@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "images": [
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p01-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 1,
+      "scale": 2,
+      "sha256": "a2baa34e571a90b042af91f72c838144c0c330952e9822d2e98231bf6a4c1d60"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p02-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 2,
+      "scale": 2,
+      "sha256": "0853ef093d4a1f73e60418b46082ffa7a666e76cf8675a758cac8aeaa4c953c9"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p02-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 2,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "c2a2a7c3cd99ad2a718d511d6e12b17fff3df32977b6d1f4b1f927bfef792aff"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p03-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 3,
+      "scale": 2,
+      "sha256": "e08b9871261e17d65c954868ceff612bc187e509cc0d26b7f156e746375a0551"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p03-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 3,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "2f8750bda45233e50ee8ced4bc2baea8b1e8c712ea20ed2851d61db57dbbc75f"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p06-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 6,
+      "scale": 2,
+      "sha256": "630e133a66c57627813ce38cb721975e748e3643ff551e750a404e4198c6ac32"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p06-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 6,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "979b72ea2bb267af35c2a1604d1b671c0b5dac35e22544448c792039503e130d"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p08-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 8,
+      "scale": 2,
+      "sha256": "2ef82206894e18658cf43bf2e2fe76e3645a9eebf3137d8acd791132c9ff8efc"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p08-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 8,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "1ba022f9c752146eb2d4a4309a9d8fa5fab6b942c823fe20d24f8cb74bba90a6"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p12-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 12,
+      "scale": 2,
+      "sha256": "a82e2e8b17eebb1d00ad19494f8005d87bcc1bea04989c7867b292e00b7a2a32"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p12-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 12,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "13dccf7022331ce550a8972613b7290753be709f4bb2af8c1d2108ef2aab7f79"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p13-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 13,
+      "scale": 2,
+      "sha256": "b8dd5aa4db17138f40c87f80cdfa161a5fd75a5df51bfcc45a8d74b179a13822"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p13-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 13,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "13453e4d0745c2b09f02d31e859e8b0f395acbb96fa5b7f7fb842cbf7f4c6d8b"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p15-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 15,
+      "scale": 2,
+      "sha256": "f1105504784bc697d8dfc9226a383eca0e4e6ac8e6a31ea11ea2d80aeceb5127"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p15-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 15,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "2d8bd4fdad4e42b610569d510daa174571a6f9606411a05b693015f397f77659"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p16-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 16,
+      "scale": 2,
+      "sha256": "89f323e48d57b5c842e1b6b347ea40690511b268fa8653262fb16dd8babff222"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p16-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 16,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "359919de1843a728cae5ce1a31826486bc57f5c21e36ee39acb13f623fe5254f"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p20-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 20,
+      "scale": 2,
+      "sha256": "bb820e0193d2d23e79a7894d8bf76282eb0572261303b009890ab539bed4a93d"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p20-numbers.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 20,
+      "scale": 3,
+      "cropPixels": [
+        150,
+        200,
+        1125,
+        1535
+      ],
+      "sha256": "3534ff5943372ba37c53e78c74bf60908d98a96195bc27bd6712b7d30c071c48"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p23-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 23,
+      "scale": 2,
+      "sha256": "9df04fcf35462a950676b5079117da89cf0254b85db0cc65e431ff49a196723b"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\memo-p24-full.png",
+      "sourcePdf": "padload_13_lm.pdf",
+      "pdfPage": 24,
+      "scale": 2,
+      "sha256": "9f046f10b0b9c27095b4a436fab918625936411c7e3fec2038fcb9b7d17b5c9b"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p01-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 1,
+      "scale": 2,
+      "sha256": "7ca1fcaf2c828904b3c3a2a09013bd3d107bb0e88cea18c6550eac62b5dbfb61"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p01-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 1,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "b7f49b0257fdbc7f9e3737d1ba579415912b5962ee2c96dadea94021a3ae2d15"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p02-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 2,
+      "scale": 2,
+      "sha256": "7a4aeaf4b3911394d582df6bbde31664643dd94b79e3953ca9a04709b6274253"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p02-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 2,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "c82314eea03c8b8d768effa1f4ed7979a1108153f661cfbdb211f77a99a99bf3"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p05-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 5,
+      "scale": 2,
+      "sha256": "cf7b7a0ad2bda7bd59f7fa7fec6809b0bcaae6a452aa20056d7d704df3508ba9"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p05-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 5,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "33c86e6a4f54c1971ec58873a2a5dafc7f4d5d296e11b1fc4f52f1ed68c77e63"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p07-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 7,
+      "scale": 2,
+      "sha256": "bb0671292c05e8e7d660f737a510d684b460bb494788e54fad045c3d8babc39d"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p07-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 7,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "d810d48b3e50c506b4eb3f1666b3e35ed1e5252d154f618c0576790a66dbe6ad"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p11-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 11,
+      "scale": 2,
+      "sha256": "e536df2432a1e78cbaeeb204fc5726fe499d27321adc66f312609dd50b8efeb3"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p11-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 11,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "c27e966e2dc702c9b7e8c7d1968ba8823bac83d6807f5cfc378925a8b6569cdd"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p12-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 12,
+      "scale": 2,
+      "sha256": "96f349d6213af9cdd07c73ef0ba5d6c9cd0fbd228056e0a86e53c142df9213f7"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p12-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 12,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "15a7d022b0efc08956572d519ec20eab0ccf1c9401a22d7f3d4f3b3649ea9493"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p14-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 14,
+      "scale": 2,
+      "sha256": "147e89872591fb5409898b8d4f5bdd71b2c9ea2289b1c659f467f56f34c9e962"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p14-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 14,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "879eec53d6b0ce1060e5a6cddaa2240c6b5aa69fec81525c8244c9d2ef6642c1"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p15-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 15,
+      "scale": 2,
+      "sha256": "c118ed895f95cc04bbda679cb186a2063cd76bd60d17dd54a91d6a5efc848808"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p15-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 15,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "e9ec883908b53c47812d09b6db8ac4a5f4fdfb359e6d9d0a664119bdfee1d15b"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p19-full.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 19,
+      "scale": 2,
+      "sha256": "a0951599283effd7f14d8cbb198c9663eeb445cbf78326d691cb3a273429c983"
+    },
+    {
+      "file": "reference\\extracts\\agc-padload\\handbook-p19-numbers.png",
+      "sourcePdf": "LM7_Pad_loads.pdf",
+      "pdfPage": 19,
+      "scale": 4,
+      "cropPixels": [
+        200,
+        240,
+        1560,
+        1627
+      ],
+      "sha256": "ce80cd8661fad88269dd0ec6cd7a8f33234f16d381f92307a5f421486904f3f0"
+    }
+  ]
+}

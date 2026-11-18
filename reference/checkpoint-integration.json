@@ -1,0 +1,13 @@
+{
+	"atomicRestore": true,
+	"checks": 46,
+	"failures": [],
+	"flightPadloadApplied": false,
+	"headsetTested": false,
+	"heldProNormalizedReleased": true,
+	"nativeSubcycleCarry": true,
+	"realUpstreamCpu": true,
+	"result": "PASS",
+	"schemaVersion": 1,
+	"sharedQuantumNanoseconds": 10000000
+}

@@ -1,0 +1,6 @@
+{
+	"checks": 48,
+	"driver": "headless dummy; no audible output",
+	"failures": [],
+	"result": "PASS"
+}

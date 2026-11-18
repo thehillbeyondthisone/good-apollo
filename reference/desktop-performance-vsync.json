@@ -1,0 +1,24 @@
+{
+	"adapter": "NVIDIA GeForce RTX 4060",
+	"displayServer": "Windows",
+	"drawCalls": 1847.0,
+	"engine": "4.7.2-stable (official)",
+	"headsetTested": false,
+	"kind": "Rendered desktop benchmark; headset not tested",
+	"meanFpsEquivalent": 59.9984200416056,
+	"meanFrameMs": 16.6671055555556,
+	"objects": 2508.0,
+	"p50FrameMs": 16.672,
+	"p95FrameMs": 17.344,
+	"p99FrameMs": 18.656,
+	"primitives": 105362.0,
+	"renderer": "gl_compatibility",
+	"sampleFrames": 360,
+	"schemaVersion": 1,
+	"viewport": [
+		1440,
+		900
+	],
+	"wallSeconds": 8.328315,
+	"warmupFrames": 90
+}

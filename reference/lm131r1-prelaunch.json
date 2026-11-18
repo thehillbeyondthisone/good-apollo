@@ -1,0 +1,6501 @@
+{
+  "schemaVersion": 2,
+  "title": "LM131R1 prelaunch parameter source candidates, with unresolved scan variants",
+  "source": {
+    "path": "D:\\apollo-ref\\flight-software\\padload_13_lm.pdf",
+    "url": "https://www.ibiblio.org/apollo/Documents/padload_13_lm.pdf",
+    "sha256": "ecd084d55f569af6d86b093d4a633cdff6fca790916062cee8a808f26a63c942",
+    "memo": "70-FS5-78",
+    "documentDate": "1970-03-26",
+    "prelaunchTablePdfPages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "uplinkTablePdfPage": 23,
+    "plannedChangesPdfPage": 24
+  },
+  "handbookSource": {
+    "path": "D:\\apollo-ref\\flight-software\\LM7_Pad_loads.pdf",
+    "url": "https://www.ibiblio.org/apollo/Documents/LM7_Pad_loads.pdf",
+    "sha256": "ae581dfa697759ae8836dad85651b01355df4a56eb94b0c2f93e15a1dd0a4ba3",
+    "documentDate": "1970-03-30",
+    "revision": "SNA-8-D-027(II), Rev2, Amendment61",
+    "table": "LM7/4.5.1-1",
+    "pdfPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ]
+  },
+  "approvedForLoading": false,
+  "scope": "Source candidate transcription only; not an adjudicated padload or complete flown erasable-memory checkpoint. Planned post-memo changes are not merged.",
+  "parityScope": "The source lists 15-bit data without parity. Computed odd parity is only an encoding self-check; no original parity bit was recovered.",
+  "validation": {
+    "groups": 174,
+    "prelaunchWords": 272,
+    "symbolsValidated": true,
+    "uplinkWords": 182,
+    "crossConfirmedWords": 180,
+    "handbookWords": 272,
+    "handbookMatchingWords": 261,
+    "handbookScanDisagreements": [
+      {
+        "addressOctal": "1327",
+        "symbol": "CSMMASS",
+        "memoValueOctal": "10245",
+        "memoPdfPage": 2,
+        "handbookValueOctal": "10246",
+        "handbookPdfPage": 1,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "1350",
+        "symbol": "E32C31RM",
+        "memoValueOctal": "03363",
+        "memoPdfPage": 2,
+        "handbookValueOctal": "03367",
+        "handbookPdfPage": 1,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "1746",
+        "symbol": "REFSMMAT",
+        "memoValueOctal": "31571",
+        "memoPdfPage": 6,
+        "handbookValueOctal": "31671",
+        "handbookPdfPage": 5,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "2462",
+        "symbol": "AAPFG*",
+        "memoValueOctal": "77754",
+        "memoPdfPage": 12,
+        "handbookValueOctal": "77764",
+        "handbookPdfPage": 11,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "2463",
+        "symbol": "AAPFG*",
+        "memoValueOctal": "67646",
+        "memoPdfPage": 12,
+        "handbookValueOctal": "67645",
+        "handbookPdfPage": 11,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "2467",
+        "symbol": "GAINAPPR",
+        "memoValueOctal": "00000",
+        "memoPdfPage": 13,
+        "handbookValueOctal": "00010",
+        "handbookPdfPage": 12,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "2527",
+        "symbol": "LRVF",
+        "memoValueOctal": "00116",
+        "memoPdfPage": 15,
+        "handbookValueOctal": "00115",
+        "handbookPdfPage": 14,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "2536",
+        "symbol": "LRWVFF",
+        "memoValueOctal": "03145",
+        "memoPdfPage": 16,
+        "handbookValueOctal": "03146",
+        "handbookPdfPage": 15,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "2540",
+        "symbol": "TAUROD",
+        "memoValueOctal": "11300",
+        "memoPdfPage": 16,
+        "handbookValueOctal": "14300",
+        "handbookPdfPage": 15,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "2546",
+        "symbol": "MAXFORCE",
+        "memoValueOctal": "00013",
+        "memoPdfPage": 16,
+        "handbookValueOctal": "00017",
+        "handbookPdfPage": 15,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      },
+      {
+        "addressOctal": "3372",
+        "symbol": "VELBIAS",
+        "memoValueOctal": "36331",
+        "memoPdfPage": 20,
+        "handbookValueOctal": "35331",
+        "handbookPdfPage": 19,
+        "status": "Unresolved scan readings; neither source variant selected for loading"
+      }
+    ],
+    "computedOddParityWordsChecked": 272,
+    "singleTableWords": 0,
+    "conflicts": [
+      {
+        "addressOctal": "2536",
+        "symbol": "LRWVFF",
+        "prelaunchValueOctal": "03145",
+        "prelaunchPdfPage": 16,
+        "uplinkValueOctal": "03146",
+        "uplinkPdfPage": 23,
+        "column": "K",
+        "rowOctal": "13"
+      },
+      {
+        "addressOctal": "2540",
+        "symbol": "TAUROD",
+        "prelaunchValueOctal": "11300",
+        "prelaunchPdfPage": 16,
+        "uplinkValueOctal": "14300",
+        "uplinkPdfPage": 23,
+        "column": "K",
+        "rowOctal": "15"
+      }
+    ],
+    "uplinkOnlyWords": [],
+    "errors": []
+  },
+  "plannedChanges": [
+    {
+      "symbol": "WRENDPOS",
+      "engineeringValue": "609.6 m",
+      "valueOctal": "01142",
+      "sourcePdfPage": 24
+    },
+    {
+      "symbol": "WRENDVEL",
+      "engineeringValue": "0.006096 m/cs",
+      "valueOctal": "00144",
+      "sourcePdfPage": 24
+    },
+    {
+      "symbol": "WSHAFT",
+      "engineeringValue": "0.005 rad",
+      "valueOctal": "05075",
+      "sourcePdfPage": 24
+    },
+    {
+      "symbol": "R03 masses / TEPHEM / RLS",
+      "status": "Planned changes stated without complete finalized words; not applied",
+      "sourcePdfPage": 24
+    }
+  ],
+  "words": [
+    {
+      "addressOctal": "0077",
+      "address": 63,
+      "valueOctal": "12000",
+      "value": 5120,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "024001",
+      "symbol": "FLAGWRD3",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "12000"
+      }
+    },
+    {
+      "addressOctal": "0104",
+      "address": 68,
+      "valueOctal": "06000",
+      "value": 3072,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "014001",
+      "symbol": "FLAGWRD8",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "06000"
+      }
+    },
+    {
+      "addressOctal": "0106",
+      "address": 70,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "FLGWRD10",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1243",
+      "address": 675,
+      "valueOctal": "07401",
+      "value": 3841,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "017002",
+      "symbol": "MASS",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "07401"
+      }
+    },
+    {
+      "addressOctal": "1244",
+      "address": 676,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "MASS",
+      "wordOffset": 1,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1326",
+      "address": 726,
+      "valueOctal": "07401",
+      "value": 3841,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "017002",
+      "symbol": "LEMMASS",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "dsky",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "07401"
+      }
+    },
+    {
+      "addressOctal": "1327",
+      "address": 727,
+      "valueOctal": "10245",
+      "value": 4261,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "020512",
+      "symbol": "CSMMASS",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "dsky",
+      "reviewStatus": "source-scan-disagreement",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "10246"
+      }
+    },
+    {
+      "addressOctal": "1347",
+      "address": 743,
+      "valueOctal": "12160",
+      "value": 5232,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "024340",
+      "symbol": "E3J22R2M",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "12160"
+      }
+    },
+    {
+      "addressOctal": "1350",
+      "address": 744,
+      "valueOctal": "03363",
+      "value": 1779,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "006747",
+      "symbol": "E32C31RM",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "03367"
+      }
+    },
+    {
+      "addressOctal": "1351",
+      "address": 745,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "RADSKAL",
+      "wordOffset": 0,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1352",
+      "address": 746,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "RADSKAL",
+      "wordOffset": 1,
+      "pdfPage": 2,
+      "printedTablePage": 1,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 1,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1353",
+      "address": 747,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "SKALSKAL",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1356",
+      "address": 750,
+      "valueOctal": "00044",
+      "value": 36,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000111",
+      "symbol": "ELBIAS",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "00044"
+      }
+    },
+    {
+      "addressOctal": "1452",
+      "address": 810,
+      "valueOctal": "03641",
+      "value": 1953,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "007503",
+      "symbol": "PBIASX",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "03",
+        "valueOctal": "03641"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "03641"
+      }
+    },
+    {
+      "addressOctal": "1453",
+      "address": 811,
+      "valueOctal": "64417",
+      "value": 26895,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "151037",
+      "symbol": "PIPASCFX",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "04",
+        "valueOctal": "64417"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "64417"
+      }
+    },
+    {
+      "addressOctal": "1454",
+      "address": 812,
+      "valueOctal": "74272",
+      "value": 30906,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "170564",
+      "symbol": "PBIASY",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "05",
+        "valueOctal": "74272"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "74272"
+      }
+    },
+    {
+      "addressOctal": "1455",
+      "address": 813,
+      "valueOctal": "54401",
+      "value": 22785,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "131002",
+      "symbol": "PIPASCFY",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "06",
+        "valueOctal": "54401"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "54401"
+      }
+    },
+    {
+      "addressOctal": "1456",
+      "address": 814,
+      "valueOctal": "03775",
+      "value": 2045,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "007773",
+      "symbol": "PBIASZ",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "07",
+        "valueOctal": "03775"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "03775"
+      }
+    },
+    {
+      "addressOctal": "1457",
+      "address": 815,
+      "valueOctal": "72727",
+      "value": 30167,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "165656",
+      "symbol": "PIPASCFZ",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "10",
+        "valueOctal": "72727"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "72727"
+      }
+    },
+    {
+      "addressOctal": "1460",
+      "address": 816,
+      "valueOctal": "00063",
+      "value": 51,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000147",
+      "symbol": "NBDX",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "11",
+        "valueOctal": "00063"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "00063"
+      }
+    },
+    {
+      "addressOctal": "1461",
+      "address": 817,
+      "valueOctal": "00015",
+      "value": 13,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000032",
+      "symbol": "NBDY",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "12",
+        "valueOctal": "00015"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "00015"
+      }
+    },
+    {
+      "addressOctal": "1462",
+      "address": 818,
+      "valueOctal": "77762",
+      "value": 32754,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177745",
+      "symbol": "NBDZ",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "13",
+        "valueOctal": "77762"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "77762"
+      }
+    },
+    {
+      "addressOctal": "1463",
+      "address": 819,
+      "valueOctal": "77627",
+      "value": 32663,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177457",
+      "symbol": "ADIAX",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "14",
+        "valueOctal": "77627"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "77627"
+      }
+    },
+    {
+      "addressOctal": "1464",
+      "address": 820,
+      "valueOctal": "00202",
+      "value": 130,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000405",
+      "symbol": "ADIAY",
+      "wordOffset": 0,
+      "pdfPage": 3,
+      "printedTablePage": 2,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "15",
+        "valueOctal": "00202"
+      },
+      "handbook": {
+        "pdfPage": 2,
+        "valueOctal": "00202"
+      }
+    },
+    {
+      "addressOctal": "1465",
+      "address": 821,
+      "valueOctal": "77713",
+      "value": 32715,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177627",
+      "symbol": "ADIAZ",
+      "wordOffset": 0,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "16",
+        "valueOctal": "77713"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "77713"
+      }
+    },
+    {
+      "addressOctal": "1466",
+      "address": 822,
+      "valueOctal": "77745",
+      "value": 32741,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177713",
+      "symbol": "ADSRAX",
+      "wordOffset": 0,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "17",
+        "valueOctal": "77745"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "77745"
+      }
+    },
+    {
+      "addressOctal": "1467",
+      "address": 823,
+      "valueOctal": "00266",
+      "value": 182,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000554",
+      "symbol": "ADSRAY",
+      "wordOffset": 0,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "20",
+        "valueOctal": "00266"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00266"
+      }
+    },
+    {
+      "addressOctal": "1470",
+      "address": 824,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "ADSRAZ",
+      "wordOffset": 0,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "A",
+        "rowOctal": "21",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1477",
+      "address": 831,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "GCOMPSW",
+      "wordOffset": 0,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1570",
+      "address": 888,
+      "valueOctal": "37777",
+      "value": 16383,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "077777",
+      "symbol": "TETCSM",
+      "wordOffset": 0,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "37777"
+      }
+    },
+    {
+      "addressOctal": "1642",
+      "address": 930,
+      "valueOctal": "37777",
+      "value": 16383,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "077777",
+      "symbol": "TETLEM",
+      "wordOffset": 0,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "37777"
+      }
+    },
+    {
+      "addressOctal": "1700",
+      "address": 960,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "X789",
+      "wordOffset": 0,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "03",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1701",
+      "address": 961,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "X789",
+      "wordOffset": 1,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "04",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1702",
+      "address": 962,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "X789",
+      "wordOffset": 2,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "05",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1703",
+      "address": 963,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "X789",
+      "wordOffset": 3,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "06",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1704",
+      "address": 964,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "X789",
+      "wordOffset": 4,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "07",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1705",
+      "address": 965,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "X789",
+      "wordOffset": 5,
+      "pdfPage": 4,
+      "printedTablePage": 3,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "10",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 3,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1706",
+      "address": 966,
+      "valueOctal": "00011",
+      "value": 9,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000023",
+      "symbol": "TEPHEM",
+      "wordOffset": 0,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "11",
+        "valueOctal": "00011"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "00011"
+      }
+    },
+    {
+      "addressOctal": "1707",
+      "address": 967,
+      "valueOctal": "05253",
+      "value": 2731,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "012526",
+      "symbol": "TEPHEM",
+      "wordOffset": 1,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "12",
+        "valueOctal": "05253"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "05253"
+      }
+    },
+    {
+      "addressOctal": "1710",
+      "address": 968,
+      "valueOctal": "33560",
+      "value": 14192,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "067341",
+      "symbol": "TEPHEM",
+      "wordOffset": 2,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "13",
+        "valueOctal": "33560"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "33560"
+      }
+    },
+    {
+      "addressOctal": "1711",
+      "address": 969,
+      "valueOctal": "30623",
+      "value": 12691,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "061446",
+      "symbol": "AZO",
+      "wordOffset": 0,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "14",
+        "valueOctal": "30623"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "30623"
+      }
+    },
+    {
+      "addressOctal": "1712",
+      "address": 970,
+      "valueOctal": "37367",
+      "value": 16119,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "076757",
+      "symbol": "AZO",
+      "wordOffset": 1,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "15",
+        "valueOctal": "37367"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "37367"
+      }
+    },
+    {
+      "addressOctal": "1713",
+      "address": 971,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "-AYO",
+      "wordOffset": 0,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "16",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1714",
+      "address": 972,
+      "valueOctal": "23066",
+      "value": 9782,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "046154",
+      "symbol": "-AYO",
+      "wordOffset": 1,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "17",
+        "valueOctal": "23066"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "23066"
+      }
+    },
+    {
+      "addressOctal": "1715",
+      "address": 973,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "AXO",
+      "wordOffset": 0,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "20",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "1716",
+      "address": 974,
+      "valueOctal": "26474",
+      "value": 11580,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "055171",
+      "symbol": "AXO",
+      "wordOffset": 1,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "B",
+        "rowOctal": "21",
+        "valueOctal": "26474"
+      },
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "26474"
+      }
+    },
+    {
+      "addressOctal": "1733",
+      "address": 987,
+      "valueOctal": "11227",
+      "value": 4759,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "022456",
+      "symbol": "REFSMMAT",
+      "wordOffset": 0,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "11227"
+      }
+    },
+    {
+      "addressOctal": "1734",
+      "address": 988,
+      "valueOctal": "03621",
+      "value": 1937,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "007443",
+      "symbol": "REFSMMAT",
+      "wordOffset": 1,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "03621"
+      }
+    },
+    {
+      "addressOctal": "1735",
+      "address": 989,
+      "valueOctal": "64303",
+      "value": 26819,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "150606",
+      "symbol": "REFSMMAT",
+      "wordOffset": 2,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "64303"
+      }
+    },
+    {
+      "addressOctal": "1736",
+      "address": 990,
+      "valueOctal": "76432",
+      "value": 32026,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "175064",
+      "symbol": "REFSMMAT",
+      "wordOffset": 3,
+      "pdfPage": 5,
+      "printedTablePage": 4,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 4,
+        "valueOctal": "76432"
+      }
+    },
+    {
+      "addressOctal": "1737",
+      "address": 991,
+      "valueOctal": "72072",
+      "value": 29754,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "164165",
+      "symbol": "REFSMMAT",
+      "wordOffset": 4,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "72072"
+      }
+    },
+    {
+      "addressOctal": "1740",
+      "address": 992,
+      "valueOctal": "64034",
+      "value": 26652,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "150071",
+      "symbol": "REFSMMAT",
+      "wordOffset": 5,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "64034"
+      }
+    },
+    {
+      "addressOctal": "1741",
+      "address": 993,
+      "valueOctal": "77664",
+      "value": 32692,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177550",
+      "symbol": "REFSMMAT",
+      "wordOffset": 6,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "77664"
+      }
+    },
+    {
+      "addressOctal": "1742",
+      "address": 994,
+      "valueOctal": "50201",
+      "value": 20609,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "120403",
+      "symbol": "REFSMMAT",
+      "wordOffset": 7,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "50201"
+      }
+    },
+    {
+      "addressOctal": "1743",
+      "address": 995,
+      "valueOctal": "70531",
+      "value": 29017,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "161263",
+      "symbol": "REFSMMAT",
+      "wordOffset": 8,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "70531"
+      }
+    },
+    {
+      "addressOctal": "1744",
+      "address": 996,
+      "valueOctal": "72041",
+      "value": 29729,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "164103",
+      "symbol": "REFSMMAT",
+      "wordOffset": 9,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "72041"
+      }
+    },
+    {
+      "addressOctal": "1745",
+      "address": 997,
+      "valueOctal": "16162",
+      "value": 7282,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "034344",
+      "symbol": "REFSMMAT",
+      "wordOffset": 10,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "16162"
+      }
+    },
+    {
+      "addressOctal": "1746",
+      "address": 998,
+      "valueOctal": "31571",
+      "value": 13177,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "063362",
+      "symbol": "REFSMMAT",
+      "wordOffset": 11,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "source-scan-disagreement",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "31671"
+      }
+    },
+    {
+      "addressOctal": "1747",
+      "address": 999,
+      "valueOctal": "62764",
+      "value": 26100,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "145750",
+      "symbol": "REFSMMAT",
+      "wordOffset": 12,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "62764"
+      }
+    },
+    {
+      "addressOctal": "1750",
+      "address": 1000,
+      "valueOctal": "63727",
+      "value": 26583,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "147656",
+      "symbol": "REFSMMAT",
+      "wordOffset": 13,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "63727"
+      }
+    },
+    {
+      "addressOctal": "1751",
+      "address": 1001,
+      "valueOctal": "67624",
+      "value": 28564,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "157450",
+      "symbol": "REFSMMAT",
+      "wordOffset": 14,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "67624"
+      }
+    },
+    {
+      "addressOctal": "1752",
+      "address": 1002,
+      "valueOctal": "76002",
+      "value": 31746,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "174005",
+      "symbol": "REFSMMAT",
+      "wordOffset": 15,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "76002"
+      }
+    },
+    {
+      "addressOctal": "1753",
+      "address": 1003,
+      "valueOctal": "73506",
+      "value": 30534,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "167214",
+      "symbol": "REFSMMAT",
+      "wordOffset": 16,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "73506"
+      }
+    },
+    {
+      "addressOctal": "1754",
+      "address": 1004,
+      "valueOctal": "53045",
+      "value": 22053,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "126112",
+      "symbol": "REFSMMAT",
+      "wordOffset": 17,
+      "pdfPage": 6,
+      "printedTablePage": 5,
+      "inflightLoadingMethod": "none",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 5,
+        "valueOctal": "53045"
+      }
+    },
+    {
+      "addressOctal": "1770",
+      "address": 1016,
+      "valueOctal": "01351",
+      "value": 745,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "002723",
+      "symbol": "RANGEVAR",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "C",
+        "rowOctal": "03",
+        "valueOctal": "01351"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "01351"
+      }
+    },
+    {
+      "addressOctal": "1771",
+      "address": 1017,
+      "valueOctal": "24734",
+      "value": 10716,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "051671",
+      "symbol": "RANGEVAR",
+      "wordOffset": 1,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "C",
+        "rowOctal": "04",
+        "valueOctal": "24734"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "24734"
+      }
+    },
+    {
+      "addressOctal": "1772",
+      "address": 1018,
+      "valueOctal": "02354",
+      "value": 1260,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "004731",
+      "symbol": "RATEVAR",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "C",
+        "rowOctal": "05",
+        "valueOctal": "02354"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "02354"
+      }
+    },
+    {
+      "addressOctal": "1773",
+      "address": 1019,
+      "valueOctal": "04750",
+      "value": 2536,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "011721",
+      "symbol": "RATEVAR",
+      "wordOffset": 1,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "C",
+        "rowOctal": "06",
+        "valueOctal": "04750"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "04750"
+      }
+    },
+    {
+      "addressOctal": "1774",
+      "address": 1020,
+      "valueOctal": "00410",
+      "value": 264,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "001021",
+      "symbol": "RVARMIN",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "C",
+        "rowOctal": "07",
+        "valueOctal": "00410"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "00410"
+      }
+    },
+    {
+      "addressOctal": "1775",
+      "address": 1021,
+      "valueOctal": "00165",
+      "value": 117,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000352",
+      "symbol": "VVARMIN",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "C",
+        "rowOctal": "10",
+        "valueOctal": "00165"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "00165"
+      }
+    },
+    {
+      "addressOctal": "2000",
+      "address": 1024,
+      "valueOctal": "05750",
+      "value": 3048,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "013720",
+      "symbol": "WRENDPOS",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "03",
+        "valueOctal": "05750"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "05750"
+      }
+    },
+    {
+      "addressOctal": "2001",
+      "address": 1025,
+      "valueOctal": "00763",
+      "value": 499,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "001746",
+      "symbol": "WRENDVEL",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "04",
+        "valueOctal": "00763"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "00763"
+      }
+    },
+    {
+      "addressOctal": "2002",
+      "address": 1026,
+      "valueOctal": "17270",
+      "value": 7864,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "036561",
+      "symbol": "WSHAFT",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "05",
+        "valueOctal": "17270"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "17270"
+      }
+    },
+    {
+      "addressOctal": "2003",
+      "address": 1027,
+      "valueOctal": "17270",
+      "value": 7864,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "036561",
+      "symbol": "WTRUN",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "06",
+        "valueOctal": "17270"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "17270"
+      }
+    },
+    {
+      "addressOctal": "2004",
+      "address": 1028,
+      "valueOctal": "00023",
+      "value": 19,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000046",
+      "symbol": "RMAX",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "07",
+        "valueOctal": "00023"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "00023"
+      }
+    },
+    {
+      "addressOctal": "2005",
+      "address": 1029,
+      "valueOctal": "00001",
+      "value": 1,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000002",
+      "symbol": "VMAX",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "10",
+        "valueOctal": "00001"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "00001"
+      }
+    },
+    {
+      "addressOctal": "2006",
+      "address": 1030,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "WSURFPOS",
+      "wordOffset": 0,
+      "pdfPage": 7,
+      "printedTablePage": 6,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "11",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 6,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2007",
+      "address": 1031,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "WSURFVEL",
+      "wordOffset": 0,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "12",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2010",
+      "address": 1032,
+      "valueOctal": "00103",
+      "value": 67,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000206",
+      "symbol": "SHAFTVAR",
+      "wordOffset": 0,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "13",
+        "valueOctal": "00103"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "00103"
+      }
+    },
+    {
+      "addressOctal": "2011",
+      "address": 1033,
+      "valueOctal": "00103",
+      "value": 67,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000206",
+      "symbol": "TRUNVAR",
+      "wordOffset": 0,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "14",
+        "valueOctal": "00103"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "00103"
+      }
+    },
+    {
+      "addressOctal": "2012",
+      "address": 1034,
+      "valueOctal": "77772",
+      "value": 32762,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177764",
+      "symbol": "504LM",
+      "wordOffset": 0,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "15",
+        "valueOctal": "77772"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "77772"
+      }
+    },
+    {
+      "addressOctal": "2013",
+      "address": 1035,
+      "valueOctal": "46750",
+      "value": 19944,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "115721",
+      "symbol": "504LM",
+      "wordOffset": 1,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "16",
+        "valueOctal": "46750"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "46750"
+      }
+    },
+    {
+      "addressOctal": "2014",
+      "address": 1036,
+      "valueOctal": "77773",
+      "value": 32763,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177767",
+      "symbol": "504LM",
+      "wordOffset": 2,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "17",
+        "valueOctal": "77773"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "77773"
+      }
+    },
+    {
+      "addressOctal": "2015",
+      "address": 1037,
+      "valueOctal": "57473",
+      "value": 24379,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "137166",
+      "symbol": "504LM",
+      "wordOffset": 3,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "20",
+        "valueOctal": "57473"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "57473"
+      }
+    },
+    {
+      "addressOctal": "2016",
+      "address": 1038,
+      "valueOctal": "00006",
+      "value": 6,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000015",
+      "symbol": "504LM",
+      "wordOffset": 4,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "21",
+        "valueOctal": "00006"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "00006"
+      }
+    },
+    {
+      "addressOctal": "2017",
+      "address": 1039,
+      "valueOctal": "06361",
+      "value": 3313,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "014742",
+      "symbol": "504LM",
+      "wordOffset": 5,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "22",
+        "valueOctal": "06361"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "06361"
+      }
+    },
+    {
+      "addressOctal": "2020",
+      "address": 1040,
+      "valueOctal": "04225",
+      "value": 2197,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "010452",
+      "symbol": "AGSK",
+      "wordOffset": 0,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "23",
+        "valueOctal": "04225"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "04225"
+      }
+    },
+    {
+      "addressOctal": "2021",
+      "address": 1041,
+      "valueOctal": "10400",
+      "value": 4352,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "021001",
+      "symbol": "AGSK",
+      "wordOffset": 1,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "D",
+        "rowOctal": "24",
+        "valueOctal": "10400"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "10400"
+      }
+    },
+    {
+      "addressOctal": "2022",
+      "address": 1042,
+      "valueOctal": "00311",
+      "value": 201,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000623",
+      "symbol": "RLS",
+      "wordOffset": 0,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "E",
+        "rowOctal": "03",
+        "valueOctal": "00311"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "00311"
+      }
+    },
+    {
+      "addressOctal": "2023",
+      "address": 1043,
+      "valueOctal": "31177",
+      "value": 12927,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "062377",
+      "symbol": "RLS",
+      "wordOffset": 1,
+      "pdfPage": 8,
+      "printedTablePage": 7,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "E",
+        "rowOctal": "04",
+        "valueOctal": "31177"
+      },
+      "handbook": {
+        "pdfPage": 7,
+        "valueOctal": "31177"
+      }
+    },
+    {
+      "addressOctal": "2024",
+      "address": 1044,
+      "valueOctal": "77700",
+      "value": 32704,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177600",
+      "symbol": "RLS",
+      "wordOffset": 2,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "E",
+        "rowOctal": "05",
+        "valueOctal": "77700"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "77700"
+      }
+    },
+    {
+      "addressOctal": "2025",
+      "address": 1045,
+      "valueOctal": "55774",
+      "value": 23548,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "133770",
+      "symbol": "RLS",
+      "wordOffset": 3,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "E",
+        "rowOctal": "06",
+        "valueOctal": "55774"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "55774"
+      }
+    },
+    {
+      "addressOctal": "2026",
+      "address": 1046,
+      "valueOctal": "77762",
+      "value": 32754,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177745",
+      "symbol": "RLS",
+      "wordOffset": 4,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "E",
+        "rowOctal": "07",
+        "valueOctal": "77762"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "77762"
+      }
+    },
+    {
+      "addressOctal": "2027",
+      "address": 1047,
+      "valueOctal": "55732",
+      "value": 23514,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "133665",
+      "symbol": "RLS",
+      "wordOffset": 5,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "E",
+        "rowOctal": "10",
+        "valueOctal": "55732"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "55732"
+      }
+    },
+    {
+      "addressOctal": "2400",
+      "address": 1280,
+      "valueOctal": "04347",
+      "value": 2279,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "010716",
+      "symbol": "TLAND",
+      "wordOffset": 0,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "03",
+        "valueOctal": "04347"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "04347"
+      }
+    },
+    {
+      "addressOctal": "2401",
+      "address": 1281,
+      "valueOctal": "20441",
+      "value": 8481,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "041103",
+      "symbol": "TLAND",
+      "wordOffset": 1,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "04",
+        "valueOctal": "20441"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "20441"
+      }
+    },
+    {
+      "addressOctal": "2402",
+      "address": 1282,
+      "valueOctal": "77776",
+      "value": 32766,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177775",
+      "symbol": "RBRFG",
+      "wordOffset": 0,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "05",
+        "valueOctal": "77776"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "77776"
+      }
+    },
+    {
+      "addressOctal": "2403",
+      "address": 1283,
+      "valueOctal": "76044",
+      "value": 31780,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "174110",
+      "symbol": "RBRFG",
+      "wordOffset": 1,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "06",
+        "valueOctal": "76044"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "76044"
+      }
+    },
+    {
+      "addressOctal": "2404",
+      "address": 1284,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "RBRFG",
+      "wordOffset": 2,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "07",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2405",
+      "address": 1285,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "RBRFG",
+      "wordOffset": 3,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "10",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2406",
+      "address": 1286,
+      "valueOctal": "77773",
+      "value": 32763,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177767",
+      "symbol": "RBRFG",
+      "wordOffset": 4,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "11",
+        "valueOctal": "77773"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "77773"
+      }
+    },
+    {
+      "addressOctal": "2407",
+      "address": 1287,
+      "valueOctal": "75347",
+      "value": 31463,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "172716",
+      "symbol": "RBRFG",
+      "wordOffset": 5,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "12",
+        "valueOctal": "75347"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "75347"
+      }
+    },
+    {
+      "addressOctal": "2410",
+      "address": 1288,
+      "valueOctal": "77766",
+      "value": 32758,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177754",
+      "symbol": "VBRFG",
+      "wordOffset": 0,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "13",
+        "valueOctal": "77766"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "77766"
+      }
+    },
+    {
+      "addressOctal": "2411",
+      "address": 1289,
+      "valueOctal": "74245",
+      "value": 30885,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "170513",
+      "symbol": "VBRFG",
+      "wordOffset": 1,
+      "pdfPage": 9,
+      "printedTablePage": 8,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "14",
+        "valueOctal": "74245"
+      },
+      "handbook": {
+        "pdfPage": 8,
+        "valueOctal": "74245"
+      }
+    },
+    {
+      "addressOctal": "2412",
+      "address": 1290,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "VBRFG",
+      "wordOffset": 2,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "15",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2413",
+      "address": 1291,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "VBRFG",
+      "wordOffset": 3,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "16",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2414",
+      "address": 1292,
+      "valueOctal": "77773",
+      "value": 32763,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177767",
+      "symbol": "VBRFG",
+      "wordOffset": 4,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "17",
+        "valueOctal": "77773"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "77773"
+      }
+    },
+    {
+      "addressOctal": "2415",
+      "address": 1293,
+      "valueOctal": "45722",
+      "value": 19410,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "113645",
+      "symbol": "VBRFG",
+      "wordOffset": 5,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "20",
+        "valueOctal": "45722"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "45722"
+      }
+    },
+    {
+      "addressOctal": "2416",
+      "address": 1294,
+      "valueOctal": "77774",
+      "value": 32764,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177770",
+      "symbol": "ABRFG",
+      "wordOffset": 0,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "21",
+        "valueOctal": "77774"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "77774"
+      }
+    },
+    {
+      "addressOctal": "2417",
+      "address": 1295,
+      "valueOctal": "54701",
+      "value": 22977,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "131602",
+      "symbol": "ABRFG",
+      "wordOffset": 1,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "22",
+        "valueOctal": "54701"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "54701"
+      }
+    },
+    {
+      "addressOctal": "2420",
+      "address": 1296,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "ABRFG",
+      "wordOffset": 2,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "23",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2421",
+      "address": 1297,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "ABRFG",
+      "wordOffset": 3,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "F",
+        "rowOctal": "24",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2422",
+      "address": 1298,
+      "valueOctal": "77663",
+      "value": 32691,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177547",
+      "symbol": "ABRFG",
+      "wordOffset": 4,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "03",
+        "valueOctal": "77663"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "77663"
+      }
+    },
+    {
+      "addressOctal": "2423",
+      "address": 1299,
+      "valueOctal": "77104",
+      "value": 32324,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "176211",
+      "symbol": "ABRFG",
+      "wordOffset": 5,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "04",
+        "valueOctal": "77104"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "77104"
+      }
+    },
+    {
+      "addressOctal": "2424",
+      "address": 1300,
+      "valueOctal": "77765",
+      "value": 32757,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177752",
+      "symbol": "VBRFG*",
+      "wordOffset": 0,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "05",
+        "valueOctal": "77765"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "77765"
+      }
+    },
+    {
+      "addressOctal": "2425",
+      "address": 1301,
+      "valueOctal": "45231",
+      "value": 19097,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "112462",
+      "symbol": "VBRFG*",
+      "wordOffset": 1,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "06",
+        "valueOctal": "45231"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "45231"
+      }
+    },
+    {
+      "addressOctal": "2426",
+      "address": 1302,
+      "valueOctal": "77067",
+      "value": 32311,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "176156",
+      "symbol": "ABRFG*",
+      "wordOffset": 0,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "07",
+        "valueOctal": "77067"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "77067"
+      }
+    },
+    {
+      "addressOctal": "2427",
+      "address": 1303,
+      "valueOctal": "72634",
+      "value": 30108,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "165470",
+      "symbol": "ABRFG*",
+      "wordOffset": 1,
+      "pdfPage": 10,
+      "printedTablePage": 9,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "10",
+        "valueOctal": "72634"
+      },
+      "handbook": {
+        "pdfPage": 9,
+        "valueOctal": "72634"
+      }
+    },
+    {
+      "addressOctal": "2430",
+      "address": 1304,
+      "valueOctal": "77545",
+      "value": 32613,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177312",
+      "symbol": "JBRFG*",
+      "wordOffset": 0,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "11",
+        "valueOctal": "77545"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "77545"
+      }
+    },
+    {
+      "addressOctal": "2431",
+      "address": 1305,
+      "valueOctal": "63177",
+      "value": 26239,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "146376",
+      "symbol": "JBRFG*",
+      "wordOffset": 1,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "12",
+        "valueOctal": "63177"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "63177"
+      }
+    },
+    {
+      "addressOctal": "2432",
+      "address": 1306,
+      "valueOctal": "37777",
+      "value": 16383,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "077777",
+      "symbol": "GAINBRAK",
+      "wordOffset": 0,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "13",
+        "valueOctal": "37777"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "37777"
+      }
+    },
+    {
+      "addressOctal": "2433",
+      "address": 1307,
+      "valueOctal": "37777",
+      "value": 16383,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "077777",
+      "symbol": "GAINBRAK",
+      "wordOffset": 1,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "14",
+        "valueOctal": "37777"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "37777"
+      }
+    },
+    {
+      "addressOctal": "2434",
+      "address": 1308,
+      "valueOctal": "00567",
+      "value": 375,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "001356",
+      "symbol": "TCGFBRAK",
+      "wordOffset": 0,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "15",
+        "valueOctal": "00567"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "00567"
+      }
+    },
+    {
+      "addressOctal": "2435",
+      "address": 1309,
+      "valueOctal": "25762",
+      "value": 11250,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "053744",
+      "symbol": "TCGIBRAK",
+      "wordOffset": 0,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "16",
+        "valueOctal": "25762"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "25762"
+      }
+    },
+    {
+      "addressOctal": "2436",
+      "address": 1310,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "RAPFG",
+      "wordOffset": 0,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "17",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2437",
+      "address": 1311,
+      "valueOctal": "00624",
+      "value": 404,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "001451",
+      "symbol": "RAPFG",
+      "wordOffset": 1,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "20",
+        "valueOctal": "00624"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "00624"
+      }
+    },
+    {
+      "addressOctal": "2440",
+      "address": 1312,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "RAPFG",
+      "wordOffset": 2,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "21",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2441",
+      "address": 1313,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "RAPFG",
+      "wordOffset": 3,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "22",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2442",
+      "address": 1314,
+      "valueOctal": "77777",
+      "value": 32767,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177776",
+      "symbol": "RAPFG",
+      "wordOffset": 4,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "23",
+        "valueOctal": "77777"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "77777"
+      }
+    },
+    {
+      "addressOctal": "2443",
+      "address": 1315,
+      "valueOctal": "77635",
+      "value": 32669,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177473",
+      "symbol": "RAPFG",
+      "wordOffset": 5,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "G",
+        "rowOctal": "24",
+        "valueOctal": "77635"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "77635"
+      }
+    },
+    {
+      "addressOctal": "2444",
+      "address": 1316,
+      "valueOctal": "77777",
+      "value": 32767,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177776",
+      "symbol": "VAPFG",
+      "wordOffset": 0,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "03",
+        "valueOctal": "77777"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "77777"
+      }
+    },
+    {
+      "addressOctal": "2445",
+      "address": 1317,
+      "valueOctal": "77400",
+      "value": 32512,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177000",
+      "symbol": "VAPFG",
+      "wordOffset": 1,
+      "pdfPage": 11,
+      "printedTablePage": 10,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "04",
+        "valueOctal": "77400"
+      },
+      "handbook": {
+        "pdfPage": 10,
+        "valueOctal": "77400"
+      }
+    },
+    {
+      "addressOctal": "2446",
+      "address": 1318,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "VAPFG",
+      "wordOffset": 2,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "05",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2447",
+      "address": 1319,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "VAPFG",
+      "wordOffset": 3,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "06",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2450",
+      "address": 1320,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "VAPFG",
+      "wordOffset": 4,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "07",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2451",
+      "address": 1321,
+      "valueOctal": "00372",
+      "value": 250,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000765",
+      "symbol": "VAPFG",
+      "wordOffset": 5,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "10",
+        "valueOctal": "00372"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "00372"
+      }
+    },
+    {
+      "addressOctal": "2452",
+      "address": 1322,
+      "valueOctal": "00002",
+      "value": 2,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000004",
+      "symbol": "AAPFG",
+      "wordOffset": 0,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "11",
+        "valueOctal": "00002"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "00002"
+      }
+    },
+    {
+      "addressOctal": "2453",
+      "address": 1323,
+      "valueOctal": "14522",
+      "value": 6482,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "031245",
+      "symbol": "AAPFG",
+      "wordOffset": 1,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "12",
+        "valueOctal": "14522"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "14522"
+      }
+    },
+    {
+      "addressOctal": "2454",
+      "address": 1324,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "AAPFG",
+      "wordOffset": 2,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "13",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2455",
+      "address": 1325,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "AAPFG",
+      "wordOffset": 3,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "14",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2456",
+      "address": 1326,
+      "valueOctal": "77774",
+      "value": 32764,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177770",
+      "symbol": "AAPFG",
+      "wordOffset": 4,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "15",
+        "valueOctal": "77774"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "77774"
+      }
+    },
+    {
+      "addressOctal": "2457",
+      "address": 1327,
+      "valueOctal": "71233",
+      "value": 29339,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "162466",
+      "symbol": "AAPFG",
+      "wordOffset": 5,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "16",
+        "valueOctal": "71233"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "71233"
+      }
+    },
+    {
+      "addressOctal": "2460",
+      "address": 1328,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "VAPFG*",
+      "wordOffset": 0,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "17",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2461",
+      "address": 1329,
+      "valueOctal": "01062",
+      "value": 562,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "002145",
+      "symbol": "VAPFG*",
+      "wordOffset": 1,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "20",
+        "valueOctal": "01062"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "01062"
+      }
+    },
+    {
+      "addressOctal": "2462",
+      "address": 1330,
+      "valueOctal": "77754",
+      "value": 32748,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177731",
+      "symbol": "AAPFG*",
+      "wordOffset": 0,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "21",
+        "valueOctal": "77754"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "77764"
+      }
+    },
+    {
+      "addressOctal": "2463",
+      "address": 1331,
+      "valueOctal": "67646",
+      "value": 28582,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "157515",
+      "symbol": "AAPFG*",
+      "wordOffset": 1,
+      "pdfPage": 12,
+      "printedTablePage": 11,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "22",
+        "valueOctal": "67646"
+      },
+      "handbook": {
+        "pdfPage": 11,
+        "valueOctal": "67645"
+      }
+    },
+    {
+      "addressOctal": "2464",
+      "address": 1332,
+      "valueOctal": "00612",
+      "value": 394,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "001425",
+      "symbol": "JAPFG*",
+      "wordOffset": 0,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "23",
+        "valueOctal": "00612"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "00612"
+      }
+    },
+    {
+      "addressOctal": "2465",
+      "address": 1333,
+      "valueOctal": "30722",
+      "value": 12754,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "061644",
+      "symbol": "JAPFG*",
+      "wordOffset": 1,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "H",
+        "rowOctal": "24",
+        "valueOctal": "30722"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "30722"
+      }
+    },
+    {
+      "addressOctal": "2466",
+      "address": 1334,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "GAINAPPR",
+      "wordOffset": 0,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "03",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2467",
+      "address": 1335,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "GAINAPPR",
+      "wordOffset": 1,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "04",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "00010"
+      }
+    },
+    {
+      "addressOctal": "2470",
+      "address": 1336,
+      "valueOctal": "00113",
+      "value": 75,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000227",
+      "symbol": "TCGFAPPR",
+      "wordOffset": 0,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "05",
+        "valueOctal": "00113"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "00113"
+      }
+    },
+    {
+      "addressOctal": "2471",
+      "address": 1337,
+      "valueOctal": "04704",
+      "value": 2500,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "011610",
+      "symbol": "TCGIAPPR",
+      "wordOffset": 0,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "06",
+        "valueOctal": "04704"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "04704"
+      }
+    },
+    {
+      "addressOctal": "2472",
+      "address": 1338,
+      "valueOctal": "00416",
+      "value": 270,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "001035",
+      "symbol": "VIGN",
+      "wordOffset": 0,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "07",
+        "valueOctal": "00416"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "00416"
+      }
+    },
+    {
+      "addressOctal": "2473",
+      "address": 1339,
+      "valueOctal": "15755",
+      "value": 7149,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "033733",
+      "symbol": "VIGN",
+      "wordOffset": 1,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "10",
+        "valueOctal": "15755"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "15755"
+      }
+    },
+    {
+      "addressOctal": "2474",
+      "address": 1340,
+      "valueOctal": "77730",
+      "value": 32728,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "177660",
+      "symbol": "RIGNX",
+      "wordOffset": 0,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "11",
+        "valueOctal": "77730"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "77730"
+      }
+    },
+    {
+      "addressOctal": "2475",
+      "address": 1341,
+      "valueOctal": "51505",
+      "value": 21317,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "123212",
+      "symbol": "RIGNX",
+      "wordOffset": 1,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "12",
+        "valueOctal": "51505"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "51505"
+      }
+    },
+    {
+      "addressOctal": "2476",
+      "address": 1342,
+      "valueOctal": "77121",
+      "value": 32337,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "176242",
+      "symbol": "RIGNZ",
+      "wordOffset": 0,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "13",
+        "valueOctal": "77121"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "77121"
+      }
+    },
+    {
+      "addressOctal": "2477",
+      "address": 1343,
+      "valueOctal": "73554",
+      "value": 30572,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "167331",
+      "symbol": "RIGNZ",
+      "wordOffset": 1,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "14",
+        "valueOctal": "73554"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "73554"
+      }
+    },
+    {
+      "addressOctal": "2500",
+      "address": 1344,
+      "valueOctal": "77255",
+      "value": 32429,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "176532",
+      "symbol": "KIGNX/B4",
+      "wordOffset": 0,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "15",
+        "valueOctal": "77255"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "77255"
+      }
+    },
+    {
+      "addressOctal": "2501",
+      "address": 1345,
+      "valueOctal": "41625",
+      "value": 17301,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "103452",
+      "symbol": "KIGNX/B4",
+      "wordOffset": 1,
+      "pdfPage": 13,
+      "printedTablePage": 12,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "16",
+        "valueOctal": "41625"
+      },
+      "handbook": {
+        "pdfPage": 12,
+        "valueOctal": "41625"
+      }
+    },
+    {
+      "addressOctal": "2502",
+      "address": 1346,
+      "valueOctal": "73754",
+      "value": 30700,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "167730",
+      "symbol": "KIGNY/B8",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "17",
+        "valueOctal": "73754"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "73754"
+      }
+    },
+    {
+      "addressOctal": "2503",
+      "address": 1347,
+      "valueOctal": "52751",
+      "value": 21993,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "125722",
+      "symbol": "KIGNY/B8",
+      "wordOffset": 1,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "20",
+        "valueOctal": "52751"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "52751"
+      }
+    },
+    {
+      "addressOctal": "2504",
+      "address": 1348,
+      "valueOctal": "72516",
+      "value": 30030,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "165234",
+      "symbol": "KIGNV/B4",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "21",
+        "valueOctal": "72516"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "72516"
+      }
+    },
+    {
+      "addressOctal": "2505",
+      "address": 1349,
+      "valueOctal": "57777",
+      "value": 24575,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "137777",
+      "symbol": "KIGNV/B4",
+      "wordOffset": 1,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "22",
+        "valueOctal": "57777"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "57777"
+      }
+    },
+    {
+      "addressOctal": "2506",
+      "address": 1350,
+      "valueOctal": "04114",
+      "value": 2124,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "010231",
+      "symbol": "LOWCRIT",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "23",
+        "valueOctal": "04114"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "04114"
+      }
+    },
+    {
+      "addressOctal": "2507",
+      "address": 1351,
+      "valueOctal": "04454",
+      "value": 2348,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "011130",
+      "symbol": "HIGHCRIT",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "I",
+        "rowOctal": "24",
+        "valueOctal": "04454"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "04454"
+      }
+    },
+    {
+      "addressOctal": "2510",
+      "address": 1352,
+      "valueOctal": "07640",
+      "value": 4000,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "017501",
+      "symbol": "TAUHZ",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "03",
+        "valueOctal": "07640"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "07640"
+      }
+    },
+    {
+      "addressOctal": "2511",
+      "address": 1353,
+      "valueOctal": "14632",
+      "value": 6554,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "031464",
+      "symbol": "QHZ",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "04",
+        "valueOctal": "14632"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "14632"
+      }
+    },
+    {
+      "addressOctal": "2512",
+      "address": 1354,
+      "valueOctal": "00017",
+      "value": 15,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000037",
+      "symbol": "AHZLIM",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "05",
+        "valueOctal": "00017"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "00017"
+      }
+    },
+    {
+      "addressOctal": "2513",
+      "address": 1355,
+      "valueOctal": "00003",
+      "value": 3,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000007",
+      "symbol": "TOOFEW",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "06",
+        "valueOctal": "00003"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "00003"
+      }
+    },
+    {
+      "addressOctal": "2514",
+      "address": 1356,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "HLROFF",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "07",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2515",
+      "address": 1357,
+      "valueOctal": "00364",
+      "value": 244,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000750",
+      "symbol": "HLROFF",
+      "wordOffset": 1,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "10",
+        "valueOctal": "00364"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "00364"
+      }
+    },
+    {
+      "addressOctal": "2516",
+      "address": 1358,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "2LATE466",
+      "wordOffset": 0,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "11",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2517",
+      "address": 1359,
+      "valueOctal": "00226",
+      "value": 150,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000455",
+      "symbol": "2LATE466",
+      "wordOffset": 1,
+      "pdfPage": 14,
+      "printedTablePage": 13,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "12",
+        "valueOctal": "00226"
+      },
+      "handbook": {
+        "pdfPage": 13,
+        "valueOctal": "00226"
+      }
+    },
+    {
+      "addressOctal": "2520",
+      "address": 1360,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DELQFIX",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "13",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2521",
+      "address": 1361,
+      "valueOctal": "01717",
+      "value": 975,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "003637",
+      "symbol": "DELQFIX",
+      "wordOffset": 1,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "14",
+        "valueOctal": "01717"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "01717"
+      }
+    },
+    {
+      "addressOctal": "2522",
+      "address": 1362,
+      "valueOctal": "01042",
+      "value": 546,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "002104",
+      "symbol": "LRALPHA",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "15",
+        "valueOctal": "01042"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "01042"
+      }
+    },
+    {
+      "addressOctal": "2523",
+      "address": 1363,
+      "valueOctal": "04211",
+      "value": 2185,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "010423",
+      "symbol": "LRBETA1",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "16",
+        "valueOctal": "04211"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "04211"
+      }
+    },
+    {
+      "addressOctal": "2524",
+      "address": 1364,
+      "valueOctal": "01042",
+      "value": 546,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "002104",
+      "symbol": "LRALPHA2",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "17",
+        "valueOctal": "01042"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "01042"
+      }
+    },
+    {
+      "addressOctal": "2525",
+      "address": 1365,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "LRBETA2",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "J",
+        "rowOctal": "20",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2526",
+      "address": 1366,
+      "valueOctal": "01414",
+      "value": 780,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "003031",
+      "symbol": "LRVMAX",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "03",
+        "valueOctal": "01414"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "01414"
+      }
+    },
+    {
+      "addressOctal": "2527",
+      "address": 1367,
+      "valueOctal": "00116",
+      "value": 78,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000235",
+      "symbol": "LRVF",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "04",
+        "valueOctal": "00116"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "00115"
+      }
+    },
+    {
+      "addressOctal": "2530",
+      "address": 1368,
+      "valueOctal": "11463",
+      "value": 4915,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "023146",
+      "symbol": "LRWVZ",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "05",
+        "valueOctal": "11463"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "11463"
+      }
+    },
+    {
+      "addressOctal": "2531",
+      "address": 1369,
+      "valueOctal": "11463",
+      "value": 4915,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "023146",
+      "symbol": "LRWVY",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "06",
+        "valueOctal": "11463"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "11463"
+      }
+    },
+    {
+      "addressOctal": "2532",
+      "address": 1370,
+      "valueOctal": "11463",
+      "value": 4915,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "023146",
+      "symbol": "LRWVX",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "07",
+        "valueOctal": "11463"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "11463"
+      }
+    },
+    {
+      "addressOctal": "2533",
+      "address": 1371,
+      "valueOctal": "06315",
+      "value": 3277,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "014632",
+      "symbol": "LRWVFZ",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "10",
+        "valueOctal": "06315"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "06315"
+      }
+    },
+    {
+      "addressOctal": "2534",
+      "address": 1372,
+      "valueOctal": "06315",
+      "value": 3277,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "014632",
+      "symbol": "LRWVFY",
+      "wordOffset": 0,
+      "pdfPage": 15,
+      "printedTablePage": 14,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "11",
+        "valueOctal": "06315"
+      },
+      "handbook": {
+        "pdfPage": 14,
+        "valueOctal": "06315"
+      }
+    },
+    {
+      "addressOctal": "2535",
+      "address": 1373,
+      "valueOctal": "06315",
+      "value": 3277,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "014632",
+      "symbol": "LRWVFX",
+      "wordOffset": 0,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "12",
+        "valueOctal": "06315"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "06315"
+      }
+    },
+    {
+      "addressOctal": "2536",
+      "address": 1374,
+      "valueOctal": "03145",
+      "value": 1637,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "006313",
+      "symbol": "LRWVFF",
+      "wordOffset": 0,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "13",
+        "valueOctal": "03146"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "03146"
+      }
+    },
+    {
+      "addressOctal": "2537",
+      "address": 1375,
+      "valueOctal": "14370",
+      "value": 6392,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "030760",
+      "symbol": "RODSCALE",
+      "wordOffset": 0,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "14",
+        "valueOctal": "14370"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "14370"
+      }
+    },
+    {
+      "addressOctal": "2540",
+      "address": 1376,
+      "valueOctal": "11300",
+      "value": 4800,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "022601",
+      "symbol": "TAUROD",
+      "wordOffset": 0,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "15",
+        "valueOctal": "14300"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "14300"
+      }
+    },
+    {
+      "addressOctal": "2541",
+      "address": 1377,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "TAUROD",
+      "wordOffset": 1,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "16",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2542",
+      "address": 1378,
+      "valueOctal": "15164",
+      "value": 6772,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "032350",
+      "symbol": "LAG/TAU",
+      "wordOffset": 0,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "17",
+        "valueOctal": "15164"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "15164"
+      }
+    },
+    {
+      "addressOctal": "2543",
+      "address": 1379,
+      "valueOctal": "01420",
+      "value": 784,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "003040",
+      "symbol": "LAG/TAU",
+      "wordOffset": 1,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "20",
+        "valueOctal": "01420"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "01420"
+      }
+    },
+    {
+      "addressOctal": "2544",
+      "address": 1380,
+      "valueOctal": "00001",
+      "value": 1,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000002",
+      "symbol": "MINFORCE",
+      "wordOffset": 0,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "21",
+        "valueOctal": "00001"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "00001"
+      }
+    },
+    {
+      "addressOctal": "2545",
+      "address": 1381,
+      "valueOctal": "27631",
+      "value": 12185,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "057462",
+      "symbol": "MINFORCE",
+      "wordOffset": 1,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "22",
+        "valueOctal": "27631"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "27631"
+      }
+    },
+    {
+      "addressOctal": "2546",
+      "address": 1382,
+      "valueOctal": "00013",
+      "value": 11,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000026",
+      "symbol": "MAXFORCE",
+      "wordOffset": 0,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "23",
+        "valueOctal": "00013"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "00017"
+      }
+    },
+    {
+      "addressOctal": "2547",
+      "address": 1383,
+      "valueOctal": "06551",
+      "value": 3433,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "015322",
+      "symbol": "MAXFORCE",
+      "wordOffset": 1,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "K",
+        "rowOctal": "24",
+        "valueOctal": "06551"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "06551"
+      }
+    },
+    {
+      "addressOctal": "2550",
+      "address": 1384,
+      "valueOctal": "07015",
+      "value": 3597,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "016033",
+      "symbol": "J1PARM",
+      "wordOffset": 0,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "03",
+        "valueOctal": "07015"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "07015"
+      }
+    },
+    {
+      "addressOctal": "2551",
+      "address": 1385,
+      "valueOctal": "12075",
+      "value": 5181,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "024172",
+      "symbol": "J1PARM",
+      "wordOffset": 1,
+      "pdfPage": 16,
+      "printedTablePage": 15,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "04",
+        "valueOctal": "12075"
+      },
+      "handbook": {
+        "pdfPage": 15,
+        "valueOctal": "12075"
+      }
+    },
+    {
+      "addressOctal": "2552",
+      "address": 1386,
+      "valueOctal": "75534",
+      "value": 31580,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "173271",
+      "symbol": "K1PARM",
+      "wordOffset": 0,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "05",
+        "valueOctal": "75534"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "75534"
+      }
+    },
+    {
+      "addressOctal": "2553",
+      "address": 1387,
+      "valueOctal": "64200",
+      "value": 26752,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "150401",
+      "symbol": "K1PARM",
+      "wordOffset": 1,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "06",
+        "valueOctal": "64200"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "64200"
+      }
+    },
+    {
+      "addressOctal": "2554",
+      "address": 1388,
+      "valueOctal": "07017",
+      "value": 3599,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "016036",
+      "symbol": "J2PARM",
+      "wordOffset": 0,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "07",
+        "valueOctal": "07017"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "07017"
+      }
+    },
+    {
+      "addressOctal": "2555",
+      "address": 1389,
+      "valueOctal": "31511",
+      "value": 13129,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "063222",
+      "symbol": "J2PARM",
+      "wordOffset": 1,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "10",
+        "valueOctal": "31511"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "31511"
+      }
+    },
+    {
+      "addressOctal": "2556",
+      "address": 1390,
+      "valueOctal": "73337",
+      "value": 30431,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "166677",
+      "symbol": "K2PARM",
+      "wordOffset": 0,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "11",
+        "valueOctal": "73337"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "73337"
+      }
+    },
+    {
+      "addressOctal": "2557",
+      "address": 1391,
+      "valueOctal": "66560",
+      "value": 28016,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "155341",
+      "symbol": "K2PARM",
+      "wordOffset": 1,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "12",
+        "valueOctal": "66560"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "66560"
+      }
+    },
+    {
+      "addressOctal": "2560",
+      "address": 1392,
+      "valueOctal": "76361",
+      "value": 31985,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "174743",
+      "symbol": "THETCRIT",
+      "wordOffset": 0,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "13",
+        "valueOctal": "76361"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "76361"
+      }
+    },
+    {
+      "addressOctal": "2561",
+      "address": 1393,
+      "valueOctal": "77023",
+      "value": 32275,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "176046",
+      "symbol": "THETCRIT",
+      "wordOffset": 1,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "14",
+        "valueOctal": "77023"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "77023"
+      }
+    },
+    {
+      "addressOctal": "2562",
+      "address": 1394,
+      "valueOctal": "03326",
+      "value": 1750,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "006654",
+      "symbol": "RAMIN",
+      "wordOffset": 0,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "15",
+        "valueOctal": "03326"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "03326"
+      }
+    },
+    {
+      "addressOctal": "2563",
+      "address": 1395,
+      "valueOctal": "13475",
+      "value": 5949,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "027172",
+      "symbol": "RAMIN",
+      "wordOffset": 1,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "16",
+        "valueOctal": "13475"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "13475"
+      }
+    },
+    {
+      "addressOctal": "2564",
+      "address": 1396,
+      "valueOctal": "00016",
+      "value": 14,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000034",
+      "symbol": "YLIM",
+      "wordOffset": 0,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "17",
+        "valueOctal": "00016"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "00016"
+      }
+    },
+    {
+      "addressOctal": "2565",
+      "address": 1397,
+      "valueOctal": "32446",
+      "value": 13606,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "065114",
+      "symbol": "YLIM",
+      "wordOffset": 1,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "20",
+        "valueOctal": "32446"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "32446"
+      }
+    },
+    {
+      "addressOctal": "2566",
+      "address": 1398,
+      "valueOctal": "00007",
+      "value": 7,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000016",
+      "symbol": "ABTRDOT",
+      "wordOffset": 0,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "21",
+        "valueOctal": "00007"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "00007"
+      }
+    },
+    {
+      "addressOctal": "2567",
+      "address": 1399,
+      "valueOctal": "23346",
+      "value": 9958,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "046715",
+      "symbol": "ABTRDOT",
+      "wordOffset": 1,
+      "pdfPage": 17,
+      "printedTablePage": 16,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "22",
+        "valueOctal": "23346"
+      },
+      "handbook": {
+        "pdfPage": 16,
+        "valueOctal": "23346"
+      }
+    },
+    {
+      "addressOctal": "2570",
+      "address": 1400,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "COSTHET1",
+      "wordOffset": 0,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "23",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2571",
+      "address": 1401,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "COSTHET1",
+      "wordOffset": 1,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-independent-uplink-table",
+      "uplinkSheet": {
+        "pdfPage": 23,
+        "column": "L",
+        "rowOctal": "24",
+        "valueOctal": "00000"
+      },
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2572",
+      "address": 1402,
+      "valueOctal": "06733",
+      "value": 3547,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "015666",
+      "symbol": "COSTHET2",
+      "wordOffset": 0,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "06733"
+      }
+    },
+    {
+      "addressOctal": "2573",
+      "address": 1403,
+      "valueOctal": "07535",
+      "value": 3933,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "017272",
+      "symbol": "COSTHET2",
+      "wordOffset": 1,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "07535"
+      }
+    },
+    {
+      "addressOctal": "2634",
+      "address": 1436,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DLAND",
+      "wordOffset": 0,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2635",
+      "address": 1437,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DLAND",
+      "wordOffset": 1,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2636",
+      "address": 1438,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DLAND",
+      "wordOffset": 2,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2637",
+      "address": 1439,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DLAND",
+      "wordOffset": 3,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2640",
+      "address": 1440,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DLAND",
+      "wordOffset": 4,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "2641",
+      "address": 1441,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DLAND",
+      "wordOffset": 5,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "3000",
+      "address": 1536,
+      "valueOctal": "02324",
+      "value": 1236,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "004650",
+      "symbol": "HIASCENT",
+      "wordOffset": 0,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "02324"
+      }
+    },
+    {
+      "addressOctal": "3001",
+      "address": 1537,
+      "valueOctal": "05454",
+      "value": 2860,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "013131",
+      "symbol": "ROLLTIME",
+      "wordOffset": 0,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "dsky",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "05454"
+      }
+    },
+    {
+      "addressOctal": "3002",
+      "address": 1538,
+      "valueOctal": "04513",
+      "value": 2379,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "011227",
+      "symbol": "PITTIME",
+      "wordOffset": 0,
+      "pdfPage": 18,
+      "printedTablePage": 17,
+      "inflightLoadingMethod": "dsky",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 17,
+        "valueOctal": "04513"
+      }
+    },
+    {
+      "addressOctal": "3003",
+      "address": 1539,
+      "valueOctal": "77001",
+      "value": 32257,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "176002",
+      "symbol": "DKTRAP",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "77001"
+      }
+    },
+    {
+      "addressOctal": "3004",
+      "address": 1540,
+      "valueOctal": "00012",
+      "value": 10,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000025",
+      "symbol": "DKOMEGAN",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00012"
+      }
+    },
+    {
+      "addressOctal": "3005",
+      "address": 1541,
+      "valueOctal": "00074",
+      "value": 60,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000171",
+      "symbol": "DKKAOSN",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00074"
+      }
+    },
+    {
+      "addressOctal": "3006",
+      "address": 1542,
+      "valueOctal": "77001",
+      "value": 32257,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "176002",
+      "symbol": "LMTRAP",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "77001"
+      }
+    },
+    {
+      "addressOctal": "3007",
+      "address": 1543,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "LMOMEGAN",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "3010",
+      "address": 1544,
+      "valueOctal": "00074",
+      "value": 60,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000171",
+      "symbol": "LMKAOSN",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00074"
+      }
+    },
+    {
+      "addressOctal": "3011",
+      "address": 1545,
+      "valueOctal": "00200",
+      "value": 128,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000400",
+      "symbol": "DKDB",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00200"
+      }
+    },
+    {
+      "addressOctal": "3012",
+      "address": 1546,
+      "valueOctal": "02555",
+      "value": 1389,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "005332",
+      "symbol": "IGNAOSQ",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "02555"
+      }
+    },
+    {
+      "addressOctal": "3013",
+      "address": 1547,
+      "valueOctal": "00150",
+      "value": 104,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000320",
+      "symbol": "IGNAOSR",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00150"
+      }
+    },
+    {
+      "addressOctal": "3113",
+      "address": 1611,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DOWNTORK",
+      "wordOffset": 0,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "3114",
+      "address": 1612,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DOWNTORK",
+      "wordOffset": 1,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "3115",
+      "address": 1613,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DOWNTORK",
+      "wordOffset": 2,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "3116",
+      "address": 1614,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DOWNTORK",
+      "wordOffset": 3,
+      "pdfPage": 19,
+      "printedTablePage": 18,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 18,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "3117",
+      "address": 1615,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DOWNTORK",
+      "wordOffset": 4,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "3120",
+      "address": 1616,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "DOWNTORK",
+      "wordOffset": 5,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "00000"
+      }
+    },
+    {
+      "addressOctal": "3371",
+      "address": 1785,
+      "valueOctal": "00001",
+      "value": 1,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000002",
+      "symbol": "VELBIAS",
+      "wordOffset": 0,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "00001"
+      }
+    },
+    {
+      "addressOctal": "3372",
+      "address": 1786,
+      "valueOctal": "36331",
+      "value": 15577,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "074662",
+      "symbol": "VELBIAS",
+      "wordOffset": 1,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "source-scan-disagreement",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "35331"
+      }
+    },
+    {
+      "addressOctal": "3373",
+      "address": 1787,
+      "valueOctal": "77201",
+      "value": 32385,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "176403",
+      "symbol": "AZBIAS",
+      "wordOffset": 0,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "77201"
+      }
+    },
+    {
+      "addressOctal": "3400",
+      "address": 1792,
+      "valueOctal": "00001",
+      "value": 1,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000002",
+      "symbol": "ATIGINC",
+      "wordOffset": 0,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "00001"
+      }
+    },
+    {
+      "addressOctal": "3401",
+      "address": 1793,
+      "valueOctal": "03120",
+      "value": 1616,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "006241",
+      "symbol": "ATIGINC",
+      "wordOffset": 1,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "03120"
+      }
+    },
+    {
+      "addressOctal": "3402",
+      "address": 1794,
+      "valueOctal": "00001",
+      "value": 1,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "000002",
+      "symbol": "PTIGINC",
+      "wordOffset": 0,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "00001"
+      }
+    },
+    {
+      "addressOctal": "3403",
+      "address": 1795,
+      "valueOctal": "03120",
+      "value": 1616,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "006241",
+      "symbol": "PTIGINC",
+      "wordOffset": 1,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "03120"
+      }
+    },
+    {
+      "addressOctal": "3404",
+      "address": 1796,
+      "valueOctal": "65244",
+      "value": 27300,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "152510",
+      "symbol": "AOTAZ",
+      "wordOffset": 0,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "65244"
+      }
+    },
+    {
+      "addressOctal": "3405",
+      "address": 1797,
+      "valueOctal": "77770",
+      "value": 32760,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177761",
+      "symbol": "AOTAZ",
+      "wordOffset": 1,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "77770"
+      }
+    },
+    {
+      "addressOctal": "3406",
+      "address": 1798,
+      "valueOctal": "12514",
+      "value": 5452,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "025231",
+      "symbol": "AOTAZ",
+      "wordOffset": 2,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "12514"
+      }
+    },
+    {
+      "addressOctal": "3407",
+      "address": 1799,
+      "valueOctal": "25247",
+      "value": 10919,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "052517",
+      "symbol": "AOTAZ",
+      "wordOffset": 3,
+      "pdfPage": 20,
+      "printedTablePage": 19,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 19,
+        "valueOctal": "25247"
+      }
+    },
+    {
+      "addressOctal": "3410",
+      "address": 1800,
+      "valueOctal": "37775",
+      "value": 16381,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "077772",
+      "symbol": "AOTAZ",
+      "wordOffset": 4,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "37775"
+      }
+    },
+    {
+      "addressOctal": "3411",
+      "address": 1801,
+      "valueOctal": "52521",
+      "value": 21841,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "125242",
+      "symbol": "AOTAZ",
+      "wordOffset": 5,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "52521"
+      }
+    },
+    {
+      "addressOctal": "3412",
+      "address": 1802,
+      "valueOctal": "10011",
+      "value": 4105,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "020022",
+      "symbol": "AOTEL",
+      "wordOffset": 0,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "10011"
+      }
+    },
+    {
+      "addressOctal": "3413",
+      "address": 1803,
+      "valueOctal": "10012",
+      "value": 4106,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "020024",
+      "symbol": "AOTEL",
+      "wordOffset": 1,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "10012"
+      }
+    },
+    {
+      "addressOctal": "3414",
+      "address": 1804,
+      "valueOctal": "10014",
+      "value": 4108,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "020030",
+      "symbol": "AOTEL",
+      "wordOffset": 2,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "10014"
+      }
+    },
+    {
+      "addressOctal": "3415",
+      "address": 1805,
+      "valueOctal": "10013",
+      "value": 4107,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "020027",
+      "symbol": "AOTEL",
+      "wordOffset": 3,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "10013"
+      }
+    },
+    {
+      "addressOctal": "3416",
+      "address": 1806,
+      "valueOctal": "10012",
+      "value": 4106,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "020024",
+      "symbol": "AOTEL",
+      "wordOffset": 4,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "10012"
+      }
+    },
+    {
+      "addressOctal": "3417",
+      "address": 1807,
+      "valueOctal": "10010",
+      "value": 4104,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "020021",
+      "symbol": "AOTEL",
+      "wordOffset": 5,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "10010"
+      }
+    },
+    {
+      "addressOctal": "3420",
+      "address": 1808,
+      "valueOctal": "35610",
+      "value": 15240,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "073420",
+      "symbol": "LRHMAX",
+      "wordOffset": 0,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "35610"
+      }
+    },
+    {
+      "addressOctal": "3421",
+      "address": 1809,
+      "valueOctal": "13146",
+      "value": 5734,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "026314",
+      "symbol": "LRWH",
+      "wordOffset": 0,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "13146"
+      }
+    },
+    {
+      "addressOctal": "3422",
+      "address": 1810,
+      "valueOctal": "05050",
+      "value": 2600,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "012121",
+      "symbol": "ZOOMTIME",
+      "wordOffset": 0,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "05050"
+      }
+    },
+    {
+      "addressOctal": "3423",
+      "address": 1811,
+      "valueOctal": "01407",
+      "value": 775,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "003016",
+      "symbol": "TENDBRAK",
+      "wordOffset": 0,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "01407"
+      }
+    },
+    {
+      "addressOctal": "3424",
+      "address": 1812,
+      "valueOctal": "00226",
+      "value": 150,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000455",
+      "symbol": "TENDAPPR",
+      "wordOffset": 0,
+      "pdfPage": 21,
+      "printedTablePage": 20,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 20,
+        "valueOctal": "00226"
+      }
+    },
+    {
+      "addressOctal": "3425",
+      "address": 1813,
+      "valueOctal": "75632",
+      "value": 31642,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "173465",
+      "symbol": "DELTTFAP",
+      "wordOffset": 0,
+      "pdfPage": 22,
+      "printedTablePage": 21,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 21,
+        "valueOctal": "75632"
+      }
+    },
+    {
+      "addressOctal": "3426",
+      "address": 1814,
+      "valueOctal": "77443",
+      "value": 32547,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "177107",
+      "symbol": "LEADTIME",
+      "wordOffset": 0,
+      "pdfPage": 22,
+      "printedTablePage": 21,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 21,
+        "valueOctal": "77443"
+      }
+    },
+    {
+      "addressOctal": "3427",
+      "address": 1815,
+      "valueOctal": "01407",
+      "value": 775,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "003016",
+      "symbol": "RPCRTIME",
+      "wordOffset": 0,
+      "pdfPage": 22,
+      "printedTablePage": 21,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 21,
+        "valueOctal": "01407"
+      }
+    },
+    {
+      "addressOctal": "3430",
+      "address": 1816,
+      "valueOctal": "57777",
+      "value": 24575,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "137777",
+      "symbol": "RPCRTQSW",
+      "wordOffset": 0,
+      "pdfPage": 22,
+      "printedTablePage": 21,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 21,
+        "valueOctal": "57777"
+      }
+    },
+    {
+      "addressOctal": "3431",
+      "address": 1817,
+      "valueOctal": "20000",
+      "value": 8192,
+      "computedOddParityBit": 0,
+      "computedDataShiftedLeftWithParityLsbOctal": "040000",
+      "symbol": "TNEWA",
+      "wordOffset": 0,
+      "pdfPage": 22,
+      "printedTablePage": 21,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 21,
+        "valueOctal": "20000"
+      }
+    },
+    {
+      "addressOctal": "3432",
+      "address": 1818,
+      "valueOctal": "00000",
+      "value": 0,
+      "computedOddParityBit": 1,
+      "computedDataShiftedLeftWithParityLsbOctal": "000001",
+      "symbol": "TNEWA",
+      "wordOffset": 1,
+      "pdfPage": 22,
+      "printedTablePage": 21,
+      "inflightLoadingMethod": "uplink",
+      "reviewStatus": "agrees-with-handbook-copy",
+      "handbook": {
+        "pdfPage": 21,
+        "valueOctal": "00000"
+      }
+    }
+  ],
+  "uplinkBlocks": [
+    {
+      "column": "A",
+      "wordCountOctal": "00021",
+      "startAddressOctal": "01452",
+      "valuesOctal": [
+        "03641",
+        "64417",
+        "74272",
+        "54401",
+        "03775",
+        "72727",
+        "00063",
+        "00015",
+        "77762",
+        "77627",
+        "00202",
+        "77713",
+        "77745",
+        "00266",
+        "00000"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "B",
+      "wordCountOctal": "00021",
+      "startAddressOctal": "01700",
+      "valuesOctal": [
+        "00000",
+        "00000",
+        "00000",
+        "00000",
+        "00000",
+        "00000",
+        "00011",
+        "05253",
+        "33560",
+        "30623",
+        "37367",
+        "00000",
+        "23066",
+        "00000",
+        "26474"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "C",
+      "wordCountOctal": "00010",
+      "startAddressOctal": "01770",
+      "valuesOctal": [
+        "01351",
+        "24734",
+        "02354",
+        "04750",
+        "00410",
+        "00165"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "D",
+      "wordCountOctal": "00024",
+      "startAddressOctal": "02000",
+      "valuesOctal": [
+        "05750",
+        "00763",
+        "17270",
+        "17270",
+        "00023",
+        "00001",
+        "00000",
+        "00000",
+        "00103",
+        "00103",
+        "77772",
+        "46750",
+        "77773",
+        "57473",
+        "00006",
+        "06361",
+        "04225",
+        "10400"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "E",
+      "wordCountOctal": "00010",
+      "startAddressOctal": "02022",
+      "valuesOctal": [
+        "00311",
+        "31177",
+        "77700",
+        "55774",
+        "77762",
+        "55732"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "F",
+      "wordCountOctal": "00024",
+      "startAddressOctal": "02400",
+      "valuesOctal": [
+        "04347",
+        "20441",
+        "77776",
+        "76044",
+        "00000",
+        "00000",
+        "77773",
+        "75347",
+        "77766",
+        "74245",
+        "00000",
+        "00000",
+        "77773",
+        "45722",
+        "77774",
+        "54701",
+        "00000",
+        "00000"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "G",
+      "wordCountOctal": "00024",
+      "startAddressOctal": "02422",
+      "valuesOctal": [
+        "77663",
+        "77104",
+        "77765",
+        "45231",
+        "77067",
+        "72634",
+        "77545",
+        "63177",
+        "37777",
+        "37777",
+        "00567",
+        "25762",
+        "00000",
+        "00624",
+        "00000",
+        "00000",
+        "77777",
+        "77635"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "H",
+      "wordCountOctal": "00024",
+      "startAddressOctal": "02444",
+      "valuesOctal": [
+        "77777",
+        "77400",
+        "00000",
+        "00000",
+        "00000",
+        "00372",
+        "00002",
+        "14522",
+        "00000",
+        "00000",
+        "77774",
+        "71233",
+        "00000",
+        "01062",
+        "77754",
+        "67646",
+        "00612",
+        "30722"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "I",
+      "wordCountOctal": "00024",
+      "startAddressOctal": "02466",
+      "valuesOctal": [
+        "00000",
+        "00000",
+        "00113",
+        "04704",
+        "00416",
+        "15755",
+        "77730",
+        "51505",
+        "77121",
+        "73554",
+        "77255",
+        "41625",
+        "73754",
+        "52751",
+        "72516",
+        "57777",
+        "04114",
+        "04454"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "J",
+      "wordCountOctal": "00020",
+      "startAddressOctal": "02510",
+      "valuesOctal": [
+        "07640",
+        "14632",
+        "00017",
+        "00003",
+        "00000",
+        "00364",
+        "00000",
+        "00226",
+        "00000",
+        "01717",
+        "01042",
+        "04211",
+        "01042",
+        "00000"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "K",
+      "wordCountOctal": "00024",
+      "startAddressOctal": "02526",
+      "valuesOctal": [
+        "01414",
+        "00116",
+        "11463",
+        "11463",
+        "11463",
+        "06315",
+        "06315",
+        "06315",
+        "03146",
+        "14370",
+        "14300",
+        "00000",
+        "15164",
+        "01420",
+        "00001",
+        "27631",
+        "00013",
+        "06551"
+      ],
+      "pdfPage": 23
+    },
+    {
+      "column": "L",
+      "wordCountOctal": "00024",
+      "startAddressOctal": "02550",
+      "valuesOctal": [
+        "07015",
+        "12075",
+        "75534",
+        "64200",
+        "07017",
+        "31511",
+        "73337",
+        "66560",
+        "76361",
+        "77023",
+        "03326",
+        "13475",
+        "00016",
+        "32446",
+        "00007",
+        "23346",
+        "00000",
+        "00000"
+      ],
+      "pdfPage": 23
+    }
+  ]
+}

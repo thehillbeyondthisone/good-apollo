@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "mission": "Apollo 13",
+  "speaker": "Joseph P. Kerwin, CAPCOM",
+  "source": {
+    "archive": "Apollo 13 in Real Time, restored NASA Mission Control headset audio",
+    "credit": "NASA original recordings. Audio digitization and restoration credited by Apollo 13 in Real Time to Ben Feist and Jeremy Cooper.",
+    "tape": "T924 HR1L",
+    "tapeStartGet": "081:01:11",
+    "tapeIndex": "https://apolloinrealtime.org/13/MOCRviz/data/tape_ranges.csv",
+    "archiveUrl": "https://apolloinrealtime.org/13/",
+    "usage": "The source site identifies its work as CC BY-NC-SA 3.0. These excerpts retain that attribution and use the restored audio only.",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "channels": {
+      "14": {
+        "url": "https://media.apolloinrealtime.org/A13/MOCR_audio/DA13_T924_HR1L_16khz_mp3_16/DA13_T924_HR1L_CH14.mp3",
+        "sha256": "959248255a75b1fe74ef0aad29f7f82b32f967321df088264c050ad3da41e2e0"
+      },
+      "15": {
+        "url": "https://media.apolloinrealtime.org/A13/MOCR_audio/DA13_T924_HR1L_16khz_mp3_16/DA13_T924_HR1L_CH15.mp3",
+        "sha256": "9589aa0a4d4b656db8e7c96f94286b42e9a11b395a8a9ec4984aa606f34ea56f"
+      }
+    }
+  },
+  "edit": "Original speech excerpts trimmed to their calls, band limited, peak leveled and faded briefly at cut boundaries. Mono PCM at 8 kHz.",
+  "clips": {
+    "090:09:17": {
+      "file": "0900917.wav",
+      "channel": 14,
+      "sourceStartSeconds": 32884.6,
+      "durationSeconds": 39.6,
+      "sha256": "9be45239daa7fca6525fa985427629474cb5846dff6f1183448065c58de881ce",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0900917"
+    },
+    "090:22:50": {
+      "file": "0902250.wav",
+      "channel": 14,
+      "sourceStartSeconds": 33711.1,
+      "durationSeconds": 30.4,
+      "sha256": "83c6e692967d6989c4d98719a39e12105de831630c682b93049ca61aed9531c3",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0902250"
+    },
+    "090:24:55": {
+      "file": "0902455.wav",
+      "channel": 15,
+      "sourceStartSeconds": 33822.3,
+      "durationSeconds": 20.4,
+      "sha256": "7a22c63a9357199345957a9ee5a2f3fdfafe90e2bb62148c7e29da89bfa41a2c",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0902455"
+    },
+    "090:26:22": {
+      "file": "0902622.wav",
+      "channel": 15,
+      "sourceStartSeconds": 33910.8,
+      "durationSeconds": 15.2,
+      "sha256": "4a17f44902ab80e845682e34e9d0a4ca687b296ea7c84cdfa8dc8d2160440d79",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0902622"
+    },
+    "090:27:37": {
+      "file": "0902737.wav",
+      "channel": 15,
+      "sourceStartSeconds": 33985.9,
+      "durationSeconds": 33.7,
+      "sha256": "6e32775b206b4a20544eacfd0f659a68c03a00bcf0fe4b8ce682b2fefbe11b8f",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0902737"
+    },
+    "090:33:30": {
+      "file": "0903330.wav",
+      "channel": 15,
+      "sourceStartSeconds": 34337.2,
+      "durationSeconds": 44.9,
+      "sha256": "061d9dea38f59caf863c0a18cc5b3077d6fa9348a41907b31d2709ac2738f646",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0903330"
+    },
+    "090:37:32": {
+      "file": "0903732.wav",
+      "channel": 15,
+      "sourceStartSeconds": 34579.1,
+      "durationSeconds": 36.3,
+      "sha256": "90c317eeefe87909df0a65d69ff0506bab546f3db76ca8f4145754fe61c926a1",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0903732"
+    },
+    "090:38:13": {
+      "file": "0903813.wav",
+      "channel": 15,
+      "sourceStartSeconds": 34620.2,
+      "durationSeconds": 17.5,
+      "sha256": "2a5f3fac89ed4c9331bf7223939f93b1b82a0a6a8eacb7bb816bc962f5083d0b",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0903813"
+    },
+    "090:43:41": {
+      "file": "0904341.wav",
+      "channel": 15,
+      "sourceStartSeconds": 34948.1,
+      "durationSeconds": 33.1,
+      "sha256": "51f1468f68a7470b860d84c9c79eee3ac5aff16b7af7966d1b4266cf614011e4",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0904341"
+    },
+    "090:47:21": {
+      "file": "0904721.wav",
+      "channel": 15,
+      "sourceStartSeconds": 35168.1,
+      "durationSeconds": 31.5,
+      "sha256": "8cf4874860a4819012c695480a66a332b30b49c8f04bb28fec677df0ad45add7",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0904721"
+    },
+    "090:49:20": {
+      "file": "0904920.wav",
+      "channel": 15,
+      "sourceStartSeconds": 35287.1,
+      "durationSeconds": 29.3,
+      "sha256": "19c2637b4af7ab643e779884a0022741d9b35e815ecc21d091ffc9833a7b7564",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0904920"
+    },
+    "090:55:15": {
+      "file": "0905515.wav",
+      "channel": 14,
+      "sourceStartSeconds": 35642.5,
+      "durationSeconds": 19.9,
+      "sha256": "e5b27dd66db84963fdf2c156166f87007a8303a57dd0dc19e838dc842607b73b",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0905515"
+    },
+    "090:58:03": {
+      "file": "0905803.wav",
+      "channel": 15,
+      "sourceStartSeconds": 35810.1,
+      "durationSeconds": 53.8,
+      "sha256": "7d5409248ab5d3278cea14d7ff14beb2a5b33c6d909ce8ae87763c27ec0fcd2c",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0905803"
+    },
+    "091:01:00": {
+      "file": "0910100.wav",
+      "channel": 15,
+      "sourceStartSeconds": 35987,
+      "durationSeconds": 39.2,
+      "sha256": "03f5b54bf658abda5f91753b84f6cdb5b4ffa2efbd22759ff4500bfdce63f88f",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0910100"
+    },
+    "091:10:53": {
+      "file": "0911053.wav",
+      "channel": 15,
+      "sourceStartSeconds": 36580.5,
+      "durationSeconds": 22.7,
+      "sha256": "946019147bc89377986c7cae50277399f42d1b5a404d57a57c6ffb69c0194684",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0911053"
+    },
+    "091:12:30": {
+      "file": "0911230.wav",
+      "channel": 15,
+      "sourceStartSeconds": 36703.1,
+      "durationSeconds": 17.4,
+      "sha256": "6e8ca4b257e2137278c0a387e004030d26d60b2d93f877d7777e3a6fdc31bae5",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0911230"
+    },
+    "093:27:39": {
+      "file": "0932739.wav",
+      "channel": 14,
+      "sourceStartSeconds": 44786.1,
+      "durationSeconds": 31.4,
+      "sha256": "520127f847520cf8579290ec31e2b571e92a610f6cbe0d99250f63d91d78efbe",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0932739"
+    },
+    "093:44:17": {
+      "file": "0934417.wav",
+      "channel": 15,
+      "sourceStartSeconds": 45806.7,
+      "durationSeconds": 23.2,
+      "sha256": "f04ba8e1f097fac68e76d4000ae4daa4a1c7358fad5cc90c324ba7585fd874f7",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0934417"
+    },
+    "093:52:59": {
+      "file": "0935259.wav",
+      "channel": 15,
+      "sourceStartSeconds": 46306.1,
+      "durationSeconds": 14.3,
+      "sha256": "ec6ef44947399e2f4be56203410a306557f09016e592c1aba2a8043d143536ca",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0935259"
+    },
+    "093:54:39": {
+      "file": "0935439.wav",
+      "channel": 15,
+      "sourceStartSeconds": 46407.2,
+      "durationSeconds": 23.6,
+      "sha256": "6a4b44387bc3903fe6460eb7b2d70c6522201b0594e3139c5767a9f04c3cf791",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0935439"
+    },
+    "093:56:31": {
+      "file": "0935631.wav",
+      "channel": 14,
+      "sourceStartSeconds": 46518.1,
+      "durationSeconds": 25.4,
+      "sha256": "a2240ce1babf3d070b685883bb68275a466722658c73aa669287ed75b8b80c3d",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0935631"
+    },
+    "093:58:17": {
+      "file": "0935817.wav",
+      "channel": 15,
+      "sourceStartSeconds": 46624,
+      "durationSeconds": 8.8,
+      "sha256": "db911adfa2d13779a74e2d05c5587ec7f4fb1c2fa2efeb4471e35a955613767e",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0935817"
+    },
+    "093:58:33": {
+      "file": "0935833.wav",
+      "channel": 15,
+      "sourceStartSeconds": 46642,
+      "durationSeconds": 6.1,
+      "sha256": "c6d3b5eeb22b9a1af9137484c0c7c68dc91a4326045938a35a6afe2a35d61979",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0935833"
+    },
+    "093:59:45": {
+      "file": "0935945.wav",
+      "channel": 15,
+      "sourceStartSeconds": 46712.1,
+      "durationSeconds": 6.2,
+      "sha256": "f011c61c8c3106e1d79991d9c768a67a5d8a669eebdd7388edbb82a590061904",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0935945"
+    },
+    "094:00:03": {
+      "file": "0940003.wav",
+      "channel": 14,
+      "sourceStartSeconds": 46730,
+      "durationSeconds": 11,
+      "sha256": "938bf1d60ebe7e4aba21f9493c1d2047641acc7fa123c1aed993e67aac2c8f68",
+      "transcript": "https://www.apollojournals.org/afj/ap13fj/15day4-mailbox.html#0940003"
+    },
+    "094:33:21": {
+      "file": "0943321.wav",
+      "channel": 14,
+      "sourceStartSeconds": 48728.8,
+      "durationSeconds": 8.9,
+      "sha256": "3d6babdd5f121bd38cececbecd877a863bb3ec89f8449fe9cc6fd1cf0e40323e",
+      "transcript": "https://apollojournals.org/afj/ap13fj/16day4-checkingodyssey.html#0943321"
+    }
+  }
+}

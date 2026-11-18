@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "mission": "Apollo 13, MCC-5",
+  "source": {
+    "archive": "Apollo 13 in Real Time, restored NASA Mission Control headset audio",
+    "credit": "NASA original recordings. Audio restoration credited to Ben Feist and Jeremy Cooper.",
+    "archiveUrl": "https://apolloinrealtime.org/13/",
+    "tape": "T921 HR1U",
+    "tapeStartGet": "097:40:29",
+    "tapeIndex": "https://apolloinrealtime.org/13/MOCRviz/data/tape_ranges.csv",
+    "channel": 15,
+    "url": "https://media.apolloinrealtime.org/A13/MOCR_audio/DA13_T921_HR1U_16khz_mp3_16/DA13_T921_HR1U_CH15.mp3",
+    "sha256": "2175dda652f3be502fe4b4118ce3976f9f1c2591214b87a0bb3b932b0407fb06",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "usage": "The source site identifies its work as CC BY-NC-SA 3.0. The edited audio-only excerpts retain that attribution."
+  },
+  "edit": "Original speech trimmed to the instruction, band limited, leveled and faded at the cut boundaries. Mono 8 kHz PCM.",
+  "clips": {
+    "100:16:16": {
+      "file": "1001616.wav",
+      "speaker": "Charlie Duke",
+      "sourceStartSeconds": 9345.6,
+      "durationSeconds": 71.9,
+      "sha256": "db5454240ed5ca0ce0e0e223e74552d77c4ab0dcbee2b470b874a3bce4053e73",
+      "transcript": "https://apollojournals.org/afj/ap13fj/17day5-thumpandsnowflakes.html#1001616"
+    },
+    "103:43:43": {
+      "file": "1034343.wav",
+      "speaker": "Vance Brand",
+      "sourceStartSeconds": 21815,
+      "durationSeconds": 36.3,
+      "sha256": "017a8a96a4500d24f327fdc26080087cc219bb2342101547003b90aaed9b13b8",
+      "transcript": "https://apollojournals.org/afj/ap13fj/19day5-themanualcoursecorrection.html#1034343"
+    },
+    "103:51:07": {
+      "file": "1035107.wav",
+      "speaker": "Vance Brand",
+      "sourceStartSeconds": 22236,
+      "durationSeconds": 7.5,
+      "sha256": "4b2ebf873f844682b0f7c2a6156f55de19289cf2a1731a4dd0d1b4ddaa6f89c7",
+      "transcript": "https://apollojournals.org/afj/ap13fj/19day5-themanualcoursecorrection.html#1035107"
+    },
+    "104:33:43": {
+      "file": "1043343.wav",
+      "speaker": "Jack Lousma",
+      "sourceStartSeconds": 24834.5,
+      "durationSeconds": 21.5,
+      "sha256": "7ec63470fd38dbb2daba1c342b4ad408d6d24b29963cca1ca111aaa5d0cbfd69",
+      "transcript": "https://apollojournals.org/afj/ap13fj/19day5-themanualcoursecorrection.html#1043343"
+    },
+    "105:12:04": {
+      "file": "1051204.wav",
+      "speaker": "Jack Lousma",
+      "sourceStartSeconds": 27093.1,
+      "durationSeconds": 7.7,
+      "sha256": "39356399ba7cee79ed3c27c03079fadb1b25cf30f70fd23c4eeb764ee03c08b5",
+      "transcript": "https://apollojournals.org/afj/ap13fj/19day5-themanualcoursecorrection.html#1051204"
+    },
+    "105:17:01": {
+      "file": "1051701.wav",
+      "speaker": "Jack Lousma",
+      "sourceStartSeconds": 27390.95,
+      "durationSeconds": 3.65,
+      "sha256": "eaaa034c1af244140e25fb525d6417969a8c1e36c1bc868b33c44ab7a3e0a628",
+      "transcript": "https://apollojournals.org/afj/ap13fj/19day5-themanualcoursecorrection.html#1051701"
+    },
+    "105:19:05": {
+      "file": "1051905.wav",
+      "speaker": "Jack Lousma",
+      "sourceStartSeconds": 27523.1,
+      "durationSeconds": 3.5,
+      "sha256": "90decda9d928b9ff4b59d370d20ebd44c7bc83562d1abe5f07fc1df3bb9b68b1",
+      "transcript": "https://apollojournals.org/afj/ap13fj/19day5-themanualcoursecorrection.html#1051905"
+    },
+    "105:19:46": {
+      "file": "1051946.wav",
+      "speaker": "Jack Lousma",
+      "sourceStartSeconds": 27554.9,
+      "durationSeconds": 3.05,
+      "sha256": "7edc17fd1cb4f18292deb0a3700f7b4272cd70761391ee799791976ec200d78e",
+      "transcript": "https://apollojournals.org/afj/ap13fj/19day5-themanualcoursecorrection.html#1051946"
+    }
+  }
+}

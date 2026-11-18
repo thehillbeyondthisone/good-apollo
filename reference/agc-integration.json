@@ -1,0 +1,46 @@
+{
+	"all21NumericEightsObserved": true,
+	"checks": 30,
+	"failures": [],
+	"flightPadloadApplied": false,
+	"lampClearObserved": true,
+	"lastSnapshot": {
+		"connected": true,
+		"cpuClock": "external real time; not simulation-stepped",
+		"flightPadloadApplied": false,
+		"initialization": "test initialization",
+		"keyPressesSent": 11.0,
+		"lampTestAlarm": false,
+		"lamps": {
+			"p4_dsky_alt_light": false,
+			"p4_dsky_comptr_acty_light": false,
+			"p4_dsky_gimbal_lock_light": false,
+			"p4_dsky_key_rel_light": false,
+			"p4_dsky_no_att_light": false,
+			"p4_dsky_opr_err_light": false,
+			"p4_dsky_prog_light": false,
+			"p4_dsky_restart_light": true,
+			"p4_dsky_stby_light": false,
+			"p4_dsky_temp_light": false,
+			"p4_dsky_tracker_light": false,
+			"p4_dsky_uplink_acty_light": false,
+			"p4_dsky_vel_light": false
+		},
+		"packetsReceived": 1374.0,
+		"poweredByAgcHardwareStatus": true,
+		"readouts": {
+			"p4_dsky_noun_display": "88",
+			"p4_dsky_prog_display": "00",
+			"p4_dsky_r1_display": "+88888",
+			"p4_dsky_r2_display": "+88888",
+			"p4_dsky_r3_display": "+88888",
+			"p4_dsky_verb_display": "88"
+		},
+		"rope": "LM131R1",
+		"status": "LM131R1 live / test initialization / flight padload pending"
+	},
+	"realUpstreamCli": true,
+	"result": "PASS",
+	"rope": "LM131R1",
+	"schemaVersion": 1
+}

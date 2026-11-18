@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "result": "PASS",
+  "checks": 124,
+  "failures": [],
+  "kind": "Source catalog gates and independent DC/AC accounting fixtures",
+  "sourceLoads": 20,
+  "electricalSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+  "controlsSha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "completeFlightValidation": false,
+  "headsetTested": false
+}

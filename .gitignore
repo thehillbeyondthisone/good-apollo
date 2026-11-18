@@ -1,0 +1,18 @@
+# Engine and compiler caches
+godot/.godot/
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+
+# Rebuildable scratch and Blender backups
+.tmp/
+.cache/
+tmp/
+*.blend1
+*.blend2
+*.tmp
+
+# Local tool/bootstrap output; source libraries live on D:.
+tools/.local/
+*.log

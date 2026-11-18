@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "checks": 606,
+  "failures": [],
+  "breakers": 160,
+  "headlessCore": true,
+  "fidelity": "PartialEPS; aggregate calibrated; no fullflight validation claim",
+  "flightValidationGate": "OPEN"
+}

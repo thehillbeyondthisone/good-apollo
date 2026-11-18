@@ -1,0 +1,180 @@
+{
+  "purpose": "Source-qualified chronology scenarios and uncertainty; not full flown-profile reproduction",
+  "artifact": "reference/electrical-flight-audit.json",
+  "initialAh": 2179,
+  "reportedRemainingAh": 410,
+  "validationPassed": false,
+  "independentValidationPassed": false,
+  "supersededLegacy": {
+    "id": "legacy_coarse_superseded",
+    "segments": [
+      {
+        "startGet": "058:00:00",
+        "endGet": "079:32:06",
+        "startGetHours": 58.0,
+        "endGetHours": 79.535,
+        "currentA": 30,
+        "useAh": 646.05,
+        "basis": "Mission Report aggregate approximated as constant; original audit endpoint79.535h"
+      },
+      {
+        "startGet": "079:32:06",
+        "endGet": "136:00:00",
+        "startGetHours": 79.535,
+        "endGetHours": 136.0,
+        "currentA": 12,
+        "useAh": 677.58,
+        "basis": "Superseded transition assumptions"
+      },
+      {
+        "startGet": "136:00:00",
+        "endGet": "141:30:00",
+        "startGetHours": 136.0,
+        "endGetHours": 141.5,
+        "currentA": 40.7,
+        "useAh": 223.85,
+        "basis": "Flight Director planning amplitude, not measured"
+      }
+    ],
+    "lmScenarioUseAh": 1547.48,
+    "cmTransferAh": 129,
+    "transferBoundary": "CM export added once to a scenario explicitly interpreting segment currents as LM housekeeping only; this interpretation is conditional.",
+    "predictedRemainingAh": 502.52,
+    "reportedTotalRemainingAh": 410,
+    "residualAh": 92.52,
+    "independentValidationPassed": false,
+    "note": "Reproduces the old92.52Ah residual for comparison only; known timing omissions invalidate it as a flown schedule."
+  },
+  "scenarios": [
+    {
+      "id": "late_boundary_sensitivity",
+      "segments": [
+        {
+          "startGet": "058:00:00",
+          "endGet": "079:32:06",
+          "startGetHours": 58.0,
+          "endGetHours": 79.535,
+          "currentA": 30,
+          "useAh": 646.05,
+          "basis": "Legacy initial assumption retained to isolate one change"
+        },
+        {
+          "startGet": "079:32:06",
+          "endGet": "133:29:00",
+          "startGetHours": 79.535,
+          "endGetHours": 133.48333333333332,
+          "currentA": 12,
+          "useAh": 647.38,
+          "basis": "Legacy low current, with actual final powerup start"
+        },
+        {
+          "startGet": "133:29:00",
+          "endGet": "141:30:00",
+          "startGetHours": 133.48333333333332,
+          "endGetHours": 141.5,
+          "currentA": 40.7,
+          "useAh": 326.278333,
+          "basis": "Planning amplitude retained as sensitivity, not observed constant"
+        }
+      ],
+      "lmScenarioUseAh": 1619.708333,
+      "cmTransferAh": 129,
+      "transferBoundary": "CM export added once to a scenario explicitly interpreting segment currents as LM housekeeping only; this interpretation is conditional.",
+      "predictedRemainingAh": 430.291667,
+      "reportedTotalRemainingAh": 410,
+      "residualAh": 20.291667,
+      "independentValidationPassed": false,
+      "note": "Only final boundary moved to133:29. Nearer reserve agreement is not an independent pass; early powerdown transition and ramp remain wrong/incomplete."
+    },
+    {
+      "id": "telmu_chronology_illustrative",
+      "segments": [
+        {
+          "startGet": "058:00:00",
+          "endGet": "082:30:00",
+          "startGetHours": 58.0,
+          "endGetHours": 82.5,
+          "currentA": 30,
+          "useAh": 735.0,
+          "basis": "Simplified30A average inside reported28-50A initial range"
+        },
+        {
+          "startGet": "082:30:00",
+          "endGet": "133:29:00",
+          "startGetHours": 82.5,
+          "endGetHours": 133.48333333333332,
+          "currentA": 12.5,
+          "useAh": 637.291667,
+          "basis": "TELMU powered-down average extended across unmeasured changes; assumption"
+        },
+        {
+          "startGet": "133:29:00",
+          "endGet": "141:30:00",
+          "startGetHours": 133.48333333333332,
+          "endGetHours": 141.5,
+          "currentA": 40,
+          "useAh": 320.666667,
+          "basis": "Observed later plateau applied as an illustrative constant; excludes unknown warmup shape"
+        }
+      ],
+      "lmScenarioUseAh": 1692.958334,
+      "cmTransferAh": 129,
+      "transferBoundary": "CM export added once to a scenario explicitly interpreting segment currents as LM housekeeping only; this interpretation is conditional.",
+      "predictedRemainingAh": 357.041666,
+      "reportedTotalRemainingAh": 410,
+      "residualAh": -52.958334,
+      "independentValidationPassed": false,
+      "note": "Chronology improved but not a reconstructed waveform. Aggregate anchors calibrate this scenario and therefore cannot independently validate it."
+    }
+  ],
+  "heldOutSpotChecks": {
+    "scenarioId": "telmu_chronology_illustrative",
+    "qualification": "These pre-export PAO references were not used to choose the illustrative scenario segments. The comparison checks the assumed aggregate against unused observations. The magnitude or stated range of each observation is approximate, and no acceptance tolerance or component-model pass is claimed.",
+    "acceptanceTolerance": null,
+    "comparisons": [
+      {
+        "anchorId": "coast_hourly_summary",
+        "get": "096:00:00",
+        "source": "mission_ops_electrical",
+        "referenceCurrentA": 11.8,
+        "predictedCurrentA": 12.5,
+        "predictedMinusReportedA": 0.7
+      },
+      {
+        "anchorId": "manual_mcc_load",
+        "get": "105:18:28",
+        "source": "fj_manual_mcc",
+        "referenceCurrentA": 25,
+        "predictedCurrentA": 12.5,
+        "predictedMinusReportedA": -12.5
+      },
+      {
+        "anchorId": "post_manual_mcc",
+        "get": "106:03:00",
+        "source": "fj_manual_mcc",
+        "referenceCurrentA": [
+          10,
+          12
+        ],
+        "predictedCurrentA": 12.5,
+        "outsideReportedRangeA": 0.5
+      }
+    ]
+  },
+  "timingSensitivityAh": 72.228333,
+  "warmupPeak": {
+    "peakA": 70,
+    "durationSeconds": null,
+    "integratedChargeAh": null,
+    "reason": "Only a peak is reported; duration is unknown. No70A rectangular interval is invented."
+  },
+  "nasaPublishedAcceptanceTolerance": null,
+  "acceptancePolicy": "No pass/fail tolerance is inferred from reserve agreement of an aggregate-calibrated scenario.",
+  "limitations": [
+    "Sparse aggregate observations are not a sampled current history.",
+    "58:00 is a rounded scenario starting epoch; internal power was present by57:44, and the exact2179Ah capacity epoch/per-battery allocation is not established.",
+    "CM export must not be added to a measured whole-source current that already includes it.",
+    "Initial unequal bus sharing, individual battery history and unusable reserve are not reproduced.",
+    "Heater cycles, course-correction peaks, comm changes and final ramp durations remain incomplete."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "recordedUtc": "2026-11-17T16:59:05.115714+00:00",
+  "inventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "gate1": {
+    "overall": "OPEN",
+    "declaredInventorySourceReview": "PASS",
+    "entries": 620,
+    "inputs": 485,
+    "outputs": 135,
+    "groups": 29,
+    "originalPanelEntriesVisuallyReviewed": 495,
+    "stowageRowsDispositioned": 76,
+    "implementedNewMechanisms": 35,
+    "sourceAudit": "reference/control-source-audit.json",
+    "followup": "reference/cabin-mechanism-followup.json",
+    "actualSceneMechanismChecks": 90,
+    "remaining": [
+      "Exact panel placements, individual closure counts, motion ranges and controller grip/cross-axis geometry need engineering evidence",
+      "Full-vehicle scope/denominator and three source discrepancies remain unresolved",
+      "Wearable/EVA, camera and CSM interface scope requires separate resolution"
+    ]
+  },
+  "gate2": {
+    "overall": "OPEN - DEFERRED BY USER",
+    "furtherPhysicalTesting": "Explicitly deferred until much later; continue offline development",
+    "historicalInventoryEntries": 585,
+    "historicalInventorySha256": "2de418f4e1ff8057c478b0cc40f64f87f33364717ee43191eb8b72115a6c8fcb",
+    "stereoAndTrackedControllers": "Observed during earlier session",
+    "operatorFeedback": "Initial controls and labels accepted; later controller rays missing; final feedback mostly flawless and done testing",
+    "operatorReview": "output/xr-operator-review.json",
+    "controllerFix": "Minimal Touch-only map passes software checks; sustained hardware behavior unconfirmed",
+    "current620GeometryPhysicallyTested": false,
+    "historicalCompositorMeasuredRun": "PASS - throughput exceeds72Hz in the recorded60second585-entry run",
+    "compositorEvidence": "output/steamvr-compositor.json",
+    "submittedFps": 86.25,
+    "droppedFrames": 3,
+    "submittedFrames": 5175,
+    "reprojectedFrames": 0,
+    "remaining": [
+      "Sustained controller reliability and current geometry review",
+      "Complete physical reach and every-control-position audit",
+      "Wireless transport quality is outside compositor measurement"
+    ]
+  },
+  "softwareEvidence": "reference/build-verification.json",
+  "desktopVisualReview": {
+    "headsetStarted": false,
+    "rearShell": "Intentional open cutaway",
+    "captures": [
+      "output/aquarius-cabin-mechanisms.png",
+      "output/aquarius-aft-mechanisms.png",
+      "output/aquarius-shades-deployed.png",
+      "output/aquarius-coas-overhead.png"
+    ]
+  }
+}

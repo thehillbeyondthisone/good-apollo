@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "rangeZeroUtc": "1970-04-11T19:13:00.000Z",
+  "liftOffUtc": "1970-04-11T19:13:00.650Z",
+  "source": {
+    "document": "Apollo 13 Mission Report, MSC-02680",
+    "file": "D:/apollo-ref/a13-mission-data/a13-mission-report-197007.pdf",
+    "table": "3-I, Sequence of Events",
+    "printedPage": "3-2",
+    "pdfPage": 23,
+    "verification": "Visually checked against the rendered table; times retain table's one-second precision."
+  },
+  "limitation": "Historical anchor data only. Event selection does not reconstruct trajectory, attitude, consumables or the flown AGC erasable state.",
+  "events": [
+    {"id":"range-zero","get":"000:00:00","getSeconds":0,"title":"Range zero"},
+    {"id":"oxygen-incident","get":"055:54:53","getSeconds":201293,"title":"Cryogenic oxygen tank incident"},
+    {"id":"free-return-burn","get":"061:29:43","getSeconds":221383,"title":"DPS free-return correction"},
+    {"id":"sivb-impact","get":"077:56:40","getSeconds":280600,"title":"S-IVB lunar impact"},
+    {"id":"pc-plus-two","get":"079:27:39","getSeconds":286059,"title":"PC+2 DPS burn"},
+    {"id":"midcourse-three","get":"105:18:28","getSeconds":379108,"title":"Manual DPS midcourse correction"},
+    {"id":"midcourse-four","get":"137:39:52","getSeconds":495592,"title":"Final LM RCS midcourse correction"},
+    {"id":"service-module-separation","get":"138:01:48","getSeconds":496908,"title":"Service module separation"},
+    {"id":"lm-undocking","get":"141:30:00","getSeconds":509400,"title":"Lunar module undocking"},
+    {"id":"entry-interface","get":"142:40:46","getSeconds":513646,"title":"Entry interface"},
+    {"id":"splashdown","get":"142:54:41","getSeconds":514481,"title":"Splashdown"}
+  ]
+}

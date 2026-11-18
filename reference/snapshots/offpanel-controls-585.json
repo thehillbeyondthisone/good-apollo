@@ -1,0 +1,3183 @@
+{
+  "schemaVersion": 1,
+  "title": "LM-7 source-audited off-panel and missing-panel additions",
+  "sourceDocument": "D:/apollo-ref/lm-systems/a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+  "reviewedPdfPages": [
+    24,
+    25,
+    26,
+    29,
+    30,
+    686,
+    688,
+    689,
+    707,
+    723,
+    724,
+    725,
+    751,
+    757,
+    762,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819,
+    820,
+    821,
+    822,
+    823,
+    825,
+    827
+  ],
+  "sourceMethod": "Complete rendered pages visually read; detailed-table states and figure geometry retained separately.",
+  "geometryStatus": "Provisional normalized layouts and dimensions; all additions need physical headset reach/readability testing.",
+  "completeVehicleDenominatorKnown": false,
+  "limitations": [
+    "Source tables establish the listed control functions; they do not establish measured cabin coordinates.",
+    "Controller axes are independent inspectable input nodes; the real shared TTCA handle and cross-axis coupling remain a presentation simplification.",
+    "Exact controller stop angles, nonlinear response, friction force, and optical transfer functions remain unvalidated.",
+    "Hatch pressure forces, emergency separation, and ECS fluid/thermal behavior are not simulated.",
+    "Protective STOP covers and STAGE guard are visually transcribed; their blocking interaction is a declared sandbox rule.",
+    "Complete instrument sub-elements, window shades, stowage latches, and utility light aiming have not been fully inventoried."
+  ],
+  "panels": [
+    {
+      "id": "AOT",
+      "label": "Alignment optical telescope",
+      "width_m": 0.26,
+      "height_m": 0.3,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": 0,
+        "y": 0.95,
+        "z": 1.94,
+        "rotateXDeg": 90,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-2",
+        "pdfPage": 827
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "ORDEAL",
+      "label": "ORDEAL",
+      "width_m": 0.31,
+      "height_m": 0.15,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": -1.04,
+        "y": -0.28,
+        "z": 1.02,
+        "rotateXDeg": 70,
+        "rotateZDeg": 58
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-2",
+        "pdfPage": 827
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "ACA_CDR",
+      "label": "CDR attitude controller",
+      "width_m": 0.16,
+      "height_m": 0.22,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": -0.43,
+        "y": 0.35,
+        "z": 0.88,
+        "rotateXDeg": 40,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-2",
+        "pdfPage": 827
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "TTCA_CDR",
+      "label": "CDR thrust/translation controller",
+      "width_m": 0.21,
+      "height_m": 0.24,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": -0.6799999999999999,
+        "y": 0.35,
+        "z": 0.88,
+        "rotateXDeg": 40,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-2",
+        "pdfPage": 827
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "ACA_LMP",
+      "label": "LMP attitude controller",
+      "width_m": 0.16,
+      "height_m": 0.22,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": 0.7,
+        "y": 0.35,
+        "z": 0.88,
+        "rotateXDeg": 40,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-2",
+        "pdfPage": 827
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "TTCA_LMP",
+      "label": "LMP thrust/translation controller",
+      "width_m": 0.21,
+      "height_m": 0.24,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": 0.44999999999999996,
+        "y": 0.35,
+        "z": 0.88,
+        "rotateXDeg": 40,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-2",
+        "pdfPage": 827
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "UTIL",
+      "label": "Utility lights",
+      "width_m": 0.28,
+      "height_m": 0.1,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": 0,
+        "y": 0.96,
+        "z": 2.02,
+        "rotateXDeg": 90,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-2",
+        "pdfPage": 827
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "RR_GYRO",
+      "label": "Rendezvous radar gyro selector",
+      "width_m": 0.07,
+      "height_m": 0.13,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": -0.19,
+        "y": 0.95,
+        "z": 1.93,
+        "rotateXDeg": 90,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-2",
+        "pdfPage": 827
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "ECS",
+      "label": "Aft ECS valves and canisters",
+      "width_m": 0.78,
+      "height_m": 0.7,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": 0.57,
+        "y": -1.03,
+        "z": 1.13,
+        "rotateXDeg": -90,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "3-1",
+        "pdfPage": 825
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "HATCH_FWD",
+      "label": "Forward hatch controls",
+      "width_m": 0.5,
+      "height_m": 0.34,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": 0,
+        "y": 1.065,
+        "z": 0.44,
+        "rotateXDeg": 90,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "1-8",
+        "pdfPage": 26
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    },
+    {
+      "id": "HATCH_OVHD",
+      "label": "Overhead hatch controls",
+      "width_m": 0.5,
+      "height_m": 0.34,
+      "dimensionsProvisional": true,
+      "layoutProvisional": true,
+      "placement": {
+        "x": 0,
+        "y": -0.15,
+        "z": 2.055,
+        "rotateXDeg": 180,
+        "rotateZDeg": 0
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "1-12",
+        "pdfPage": 30
+      },
+      "notes": "Functional grouping is sourced; dimensions, coordinates and reach are provisional."
+    }
+  ],
+  "controls": [
+    {
+      "id": "p5_stop",
+      "panel": "5",
+      "label": "ENGINE STOP",
+      "type": "pushbutton",
+      "positions": [
+        "RELEASED",
+        "PRESSED"
+      ],
+      "default": "RELEASED",
+      "interactive": true,
+      "layout": {
+        "u": 0.28,
+        "v": 0.88
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 751,
+        "printedPage": "3-81",
+        "tablePdfPage": 751,
+        "tablePrintedPage": "3-81"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1S3",
+      "momentary": false,
+      "mechanism": {
+        "latching": "push_push",
+        "guardId": "p5_stop_guard"
+      }
+    },
+    {
+      "id": "p5_des_rate",
+      "panel": "5",
+      "label": "DES RATE",
+      "type": "toggle",
+      "positions": [
+        "+1 FPS",
+        "CENTER",
+        "-1 FPS"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.04,
+        "v": 0.82
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 751,
+        "printedPage": "3-81",
+        "tablePdfPage": 751,
+        "tablePrintedPage": "3-81"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1S5",
+      "momentary": true,
+      "springReturn": true,
+      "mechanism": {
+        "springReturn": true,
+        "returnPosition": "CENTER"
+      }
+    },
+    {
+      "id": "p5_stop_guard",
+      "panel": "5",
+      "label": "ENGINE STOP COVER",
+      "type": "guard",
+      "positions": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "default": "CLOSED",
+      "interactive": true,
+      "layout": {
+        "u": 0.28,
+        "v": 0.97
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 827,
+        "printedPage": "3-157/3-158",
+        "figure": "3-2"
+      },
+      "confidence": "diagram_transcribed",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Independent mechanical action. CLOSED/OPEN are sandbox status names; source nomenclature and motion are retained in mechanism metadata.",
+      "protectedControlId": "p5_stop",
+      "mechanism": {
+        "action": "hinged cover",
+        "interlockFidelity": "sandbox blocking; geometry from figure"
+      }
+    },
+    {
+      "id": "p6_stop_guard",
+      "panel": "6",
+      "label": "ENGINE STOP COVER",
+      "type": "guard",
+      "positions": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "default": "CLOSED",
+      "interactive": true,
+      "layout": {
+        "u": 0.1,
+        "v": 0.98
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 827,
+        "printedPage": "3-157/3-158",
+        "figure": "3-2"
+      },
+      "confidence": "diagram_transcribed",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Independent mechanical action. CLOSED/OPEN are sandbox status names; source nomenclature and motion are retained in mechanism metadata.",
+      "protectedControlId": "p6_stop",
+      "mechanism": {
+        "action": "hinged cover",
+        "interlockFidelity": "sandbox blocking; geometry from figure"
+      }
+    },
+    {
+      "id": "p8_stage_guard",
+      "panel": "8",
+      "label": "STAGE GUARD",
+      "type": "guard",
+      "positions": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "default": "CLOSED",
+      "interactive": true,
+      "layout": {
+        "u": 0.42,
+        "v": 0.09
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 827,
+        "printedPage": "3-157/3-158",
+        "figure": "3-2"
+      },
+      "confidence": "diagram_transcribed",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Independent mechanical action. CLOSED/OPEN are sandbox status names; source nomenclature and motion are retained in mechanism metadata.",
+      "protectedControlId": "p8_stage",
+      "mechanism": {
+        "action": "hinged guard",
+        "interlockFidelity": "sandbox blocking; geometry from figure"
+      }
+    },
+    {
+      "id": "p1_x_pointer_power_failure",
+      "panel": "1",
+      "label": "X-POINTER POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.18728,
+        "v": 0.5565300000000001
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 686,
+        "printedPage": "3-16",
+        "tablePdfPage": 686,
+        "tablePrintedPage": "3-16"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS91",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p1_x_pointer",
+      "color": "red"
+    },
+    {
+      "id": "p1_thrust_power_failure",
+      "panel": "1",
+      "label": "THRUST POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.6642800000000001,
+        "v": 0.56536
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 688,
+        "printedPage": "3-18",
+        "tablePdfPage": 688,
+        "tablePrintedPage": "3-18"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS92",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p1_thrust",
+      "color": "red"
+    },
+    {
+      "id": "p1_press_power_failure",
+      "panel": "1",
+      "label": "PRESS POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.9403100000000001,
+        "v": 0.56536
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 689,
+        "printedPage": "3-19",
+        "tablePdfPage": 689,
+        "tablePrintedPage": "3-19"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS90",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p1_press",
+      "color": "red"
+    },
+    {
+      "id": "p2_rcs_press_power_failure",
+      "panel": "2",
+      "label": "RCS PRESS POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.28864,
+        "v": 0.7037100000000001
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 707,
+        "printedPage": "3-37",
+        "tablePdfPage": 707,
+        "tablePrintedPage": "3-37"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS96",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p2_reaction_control_press",
+      "color": "red"
+    },
+    {
+      "id": "p2_rcs_quantity_power_failure",
+      "panel": "2",
+      "label": "RCS QUANTITY POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.41074,
+        "v": 0.7037100000000001
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 707,
+        "printedPage": "3-37",
+        "tablePdfPage": 707,
+        "tablePrintedPage": "3-37"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS98",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p2_reaction_control_quantity",
+      "color": "red"
+    },
+    {
+      "id": "p2_ecs_press_power_failure",
+      "panel": "2",
+      "label": "ECS PRESS POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.71477,
+        "v": 0.7037100000000001
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 723,
+        "printedPage": "3-53",
+        "tablePdfPage": 723,
+        "tablePrintedPage": "3-53"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS93",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p2_ecs_press",
+      "color": "red"
+    },
+    {
+      "id": "p2_ecs_quantity_power_failure",
+      "panel": "2",
+      "label": "ECS QUANTITY POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.7062200000000001,
+        "v": 0.55174
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 724,
+        "printedPage": "3-54",
+        "tablePdfPage": 724,
+        "tablePrintedPage": "3-54"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS94",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p2_o2_h2o_quantity",
+      "color": "red"
+    },
+    {
+      "id": "p2_glycol_power_failure",
+      "panel": "2",
+      "label": "GLYCOL POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.57069,
+        "v": 0.55174
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 724,
+        "printedPage": "3-54",
+        "tablePdfPage": 724,
+        "tablePrintedPage": "3-54"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS95",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p2_glycol",
+      "color": "red"
+    },
+    {
+      "id": "p2_x_pointer_power_failure",
+      "panel": "2",
+      "label": "X-POINTER POWER FAILURE",
+      "type": "indicator",
+      "positions": [
+        "OFF",
+        "ON"
+      ],
+      "default": "OFF",
+      "interactive": false,
+      "layout": {
+        "u": 0.90525,
+        "v": 0.5544600000000001
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 725,
+        "printedPage": "3-55",
+        "tablePdfPage": 725,
+        "tablePrintedPage": "3-55"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Detailed source row: red lamp goes on when power to its instrument is interrupted. Indicator is inventoried separately; downstream equipment-power/failure wiring remains a scoped simulation concern.",
+      "referenceDesignation": "16DS97",
+      "outputRole": "instrument_power_failure",
+      "instrumentId": "p2_x_pointer",
+      "color": "red"
+    },
+    {
+      "id": "aot_eyepiece_adjust",
+      "panel": "AOT",
+      "label": "EYEPIECE ADJUST",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.76,
+        "v": 0.78
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 819,
+        "printedPage": "3-149",
+        "tablePdfPage": 819,
+        "tablePrintedPage": "3-149"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Moves eyepiece toward/away from observer; normalized travel, physical travel not established.",
+      "referenceDesignation": "3H3",
+      "momentary": false,
+      "axis": {
+        "min": 0,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "focus"
+      }
+    },
+    {
+      "id": "aot_mark_x",
+      "panel": "AOT",
+      "label": "MARK X",
+      "type": "pushbutton",
+      "positions": [
+        "RELEASED",
+        "PRESSED"
+      ],
+      "default": "RELEASED",
+      "interactive": true,
+      "layout": {
+        "u": 0.18,
+        "v": 0.52
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 819,
+        "printedPage": "3-149",
+        "tablePdfPage": 819,
+        "tablePrintedPage": "3-149"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "3S23",
+      "momentary": true
+    },
+    {
+      "id": "aot_mark_y",
+      "panel": "AOT",
+      "label": "MARK Y",
+      "type": "pushbutton",
+      "positions": [
+        "RELEASED",
+        "PRESSED"
+      ],
+      "default": "RELEASED",
+      "interactive": true,
+      "layout": {
+        "u": 0.82,
+        "v": 0.52
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 819,
+        "printedPage": "3-149",
+        "tablePdfPage": 819,
+        "tablePrintedPage": "3-149"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "3S25",
+      "momentary": true
+    },
+    {
+      "id": "aot_reject",
+      "panel": "AOT",
+      "label": "REJECT",
+      "type": "pushbutton",
+      "positions": [
+        "RELEASED",
+        "PRESSED"
+      ],
+      "default": "RELEASED",
+      "interactive": true,
+      "layout": {
+        "u": 0.82,
+        "v": 0.3
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 819,
+        "printedPage": "3-149",
+        "tablePdfPage": 819,
+        "tablePrintedPage": "3-149"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "3S24",
+      "momentary": true
+    },
+    {
+      "id": "aot_reticle_illumination",
+      "panel": "AOT",
+      "label": "RETICLE ILLUMINATION",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.18,
+        "v": 0.3
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 819,
+        "printedPage": "3-149",
+        "tablePdfPage": 819,
+        "tablePrintedPage": "3-149"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "3R1",
+      "momentary": false,
+      "axis": {
+        "min": 0,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "brightness"
+      }
+    },
+    {
+      "id": "aot_reticle",
+      "panel": "AOT",
+      "label": "RETICLE ROTATION",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.34
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 819,
+        "printedPage": "3-149",
+        "tablePdfPage": 819,
+        "tablePrintedPage": "3-149"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Reticle rotation is sourced; wrap, gearing and exact control travel remain unvalidated.",
+      "referenceDesignation": "3H1",
+      "momentary": false,
+      "axis": {
+        "min": 0,
+        "max": 360,
+        "unit": "degrees",
+        "axis": "reticle"
+      }
+    },
+    {
+      "id": "aot_azimuth",
+      "panel": "AOT",
+      "label": "AZIMUTH",
+      "type": "rotary",
+      "positions": [
+        "LR",
+        "L",
+        "F",
+        "R",
+        "RR",
+        "CL"
+      ],
+      "default": "LR",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.75
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 819,
+        "pdfPages": [
+          819,
+          820
+        ],
+        "printedPage": "3-149/3-150",
+        "tablePdfPage": 819
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "3H2"
+    },
+    {
+      "id": "aot_indicator",
+      "panel": "AOT",
+      "label": "RETICLE ANGLE",
+      "type": "display",
+      "positions": [
+        "UNPOWERED",
+        "POWERED"
+      ],
+      "default": "UNPOWERED",
+      "interactive": false,
+      "layout": {
+        "u": 0.5,
+        "v": 0.12
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Five-place reticle angle display; tenths of a degree in rightmost digit. Optical model is not coupled.",
+      "referenceDesignation": "3M7"
+    },
+    {
+      "id": "ordeal_fdai_1",
+      "panel": "ORDEAL",
+      "label": "FDAI 1",
+      "type": "toggle",
+      "positions": [
+        "ORB RATE",
+        "INRTL"
+      ],
+      "default": "ORB RATE",
+      "interactive": true,
+      "layout": {
+        "u": 0.12,
+        "v": 0.73
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 821,
+        "printedPage": "3-151/3-152",
+        "tablePdfPage": 821,
+        "tablePrintedPage": "3-151/3-152"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "9S23"
+    },
+    {
+      "id": "ordeal_fdai_2",
+      "panel": "ORDEAL",
+      "label": "FDAI 2",
+      "type": "toggle",
+      "positions": [
+        "ORB RATE",
+        "INRTL"
+      ],
+      "default": "ORB RATE",
+      "interactive": true,
+      "layout": {
+        "u": 0.31,
+        "v": 0.73
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 822,
+        "printedPage": "3-152",
+        "tablePdfPage": 822,
+        "tablePrintedPage": "3-152"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "9S24"
+    },
+    {
+      "id": "ordeal_earth_lunar",
+      "panel": "ORDEAL",
+      "label": "EARTH-LUNAR",
+      "type": "toggle",
+      "positions": [
+        "EARTH",
+        "PWR OFF",
+        "LUNAR"
+      ],
+      "default": "PWR OFF",
+      "interactive": true,
+      "layout": {
+        "u": 0.51,
+        "v": 0.73
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 822,
+        "printedPage": "3-152",
+        "tablePdfPage": 822,
+        "tablePrintedPage": "3-152"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "9S25"
+    },
+    {
+      "id": "ordeal_alt_set",
+      "panel": "ORDEAL",
+      "label": "ALT SET",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.51
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 822,
+        "printedPage": "3-152",
+        "tablePdfPage": 822,
+        "tablePrintedPage": "3-152"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "9R1",
+      "momentary": false,
+      "axis": {
+        "min": 10,
+        "max": 310,
+        "unit": "nautical_miles",
+        "axis": "altitude"
+      }
+    },
+    {
+      "id": "ordeal_lighting",
+      "panel": "ORDEAL",
+      "label": "LIGHTING",
+      "type": "toggle",
+      "positions": [
+        "BRT",
+        "OFF",
+        "DIM"
+      ],
+      "default": "OFF",
+      "interactive": true,
+      "layout": {
+        "u": 0.12,
+        "v": 0.25
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 822,
+        "printedPage": "3-152",
+        "tablePdfPage": 822,
+        "tablePrintedPage": "3-152"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "9S26"
+    },
+    {
+      "id": "ordeal_mode",
+      "panel": "ORDEAL",
+      "label": "MODE",
+      "type": "toggle",
+      "positions": [
+        "OPR/SLOW",
+        "HOLD/FAST"
+      ],
+      "default": "OPR/SLOW",
+      "interactive": true,
+      "layout": {
+        "u": 0.31,
+        "v": 0.25
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 823,
+        "printedPage": "3-153/3-154",
+        "tablePdfPage": 823,
+        "tablePrintedPage": "3-153/3-154"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "9S27"
+    },
+    {
+      "id": "ordeal_slew",
+      "panel": "ORDEAL",
+      "label": "SLEW",
+      "type": "toggle",
+      "positions": [
+        "UP",
+        "CENTER",
+        "DOWN"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.51,
+        "v": 0.25
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 823,
+        "printedPage": "3-153/3-154",
+        "tablePdfPage": 823,
+        "tablePrintedPage": "3-153/3-154"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "UP and DOWN functions from detailed table; unlabelled neutral position visible in Fig.3-2. Spring-return behavior is not asserted by the inspected table.",
+      "referenceDesignation": "9S28",
+      "mechanism": {
+        "centerPlacardSource": "Fig.3-2",
+        "springReturnUnconfirmed": true
+      }
+    },
+    {
+      "id": "aca_cdr_yaw",
+      "panel": "ACA_CDR",
+      "label": "YAW",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.78
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1A1",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-X rotation"
+      }
+    },
+    {
+      "id": "aca_cdr_pitch",
+      "panel": "ACA_CDR",
+      "label": "PITCH",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.2,
+        "v": 0.46
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1A1",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-Y rotation"
+      }
+    },
+    {
+      "id": "aca_cdr_roll",
+      "panel": "ACA_CDR",
+      "label": "ROLL",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.8,
+        "v": 0.46
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1A1",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-Z rotation"
+      }
+    },
+    {
+      "id": "aca_cdr_ptt",
+      "panel": "ACA_CDR",
+      "label": "PUSH TO TALK",
+      "type": "pushbutton",
+      "positions": [
+        "RELEASED",
+        "PRESSED"
+      ],
+      "default": "RELEASED",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.16
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "15AS10",
+      "momentary": true
+    },
+    {
+      "id": "ttca_cdr_translation_x",
+      "panel": "TTCA_CDR",
+      "label": "TRANSLATION X",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.8
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150/3-151",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150/3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Three-axis controller. X translation is available with JETS selected; Y and Z translation are available in either lever position. Physical controller stop angles and transfer curve remain unvalidated.",
+      "referenceDesignation": "1X1",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-X translation"
+      }
+    },
+    {
+      "id": "ttca_cdr_translation_y",
+      "panel": "TTCA_CDR",
+      "label": "TRANSLATION Y",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.19,
+        "v": 0.57
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150/3-151",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150/3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Three-axis controller. X translation is available with JETS selected; Y and Z translation are available in either lever position. Physical controller stop angles and transfer curve remain unvalidated.",
+      "referenceDesignation": "1X1",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-Y translation"
+      }
+    },
+    {
+      "id": "ttca_cdr_translation_z",
+      "panel": "TTCA_CDR",
+      "label": "TRANSLATION Z",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.57
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150/3-151",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150/3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Three-axis controller. X translation is available with JETS selected; Y and Z translation are available in either lever position. Physical controller stop angles and transfer curve remain unvalidated.",
+      "referenceDesignation": "1X1",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-Z translation"
+      }
+    },
+    {
+      "id": "ttca_cdr_select",
+      "panel": "TTCA_CDR",
+      "label": "THROTTLE/JETS",
+      "type": "toggle",
+      "positions": [
+        "JETS",
+        "THROTTLE"
+      ],
+      "default": "JETS",
+      "interactive": true,
+      "layout": {
+        "u": 0.18,
+        "v": 0.2
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 821,
+        "printedPage": "3-151",
+        "tablePdfPage": 821,
+        "tablePrintedPage": "3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1H1"
+    },
+    {
+      "id": "ttca_cdr_throttle",
+      "panel": "TTCA_CDR",
+      "label": "THROTTLE",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.37
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150/3-151",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150/3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Same physical LM-X tee-handle travel as X translation, selected by THROTTLE/JETS. Separate input node exposes both functions for this interaction study; engine coupling is absent.",
+      "referenceDesignation": "1X1",
+      "momentary": false,
+      "axis": {
+        "min": 10,
+        "max": 92.5,
+        "unit": "percent_thrust",
+        "axis": "throttle"
+      }
+    },
+    {
+      "id": "ttca_cdr_friction",
+      "panel": "TTCA_CDR",
+      "label": "THROTTLE FRICTION",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.2
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 821,
+        "printedPage": "3-151",
+        "tablePdfPage": 821,
+        "tablePrintedPage": "3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Sourced control varies tee-handle force. The AOH quotes ranges of force, not a unique knob-position transfer; no physical haptic force is simulated.",
+      "referenceDesignation": "1H3",
+      "momentary": false,
+      "axis": {
+        "min": 0,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "friction"
+      }
+    },
+    {
+      "id": "aca_lmp_yaw",
+      "panel": "ACA_LMP",
+      "label": "YAW",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.78
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1A2",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-X rotation"
+      }
+    },
+    {
+      "id": "aca_lmp_pitch",
+      "panel": "ACA_LMP",
+      "label": "PITCH",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.2,
+        "v": 0.46
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1A2",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-Y rotation"
+      }
+    },
+    {
+      "id": "aca_lmp_roll",
+      "panel": "ACA_LMP",
+      "label": "ROLL",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.8,
+        "v": 0.46
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1A2",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-Z rotation"
+      }
+    },
+    {
+      "id": "aca_lmp_ptt",
+      "panel": "ACA_LMP",
+      "label": "PUSH TO TALK",
+      "type": "pushbutton",
+      "positions": [
+        "RELEASED",
+        "PRESSED"
+      ],
+      "default": "RELEASED",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.16
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "15BS10",
+      "momentary": true
+    },
+    {
+      "id": "ttca_lmp_translation_x",
+      "panel": "TTCA_LMP",
+      "label": "TRANSLATION X",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.8
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150/3-151",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150/3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Three-axis controller. X translation is available with JETS selected; Y and Z translation are available in either lever position. Physical controller stop angles and transfer curve remain unvalidated.",
+      "referenceDesignation": "1X2",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-X translation"
+      }
+    },
+    {
+      "id": "ttca_lmp_translation_y",
+      "panel": "TTCA_LMP",
+      "label": "TRANSLATION Y",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.19,
+        "v": 0.57
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150/3-151",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150/3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Three-axis controller. X translation is available with JETS selected; Y and Z translation are available in either lever position. Physical controller stop angles and transfer curve remain unvalidated.",
+      "referenceDesignation": "1X2",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-Y translation"
+      }
+    },
+    {
+      "id": "ttca_lmp_translation_z",
+      "panel": "TTCA_LMP",
+      "label": "TRANSLATION Z",
+      "type": "axis",
+      "positions": [
+        "NEGATIVE",
+        "CENTER",
+        "POSITIVE"
+      ],
+      "default": "CENTER",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.57
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150/3-151",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150/3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Three-axis controller. X translation is available with JETS selected; Y and Z translation are available in either lever position. Physical controller stop angles and transfer curve remain unvalidated.",
+      "referenceDesignation": "1X2",
+      "momentary": true,
+      "axis": {
+        "min": -1,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "LM-Z translation"
+      }
+    },
+    {
+      "id": "ttca_lmp_select",
+      "panel": "TTCA_LMP",
+      "label": "THROTTLE/JETS",
+      "type": "toggle",
+      "positions": [
+        "JETS",
+        "THROTTLE"
+      ],
+      "default": "JETS",
+      "interactive": true,
+      "layout": {
+        "u": 0.18,
+        "v": 0.2
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 821,
+        "printedPage": "3-151",
+        "tablePdfPage": 821,
+        "tablePrintedPage": "3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "1H2"
+    },
+    {
+      "id": "ttca_lmp_throttle",
+      "panel": "TTCA_LMP",
+      "label": "THROTTLE",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.37
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 820,
+        "printedPage": "3-150/3-151",
+        "tablePdfPage": 820,
+        "tablePrintedPage": "3-150/3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Same physical LM-X tee-handle travel as X translation, selected by THROTTLE/JETS. Separate input node exposes both functions for this interaction study; engine coupling is absent.",
+      "referenceDesignation": "1X2",
+      "momentary": false,
+      "axis": {
+        "min": 10,
+        "max": 92.5,
+        "unit": "percent_thrust",
+        "axis": "throttle"
+      }
+    },
+    {
+      "id": "ttca_lmp_friction",
+      "panel": "TTCA_LMP",
+      "label": "THROTTLE FRICTION",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.2
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 821,
+        "printedPage": "3-151",
+        "tablePdfPage": 821,
+        "tablePrintedPage": "3-151"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Sourced control varies tee-handle force. The AOH quotes ranges of force, not a unique knob-position transfer; no physical haptic force is simulated.",
+      "referenceDesignation": "1H4",
+      "momentary": false,
+      "axis": {
+        "min": 0,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "friction"
+      }
+    },
+    {
+      "id": "util_cdr",
+      "panel": "UTIL",
+      "label": "CDR UTILITY LIGHTS",
+      "type": "rotary",
+      "positions": [
+        "OFF",
+        "DIM",
+        "BRIGHT"
+      ],
+      "default": "OFF",
+      "interactive": true,
+      "layout": {
+        "u": 0.25,
+        "v": 0.5
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 823,
+        "printedPage": "3-153/3-154",
+        "tablePdfPage": 823,
+        "tablePrintedPage": "3-153/3-154"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "16S19"
+    },
+    {
+      "id": "util_lmp",
+      "panel": "UTIL",
+      "label": "LMP UTILITY LIGHTS",
+      "type": "rotary",
+      "positions": [
+        "OFF",
+        "DIM",
+        "BRIGHT"
+      ],
+      "default": "OFF",
+      "interactive": true,
+      "layout": {
+        "u": 0.75,
+        "v": 0.5
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 823,
+        "printedPage": "3-153/3-154",
+        "tablePdfPage": 823,
+        "tablePrintedPage": "3-153/3-154"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "16S20"
+    },
+    {
+      "id": "rr_gyro_sel",
+      "panel": "RR_GYRO",
+      "label": "RR GYRO SEL",
+      "type": "toggle",
+      "positions": [
+        "PRIM",
+        "AUTO",
+        "SEC"
+      ],
+      "default": "AUTO",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.5
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 823,
+        "printedPage": "3-153/3-154",
+        "tablePdfPage": 823,
+        "tablePrintedPage": "3-153/3-154"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "17S9"
+    },
+    {
+      "id": "ecs_suit_gas_diverter",
+      "panel": "ECS",
+      "label": "SUIT GAS DIVERTER",
+      "type": "valve",
+      "positions": [
+        "PUSH-CABIN",
+        "PULL-EGRESS"
+      ],
+      "default": "PUSH-CABIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.1,
+        "v": 0.9
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 811,
+        "printedPage": "3-141",
+        "tablePdfPage": 811,
+        "tablePrintedPage": "3-141"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H8"
+    },
+    {
+      "id": "ecs_cabin_repress",
+      "panel": "ECS",
+      "label": "CABIN REPRESS",
+      "type": "valve",
+      "positions": [
+        "MANUAL",
+        "AUTO",
+        "CLOSE"
+      ],
+      "default": "MANUAL",
+      "interactive": true,
+      "layout": {
+        "u": 0.30000000000000004,
+        "v": 0.9
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 811,
+        "printedPage": "3-141",
+        "tablePdfPage": 811,
+        "tablePrintedPage": "3-141"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H3"
+    },
+    {
+      "id": "ecs_plss_fill",
+      "panel": "ECS",
+      "label": "PLSS FILL",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.9
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 811,
+        "printedPage": "3-141",
+        "tablePdfPage": 811,
+        "tablePrintedPage": "3-141"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H4"
+    },
+    {
+      "id": "ecs_press_reg_a",
+      "panel": "ECS",
+      "label": "PRESS REG A",
+      "type": "valve",
+      "positions": [
+        "DIRECT O2",
+        "CABIN",
+        "EGRESS",
+        "CLOSE"
+      ],
+      "default": "DIRECT O2",
+      "interactive": true,
+      "layout": {
+        "u": 0.7000000000000001,
+        "v": 0.9
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 812,
+        "printedPage": "3-142",
+        "tablePdfPage": 812,
+        "tablePrintedPage": "3-142"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H1"
+    },
+    {
+      "id": "ecs_press_reg_b",
+      "panel": "ECS",
+      "label": "PRESS REG B",
+      "type": "valve",
+      "positions": [
+        "DIRECT O2",
+        "CABIN",
+        "EGRESS",
+        "CLOSE"
+      ],
+      "default": "DIRECT O2",
+      "interactive": true,
+      "layout": {
+        "u": 0.9,
+        "v": 0.9
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 812,
+        "printedPage": "3-142",
+        "tablePdfPage": 812,
+        "tablePrintedPage": "3-142"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H2"
+    },
+    {
+      "id": "ecs_des_o2",
+      "panel": "ECS",
+      "label": "DES O2",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.1,
+        "v": 0.73
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 812,
+        "printedPage": "3-142",
+        "tablePdfPage": 812,
+        "tablePrintedPage": "3-142"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H15"
+    },
+    {
+      "id": "ecs_asc_o2_1",
+      "panel": "ECS",
+      "label": "#1 ASC O2",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.30000000000000004,
+        "v": 0.73
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 812,
+        "printedPage": "3-142",
+        "tablePdfPage": 812,
+        "tablePrintedPage": "3-142"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H21"
+    },
+    {
+      "id": "ecs_asc_o2_2",
+      "panel": "ECS",
+      "label": "#2 ASC O2",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.73
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 812,
+        "printedPage": "3-142",
+        "tablePdfPage": 812,
+        "tablePrintedPage": "3-142"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H5"
+    },
+    {
+      "id": "ecs_suit_isol_cdr",
+      "panel": "ECS",
+      "label": "CDR SUIT ISOL",
+      "type": "valve",
+      "positions": [
+        "SUIT DISC",
+        "SUIT FLOW",
+        "ACTUATOR OVRD"
+      ],
+      "default": "SUIT DISC",
+      "interactive": true,
+      "layout": {
+        "u": 0.7000000000000001,
+        "v": 0.73
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 813,
+        "printedPage": "3-143",
+        "tablePdfPage": 813,
+        "tablePrintedPage": "3-143"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration. Detailed table lists reference-designation pair 7H6/7H7 without assigning the crew side; per-side designation remains unadjudicated.",
+      "referenceDesignationCandidates": [
+        "7H6",
+        "7H7"
+      ]
+    },
+    {
+      "id": "ecs_suit_isol_lmp",
+      "panel": "ECS",
+      "label": "LMP SUIT ISOL",
+      "type": "valve",
+      "positions": [
+        "SUIT DISC",
+        "SUIT FLOW",
+        "ACTUATOR OVRD"
+      ],
+      "default": "SUIT DISC",
+      "interactive": true,
+      "layout": {
+        "u": 0.9,
+        "v": 0.73
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 813,
+        "printedPage": "3-143",
+        "tablePdfPage": 813,
+        "tablePrintedPage": "3-143"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration. Detailed table lists reference-designation pair 7H6/7H7 without assigning the crew side; per-side designation remains unadjudicated.",
+      "referenceDesignationCandidates": [
+        "7H6",
+        "7H7"
+      ]
+    },
+    {
+      "id": "ecs_sec_evap_flow",
+      "panel": "ECS",
+      "label": "SEC EVAP FLOW",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.1,
+        "v": 0.56
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 813,
+        "printedPage": "3-143",
+        "tablePdfPage": 813,
+        "tablePrintedPage": "3-143"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H18"
+    },
+    {
+      "id": "ecs_pri_evap_flow_2",
+      "panel": "ECS",
+      "label": "PRI EVAP FLOW #2",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.30000000000000004,
+        "v": 0.56
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 813,
+        "printedPage": "3-143",
+        "tablePdfPage": 813,
+        "tablePrintedPage": "3-143"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H16"
+    },
+    {
+      "id": "ecs_water_tank_select",
+      "panel": "ECS",
+      "label": "WATER TANK SELECT",
+      "type": "valve",
+      "positions": [
+        "DES",
+        "ASC",
+        "SEC"
+      ],
+      "default": "DES",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.56
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 813,
+        "printedPage": "3-143/3-144",
+        "tablePdfPage": 813,
+        "tablePrintedPage": "3-143/3-144"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H14"
+    },
+    {
+      "id": "ecs_asc_h2o",
+      "panel": "ECS",
+      "label": "ASC H2O",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.7000000000000001,
+        "v": 0.56
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 814,
+        "printedPage": "3-144",
+        "tablePdfPage": 814,
+        "tablePrintedPage": "3-144"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H13"
+    },
+    {
+      "id": "ecs_des_h2o",
+      "panel": "ECS",
+      "label": "DES H2O",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.9,
+        "v": 0.56
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 814,
+        "printedPage": "3-144",
+        "tablePdfPage": 814,
+        "tablePrintedPage": "3-144"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H26"
+    },
+    {
+      "id": "ecs_cabin_gas_return",
+      "panel": "ECS",
+      "label": "CABIN GAS RETURN",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "AUTO",
+        "EGRESS"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.1,
+        "v": 0.39
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 815,
+        "printedPage": "3-145",
+        "tablePdfPage": 815,
+        "tablePrintedPage": "3-145"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H17"
+    },
+    {
+      "id": "ecs_co2_canister_sel",
+      "panel": "ECS",
+      "label": "CO2 CANISTER SEL",
+      "type": "valve",
+      "positions": [
+        "PRIM",
+        "SEC"
+      ],
+      "default": "PRIM",
+      "interactive": true,
+      "layout": {
+        "u": 0.30000000000000004,
+        "v": 0.39
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 815,
+        "printedPage": "3-145",
+        "tablePdfPage": 815,
+        "tablePrintedPage": "3-145"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H19"
+    },
+    {
+      "id": "ecs_suit_circuit_relief",
+      "panel": "ECS",
+      "label": "SUIT CIRCUIT RELIEF",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "AUTO",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.39
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 816,
+        "printedPage": "3-146",
+        "tablePdfPage": 816,
+        "tablePrintedPage": "3-146"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H9"
+    },
+    {
+      "id": "ecs_water_sep_sel",
+      "panel": "ECS",
+      "label": "WATER SEP SEL",
+      "type": "valve",
+      "positions": [
+        "PUSH: SEP 1",
+        "PUSH: SEP 2"
+      ],
+      "default": "PUSH: SEP 1",
+      "interactive": true,
+      "layout": {
+        "u": 0.7000000000000001,
+        "v": 0.39
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 817,
+        "printedPage": "3-147",
+        "tablePdfPage": 817,
+        "tablePrintedPage": "3-147"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H10"
+    },
+    {
+      "id": "ecs_pri_evap_flow_1",
+      "panel": "ECS",
+      "label": "PRI EVAP FLOW #1",
+      "type": "valve",
+      "positions": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "default": "OPEN",
+      "interactive": true,
+      "layout": {
+        "u": 0.9,
+        "v": 0.39
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 818,
+        "printedPage": "3-148",
+        "tablePdfPage": 818,
+        "tablePrintedPage": "3-148"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration."
+    },
+    {
+      "id": "ecs_primary_co2_cover",
+      "panel": "ECS",
+      "label": "PRIMARY CO2 CANISTER",
+      "type": "valve",
+      "positions": [
+        "CLOSE",
+        "OPEN"
+      ],
+      "default": "CLOSE",
+      "interactive": true,
+      "layout": {
+        "u": 0.1,
+        "v": 0.21999999999999997
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 816,
+        "printedPage": "3-146",
+        "tablePdfPage": 816,
+        "tablePrintedPage": "3-146"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration."
+    },
+    {
+      "id": "ecs_secondary_co2_cover",
+      "panel": "ECS",
+      "label": "SECONDARY CO2 CANISTER",
+      "type": "valve",
+      "positions": [
+        "CLOSE",
+        "OPEN"
+      ],
+      "default": "CLOSE",
+      "interactive": true,
+      "layout": {
+        "u": 0.30000000000000004,
+        "v": 0.21999999999999997
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 816,
+        "printedPage": "3-146",
+        "tablePdfPage": 816,
+        "tablePrintedPage": "3-146"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration."
+    },
+    {
+      "id": "ecs_suit_temp",
+      "panel": "ECS",
+      "label": "SUIT TEMP",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.06
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 815,
+        "printedPage": "3-145",
+        "tablePdfPage": 815,
+        "tablePrintedPage": "3-145"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Continuous modulating faucet: DECR COLD to INCR HOT. Normalized travel; no ECS heat-flow coupling.",
+      "referenceDesignation": "7H22",
+      "momentary": false,
+      "axis": {
+        "min": 0,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "temperature_valve"
+      }
+    },
+    {
+      "id": "ecs_liquid_garment_cooling",
+      "panel": "ECS",
+      "label": "LIQUID GARMENT COOLING",
+      "type": "axis",
+      "positions": [
+        "MIN",
+        "MID",
+        "MAX"
+      ],
+      "default": "MIN",
+      "interactive": true,
+      "layout": {
+        "u": 0.7,
+        "v": 0.06
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 818,
+        "printedPage": "3-148",
+        "tablePdfPage": 818,
+        "tablePrintedPage": "3-148"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control endpoints COLD and HOT; normalized travel without thermal coupling.",
+      "momentary": false,
+      "axis": {
+        "min": 0,
+        "max": 1,
+        "unit": "normalized",
+        "axis": "temperature_valve"
+      }
+    },
+    {
+      "id": "ecs_primary_co2_vent",
+      "panel": "ECS",
+      "label": "PRIMARY CO2 CANISTER VENT",
+      "type": "pushbutton",
+      "positions": [
+        "RELEASED",
+        "PRESSED"
+      ],
+      "default": "RELEASED",
+      "interactive": true,
+      "layout": {
+        "u": 0.12,
+        "v": 0.06
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 816,
+        "printedPage": "3-146",
+        "tablePdfPage": 816,
+        "tablePrintedPage": "3-146"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H23",
+      "momentary": true
+    },
+    {
+      "id": "ecs_secondary_co2_vent",
+      "panel": "ECS",
+      "label": "SECONDARY CO2 CANISTER VENT",
+      "type": "pushbutton",
+      "positions": [
+        "RELEASED",
+        "PRESSED"
+      ],
+      "default": "RELEASED",
+      "interactive": true,
+      "layout": {
+        "u": 0.3,
+        "v": 0.06
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 816,
+        "printedPage": "3-146",
+        "tablePdfPage": 816,
+        "tablePrintedPage": "3-146"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignation": "7H24",
+      "momentary": true
+    },
+    {
+      "id": "ecs_water_tank_safety_trigger",
+      "panel": "ECS",
+      "label": "WATER TANK SAFETY TRIGGER",
+      "type": "guard",
+      "positions": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "default": "CLOSED",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.48
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 814,
+        "printedPage": "3-144",
+        "tablePdfPage": 814,
+        "tablePrintedPage": "3-144"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Independent mechanical action. CLOSED/OPEN are sandbox status names; source nomenclature and motion are retained in mechanism metadata.",
+      "protectedControlId": "ecs_water_tank_select",
+      "mechanism": {
+        "action": "lift safety trigger before selecting SEC"
+      }
+    },
+    {
+      "id": "hatch_forward_latch",
+      "panel": "HATCH_FWD",
+      "label": "HATCH LATCH",
+      "type": "rotary",
+      "positions": [
+        "LATCHED",
+        "UNLATCHED"
+      ],
+      "default": "LATCHED",
+      "interactive": true,
+      "layout": {
+        "u": 0.15,
+        "v": 0.65
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 25,
+        "printedPage": "1-9/1-10",
+        "tablePdfPage": 25,
+        "tablePrintedPage": "1-9/1-10"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "mechanism": {
+        "action": "cam latch",
+        "requiredCabinCondition": "depressurized",
+        "pressureInterlockImplemented": false
+      }
+    },
+    {
+      "id": "hatch_forward_door",
+      "panel": "HATCH_FWD",
+      "label": "HATCH DOOR",
+      "type": "rotary",
+      "positions": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "default": "CLOSED",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.55
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 26,
+        "printedPage": "1-9/1-10",
+        "tablePdfPage": 26,
+        "tablePrintedPage": "1-9/1-10"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Mechanical swing is an interaction study. No cabin-pressure force or pressure interlock is simulated.",
+      "mechanism": {
+        "action": "inward swing",
+        "requiredControlPosition": {
+          "id": "hatch_forward_latch",
+          "position": "UNLATCHED"
+        },
+        "requiredCabinCondition": "depressurized",
+        "pressureInterlockImplemented": false
+      }
+    },
+    {
+      "id": "hatch_forward_relief_dump",
+      "panel": "HATCH_FWD",
+      "label": "CABIN RELIEF AND DUMP",
+      "type": "valve",
+      "positions": [
+        "DUMP",
+        "AUTO",
+        "CLOSE"
+      ],
+      "default": "AUTO",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.65
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 817,
+        "pdfPages": [
+          817,
+          818
+        ],
+        "printedPage": "3-147/3-148",
+        "tablePdfPage": 817,
+        "figure": "1-8"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignationCandidates": [
+        "7H11",
+        "7H20"
+      ],
+      "mechanism": {
+        "guardId": "hatch_forward_relief_trigger"
+      }
+    },
+    {
+      "id": "hatch_forward_relief_trigger",
+      "panel": "HATCH_FWD",
+      "label": "RELIEF VALVE UNLOCK TRIGGER",
+      "type": "guard",
+      "positions": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "default": "CLOSED",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.35
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 817,
+        "printedPage": "3-147",
+        "tablePdfPage": 817,
+        "tablePrintedPage": "3-147"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Independent mechanical action. CLOSED/OPEN are sandbox status names; source nomenclature and motion are retained in mechanism metadata.",
+      "protectedControlId": "hatch_forward_relief_dump",
+      "momentary": true,
+      "mechanism": {
+        "action": "squeeze release trigger; spring release on hand release"
+      }
+    },
+    {
+      "id": "hatch_forward_external_dump",
+      "panel": "HATCH_FWD",
+      "label": "EXTERNAL PULL TO DUMP",
+      "type": "toggle",
+      "positions": [
+        "IN",
+        "OUT"
+      ],
+      "default": "IN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.15
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 817,
+        "printedPage": "3-147",
+        "tablePdfPage": 817,
+        "tablePrintedPage": "3-147"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Exterior-side lever inventoried separately. Proxy is shown on the hatch study surface for inspection; not physically reachable from the pressurized cabin.",
+      "momentary": true,
+      "referenceDesignationCandidates": [
+        "7H11",
+        "7H20"
+      ],
+      "springReturn": true,
+      "mechanism": {
+        "returnPosition": "IN",
+        "outsideCabin": true
+      }
+    },
+    {
+      "id": "hatch_overhead_latch",
+      "panel": "HATCH_OVHD",
+      "label": "HATCH LATCH",
+      "type": "rotary",
+      "positions": [
+        "LATCHED",
+        "UNLATCHED"
+      ],
+      "default": "LATCHED",
+      "interactive": true,
+      "layout": {
+        "u": 0.15,
+        "v": 0.65
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 29,
+        "printedPage": "1-13/1-14",
+        "tablePdfPage": 29,
+        "tablePrintedPage": "1-13/1-14"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "mechanism": {
+        "action": "90 degree interior turn counterclockwise to open",
+        "requiredCabinCondition": "depressurized",
+        "pressureInterlockImplemented": false
+      }
+    },
+    {
+      "id": "hatch_overhead_door",
+      "panel": "HATCH_OVHD",
+      "label": "HATCH DOOR",
+      "type": "rotary",
+      "positions": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "default": "CLOSED",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.55
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 30,
+        "printedPage": "1-13/1-14",
+        "tablePdfPage": 30,
+        "tablePrintedPage": "1-13/1-14"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Mechanical swing is an interaction study. No cabin-pressure force or pressure interlock is simulated.",
+      "mechanism": {
+        "action": "inward swing",
+        "requiredControlPosition": {
+          "id": "hatch_overhead_latch",
+          "position": "UNLATCHED"
+        },
+        "requiredCabinCondition": "depressurized",
+        "pressureInterlockImplemented": false
+      }
+    },
+    {
+      "id": "hatch_overhead_relief_dump",
+      "panel": "HATCH_OVHD",
+      "label": "CABIN RELIEF AND DUMP",
+      "type": "valve",
+      "positions": [
+        "DUMP",
+        "AUTO",
+        "CLOSE"
+      ],
+      "default": "AUTO",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.65
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 817,
+        "pdfPages": [
+          817,
+          818
+        ],
+        "printedPage": "3-147/3-148",
+        "tablePdfPage": 817,
+        "figure": "1-12"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "referenceDesignationCandidates": [
+        "7H11",
+        "7H20"
+      ],
+      "mechanism": {
+        "guardId": "hatch_overhead_relief_trigger"
+      }
+    },
+    {
+      "id": "hatch_overhead_relief_trigger",
+      "panel": "HATCH_OVHD",
+      "label": "RELIEF VALVE UNLOCK TRIGGER",
+      "type": "guard",
+      "positions": [
+        "CLOSED",
+        "OPEN"
+      ],
+      "default": "CLOSED",
+      "interactive": true,
+      "layout": {
+        "u": 0.81,
+        "v": 0.35
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 817,
+        "printedPage": "3-147",
+        "tablePdfPage": 817,
+        "tablePrintedPage": "3-147"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Independent mechanical action. CLOSED/OPEN are sandbox status names; source nomenclature and motion are retained in mechanism metadata.",
+      "protectedControlId": "hatch_overhead_relief_dump",
+      "momentary": true,
+      "mechanism": {
+        "action": "squeeze release trigger; spring release on hand release"
+      }
+    },
+    {
+      "id": "hatch_overhead_external_dump",
+      "panel": "HATCH_OVHD",
+      "label": "EXTERNAL PULL TO DUMP",
+      "type": "toggle",
+      "positions": [
+        "IN",
+        "OUT"
+      ],
+      "default": "IN",
+      "interactive": true,
+      "layout": {
+        "u": 0.5,
+        "v": 0.15
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 817,
+        "printedPage": "3-147",
+        "tablePdfPage": 817,
+        "tablePrintedPage": "3-147"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Exterior-side lever inventoried separately. Proxy is shown on the hatch study surface for inspection; not physically reachable from the pressurized cabin.",
+      "momentary": true,
+      "referenceDesignationCandidates": [
+        "7H11",
+        "7H20"
+      ],
+      "springReturn": true,
+      "mechanism": {
+        "returnPosition": "IN",
+        "outsideCabin": true
+      }
+    },
+    {
+      "id": "hatch_forward_emergency_lockpin",
+      "panel": "HATCH_FWD",
+      "label": "EMERGENCY RELEASE LOCKPIN",
+      "type": "toggle",
+      "positions": [
+        "INSERTED",
+        "WITHDRAWN"
+      ],
+      "default": "INSERTED",
+      "interactive": true,
+      "layout": {
+        "u": 0.15,
+        "v": 0.2
+      },
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 25,
+        "pdfPages": [
+          25,
+          26
+        ],
+        "printedPage": "1-9/1-10",
+        "figure": "1-8"
+      },
+      "confidence": "visually_read_detailed_table",
+      "provisional": true,
+      "geometryProvisional": true,
+      "notes": "Control states and function sourced; interaction-study placement and sandbox initial state are not a flown configuration.",
+      "mechanism": {
+        "action": "withdraw lockpin to release cam latch in emergency"
+      }
+    }
+  ],
+  "patches": {
+    "p6_stop": {
+      "momentary": false,
+      "mechanism": {
+        "latching": "push_push",
+        "guardId": "p6_stop_guard"
+      },
+      "source": {
+        "tablePdfPage": 757,
+        "tablePrintedPage": "3-87"
+      },
+      "referenceDesignation": "1S4"
+    },
+    "p8_stage": {
+      "mechanism": {
+        "guardId": "p8_stage_guard",
+        "leverLock": true,
+        "springReturn": true,
+        "returnPosition": "SAFE"
+      },
+      "momentary": true
+    },
+    "ecs_water_tank_select": {
+      "mechanism": {
+        "guardId": "ecs_water_tank_safety_trigger",
+        "guardedPositions": [
+          "SEC"
+        ]
+      },
+      "source": {
+        "pdfPage": 813,
+        "pdfPages": [
+          813,
+          814
+        ],
+        "printedPage": "3-143/3-144",
+        "tablePdfPage": 813
+      }
+    }
+  }
+}

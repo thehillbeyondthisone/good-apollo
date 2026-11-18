@@ -1,0 +1,106 @@
+{
+  "result": "PASS",
+  "checks": 165,
+  "failures": [],
+  "electricalSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+  "controlsSha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "sequenceSha256": "2769c170fbb1761a36b20cdff9a4599fa5def3b98c92b1241c2bdaf0377b0fec",
+  "events": 13,
+  "actions": 93,
+  "completeFlownConfiguration": false,
+  "independentFlightValidationPassed": false,
+  "simulationTimePolicy": "Guided NextEvent does not advance time; GET is source label only",
+  "trace": [
+    {
+      "id": "hold_for_ptc",
+      "get": "079:37:48",
+      "evidenceKind": "instruction_only",
+      "knownDcCurrentA": 4.6499999999999995,
+      "actions": 0
+    },
+    {
+      "id": "amplifier_branch",
+      "get": "079:50:10",
+      "evidenceKind": "crew_intent_readback",
+      "knownDcCurrentA": 2.25,
+      "actions": 2
+    },
+    {
+      "id": "lighting_selectors",
+      "get": "079:51:00",
+      "evidenceKind": "crew_state_report",
+      "knownDcCurrentA": 2.25,
+      "actions": 2
+    },
+    {
+      "id": "inverter_selector",
+      "get": "079:51:28",
+      "evidenceKind": "crew_state_report",
+      "knownDcCurrentA": 2.1166666666666667,
+      "actions": 1
+    },
+    {
+      "id": "vhf_receiver",
+      "get": "079:53:55",
+      "evidenceKind": "crew_execution_report",
+      "knownDcCurrentA": 2.0766666666666667,
+      "actions": 1
+    },
+    {
+      "id": "inverter_branch",
+      "get": "079:54:23",
+      "evidenceKind": "crew_intent_report",
+      "knownDcCurrentA": 2.0766666666666667,
+      "actions": 1
+    },
+    {
+      "id": "atca_pgns",
+      "get": "082:03:11",
+      "evidenceKind": "crew_execution_report",
+      "knownDcCurrentA": 2.0766666666666667,
+      "actions": 5
+    },
+    {
+      "id": "final_readup",
+      "get": "082:06:30",
+      "evidenceKind": "readup_only",
+      "knownDcCurrentA": 2.0766666666666667,
+      "actions": 0
+    },
+    {
+      "id": "final_execution",
+      "get": "082:16:37",
+      "evidenceKind": "execution_start_grouped",
+      "knownDcCurrentA": 1.6866666666666665,
+      "actions": 71
+    },
+    {
+      "id": "sealed_heater",
+      "get": "082:23:19",
+      "evidenceKind": "crew_acknowledgement",
+      "knownDcCurrentA": 1.6866666666666665,
+      "actions": 4
+    },
+    {
+      "id": "heater_selectors",
+      "get": "082:24:11",
+      "evidenceKind": "crew_execution_report",
+      "knownDcCurrentA": 1.6866666666666665,
+      "actions": 4
+    },
+    {
+      "id": "lighting_branches",
+      "get": "082:25:03",
+      "evidenceKind": "crew_execution_report",
+      "knownDcCurrentA": 1.6866666666666665,
+      "actions": 2
+    },
+    {
+      "id": "low_power_summary",
+      "get": "082:30:00",
+      "evidenceKind": "approximate_summary_only",
+      "knownDcCurrentA": 1.6866666666666665,
+      "actions": 0
+    }
+  ]
+}

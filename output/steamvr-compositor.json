@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "SteamVR compositor read-only background measurement",
+  "interface": "IVRCompositor_029",
+  "startedUtc": "2026-11-17T16:08:38.811373+00:00",
+  "durationSeconds": 60.0,
+  "scenePid": 47320,
+  "counters": {
+    "presents": 5175,
+    "dropped": 3,
+    "reprojected": 0,
+    "startup_presents": 0,
+    "startup_dropped": 0,
+    "startup_reprojected": 0,
+    "loading_events": 0,
+    "loading_presents": 0,
+    "loading_dropped": 0,
+    "loading_reprojected": 0,
+    "timeout_events": 0,
+    "timeout_presents": 0,
+    "timeout_dropped": 0,
+    "timeout_reprojected": 0,
+    "submits": 5175,
+    "compositor_cpu_ms": 2643.6359980404377,
+    "compositor_gpu_ms": 65.92467265576124,
+    "target_frame_time_sum_raw": 57.50000139232725,
+    "application_cpu_ms": 22449.71969795227,
+    "application_gpu_ms": 26642.231874465942,
+    "depth_frames": 0
+  },
+  "sampledFrames": 5175,
+  "gpuMs": {
+    "samples": 5175,
+    "mean": 5.148257367046559,
+    "p95": 6.047359943389893,
+    "max": 8.752543449401855
+  },
+  "compositorGpuMs": {
+    "samples": 5175,
+    "mean": 0.012739067179857245,
+    "p95": 0.014047999866306782,
+    "max": 0.026623999699950218
+  },
+  "clientIntervalMs": {
+    "samples": 5175,
+    "mean": 4.3381100865608255,
+    "p95": 8.453700065612793,
+    "max": 24.4955997467041
+  },
+  "submittedFramesPerSecond": 86.25,
+  "reprojectedFraction": 0.0,
+  "droppedFraction": 0.0005797101449275362,
+  "scope": "Compositor counters for the validated Aquarius PID; does not measure wireless transport quality or every physical control.",
+  "source": "https://github.com/ValveSoftware/openvr/blob/master/headers/openvr_capi.h"
+}

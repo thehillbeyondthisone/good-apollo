@@ -1,0 +1,11 @@
+{
+	"checks": 44,
+	"electricalSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+	"failures": [],
+	"flightValidationPassed": false,
+	"headsetTested": false,
+	"inventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+	"kind": "Actual desktop F11, sourced electrical controls and complete native checkpoint integration",
+	"result": "PASS",
+	"schemaVersion": 1
+}

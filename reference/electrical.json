@@ -1,0 +1,6542 @@
+{
+  "schemaVersion": 1,
+  "title": "Deterministic partial EPS - aggregate calibration and source-valued equipment modes",
+  "inventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "fixedStepSeconds": 0.25,
+  "sources": [
+    {
+      "id": "lm7-aoh-v1",
+      "path": "D:/apollo-ref/lm-systems/a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+      "pages": [
+        377,
+        379,
+        380,
+        381,
+        382,
+        383,
+        397,
+        399,
+        789,
+        790
+      ]
+    },
+    {
+      "id": "mission-report",
+      "path": "D:/apollo-ref/a13-mission-data/a13-mission-report-197007.pdf",
+      "pages": [
+        45,
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "id": "fdlog-current-profile",
+      "path": "D:/apollo-ref/a13-procedures/09-a13-fdlog-lm-current-profile.pdf",
+      "pages": [
+        1,
+        3
+      ]
+    }
+  ],
+  "modelNotes": [
+    "Battery capacities are sourced ratings at specified nominal operating conditions; no electrochemistry or temperature derating.",
+    "Ideal30V high-tap and28V low-tap outputs are a coarse voltage surrogate, not a discharge curve.",
+    "Equal connected-source sharing, ideal diodes and ideal inverter; wire resistance and conversion losses absent.",
+    "Every declared circuit breaker has a logical source bus and rated amperage. Individual operating draws remain unknown.",
+    "Two aggregate bus loads split total calibrated draw equally; this allocation is an explicit approximation and is not a set of component wattages.",
+    "Mission Report12A/30A presets are calibration cases, not independent flight validation.",
+    "Thermal breaker trip curve, detailed ECA protection, reverse current, thermal faults and full CWEA logic remain unmodelled.",
+    "Sourced-component mode uses only published operating input watts with switch/branch gates. It never adds aggregate calibration; full vehicle load coverage remains incomplete."
+  ],
+  "batteries": [
+    {
+      "id": "BAT1",
+      "stage": "descent",
+      "capacityAh": 400,
+      "nominalVoltageV": 30,
+      "lowTapVoltageV": 28,
+      "normalBusId": "LMP_DC",
+      "highControlId": "p14_se_bat_1_hi_voltage",
+      "lowControlId": "p14_se_bat_1_low_voltage",
+      "feedBreakerIds": [
+        "p16_cb_r04_c18",
+        "p16_cb_r04_c19"
+      ],
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 397,
+        "printedPage": "2.5-19"
+      }
+    },
+    {
+      "id": "BAT2",
+      "stage": "descent",
+      "capacityAh": 400,
+      "nominalVoltageV": 30,
+      "lowTapVoltageV": 28,
+      "normalBusId": "LMP_DC",
+      "highControlId": "p14_se_bat_2_hi_voltage",
+      "lowControlId": "p14_se_bat_2_low_voltage",
+      "feedBreakerIds": [
+        "p16_cb_r04_c18",
+        "p16_cb_r04_c19"
+      ],
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 397,
+        "printedPage": "2.5-19"
+      }
+    },
+    {
+      "id": "BAT3",
+      "stage": "descent",
+      "capacityAh": 400,
+      "nominalVoltageV": 30,
+      "lowTapVoltageV": 28,
+      "normalBusId": "CDR_DC",
+      "highControlId": "p14_cdr_bat_3_hi_voltage",
+      "lowControlId": "p14_cdr_bat_3_low_voltage",
+      "feedBreakerIds": [
+        "p11_cb_r05_c01",
+        "p11_cb_r05_c02"
+      ],
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 397,
+        "printedPage": "2.5-19"
+      }
+    },
+    {
+      "id": "BAT4",
+      "stage": "descent",
+      "capacityAh": 400,
+      "nominalVoltageV": 30,
+      "lowTapVoltageV": 28,
+      "normalBusId": "CDR_DC",
+      "highControlId": "p14_cdr_bat_4_hi_voltage",
+      "lowControlId": "p14_cdr_bat_4_low_voltage",
+      "feedBreakerIds": [
+        "p11_cb_r05_c01",
+        "p11_cb_r05_c02"
+      ],
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPage": 397,
+        "printedPage": "2.5-19"
+      }
+    },
+    {
+      "id": "BAT5",
+      "stage": "ascent",
+      "capacityAh": 296,
+      "nominalVoltageV": 30,
+      "lowTapVoltageV": 30,
+      "normalBusId": "LMP_DC",
+      "backupBusId": "CDR_DC",
+      "normalControlId": "p14_bat_5_normal_se_feed",
+      "backupControlId": "p14_bat_5_back_up_cdr_feed",
+      "feedBreakerIds": [],
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPages": [
+          397,
+          399
+        ],
+        "printedPages": [
+          "2.5-19",
+          "2.5-21"
+        ]
+      }
+    },
+    {
+      "id": "BAT6",
+      "stage": "ascent",
+      "capacityAh": 296,
+      "nominalVoltageV": 30,
+      "lowTapVoltageV": 30,
+      "normalBusId": "CDR_DC",
+      "backupBusId": "LMP_DC",
+      "normalControlId": "p14_bat_6_normal_cdr_feed",
+      "backupControlId": "p14_bat_6_back_up_se_feed",
+      "feedBreakerIds": [],
+      "source": {
+        "document": "lm7-aoh-v1",
+        "pdfPages": [
+          397,
+          399
+        ],
+        "printedPages": [
+          "2.5-19",
+          "2.5-21"
+        ]
+      }
+    }
+  ],
+  "breakers": [
+    {
+      "controlId": "p11_cb_r01_c01",
+      "label": "AC BUS B SE WIND HTR",
+      "busId": "AC_B",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c02",
+      "label": "AC BUS B He/PQGS PROPUL DISP",
+      "busId": "AC_B",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c03",
+      "label": "AC BUS B S-BD ANT",
+      "busId": "AC_B",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c04",
+      "label": "AC BUS B ORDEAL",
+      "busId": "AC_B",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c05",
+      "label": "AC BUS B AGS",
+      "busId": "AC_B",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c06",
+      "label": "AC BUS B AOT LAMP",
+      "busId": "AC_B",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c07",
+      "label": "AC BUS B SE FDAI",
+      "busId": "AC_B",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c08",
+      "label": "AC BUS B NUM LTG",
+      "busId": "AC_B",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c09",
+      "label": "AC BUS B BUS TIE INV 2",
+      "busId": "AC_B",
+      "role": "ac_feeder",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c10",
+      "label": "AC BUS B BUS TIE INV 1",
+      "busId": "AC_B",
+      "role": "ac_feeder",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c11",
+      "label": "AC BUS A BUS TIE INV 2",
+      "busId": "AC_A",
+      "role": "ac_feeder",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c12",
+      "label": "AC BUS A BUS TIE INV 1",
+      "busId": "AC_A",
+      "role": "ac_feeder",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c13",
+      "label": "AC BUS A AC BUS VOLT",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c14",
+      "label": "AC BUS A CDR WIND HTR",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c15",
+      "label": "AC BUS A TAPE RCDR",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c16",
+      "label": "AC BUS A AOT LAMP",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c17",
+      "label": "AC BUS A RNDZ RDR",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c18",
+      "label": "AC BUS A DECA GMBL",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r01_c19",
+      "label": "AC BUS A INTGL LTG",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c01",
+      "label": "RCS SYS A MAIN SOV",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c02",
+      "label": "RCS SYS A QUAD 4 TCA",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c03",
+      "label": "RCS SYS A QUAD 3 TCA",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c04",
+      "label": "RCS SYS A QUAD 2 TCA",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c05",
+      "label": "RCS SYS A QUAD 1 TCA",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c06",
+      "label": "RCS SYS A ISOL VLV",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c07",
+      "label": "RCS SYS A ASC FEED 2",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c08",
+      "label": "RCS SYS A ASC FEED 1",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c09",
+      "label": "FLIGHT DISPLAYS THRUST",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c10",
+      "label": "FLIGHT DISPLAYS MISSION TIMER",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c11",
+      "label": "FLIGHT DISPLAYS CDR X-PNTR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c12",
+      "label": "FLIGHT DISPLAYS RNG/RNG RT ALT/ALT RT",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c13",
+      "label": "FLIGHT DISPLAYS GASTA",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c14",
+      "label": "FLIGHT DISPLAYS CDR FDAI",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c15",
+      "label": "FLIGHT DISPLAYS COAS",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c16",
+      "label": "FLIGHT DISPLAYS ORDEAL",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c17",
+      "label": "AC BUS A RNG/RNG RT ALT/ALT RT",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c18",
+      "label": "AC BUS A GASTA",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r02_c19",
+      "label": "AC BUS A CDR FDAI",
+      "busId": "AC_A",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c01",
+      "label": "DES He REG-VENT",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c02",
+      "label": "HEATERS RNDZ RDR STBY",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c03",
+      "label": "HEATERS RNDZ RDR OPR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c04",
+      "label": "HEATERS LDG RDR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c05",
+      "label": "HEATERS DOCK WINDOW",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c06",
+      "label": "HEATERS AOT",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c07",
+      "label": "INST SIG CONDR 1",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 3,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c08",
+      "label": "STAB/CONT AEA",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c09",
+      "label": "STAB/CONT ABORT STAGE",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c10",
+      "label": "STAB/CONT ATCA PGNS",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB81",
+        "tablePdfPage": 772,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p11_cb_r03_c11",
+      "label": "STAB/CONT AELD",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB40",
+        "tablePdfPage": 772,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p11_cb_r03_c12",
+      "label": "STAB/CONT ENG CONT",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c13",
+      "label": "STAB/CONT ATT DIR CONT",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c14",
+      "label": "STAB/CONT ENG START OVRD",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c15",
+      "label": "STAB/CONT DECA PWR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 20,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c16",
+      "label": "ED LDG GEAR FLAG",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c17",
+      "label": "ED LOGIC PWR A",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c18",
+      "label": "LTG UTIL",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r03_c19",
+      "label": "LTG ANUN/DOCK/COMPN T",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c01",
+      "label": "HEATERS RCS SYS A/B-1 QUAD 4",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c02",
+      "label": "HEATERS RCS SYS A/B-1 QUAD 3",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c03",
+      "label": "HEATERS RCS SYS A/B-1 QUAD 2",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c04",
+      "label": "HEATERS RCS SYS A/B-1 QUAD 1",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c05",
+      "label": "ECS SUIT FAN 1",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 20,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c06",
+      "label": "ECS CABIN FAN 1",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c07",
+      "label": "ECS GLYCOL PUMP 2",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c08",
+      "label": "ECS GLYCOL PUMP 1",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c09",
+      "label": "ECS GLYCOL PUMP AUTO TRNFR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c10",
+      "label": "COMM UP DATA LINK",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c11",
+      "label": "COMM SEC S-BD XMTR/RCVR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c12",
+      "label": "COMM SEC S-BD PWR AMPL",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c13",
+      "label": "COMM VHF B XMTR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c14",
+      "label": "COMM VHF A RCVR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c15",
+      "label": "COMM CDR AUDIO",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c16",
+      "label": "PGNS SIG STR DISP",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c17",
+      "label": "PGNS LDG RDR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r04_c18",
+      "label": "PGNS RNDZ RDR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 15,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB29",
+        "tablePdfPage": 776,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p11_cb_r04_c19",
+      "label": "PGNS LGC/DSKY",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB122",
+        "tablePdfPage": 776,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p11_cb_r04_c20",
+      "label": "PGNS IMU STBY",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB161",
+        "tablePdfPage": 776,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p11_cb_r04_c21",
+      "label": "PGNS IMU OPR",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 20,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB124",
+        "tablePdfPage": 777,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p11_cb_r05_c01",
+      "label": "EPS BAT FEED TIE 1",
+      "busId": "CDR_DC",
+      "role": "battery_feeder",
+      "ratedCurrentA": 100,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c02",
+      "label": "EPS BAT FEED TIE 2",
+      "busId": "CDR_DC",
+      "role": "battery_feeder",
+      "ratedCurrentA": 100,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c03",
+      "label": "EPS CROSS TIE BAL LOADS",
+      "busId": "CDR_DC",
+      "role": "bus_tie",
+      "ratedCurrentA": 30,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c04",
+      "label": "EPS CROSS TIE BUS",
+      "busId": "CDR_DC",
+      "role": "bus_tie",
+      "ratedCurrentA": 100,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c05",
+      "label": "EPS XLUNAR BUS TIE",
+      "busId": "CDR_DC",
+      "role": "return_tie",
+      "ratedCurrentA": 50,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c06",
+      "label": "EPS DES ECA CONT",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c07",
+      "label": "EPS DES ECA",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c08",
+      "label": "EPS ASC ECA CONT",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c09",
+      "label": "EPS ASC ECA",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c10",
+      "label": "EPS INV 1",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 30,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p11_cb_r05_c11",
+      "label": "EPS DC BUS VOLT",
+      "busId": "CDR_DC",
+      "role": "branch",
+      "ratedCurrentA": 3,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c01",
+      "label": "FLT DISP EVENT TIMER/SE FDAI",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c02",
+      "label": "FLT DISP SE X-PNTR",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c03",
+      "label": "RCS SYS B ASC FEED 1",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c04",
+      "label": "RCS SYS B ASC FEED 2",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c05",
+      "label": "RCS SYS B ISOL VLV",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c06",
+      "label": "RCS SYS B QUAD 1 TCA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c07",
+      "label": "RCS SYS B QUAD 2 TCA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c08",
+      "label": "RCS SYS B QUAD 3 TCA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c09",
+      "label": "RCS SYS B QUAD 4 TCA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c10",
+      "label": "RCS SYS B CRSFD",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c11",
+      "label": "RCS SYS B TEMP/PRESS DISP-FLAGS",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c12",
+      "label": "RCS SYS B PQGS DISP",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 3,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingSourceConflict": {
+        "status": "OPEN",
+        "schematicRatedCurrentA": 3,
+        "detailedTableRatedCurrentA": 2,
+        "tablePdfPage": 802,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "selectedSource": "Fig.2.5-2 schematic retained pending revision/circuit adjudication"
+      }
+    },
+    {
+      "controlId": "p16_cb_r01_c13",
+      "label": "RCS SYS B MAIN SOV",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c14",
+      "label": "DISP/ENG OVRD LOGIC",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c15",
+      "label": "PQGS",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r01_c16",
+      "label": "ASC He REG",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c01",
+      "label": "LTG FLOOD",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c02",
+      "label": "LTG TRACK",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 20,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c03",
+      "label": "LTG ANUN/DOCK/COMPN T",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c04",
+      "label": "LTG MASTER ALARM",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c05",
+      "label": "ED LOGIC PWR B",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c06",
+      "label": "STAB/CONT AEA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB28",
+        "tablePdfPage": 804,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r02_c07",
+      "label": "STAB/CONT ENG ARM",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c08",
+      "label": "STAB/CONT ASA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 20,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB79",
+        "tablePdfPage": 804,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r02_c09",
+      "label": "STAB/CONT AELD",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB41",
+        "tablePdfPage": 804,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r02_c10",
+      "label": "STAB/CONT ATCA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB82",
+        "tablePdfPage": 804,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r02_c11",
+      "label": "STAB/CONT ABORT STAGE",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB2",
+        "tablePdfPage": 804,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r02_c12",
+      "label": "STAB/CONT ATCA AGS",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 3,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB230",
+        "tablePdfPage": 804,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r02_c13",
+      "label": "STAB/CONT DES ENG OVRD",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 10,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB233",
+        "tablePdfPage": 804,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r02_c14",
+      "label": "INST CWEA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c15",
+      "label": "INST SIG SENSOR",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c16",
+      "label": "INST PCM/TE",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c17",
+      "label": "INST SIG CONDR 2",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r02_c18",
+      "label": "ECS SUIT FLOW CONT",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c01",
+      "label": "COMM DISP",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c02",
+      "label": "COMM SE AUDIO",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c03",
+      "label": "COMM VHF A XMTR",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c04",
+      "label": "COMM VHF B RCVR",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c05",
+      "label": "COMM PRIM S-BD PWR AMPL",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c06",
+      "label": "COMM PRIM S-BD XMTR/RCVR",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c07",
+      "label": "COMM S-BD ANT",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c08",
+      "label": "COMM PMP",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB102",
+        "tablePdfPage": 806,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r03_c09",
+      "label": "COMM TV",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c10",
+      "label": "ECS DISP",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c11",
+      "label": "ECS GLYCOL PUMP SEC",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c12",
+      "label": "ECS LCG PUMP",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c13",
+      "label": "ECS CABIN FAN CONT",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c14",
+      "label": "ECS CABIN REPRESS",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c15",
+      "label": "ECS SUIT FAN 2",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 20,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c16",
+      "label": "ECS SUIT FAN AP",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c17",
+      "label": "ECS DIVERT VLV",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r03_c18",
+      "label": "ECS CO2 SENSOR",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c01",
+      "label": "HEATERS RCS SYS A/B-2 QUAD 1",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c02",
+      "label": "HEATERS RCS SYS A/B-2 QUAD 2",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c03",
+      "label": "HEATERS RCS SYS A/B-2 QUAD 3",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c04",
+      "label": "HEATERS RCS SYS A/B-2 QUAD 4",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 7.5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c05",
+      "label": "HEATERS DISP",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c06",
+      "label": "HEATERS S-BD ANT",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB31",
+        "tablePdfPage": 809,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r04_c07",
+      "label": "CAMR SEQ",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c08",
+      "label": "EPS DISP",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c09",
+      "label": "EPS DC BUS VOLT",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve.",
+      "ratingAdjudication": {
+        "status": "CORRECTED_TRANSCRIPTION",
+        "referenceDesignation": "4CB21",
+        "tablePdfPage": 809,
+        "schematicPdfPages": [
+          381,
+          382,
+          383
+        ],
+        "explanation": "Detailed table and visually identified schematic breaker agree; previous positional rating transcription corrected."
+      }
+    },
+    {
+      "controlId": "p16_cb_r04_c10",
+      "label": "EPS INV 2",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 30,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c11",
+      "label": "EPS ASC ECA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c12",
+      "label": "EPS ASC ECA CONT",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c13",
+      "label": "EPS DES ECA",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 2,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c14",
+      "label": "EPS DES ECA CONT",
+      "busId": "LMP_DC",
+      "role": "branch",
+      "ratedCurrentA": 5,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c15",
+      "label": "EPS XLUNAR BUS TIE",
+      "busId": "LMP_DC",
+      "role": "return_tie",
+      "ratedCurrentA": 50,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c16",
+      "label": "EPS CROSS TIE BUS",
+      "busId": "LMP_DC",
+      "role": "bus_tie",
+      "ratedCurrentA": 100,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c17",
+      "label": "EPS CROSS TIE BAL LOADS",
+      "busId": "LMP_DC",
+      "role": "bus_tie",
+      "ratedCurrentA": 30,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c18",
+      "label": "EPS BAT FEED TIE 1",
+      "busId": "LMP_DC",
+      "role": "battery_feeder",
+      "ratedCurrentA": 100,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    },
+    {
+      "controlId": "p16_cb_r04_c19",
+      "label": "EPS BAT FEED TIE 2",
+      "busId": "LMP_DC",
+      "role": "battery_feeder",
+      "ratedCurrentA": 100,
+      "currentKnown": false,
+      "source": {
+        "document": "lm7-aoh-v1",
+        "figure": "2.5-2",
+        "pdfPages": [
+          381,
+          382,
+          383
+        ],
+        "printedPages": [
+          "2.5-5",
+          "2.5-6",
+          "2.5-6A/2.5-6B"
+        ]
+      },
+      "limitation": "Rated amperage is not equipment operating draw. Trip is an instantaneous surrogate, not a sourced thermal time-current curve."
+    }
+  ],
+  "ties": [
+    {
+      "id": "balance_loads",
+      "breakerIds": [
+        "p11_cb_r05_c03",
+        "p16_cb_r04_c17"
+      ],
+      "busA": "CDR_DC",
+      "busB": "LMP_DC",
+      "ratedCurrentA": 30
+    },
+    {
+      "id": "emergency_cross_bus",
+      "breakerIds": [
+        "p11_cb_r05_c04",
+        "p16_cb_r04_c16"
+      ],
+      "busA": "CDR_DC",
+      "busB": "LMP_DC",
+      "ratedCurrentA": 100
+    }
+  ],
+  "inverters": [
+    {
+      "id": "INV1",
+      "inputBreakerId": "p11_cb_r05_c10",
+      "sourceBusId": "CDR_DC",
+      "selection": "1",
+      "acABreakerId": "p11_cb_r01_c12",
+      "acBBreakerId": "p11_cb_r01_c10"
+    },
+    {
+      "id": "INV2",
+      "inputBreakerId": "p16_cb_r04_c10",
+      "sourceBusId": "LMP_DC",
+      "selection": "2",
+      "acABreakerId": "p11_cb_r01_c11",
+      "acBBreakerId": "p11_cb_r01_c09"
+    }
+  ],
+  "loads": [
+    {
+      "id": "aggregate_cdr",
+      "busId": "CDR_DC",
+      "nominalShare": 0.5,
+      "currentModel": "preset aggregate; unknown component decomposition"
+    },
+    {
+      "id": "aggregate_lmp",
+      "busId": "LMP_DC",
+      "nominalShare": 0.5,
+      "currentModel": "preset aggregate; unknown component decomposition"
+    }
+  ],
+  "poweredControls": [
+    {
+      "controlId": "p4_dsky_verb",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_noun",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_plus",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_minus",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_0",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_7",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_4",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_1",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_8",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_5",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_2",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_9",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_6",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_3",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_clr",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_pro",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_key_rel",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_entr",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_rset",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_uplink_acty_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_temp_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_no_att_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_gimbal_lock_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_stby_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_prog_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_key_rel_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_restart_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_opr_err_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_tracker_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_alt_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_vel_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_comptr_acty_light",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_prog_display",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_verb_display",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_noun_display",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_r1_display",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_r2_display",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p4_dsky_r3_display",
+      "breakerIds": [
+        "p11_cb_r04_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p6_deda_plus",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_minus",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_7",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_8",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_9",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_4",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_5",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_6",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_1",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_2",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_3",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_0",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_clr",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_read_out",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_entr",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_hold",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_address",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_data",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p6_deda_opr_err",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "p1_ces_ac_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_asc_press_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_ces_dc_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_des_reg_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_ags_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_des_qty_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_lgc_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_iss_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_rcs_tca_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_cabin_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_rcs_a_reg_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_suit_fan_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_rcs_b_reg_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_dc_bus_warning",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_glycol_component_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_suit_fan_component_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_co2_component_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_h2o_sep_component_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_asc_hi_reg_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_inverter_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_ed_relays_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_ecs_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_asc_qty_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_battery_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_rcs_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_o2_qty_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_eng_gmbl_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_rndz_rdr_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_heater_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_glycol_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_c_w_pwr_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_water_qty_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_pre_amps_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_s_bd_rcvr_caution",
+      "breakerIds": [
+        "p16_cb_r02_c14"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p14_volts",
+      "breakerIds": [
+        "p16_cb_r04_c08"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p14_amps",
+      "breakerIds": [
+        "p16_cb_r04_c08"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p14_power_temp_mon",
+      "breakerIds": [
+        "p16_cb_r04_c08"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_mission_timer",
+      "breakerIds": [
+        "p11_cb_r02_c10"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_event_timer",
+      "breakerIds": [
+        "p16_cb_r01_c01"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_fdai",
+      "breakerIds": [
+        "p11_cb_r02_c14",
+        "p11_cb_r02_c19"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_fdai",
+      "breakerIds": [
+        "p16_cb_r01_c01",
+        "p11_cb_r01_c07"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p1_x_pointer",
+      "breakerIds": [
+        "p11_cb_r02_c11"
+      ],
+      "switchRequirements": []
+    },
+    {
+      "controlId": "p2_x_pointer",
+      "breakerIds": [
+        "p16_cb_r01_c02"
+      ],
+      "switchRequirements": []
+    }
+  ],
+  "presets": [
+    {
+      "id": "cold_dark",
+      "description": "All batteries disconnected; no energized buses.",
+      "aggregateCurrentA": 0,
+      "initialTotalRemainingAh": null,
+      "controls": {
+        "p11_cb_r01_c01": "PULLED",
+        "p11_cb_r01_c02": "PULLED",
+        "p11_cb_r01_c03": "PULLED",
+        "p11_cb_r01_c04": "PULLED",
+        "p11_cb_r01_c05": "PULLED",
+        "p11_cb_r01_c06": "PULLED",
+        "p11_cb_r01_c07": "PULLED",
+        "p11_cb_r01_c08": "PULLED",
+        "p11_cb_r01_c09": "PULLED",
+        "p11_cb_r01_c10": "PULLED",
+        "p11_cb_r01_c11": "PULLED",
+        "p11_cb_r01_c12": "PULLED",
+        "p11_cb_r01_c13": "PULLED",
+        "p11_cb_r01_c14": "PULLED",
+        "p11_cb_r01_c15": "PULLED",
+        "p11_cb_r01_c16": "PULLED",
+        "p11_cb_r01_c17": "PULLED",
+        "p11_cb_r01_c18": "PULLED",
+        "p11_cb_r01_c19": "PULLED",
+        "p11_cb_r02_c01": "PULLED",
+        "p11_cb_r02_c02": "PULLED",
+        "p11_cb_r02_c03": "PULLED",
+        "p11_cb_r02_c04": "PULLED",
+        "p11_cb_r02_c05": "PULLED",
+        "p11_cb_r02_c06": "PULLED",
+        "p11_cb_r02_c07": "PULLED",
+        "p11_cb_r02_c08": "PULLED",
+        "p11_cb_r02_c09": "PULLED",
+        "p11_cb_r02_c10": "PULLED",
+        "p11_cb_r02_c11": "PULLED",
+        "p11_cb_r02_c12": "PULLED",
+        "p11_cb_r02_c13": "PULLED",
+        "p11_cb_r02_c14": "PULLED",
+        "p11_cb_r02_c15": "PULLED",
+        "p11_cb_r02_c16": "PULLED",
+        "p11_cb_r02_c17": "PULLED",
+        "p11_cb_r02_c18": "PULLED",
+        "p11_cb_r02_c19": "PULLED",
+        "p11_cb_r03_c01": "PULLED",
+        "p11_cb_r03_c02": "PULLED",
+        "p11_cb_r03_c03": "PULLED",
+        "p11_cb_r03_c04": "PULLED",
+        "p11_cb_r03_c05": "PULLED",
+        "p11_cb_r03_c06": "PULLED",
+        "p11_cb_r03_c07": "PULLED",
+        "p11_cb_r03_c08": "PULLED",
+        "p11_cb_r03_c09": "PULLED",
+        "p11_cb_r03_c10": "PULLED",
+        "p11_cb_r03_c11": "PULLED",
+        "p11_cb_r03_c12": "PULLED",
+        "p11_cb_r03_c13": "PULLED",
+        "p11_cb_r03_c14": "PULLED",
+        "p11_cb_r03_c15": "PULLED",
+        "p11_cb_r03_c16": "PULLED",
+        "p11_cb_r03_c17": "PULLED",
+        "p11_cb_r03_c18": "PULLED",
+        "p11_cb_r03_c19": "PULLED",
+        "p11_cb_r04_c01": "PULLED",
+        "p11_cb_r04_c02": "PULLED",
+        "p11_cb_r04_c03": "PULLED",
+        "p11_cb_r04_c04": "PULLED",
+        "p11_cb_r04_c05": "PULLED",
+        "p11_cb_r04_c06": "PULLED",
+        "p11_cb_r04_c07": "PULLED",
+        "p11_cb_r04_c08": "PULLED",
+        "p11_cb_r04_c09": "PULLED",
+        "p11_cb_r04_c10": "PULLED",
+        "p11_cb_r04_c11": "PULLED",
+        "p11_cb_r04_c12": "PULLED",
+        "p11_cb_r04_c13": "PULLED",
+        "p11_cb_r04_c14": "PULLED",
+        "p11_cb_r04_c15": "PULLED",
+        "p11_cb_r04_c16": "PULLED",
+        "p11_cb_r04_c17": "PULLED",
+        "p11_cb_r04_c18": "PULLED",
+        "p11_cb_r04_c19": "PULLED",
+        "p11_cb_r04_c20": "PULLED",
+        "p11_cb_r04_c21": "PULLED",
+        "p11_cb_r05_c01": "PULLED",
+        "p11_cb_r05_c02": "PULLED",
+        "p11_cb_r05_c03": "PULLED",
+        "p11_cb_r05_c04": "PULLED",
+        "p11_cb_r05_c05": "PULLED",
+        "p11_cb_r05_c06": "PULLED",
+        "p11_cb_r05_c07": "PULLED",
+        "p11_cb_r05_c08": "PULLED",
+        "p11_cb_r05_c09": "PULLED",
+        "p11_cb_r05_c10": "PULLED",
+        "p11_cb_r05_c11": "PULLED",
+        "p16_cb_r01_c01": "PULLED",
+        "p16_cb_r01_c02": "PULLED",
+        "p16_cb_r01_c03": "PULLED",
+        "p16_cb_r01_c04": "PULLED",
+        "p16_cb_r01_c05": "PULLED",
+        "p16_cb_r01_c06": "PULLED",
+        "p16_cb_r01_c07": "PULLED",
+        "p16_cb_r01_c08": "PULLED",
+        "p16_cb_r01_c09": "PULLED",
+        "p16_cb_r01_c10": "PULLED",
+        "p16_cb_r01_c11": "PULLED",
+        "p16_cb_r01_c12": "PULLED",
+        "p16_cb_r01_c13": "PULLED",
+        "p16_cb_r01_c14": "PULLED",
+        "p16_cb_r01_c15": "PULLED",
+        "p16_cb_r01_c16": "PULLED",
+        "p16_cb_r02_c01": "PULLED",
+        "p16_cb_r02_c02": "PULLED",
+        "p16_cb_r02_c03": "PULLED",
+        "p16_cb_r02_c04": "PULLED",
+        "p16_cb_r02_c05": "PULLED",
+        "p16_cb_r02_c06": "PULLED",
+        "p16_cb_r02_c07": "PULLED",
+        "p16_cb_r02_c08": "PULLED",
+        "p16_cb_r02_c09": "PULLED",
+        "p16_cb_r02_c10": "PULLED",
+        "p16_cb_r02_c11": "PULLED",
+        "p16_cb_r02_c12": "PULLED",
+        "p16_cb_r02_c13": "PULLED",
+        "p16_cb_r02_c14": "PULLED",
+        "p16_cb_r02_c15": "PULLED",
+        "p16_cb_r02_c16": "PULLED",
+        "p16_cb_r02_c17": "PULLED",
+        "p16_cb_r02_c18": "PULLED",
+        "p16_cb_r03_c01": "PULLED",
+        "p16_cb_r03_c02": "PULLED",
+        "p16_cb_r03_c03": "PULLED",
+        "p16_cb_r03_c04": "PULLED",
+        "p16_cb_r03_c05": "PULLED",
+        "p16_cb_r03_c06": "PULLED",
+        "p16_cb_r03_c07": "PULLED",
+        "p16_cb_r03_c08": "PULLED",
+        "p16_cb_r03_c09": "PULLED",
+        "p16_cb_r03_c10": "PULLED",
+        "p16_cb_r03_c11": "PULLED",
+        "p16_cb_r03_c12": "PULLED",
+        "p16_cb_r03_c13": "PULLED",
+        "p16_cb_r03_c14": "PULLED",
+        "p16_cb_r03_c15": "PULLED",
+        "p16_cb_r03_c16": "PULLED",
+        "p16_cb_r03_c17": "PULLED",
+        "p16_cb_r03_c18": "PULLED",
+        "p16_cb_r04_c01": "PULLED",
+        "p16_cb_r04_c02": "PULLED",
+        "p16_cb_r04_c03": "PULLED",
+        "p16_cb_r04_c04": "PULLED",
+        "p16_cb_r04_c05": "PULLED",
+        "p16_cb_r04_c06": "PULLED",
+        "p16_cb_r04_c07": "PULLED",
+        "p16_cb_r04_c08": "PULLED",
+        "p16_cb_r04_c09": "PULLED",
+        "p16_cb_r04_c10": "PULLED",
+        "p16_cb_r04_c11": "PULLED",
+        "p16_cb_r04_c12": "PULLED",
+        "p16_cb_r04_c13": "PULLED",
+        "p16_cb_r04_c14": "PULLED",
+        "p16_cb_r04_c15": "PULLED",
+        "p16_cb_r04_c16": "PULLED",
+        "p16_cb_r04_c17": "PULLED",
+        "p16_cb_r04_c18": "PULLED",
+        "p16_cb_r04_c19": "PULLED",
+        "p14_se_bat_1_hi_voltage": "OFF/RESET",
+        "p14_se_bat_1_low_voltage": "OFF/RESET",
+        "p14_se_bat_2_hi_voltage": "OFF/RESET",
+        "p14_se_bat_2_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_3_hi_voltage": "OFF/RESET",
+        "p14_cdr_bat_3_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_4_hi_voltage": "OFF/RESET",
+        "p14_cdr_bat_4_low_voltage": "OFF/RESET",
+        "p14_bat_5_normal_se_feed": "OFF/RESET",
+        "p14_bat_5_back_up_cdr_feed": "OFF/RESET",
+        "p14_bat_6_normal_cdr_feed": "OFF/RESET",
+        "p14_bat_6_back_up_se_feed": "OFF/RESET",
+        "p14_des_bats": "CONNECT",
+        "p14_inverter": "OFF",
+        "p14_power_temp_mon": "BAT 1",
+        "p6_ags_status": "OPERATE"
+      }
+    },
+    {
+      "id": "minimum_lifeboat_12a",
+      "description": "Aggregate calibration from Mission Report6.2 after second DPS burn; not a complete flown checklist configuration.",
+      "aggregateCurrentA": 12,
+      "initialTotalRemainingAh": 2179,
+      "controls": {
+        "p11_cb_r01_c01": "PULLED",
+        "p11_cb_r01_c02": "PULLED",
+        "p11_cb_r01_c03": "PULLED",
+        "p11_cb_r01_c04": "PULLED",
+        "p11_cb_r01_c05": "PULLED",
+        "p11_cb_r01_c06": "PULLED",
+        "p11_cb_r01_c07": "PULLED",
+        "p11_cb_r01_c08": "PULLED",
+        "p11_cb_r01_c09": "PULLED",
+        "p11_cb_r01_c10": "PULLED",
+        "p11_cb_r01_c11": "PULLED",
+        "p11_cb_r01_c12": "PULLED",
+        "p11_cb_r01_c13": "PULLED",
+        "p11_cb_r01_c14": "PULLED",
+        "p11_cb_r01_c15": "PULLED",
+        "p11_cb_r01_c16": "PULLED",
+        "p11_cb_r01_c17": "PULLED",
+        "p11_cb_r01_c18": "PULLED",
+        "p11_cb_r01_c19": "PULLED",
+        "p11_cb_r02_c01": "PULLED",
+        "p11_cb_r02_c02": "PULLED",
+        "p11_cb_r02_c03": "PULLED",
+        "p11_cb_r02_c04": "PULLED",
+        "p11_cb_r02_c05": "PULLED",
+        "p11_cb_r02_c06": "PULLED",
+        "p11_cb_r02_c07": "PULLED",
+        "p11_cb_r02_c08": "PULLED",
+        "p11_cb_r02_c09": "PULLED",
+        "p11_cb_r02_c10": "PULLED",
+        "p11_cb_r02_c11": "PULLED",
+        "p11_cb_r02_c12": "PULLED",
+        "p11_cb_r02_c13": "PULLED",
+        "p11_cb_r02_c14": "PULLED",
+        "p11_cb_r02_c15": "PULLED",
+        "p11_cb_r02_c16": "PULLED",
+        "p11_cb_r02_c17": "PULLED",
+        "p11_cb_r02_c18": "PULLED",
+        "p11_cb_r02_c19": "PULLED",
+        "p11_cb_r03_c01": "PULLED",
+        "p11_cb_r03_c02": "PULLED",
+        "p11_cb_r03_c03": "PULLED",
+        "p11_cb_r03_c04": "PULLED",
+        "p11_cb_r03_c05": "PULLED",
+        "p11_cb_r03_c06": "PULLED",
+        "p11_cb_r03_c07": "PULLED",
+        "p11_cb_r03_c08": "PULLED",
+        "p11_cb_r03_c09": "PULLED",
+        "p11_cb_r03_c10": "PULLED",
+        "p11_cb_r03_c11": "PULLED",
+        "p11_cb_r03_c12": "PULLED",
+        "p11_cb_r03_c13": "PULLED",
+        "p11_cb_r03_c14": "PULLED",
+        "p11_cb_r03_c15": "PULLED",
+        "p11_cb_r03_c16": "PULLED",
+        "p11_cb_r03_c17": "PULLED",
+        "p11_cb_r03_c18": "PULLED",
+        "p11_cb_r03_c19": "PULLED",
+        "p11_cb_r04_c01": "PULLED",
+        "p11_cb_r04_c02": "PULLED",
+        "p11_cb_r04_c03": "PULLED",
+        "p11_cb_r04_c04": "PULLED",
+        "p11_cb_r04_c05": "PUSHED",
+        "p11_cb_r04_c06": "PULLED",
+        "p11_cb_r04_c07": "PULLED",
+        "p11_cb_r04_c08": "PUSHED",
+        "p11_cb_r04_c09": "PULLED",
+        "p11_cb_r04_c10": "PULLED",
+        "p11_cb_r04_c11": "PULLED",
+        "p11_cb_r04_c12": "PULLED",
+        "p11_cb_r04_c13": "PULLED",
+        "p11_cb_r04_c14": "PULLED",
+        "p11_cb_r04_c15": "PULLED",
+        "p11_cb_r04_c16": "PULLED",
+        "p11_cb_r04_c17": "PULLED",
+        "p11_cb_r04_c18": "PULLED",
+        "p11_cb_r04_c19": "PUSHED",
+        "p11_cb_r04_c20": "PUSHED",
+        "p11_cb_r04_c21": "PUSHED",
+        "p11_cb_r05_c01": "PUSHED",
+        "p11_cb_r05_c02": "PUSHED",
+        "p11_cb_r05_c03": "PUSHED",
+        "p11_cb_r05_c04": "PULLED",
+        "p11_cb_r05_c05": "PULLED",
+        "p11_cb_r05_c06": "PULLED",
+        "p11_cb_r05_c07": "PULLED",
+        "p11_cb_r05_c08": "PULLED",
+        "p11_cb_r05_c09": "PULLED",
+        "p11_cb_r05_c10": "PULLED",
+        "p11_cb_r05_c11": "PULLED",
+        "p16_cb_r01_c01": "PULLED",
+        "p16_cb_r01_c02": "PULLED",
+        "p16_cb_r01_c03": "PULLED",
+        "p16_cb_r01_c04": "PULLED",
+        "p16_cb_r01_c05": "PULLED",
+        "p16_cb_r01_c06": "PULLED",
+        "p16_cb_r01_c07": "PULLED",
+        "p16_cb_r01_c08": "PULLED",
+        "p16_cb_r01_c09": "PULLED",
+        "p16_cb_r01_c10": "PULLED",
+        "p16_cb_r01_c11": "PULLED",
+        "p16_cb_r01_c12": "PULLED",
+        "p16_cb_r01_c13": "PULLED",
+        "p16_cb_r01_c14": "PULLED",
+        "p16_cb_r01_c15": "PULLED",
+        "p16_cb_r01_c16": "PULLED",
+        "p16_cb_r02_c01": "PULLED",
+        "p16_cb_r02_c02": "PULLED",
+        "p16_cb_r02_c03": "PUSHED",
+        "p16_cb_r02_c04": "PULLED",
+        "p16_cb_r02_c05": "PULLED",
+        "p16_cb_r02_c06": "PUSHED",
+        "p16_cb_r02_c07": "PULLED",
+        "p16_cb_r02_c08": "PULLED",
+        "p16_cb_r02_c09": "PULLED",
+        "p16_cb_r02_c10": "PULLED",
+        "p16_cb_r02_c11": "PULLED",
+        "p16_cb_r02_c12": "PULLED",
+        "p16_cb_r02_c13": "PULLED",
+        "p16_cb_r02_c14": "PUSHED",
+        "p16_cb_r02_c15": "PULLED",
+        "p16_cb_r02_c16": "PULLED",
+        "p16_cb_r02_c17": "PULLED",
+        "p16_cb_r02_c18": "PULLED",
+        "p16_cb_r03_c01": "PULLED",
+        "p16_cb_r03_c02": "PULLED",
+        "p16_cb_r03_c03": "PULLED",
+        "p16_cb_r03_c04": "PULLED",
+        "p16_cb_r03_c05": "PULLED",
+        "p16_cb_r03_c06": "PULLED",
+        "p16_cb_r03_c07": "PULLED",
+        "p16_cb_r03_c08": "PULLED",
+        "p16_cb_r03_c09": "PULLED",
+        "p16_cb_r03_c10": "PULLED",
+        "p16_cb_r03_c11": "PULLED",
+        "p16_cb_r03_c12": "PULLED",
+        "p16_cb_r03_c13": "PULLED",
+        "p16_cb_r03_c14": "PULLED",
+        "p16_cb_r03_c15": "PULLED",
+        "p16_cb_r03_c16": "PULLED",
+        "p16_cb_r03_c17": "PULLED",
+        "p16_cb_r03_c18": "PULLED",
+        "p16_cb_r04_c01": "PULLED",
+        "p16_cb_r04_c02": "PULLED",
+        "p16_cb_r04_c03": "PULLED",
+        "p16_cb_r04_c04": "PULLED",
+        "p16_cb_r04_c05": "PULLED",
+        "p16_cb_r04_c06": "PULLED",
+        "p16_cb_r04_c07": "PULLED",
+        "p16_cb_r04_c08": "PUSHED",
+        "p16_cb_r04_c09": "PULLED",
+        "p16_cb_r04_c10": "PULLED",
+        "p16_cb_r04_c11": "PULLED",
+        "p16_cb_r04_c12": "PULLED",
+        "p16_cb_r04_c13": "PULLED",
+        "p16_cb_r04_c14": "PULLED",
+        "p16_cb_r04_c15": "PULLED",
+        "p16_cb_r04_c16": "PULLED",
+        "p16_cb_r04_c17": "PUSHED",
+        "p16_cb_r04_c18": "PUSHED",
+        "p16_cb_r04_c19": "PUSHED",
+        "p14_se_bat_1_hi_voltage": "ON",
+        "p14_se_bat_1_low_voltage": "OFF/RESET",
+        "p14_se_bat_2_hi_voltage": "ON",
+        "p14_se_bat_2_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_3_hi_voltage": "ON",
+        "p14_cdr_bat_3_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_4_hi_voltage": "ON",
+        "p14_cdr_bat_4_low_voltage": "OFF/RESET",
+        "p14_bat_5_normal_se_feed": "OFF/RESET",
+        "p14_bat_5_back_up_cdr_feed": "OFF/RESET",
+        "p14_bat_6_normal_cdr_feed": "OFF/RESET",
+        "p14_bat_6_back_up_se_feed": "OFF/RESET",
+        "p14_des_bats": "CONNECT",
+        "p14_inverter": "OFF",
+        "p14_power_temp_mon": "BAT 1",
+        "p6_ags_status": "OPERATE"
+      }
+    },
+    {
+      "id": "initial_powerdown_30a",
+      "description": "Aggregate calibration from Mission Report6.2 initial powerdown; not a complete flown checklist configuration.",
+      "aggregateCurrentA": 30,
+      "initialTotalRemainingAh": 2179,
+      "controls": {
+        "p11_cb_r01_c01": "PULLED",
+        "p11_cb_r01_c02": "PULLED",
+        "p11_cb_r01_c03": "PULLED",
+        "p11_cb_r01_c04": "PULLED",
+        "p11_cb_r01_c05": "PULLED",
+        "p11_cb_r01_c06": "PULLED",
+        "p11_cb_r01_c07": "PULLED",
+        "p11_cb_r01_c08": "PULLED",
+        "p11_cb_r01_c09": "PULLED",
+        "p11_cb_r01_c10": "PULLED",
+        "p11_cb_r01_c11": "PULLED",
+        "p11_cb_r01_c12": "PULLED",
+        "p11_cb_r01_c13": "PULLED",
+        "p11_cb_r01_c14": "PULLED",
+        "p11_cb_r01_c15": "PULLED",
+        "p11_cb_r01_c16": "PULLED",
+        "p11_cb_r01_c17": "PULLED",
+        "p11_cb_r01_c18": "PULLED",
+        "p11_cb_r01_c19": "PULLED",
+        "p11_cb_r02_c01": "PULLED",
+        "p11_cb_r02_c02": "PULLED",
+        "p11_cb_r02_c03": "PULLED",
+        "p11_cb_r02_c04": "PULLED",
+        "p11_cb_r02_c05": "PULLED",
+        "p11_cb_r02_c06": "PULLED",
+        "p11_cb_r02_c07": "PULLED",
+        "p11_cb_r02_c08": "PULLED",
+        "p11_cb_r02_c09": "PULLED",
+        "p11_cb_r02_c10": "PULLED",
+        "p11_cb_r02_c11": "PULLED",
+        "p11_cb_r02_c12": "PULLED",
+        "p11_cb_r02_c13": "PULLED",
+        "p11_cb_r02_c14": "PULLED",
+        "p11_cb_r02_c15": "PULLED",
+        "p11_cb_r02_c16": "PULLED",
+        "p11_cb_r02_c17": "PULLED",
+        "p11_cb_r02_c18": "PULLED",
+        "p11_cb_r02_c19": "PULLED",
+        "p11_cb_r03_c01": "PULLED",
+        "p11_cb_r03_c02": "PULLED",
+        "p11_cb_r03_c03": "PULLED",
+        "p11_cb_r03_c04": "PULLED",
+        "p11_cb_r03_c05": "PULLED",
+        "p11_cb_r03_c06": "PULLED",
+        "p11_cb_r03_c07": "PULLED",
+        "p11_cb_r03_c08": "PULLED",
+        "p11_cb_r03_c09": "PULLED",
+        "p11_cb_r03_c10": "PULLED",
+        "p11_cb_r03_c11": "PULLED",
+        "p11_cb_r03_c12": "PULLED",
+        "p11_cb_r03_c13": "PULLED",
+        "p11_cb_r03_c14": "PULLED",
+        "p11_cb_r03_c15": "PULLED",
+        "p11_cb_r03_c16": "PULLED",
+        "p11_cb_r03_c17": "PULLED",
+        "p11_cb_r03_c18": "PULLED",
+        "p11_cb_r03_c19": "PULLED",
+        "p11_cb_r04_c01": "PULLED",
+        "p11_cb_r04_c02": "PULLED",
+        "p11_cb_r04_c03": "PULLED",
+        "p11_cb_r04_c04": "PULLED",
+        "p11_cb_r04_c05": "PUSHED",
+        "p11_cb_r04_c06": "PULLED",
+        "p11_cb_r04_c07": "PULLED",
+        "p11_cb_r04_c08": "PUSHED",
+        "p11_cb_r04_c09": "PULLED",
+        "p11_cb_r04_c10": "PULLED",
+        "p11_cb_r04_c11": "PULLED",
+        "p11_cb_r04_c12": "PULLED",
+        "p11_cb_r04_c13": "PULLED",
+        "p11_cb_r04_c14": "PULLED",
+        "p11_cb_r04_c15": "PULLED",
+        "p11_cb_r04_c16": "PULLED",
+        "p11_cb_r04_c17": "PULLED",
+        "p11_cb_r04_c18": "PULLED",
+        "p11_cb_r04_c19": "PUSHED",
+        "p11_cb_r04_c20": "PUSHED",
+        "p11_cb_r04_c21": "PUSHED",
+        "p11_cb_r05_c01": "PUSHED",
+        "p11_cb_r05_c02": "PUSHED",
+        "p11_cb_r05_c03": "PUSHED",
+        "p11_cb_r05_c04": "PULLED",
+        "p11_cb_r05_c05": "PULLED",
+        "p11_cb_r05_c06": "PULLED",
+        "p11_cb_r05_c07": "PULLED",
+        "p11_cb_r05_c08": "PULLED",
+        "p11_cb_r05_c09": "PULLED",
+        "p11_cb_r05_c10": "PULLED",
+        "p11_cb_r05_c11": "PULLED",
+        "p16_cb_r01_c01": "PULLED",
+        "p16_cb_r01_c02": "PULLED",
+        "p16_cb_r01_c03": "PULLED",
+        "p16_cb_r01_c04": "PULLED",
+        "p16_cb_r01_c05": "PULLED",
+        "p16_cb_r01_c06": "PULLED",
+        "p16_cb_r01_c07": "PULLED",
+        "p16_cb_r01_c08": "PULLED",
+        "p16_cb_r01_c09": "PULLED",
+        "p16_cb_r01_c10": "PULLED",
+        "p16_cb_r01_c11": "PULLED",
+        "p16_cb_r01_c12": "PULLED",
+        "p16_cb_r01_c13": "PULLED",
+        "p16_cb_r01_c14": "PULLED",
+        "p16_cb_r01_c15": "PULLED",
+        "p16_cb_r01_c16": "PULLED",
+        "p16_cb_r02_c01": "PULLED",
+        "p16_cb_r02_c02": "PULLED",
+        "p16_cb_r02_c03": "PUSHED",
+        "p16_cb_r02_c04": "PULLED",
+        "p16_cb_r02_c05": "PULLED",
+        "p16_cb_r02_c06": "PUSHED",
+        "p16_cb_r02_c07": "PULLED",
+        "p16_cb_r02_c08": "PULLED",
+        "p16_cb_r02_c09": "PULLED",
+        "p16_cb_r02_c10": "PULLED",
+        "p16_cb_r02_c11": "PULLED",
+        "p16_cb_r02_c12": "PULLED",
+        "p16_cb_r02_c13": "PULLED",
+        "p16_cb_r02_c14": "PUSHED",
+        "p16_cb_r02_c15": "PULLED",
+        "p16_cb_r02_c16": "PULLED",
+        "p16_cb_r02_c17": "PULLED",
+        "p16_cb_r02_c18": "PULLED",
+        "p16_cb_r03_c01": "PULLED",
+        "p16_cb_r03_c02": "PULLED",
+        "p16_cb_r03_c03": "PULLED",
+        "p16_cb_r03_c04": "PULLED",
+        "p16_cb_r03_c05": "PULLED",
+        "p16_cb_r03_c06": "PULLED",
+        "p16_cb_r03_c07": "PULLED",
+        "p16_cb_r03_c08": "PULLED",
+        "p16_cb_r03_c09": "PULLED",
+        "p16_cb_r03_c10": "PULLED",
+        "p16_cb_r03_c11": "PULLED",
+        "p16_cb_r03_c12": "PULLED",
+        "p16_cb_r03_c13": "PULLED",
+        "p16_cb_r03_c14": "PULLED",
+        "p16_cb_r03_c15": "PULLED",
+        "p16_cb_r03_c16": "PULLED",
+        "p16_cb_r03_c17": "PULLED",
+        "p16_cb_r03_c18": "PULLED",
+        "p16_cb_r04_c01": "PULLED",
+        "p16_cb_r04_c02": "PULLED",
+        "p16_cb_r04_c03": "PULLED",
+        "p16_cb_r04_c04": "PULLED",
+        "p16_cb_r04_c05": "PULLED",
+        "p16_cb_r04_c06": "PULLED",
+        "p16_cb_r04_c07": "PULLED",
+        "p16_cb_r04_c08": "PUSHED",
+        "p16_cb_r04_c09": "PULLED",
+        "p16_cb_r04_c10": "PULLED",
+        "p16_cb_r04_c11": "PULLED",
+        "p16_cb_r04_c12": "PULLED",
+        "p16_cb_r04_c13": "PULLED",
+        "p16_cb_r04_c14": "PULLED",
+        "p16_cb_r04_c15": "PULLED",
+        "p16_cb_r04_c16": "PULLED",
+        "p16_cb_r04_c17": "PUSHED",
+        "p16_cb_r04_c18": "PUSHED",
+        "p16_cb_r04_c19": "PUSHED",
+        "p14_se_bat_1_hi_voltage": "ON",
+        "p14_se_bat_1_low_voltage": "OFF/RESET",
+        "p14_se_bat_2_hi_voltage": "ON",
+        "p14_se_bat_2_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_3_hi_voltage": "ON",
+        "p14_cdr_bat_3_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_4_hi_voltage": "ON",
+        "p14_cdr_bat_4_low_voltage": "OFF/RESET",
+        "p14_bat_5_normal_se_feed": "OFF/RESET",
+        "p14_bat_5_back_up_cdr_feed": "OFF/RESET",
+        "p14_bat_6_normal_cdr_feed": "OFF/RESET",
+        "p14_bat_6_back_up_se_feed": "OFF/RESET",
+        "p14_des_bats": "CONNECT",
+        "p14_inverter": "OFF",
+        "p14_power_temp_mon": "BAT 1",
+        "p6_ags_status": "OPERATE"
+      }
+    },
+    {
+      "id": "late_profile_14_7a",
+      "description": "Late-mission planning-profile LM solid line126.5..136h; not measured telemetry.",
+      "aggregateCurrentA": 14.7,
+      "initialTotalRemainingAh": 2179,
+      "controls": {
+        "p11_cb_r01_c01": "PULLED",
+        "p11_cb_r01_c02": "PULLED",
+        "p11_cb_r01_c03": "PULLED",
+        "p11_cb_r01_c04": "PULLED",
+        "p11_cb_r01_c05": "PULLED",
+        "p11_cb_r01_c06": "PULLED",
+        "p11_cb_r01_c07": "PULLED",
+        "p11_cb_r01_c08": "PULLED",
+        "p11_cb_r01_c09": "PULLED",
+        "p11_cb_r01_c10": "PULLED",
+        "p11_cb_r01_c11": "PULLED",
+        "p11_cb_r01_c12": "PULLED",
+        "p11_cb_r01_c13": "PULLED",
+        "p11_cb_r01_c14": "PULLED",
+        "p11_cb_r01_c15": "PULLED",
+        "p11_cb_r01_c16": "PULLED",
+        "p11_cb_r01_c17": "PULLED",
+        "p11_cb_r01_c18": "PULLED",
+        "p11_cb_r01_c19": "PULLED",
+        "p11_cb_r02_c01": "PULLED",
+        "p11_cb_r02_c02": "PULLED",
+        "p11_cb_r02_c03": "PULLED",
+        "p11_cb_r02_c04": "PULLED",
+        "p11_cb_r02_c05": "PULLED",
+        "p11_cb_r02_c06": "PULLED",
+        "p11_cb_r02_c07": "PULLED",
+        "p11_cb_r02_c08": "PULLED",
+        "p11_cb_r02_c09": "PULLED",
+        "p11_cb_r02_c10": "PULLED",
+        "p11_cb_r02_c11": "PULLED",
+        "p11_cb_r02_c12": "PULLED",
+        "p11_cb_r02_c13": "PULLED",
+        "p11_cb_r02_c14": "PULLED",
+        "p11_cb_r02_c15": "PULLED",
+        "p11_cb_r02_c16": "PULLED",
+        "p11_cb_r02_c17": "PULLED",
+        "p11_cb_r02_c18": "PULLED",
+        "p11_cb_r02_c19": "PULLED",
+        "p11_cb_r03_c01": "PULLED",
+        "p11_cb_r03_c02": "PULLED",
+        "p11_cb_r03_c03": "PULLED",
+        "p11_cb_r03_c04": "PULLED",
+        "p11_cb_r03_c05": "PULLED",
+        "p11_cb_r03_c06": "PULLED",
+        "p11_cb_r03_c07": "PULLED",
+        "p11_cb_r03_c08": "PULLED",
+        "p11_cb_r03_c09": "PULLED",
+        "p11_cb_r03_c10": "PULLED",
+        "p11_cb_r03_c11": "PULLED",
+        "p11_cb_r03_c12": "PULLED",
+        "p11_cb_r03_c13": "PULLED",
+        "p11_cb_r03_c14": "PULLED",
+        "p11_cb_r03_c15": "PULLED",
+        "p11_cb_r03_c16": "PULLED",
+        "p11_cb_r03_c17": "PULLED",
+        "p11_cb_r03_c18": "PULLED",
+        "p11_cb_r03_c19": "PULLED",
+        "p11_cb_r04_c01": "PULLED",
+        "p11_cb_r04_c02": "PULLED",
+        "p11_cb_r04_c03": "PULLED",
+        "p11_cb_r04_c04": "PULLED",
+        "p11_cb_r04_c05": "PUSHED",
+        "p11_cb_r04_c06": "PULLED",
+        "p11_cb_r04_c07": "PULLED",
+        "p11_cb_r04_c08": "PUSHED",
+        "p11_cb_r04_c09": "PULLED",
+        "p11_cb_r04_c10": "PULLED",
+        "p11_cb_r04_c11": "PULLED",
+        "p11_cb_r04_c12": "PULLED",
+        "p11_cb_r04_c13": "PULLED",
+        "p11_cb_r04_c14": "PULLED",
+        "p11_cb_r04_c15": "PULLED",
+        "p11_cb_r04_c16": "PULLED",
+        "p11_cb_r04_c17": "PULLED",
+        "p11_cb_r04_c18": "PULLED",
+        "p11_cb_r04_c19": "PUSHED",
+        "p11_cb_r04_c20": "PUSHED",
+        "p11_cb_r04_c21": "PUSHED",
+        "p11_cb_r05_c01": "PUSHED",
+        "p11_cb_r05_c02": "PUSHED",
+        "p11_cb_r05_c03": "PUSHED",
+        "p11_cb_r05_c04": "PULLED",
+        "p11_cb_r05_c05": "PULLED",
+        "p11_cb_r05_c06": "PULLED",
+        "p11_cb_r05_c07": "PULLED",
+        "p11_cb_r05_c08": "PULLED",
+        "p11_cb_r05_c09": "PULLED",
+        "p11_cb_r05_c10": "PULLED",
+        "p11_cb_r05_c11": "PULLED",
+        "p16_cb_r01_c01": "PULLED",
+        "p16_cb_r01_c02": "PULLED",
+        "p16_cb_r01_c03": "PULLED",
+        "p16_cb_r01_c04": "PULLED",
+        "p16_cb_r01_c05": "PULLED",
+        "p16_cb_r01_c06": "PULLED",
+        "p16_cb_r01_c07": "PULLED",
+        "p16_cb_r01_c08": "PULLED",
+        "p16_cb_r01_c09": "PULLED",
+        "p16_cb_r01_c10": "PULLED",
+        "p16_cb_r01_c11": "PULLED",
+        "p16_cb_r01_c12": "PULLED",
+        "p16_cb_r01_c13": "PULLED",
+        "p16_cb_r01_c14": "PULLED",
+        "p16_cb_r01_c15": "PULLED",
+        "p16_cb_r01_c16": "PULLED",
+        "p16_cb_r02_c01": "PULLED",
+        "p16_cb_r02_c02": "PULLED",
+        "p16_cb_r02_c03": "PUSHED",
+        "p16_cb_r02_c04": "PULLED",
+        "p16_cb_r02_c05": "PULLED",
+        "p16_cb_r02_c06": "PUSHED",
+        "p16_cb_r02_c07": "PULLED",
+        "p16_cb_r02_c08": "PULLED",
+        "p16_cb_r02_c09": "PULLED",
+        "p16_cb_r02_c10": "PULLED",
+        "p16_cb_r02_c11": "PULLED",
+        "p16_cb_r02_c12": "PULLED",
+        "p16_cb_r02_c13": "PULLED",
+        "p16_cb_r02_c14": "PUSHED",
+        "p16_cb_r02_c15": "PULLED",
+        "p16_cb_r02_c16": "PULLED",
+        "p16_cb_r02_c17": "PULLED",
+        "p16_cb_r02_c18": "PULLED",
+        "p16_cb_r03_c01": "PULLED",
+        "p16_cb_r03_c02": "PULLED",
+        "p16_cb_r03_c03": "PULLED",
+        "p16_cb_r03_c04": "PULLED",
+        "p16_cb_r03_c05": "PULLED",
+        "p16_cb_r03_c06": "PULLED",
+        "p16_cb_r03_c07": "PULLED",
+        "p16_cb_r03_c08": "PULLED",
+        "p16_cb_r03_c09": "PULLED",
+        "p16_cb_r03_c10": "PULLED",
+        "p16_cb_r03_c11": "PULLED",
+        "p16_cb_r03_c12": "PULLED",
+        "p16_cb_r03_c13": "PULLED",
+        "p16_cb_r03_c14": "PULLED",
+        "p16_cb_r03_c15": "PULLED",
+        "p16_cb_r03_c16": "PULLED",
+        "p16_cb_r03_c17": "PULLED",
+        "p16_cb_r03_c18": "PULLED",
+        "p16_cb_r04_c01": "PULLED",
+        "p16_cb_r04_c02": "PULLED",
+        "p16_cb_r04_c03": "PULLED",
+        "p16_cb_r04_c04": "PULLED",
+        "p16_cb_r04_c05": "PULLED",
+        "p16_cb_r04_c06": "PULLED",
+        "p16_cb_r04_c07": "PULLED",
+        "p16_cb_r04_c08": "PUSHED",
+        "p16_cb_r04_c09": "PULLED",
+        "p16_cb_r04_c10": "PULLED",
+        "p16_cb_r04_c11": "PULLED",
+        "p16_cb_r04_c12": "PULLED",
+        "p16_cb_r04_c13": "PULLED",
+        "p16_cb_r04_c14": "PULLED",
+        "p16_cb_r04_c15": "PULLED",
+        "p16_cb_r04_c16": "PULLED",
+        "p16_cb_r04_c17": "PUSHED",
+        "p16_cb_r04_c18": "PUSHED",
+        "p16_cb_r04_c19": "PUSHED",
+        "p14_se_bat_1_hi_voltage": "ON",
+        "p14_se_bat_1_low_voltage": "OFF/RESET",
+        "p14_se_bat_2_hi_voltage": "ON",
+        "p14_se_bat_2_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_3_hi_voltage": "ON",
+        "p14_cdr_bat_3_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_4_hi_voltage": "ON",
+        "p14_cdr_bat_4_low_voltage": "OFF/RESET",
+        "p14_bat_5_normal_se_feed": "OFF/RESET",
+        "p14_bat_5_back_up_cdr_feed": "OFF/RESET",
+        "p14_bat_6_normal_cdr_feed": "OFF/RESET",
+        "p14_bat_6_back_up_se_feed": "OFF/RESET",
+        "p14_des_bats": "CONNECT",
+        "p14_inverter": "OFF",
+        "p14_power_temp_mon": "BAT 1",
+        "p6_ags_status": "OPERATE"
+      }
+    },
+    {
+      "id": "electrical_checkout",
+      "description": "Powered desktop checkout with branch energization and AC inverter; aggregate draw is a calibration scaffold.",
+      "aggregateCurrentA": 12,
+      "initialTotalRemainingAh": 2179,
+      "controls": {
+        "p11_cb_r01_c01": "PUSHED",
+        "p11_cb_r01_c02": "PUSHED",
+        "p11_cb_r01_c03": "PUSHED",
+        "p11_cb_r01_c04": "PUSHED",
+        "p11_cb_r01_c05": "PUSHED",
+        "p11_cb_r01_c06": "PUSHED",
+        "p11_cb_r01_c07": "PUSHED",
+        "p11_cb_r01_c08": "PUSHED",
+        "p11_cb_r01_c09": "PUSHED",
+        "p11_cb_r01_c10": "PUSHED",
+        "p11_cb_r01_c11": "PUSHED",
+        "p11_cb_r01_c12": "PUSHED",
+        "p11_cb_r01_c13": "PUSHED",
+        "p11_cb_r01_c14": "PUSHED",
+        "p11_cb_r01_c15": "PUSHED",
+        "p11_cb_r01_c16": "PUSHED",
+        "p11_cb_r01_c17": "PUSHED",
+        "p11_cb_r01_c18": "PUSHED",
+        "p11_cb_r01_c19": "PUSHED",
+        "p11_cb_r02_c01": "PUSHED",
+        "p11_cb_r02_c02": "PUSHED",
+        "p11_cb_r02_c03": "PUSHED",
+        "p11_cb_r02_c04": "PUSHED",
+        "p11_cb_r02_c05": "PUSHED",
+        "p11_cb_r02_c06": "PUSHED",
+        "p11_cb_r02_c07": "PUSHED",
+        "p11_cb_r02_c08": "PUSHED",
+        "p11_cb_r02_c09": "PUSHED",
+        "p11_cb_r02_c10": "PUSHED",
+        "p11_cb_r02_c11": "PUSHED",
+        "p11_cb_r02_c12": "PUSHED",
+        "p11_cb_r02_c13": "PUSHED",
+        "p11_cb_r02_c14": "PUSHED",
+        "p11_cb_r02_c15": "PUSHED",
+        "p11_cb_r02_c16": "PUSHED",
+        "p11_cb_r02_c17": "PUSHED",
+        "p11_cb_r02_c18": "PUSHED",
+        "p11_cb_r02_c19": "PUSHED",
+        "p11_cb_r03_c01": "PUSHED",
+        "p11_cb_r03_c02": "PUSHED",
+        "p11_cb_r03_c03": "PUSHED",
+        "p11_cb_r03_c04": "PUSHED",
+        "p11_cb_r03_c05": "PUSHED",
+        "p11_cb_r03_c06": "PUSHED",
+        "p11_cb_r03_c07": "PUSHED",
+        "p11_cb_r03_c08": "PUSHED",
+        "p11_cb_r03_c09": "PUSHED",
+        "p11_cb_r03_c10": "PUSHED",
+        "p11_cb_r03_c11": "PUSHED",
+        "p11_cb_r03_c12": "PUSHED",
+        "p11_cb_r03_c13": "PUSHED",
+        "p11_cb_r03_c14": "PUSHED",
+        "p11_cb_r03_c15": "PUSHED",
+        "p11_cb_r03_c16": "PUSHED",
+        "p11_cb_r03_c17": "PUSHED",
+        "p11_cb_r03_c18": "PUSHED",
+        "p11_cb_r03_c19": "PUSHED",
+        "p11_cb_r04_c01": "PUSHED",
+        "p11_cb_r04_c02": "PUSHED",
+        "p11_cb_r04_c03": "PUSHED",
+        "p11_cb_r04_c04": "PUSHED",
+        "p11_cb_r04_c05": "PUSHED",
+        "p11_cb_r04_c06": "PUSHED",
+        "p11_cb_r04_c07": "PUSHED",
+        "p11_cb_r04_c08": "PUSHED",
+        "p11_cb_r04_c09": "PUSHED",
+        "p11_cb_r04_c10": "PUSHED",
+        "p11_cb_r04_c11": "PUSHED",
+        "p11_cb_r04_c12": "PUSHED",
+        "p11_cb_r04_c13": "PUSHED",
+        "p11_cb_r04_c14": "PUSHED",
+        "p11_cb_r04_c15": "PUSHED",
+        "p11_cb_r04_c16": "PUSHED",
+        "p11_cb_r04_c17": "PUSHED",
+        "p11_cb_r04_c18": "PUSHED",
+        "p11_cb_r04_c19": "PUSHED",
+        "p11_cb_r04_c20": "PUSHED",
+        "p11_cb_r04_c21": "PUSHED",
+        "p11_cb_r05_c01": "PUSHED",
+        "p11_cb_r05_c02": "PUSHED",
+        "p11_cb_r05_c03": "PUSHED",
+        "p11_cb_r05_c04": "PUSHED",
+        "p11_cb_r05_c05": "PUSHED",
+        "p11_cb_r05_c06": "PUSHED",
+        "p11_cb_r05_c07": "PUSHED",
+        "p11_cb_r05_c08": "PUSHED",
+        "p11_cb_r05_c09": "PUSHED",
+        "p11_cb_r05_c10": "PUSHED",
+        "p11_cb_r05_c11": "PUSHED",
+        "p16_cb_r01_c01": "PUSHED",
+        "p16_cb_r01_c02": "PUSHED",
+        "p16_cb_r01_c03": "PUSHED",
+        "p16_cb_r01_c04": "PUSHED",
+        "p16_cb_r01_c05": "PUSHED",
+        "p16_cb_r01_c06": "PUSHED",
+        "p16_cb_r01_c07": "PUSHED",
+        "p16_cb_r01_c08": "PUSHED",
+        "p16_cb_r01_c09": "PUSHED",
+        "p16_cb_r01_c10": "PUSHED",
+        "p16_cb_r01_c11": "PUSHED",
+        "p16_cb_r01_c12": "PUSHED",
+        "p16_cb_r01_c13": "PUSHED",
+        "p16_cb_r01_c14": "PUSHED",
+        "p16_cb_r01_c15": "PUSHED",
+        "p16_cb_r01_c16": "PUSHED",
+        "p16_cb_r02_c01": "PUSHED",
+        "p16_cb_r02_c02": "PUSHED",
+        "p16_cb_r02_c03": "PUSHED",
+        "p16_cb_r02_c04": "PUSHED",
+        "p16_cb_r02_c05": "PUSHED",
+        "p16_cb_r02_c06": "PUSHED",
+        "p16_cb_r02_c07": "PUSHED",
+        "p16_cb_r02_c08": "PUSHED",
+        "p16_cb_r02_c09": "PUSHED",
+        "p16_cb_r02_c10": "PUSHED",
+        "p16_cb_r02_c11": "PUSHED",
+        "p16_cb_r02_c12": "PUSHED",
+        "p16_cb_r02_c13": "PUSHED",
+        "p16_cb_r02_c14": "PUSHED",
+        "p16_cb_r02_c15": "PUSHED",
+        "p16_cb_r02_c16": "PUSHED",
+        "p16_cb_r02_c17": "PUSHED",
+        "p16_cb_r02_c18": "PUSHED",
+        "p16_cb_r03_c01": "PUSHED",
+        "p16_cb_r03_c02": "PUSHED",
+        "p16_cb_r03_c03": "PUSHED",
+        "p16_cb_r03_c04": "PUSHED",
+        "p16_cb_r03_c05": "PUSHED",
+        "p16_cb_r03_c06": "PUSHED",
+        "p16_cb_r03_c07": "PUSHED",
+        "p16_cb_r03_c08": "PUSHED",
+        "p16_cb_r03_c09": "PUSHED",
+        "p16_cb_r03_c10": "PUSHED",
+        "p16_cb_r03_c11": "PUSHED",
+        "p16_cb_r03_c12": "PUSHED",
+        "p16_cb_r03_c13": "PUSHED",
+        "p16_cb_r03_c14": "PUSHED",
+        "p16_cb_r03_c15": "PUSHED",
+        "p16_cb_r03_c16": "PUSHED",
+        "p16_cb_r03_c17": "PUSHED",
+        "p16_cb_r03_c18": "PUSHED",
+        "p16_cb_r04_c01": "PUSHED",
+        "p16_cb_r04_c02": "PUSHED",
+        "p16_cb_r04_c03": "PUSHED",
+        "p16_cb_r04_c04": "PUSHED",
+        "p16_cb_r04_c05": "PUSHED",
+        "p16_cb_r04_c06": "PUSHED",
+        "p16_cb_r04_c07": "PUSHED",
+        "p16_cb_r04_c08": "PUSHED",
+        "p16_cb_r04_c09": "PUSHED",
+        "p16_cb_r04_c10": "PUSHED",
+        "p16_cb_r04_c11": "PUSHED",
+        "p16_cb_r04_c12": "PUSHED",
+        "p16_cb_r04_c13": "PUSHED",
+        "p16_cb_r04_c14": "PUSHED",
+        "p16_cb_r04_c15": "PUSHED",
+        "p16_cb_r04_c16": "PUSHED",
+        "p16_cb_r04_c17": "PUSHED",
+        "p16_cb_r04_c18": "PUSHED",
+        "p16_cb_r04_c19": "PUSHED",
+        "p14_se_bat_1_hi_voltage": "ON",
+        "p14_se_bat_1_low_voltage": "OFF/RESET",
+        "p14_se_bat_2_hi_voltage": "ON",
+        "p14_se_bat_2_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_3_hi_voltage": "ON",
+        "p14_cdr_bat_3_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_4_hi_voltage": "ON",
+        "p14_cdr_bat_4_low_voltage": "OFF/RESET",
+        "p14_bat_5_normal_se_feed": "OFF/RESET",
+        "p14_bat_5_back_up_cdr_feed": "OFF/RESET",
+        "p14_bat_6_normal_cdr_feed": "OFF/RESET",
+        "p14_bat_6_back_up_se_feed": "OFF/RESET",
+        "p14_des_bats": "CONNECT",
+        "p14_inverter": "1",
+        "p14_power_temp_mon": "BAT 1",
+        "p6_ags_status": "OPERATE"
+      }
+    },
+    {
+      "id": "sourced_equipment_checkout",
+      "description": "Partial source-valued equipment checkout. Known loads replace aggregate calibration; unknown equipment draw remains excluded. Not a flown configuration.",
+      "loadModel": "sourced_components",
+      "aggregateCurrentA": 0,
+      "initialTotalRemainingAh": 2179,
+      "controls": {
+        "p11_cb_r01_c01": "PUSHED",
+        "p11_cb_r01_c02": "PUSHED",
+        "p11_cb_r01_c03": "PUSHED",
+        "p11_cb_r01_c04": "PUSHED",
+        "p11_cb_r01_c05": "PUSHED",
+        "p11_cb_r01_c06": "PUSHED",
+        "p11_cb_r01_c07": "PUSHED",
+        "p11_cb_r01_c08": "PUSHED",
+        "p11_cb_r01_c09": "PUSHED",
+        "p11_cb_r01_c10": "PUSHED",
+        "p11_cb_r01_c11": "PUSHED",
+        "p11_cb_r01_c12": "PUSHED",
+        "p11_cb_r01_c13": "PUSHED",
+        "p11_cb_r01_c14": "PUSHED",
+        "p11_cb_r01_c15": "PUSHED",
+        "p11_cb_r01_c16": "PUSHED",
+        "p11_cb_r01_c17": "PUSHED",
+        "p11_cb_r01_c18": "PUSHED",
+        "p11_cb_r01_c19": "PUSHED",
+        "p11_cb_r02_c01": "PUSHED",
+        "p11_cb_r02_c02": "PUSHED",
+        "p11_cb_r02_c03": "PUSHED",
+        "p11_cb_r02_c04": "PUSHED",
+        "p11_cb_r02_c05": "PUSHED",
+        "p11_cb_r02_c06": "PUSHED",
+        "p11_cb_r02_c07": "PUSHED",
+        "p11_cb_r02_c08": "PUSHED",
+        "p11_cb_r02_c09": "PUSHED",
+        "p11_cb_r02_c10": "PUSHED",
+        "p11_cb_r02_c11": "PUSHED",
+        "p11_cb_r02_c12": "PUSHED",
+        "p11_cb_r02_c13": "PUSHED",
+        "p11_cb_r02_c14": "PUSHED",
+        "p11_cb_r02_c15": "PUSHED",
+        "p11_cb_r02_c16": "PUSHED",
+        "p11_cb_r02_c17": "PUSHED",
+        "p11_cb_r02_c18": "PUSHED",
+        "p11_cb_r02_c19": "PUSHED",
+        "p11_cb_r03_c01": "PUSHED",
+        "p11_cb_r03_c02": "PUSHED",
+        "p11_cb_r03_c03": "PUSHED",
+        "p11_cb_r03_c04": "PUSHED",
+        "p11_cb_r03_c05": "PUSHED",
+        "p11_cb_r03_c06": "PUSHED",
+        "p11_cb_r03_c07": "PUSHED",
+        "p11_cb_r03_c08": "PUSHED",
+        "p11_cb_r03_c09": "PUSHED",
+        "p11_cb_r03_c10": "PUSHED",
+        "p11_cb_r03_c11": "PUSHED",
+        "p11_cb_r03_c12": "PUSHED",
+        "p11_cb_r03_c13": "PUSHED",
+        "p11_cb_r03_c14": "PUSHED",
+        "p11_cb_r03_c15": "PUSHED",
+        "p11_cb_r03_c16": "PUSHED",
+        "p11_cb_r03_c17": "PUSHED",
+        "p11_cb_r03_c18": "PUSHED",
+        "p11_cb_r03_c19": "PUSHED",
+        "p11_cb_r04_c01": "PUSHED",
+        "p11_cb_r04_c02": "PUSHED",
+        "p11_cb_r04_c03": "PUSHED",
+        "p11_cb_r04_c04": "PUSHED",
+        "p11_cb_r04_c05": "PUSHED",
+        "p11_cb_r04_c06": "PUSHED",
+        "p11_cb_r04_c07": "PUSHED",
+        "p11_cb_r04_c08": "PUSHED",
+        "p11_cb_r04_c09": "PUSHED",
+        "p11_cb_r04_c10": "PUSHED",
+        "p11_cb_r04_c11": "PUSHED",
+        "p11_cb_r04_c12": "PUSHED",
+        "p11_cb_r04_c13": "PUSHED",
+        "p11_cb_r04_c14": "PUSHED",
+        "p11_cb_r04_c15": "PUSHED",
+        "p11_cb_r04_c16": "PUSHED",
+        "p11_cb_r04_c17": "PUSHED",
+        "p11_cb_r04_c18": "PUSHED",
+        "p11_cb_r04_c19": "PUSHED",
+        "p11_cb_r04_c20": "PUSHED",
+        "p11_cb_r04_c21": "PUSHED",
+        "p11_cb_r05_c01": "PUSHED",
+        "p11_cb_r05_c02": "PUSHED",
+        "p11_cb_r05_c03": "PUSHED",
+        "p11_cb_r05_c04": "PUSHED",
+        "p11_cb_r05_c05": "PUSHED",
+        "p11_cb_r05_c06": "PUSHED",
+        "p11_cb_r05_c07": "PUSHED",
+        "p11_cb_r05_c08": "PUSHED",
+        "p11_cb_r05_c09": "PUSHED",
+        "p11_cb_r05_c10": "PUSHED",
+        "p11_cb_r05_c11": "PUSHED",
+        "p16_cb_r01_c01": "PUSHED",
+        "p16_cb_r01_c02": "PUSHED",
+        "p16_cb_r01_c03": "PUSHED",
+        "p16_cb_r01_c04": "PUSHED",
+        "p16_cb_r01_c05": "PUSHED",
+        "p16_cb_r01_c06": "PUSHED",
+        "p16_cb_r01_c07": "PUSHED",
+        "p16_cb_r01_c08": "PUSHED",
+        "p16_cb_r01_c09": "PUSHED",
+        "p16_cb_r01_c10": "PUSHED",
+        "p16_cb_r01_c11": "PUSHED",
+        "p16_cb_r01_c12": "PUSHED",
+        "p16_cb_r01_c13": "PUSHED",
+        "p16_cb_r01_c14": "PUSHED",
+        "p16_cb_r01_c15": "PUSHED",
+        "p16_cb_r01_c16": "PUSHED",
+        "p16_cb_r02_c01": "PUSHED",
+        "p16_cb_r02_c02": "PUSHED",
+        "p16_cb_r02_c03": "PUSHED",
+        "p16_cb_r02_c04": "PUSHED",
+        "p16_cb_r02_c05": "PUSHED",
+        "p16_cb_r02_c06": "PUSHED",
+        "p16_cb_r02_c07": "PUSHED",
+        "p16_cb_r02_c08": "PUSHED",
+        "p16_cb_r02_c09": "PUSHED",
+        "p16_cb_r02_c10": "PUSHED",
+        "p16_cb_r02_c11": "PUSHED",
+        "p16_cb_r02_c12": "PUSHED",
+        "p16_cb_r02_c13": "PUSHED",
+        "p16_cb_r02_c14": "PUSHED",
+        "p16_cb_r02_c15": "PUSHED",
+        "p16_cb_r02_c16": "PUSHED",
+        "p16_cb_r02_c17": "PUSHED",
+        "p16_cb_r02_c18": "PUSHED",
+        "p16_cb_r03_c01": "PUSHED",
+        "p16_cb_r03_c02": "PUSHED",
+        "p16_cb_r03_c03": "PUSHED",
+        "p16_cb_r03_c04": "PUSHED",
+        "p16_cb_r03_c05": "PUSHED",
+        "p16_cb_r03_c06": "PUSHED",
+        "p16_cb_r03_c07": "PUSHED",
+        "p16_cb_r03_c08": "PUSHED",
+        "p16_cb_r03_c09": "PUSHED",
+        "p16_cb_r03_c10": "PUSHED",
+        "p16_cb_r03_c11": "PUSHED",
+        "p16_cb_r03_c12": "PUSHED",
+        "p16_cb_r03_c13": "PUSHED",
+        "p16_cb_r03_c14": "PUSHED",
+        "p16_cb_r03_c15": "PUSHED",
+        "p16_cb_r03_c16": "PUSHED",
+        "p16_cb_r03_c17": "PUSHED",
+        "p16_cb_r03_c18": "PUSHED",
+        "p16_cb_r04_c01": "PUSHED",
+        "p16_cb_r04_c02": "PUSHED",
+        "p16_cb_r04_c03": "PUSHED",
+        "p16_cb_r04_c04": "PUSHED",
+        "p16_cb_r04_c05": "PUSHED",
+        "p16_cb_r04_c06": "PUSHED",
+        "p16_cb_r04_c07": "PUSHED",
+        "p16_cb_r04_c08": "PUSHED",
+        "p16_cb_r04_c09": "PUSHED",
+        "p16_cb_r04_c10": "PUSHED",
+        "p16_cb_r04_c11": "PUSHED",
+        "p16_cb_r04_c12": "PUSHED",
+        "p16_cb_r04_c13": "PUSHED",
+        "p16_cb_r04_c14": "PUSHED",
+        "p16_cb_r04_c15": "PUSHED",
+        "p16_cb_r04_c16": "PUSHED",
+        "p16_cb_r04_c17": "PUSHED",
+        "p16_cb_r04_c18": "PUSHED",
+        "p16_cb_r04_c19": "PUSHED",
+        "p14_se_bat_1_hi_voltage": "ON",
+        "p14_se_bat_1_low_voltage": "OFF/RESET",
+        "p14_se_bat_2_hi_voltage": "ON",
+        "p14_se_bat_2_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_3_hi_voltage": "ON",
+        "p14_cdr_bat_3_low_voltage": "OFF/RESET",
+        "p14_cdr_bat_4_hi_voltage": "ON",
+        "p14_cdr_bat_4_low_voltage": "OFF/RESET",
+        "p14_bat_5_normal_se_feed": "OFF/RESET",
+        "p14_bat_5_back_up_cdr_feed": "OFF/RESET",
+        "p14_bat_6_normal_cdr_feed": "OFF/RESET",
+        "p14_bat_6_back_up_se_feed": "OFF/RESET",
+        "p14_des_bats": "CONNECT",
+        "p14_inverter": "1",
+        "p14_power_temp_mon": "BAT 1",
+        "p6_ags_status": "OPERATE",
+        "p12_s_band_xmtr_rcvr": "PRIM",
+        "p12_pwr_ampl": "PRIM",
+        "ordeal_earth_lunar": "PWR OFF"
+      }
+    }
+  ],
+  "observedConstraints": [
+    {
+      "id": "initial_powerdown",
+      "kind": "reported operating aggregate",
+      "currentA": 30,
+      "powerW": 900,
+      "source": "Mission Report6.2 PDF45 printed6-1"
+    },
+    {
+      "id": "minimum_powerdown",
+      "kind": "reported operating aggregate",
+      "currentA": 12,
+      "powerW": 360,
+      "source": "Mission Report6.2 PDF45 printed6-1"
+    },
+    {
+      "id": "remaining_at_undocking",
+      "kind": "independent total-capacity endpoint",
+      "remainingAh": 410,
+      "source": "Mission Report7.2.5 PDF63 printed7-7",
+      "proposedToleranceAh": 50,
+      "toleranceNote": "Engineering review tolerance for coarse aggregate model; not a published NASA acceptance tolerance"
+    }
+  ],
+  "planningProfile": [
+    {
+      "getHours": 122,
+      "currentA": 11.9
+    },
+    {
+      "getHours": 126.5,
+      "currentA": 14.7
+    },
+    {
+      "getHours": 136,
+      "currentA": 40.7
+    },
+    {
+      "getHours": 142.75,
+      "currentA": 0
+    }
+  ],
+  "validationGate": "OPEN - no full flown load timeline and no independent fullmission agreement demonstrated",
+  "equipmentLoads": [
+    {
+      "id": "sband_tr_prim",
+      "label": "S-band transmitter-receiver PRIM",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_s_band_xmtr_rcvr",
+          "allowedPositions": [
+            "PRIM"
+          ]
+        }
+      ],
+      "powerW": 36.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. The 36 W is the combined transmitter-receiver equipment requirement, counted once for the selected supply.",
+      "evidenceIds": [
+        "comms_input_power",
+        "sband_tr_supply"
+      ]
+    },
+    {
+      "id": "sband_tr_sec",
+      "label": "S-band transmitter-receiver SEC",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c11"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_s_band_xmtr_rcvr",
+          "allowedPositions": [
+            "SEC"
+          ]
+        }
+      ],
+      "powerW": 36.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. The 36 W is the combined transmitter-receiver equipment requirement, counted once for the selected supply.",
+      "evidenceIds": [
+        "comms_input_power",
+        "sband_tr_supply"
+      ]
+    },
+    {
+      "id": "sband_pa_prim",
+      "label": "S-band power amplifier and diplexer PRIM",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c05"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_pwr_ampl",
+          "allowedPositions": [
+            "PRIM"
+          ]
+        },
+        {
+          "controlId": "p12_s_band_xmtr_rcvr",
+          "allowedPositions": [
+            "PRIM",
+            "SEC"
+          ]
+        }
+      ],
+      "powerW": 72.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. 72 W is electrical input; RF output wattages are not substituted. Enable follows T/R selector position; internal cross-equipment loss-of-supply behavior is not independently quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "sband_pa_supply",
+        "sband_tr_supply"
+      ]
+    },
+    {
+      "id": "sband_pa_sec",
+      "label": "S-band power amplifier and diplexer SEC",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c12"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_pwr_ampl",
+          "allowedPositions": [
+            "SEC"
+          ]
+        },
+        {
+          "controlId": "p12_s_band_xmtr_rcvr",
+          "allowedPositions": [
+            "PRIM",
+            "SEC"
+          ]
+        }
+      ],
+      "powerW": 72.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. 72 W is electrical input; RF output wattages are not substituted. Enable follows T/R selector position; internal cross-equipment loss-of-supply behavior is not independently quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "sband_pa_supply",
+        "sband_tr_supply"
+      ]
+    },
+    {
+      "id": "sband_antenna_auto_dc",
+      "label": "S-band antenna electronics AUTO DC",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c07"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_track_mode",
+          "allowedPositions": [
+            "AUTO"
+          ]
+        }
+      ],
+      "powerW": 0.7,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Each supply is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "antenna_supply"
+      ]
+    },
+    {
+      "id": "sband_antenna_auto_ac",
+      "label": "S-band antenna electronics AUTO AC",
+      "busId": "AC_B",
+      "breakerIds": [
+        "p11_cb_r01_c03"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_track_mode",
+          "allowedPositions": [
+            "AUTO"
+          ]
+        }
+      ],
+      "powerW": 4.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. AC watts are real-power equivalent in the ideal inverter model; reactive current and power factor are not asserted. Each supply is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "antenna_supply"
+      ]
+    },
+    {
+      "id": "sband_antenna_slew_dc",
+      "label": "S-band antenna electronics SLEW DC",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c07"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_track_mode",
+          "allowedPositions": [
+            "SLEW"
+          ]
+        }
+      ],
+      "powerW": 7.6,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Each supply is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "antenna_supply"
+      ]
+    },
+    {
+      "id": "sband_antenna_slew_ac",
+      "label": "S-band antenna electronics SLEW AC",
+      "busId": "AC_B",
+      "breakerIds": [
+        "p11_cb_r01_c03"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_track_mode",
+          "allowedPositions": [
+            "SLEW"
+          ]
+        }
+      ],
+      "powerW": 27.9,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. AC watts are real-power equivalent in the ideal inverter model; reactive current and power factor are not asserted. Each supply is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "antenna_supply"
+      ]
+    },
+    {
+      "id": "vhf_a_receiver",
+      "label": "VHF A receiver",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c14"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_vhf_a_rcvr",
+          "allowedPositions": [
+            "ON"
+          ]
+        }
+      ],
+      "powerW": 1.2,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "vhf_a_supply"
+      ]
+    },
+    {
+      "id": "vhf_b_receiver",
+      "label": "VHF B receiver",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c04"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_vhf_b_rcvr",
+          "allowedPositions": [
+            "ON"
+          ]
+        }
+      ],
+      "powerW": 1.2,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "vhf_b_biomed_supply"
+      ]
+    },
+    {
+      "id": "premodulation_processor",
+      "label": "Premodulation processor",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c08"
+      ],
+      "switchRequirements": [],
+      "powerW": 4.3,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. On-state is represented by its energized, closed supply branch; no unestablished route, volume or display-selector power gate is invented.",
+      "evidenceIds": [
+        "comms_input_power",
+        "comms_branch_mapping"
+      ]
+    },
+    {
+      "id": "cdr_audio_center",
+      "label": "CDR audio center",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c15"
+      ],
+      "switchRequirements": [],
+      "powerW": 4.8,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. On-state is represented by its energized, closed supply branch; no unestablished route, volume or display-selector power gate is invented.",
+      "evidenceIds": [
+        "comms_input_power",
+        "comms_branch_mapping"
+      ]
+    },
+    {
+      "id": "lmp_audio_center",
+      "label": "LMP audio center",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c02"
+      ],
+      "switchRequirements": [],
+      "powerW": 4.8,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. On-state is represented by its energized, closed supply branch; no unestablished route, volume or display-selector power gate is invented.",
+      "evidenceIds": [
+        "comms_input_power",
+        "comms_branch_mapping"
+      ]
+    },
+    {
+      "id": "communications_displays",
+      "label": "Communications displays",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c01"
+      ],
+      "switchRequirements": [],
+      "powerW": 3.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. On-state is represented by its energized, closed supply branch; no unestablished route, volume or display-selector power gate is invented.",
+      "evidenceIds": [
+        "comms_input_power",
+        "comms_branch_mapping"
+      ]
+    },
+    {
+      "id": "digital_uplink_data",
+      "label": "Digital uplink assembly data",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c10"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_updata_link",
+          "allowedPositions": [
+            "DATA"
+          ]
+        }
+      ],
+      "powerW": 12.5,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "dua_supply"
+      ]
+    },
+    {
+      "id": "digital_uplink_voice_backup",
+      "label": "Digital uplink assembly voice backup",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c10"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_updata_link",
+          "allowedPositions": [
+            "VOICE-BU"
+          ]
+        }
+      ],
+      "powerW": 2.5,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "dua_supply"
+      ]
+    },
+    {
+      "id": "selected_biomedical_sensors",
+      "label": "Selected crew biomedical sensors",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c08"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_telemetry_biomed",
+          "allowedPositions": [
+            "LEFT",
+            "RIGHT"
+          ]
+        }
+      ],
+      "powerW": 3.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. One selected suit source is counted; disconnected wearable interfaces and physiological sensor behavior are outside this partial model.",
+      "evidenceIds": [
+        "comms_input_power",
+        "vhf_b_biomed_supply"
+      ]
+    },
+    {
+      "id": "ordeal_dc",
+      "label": "ORDEAL DC",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r02_c16"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "ordeal_earth_lunar",
+          "allowedPositions": [
+            "EARTH",
+            "LUNAR"
+          ]
+        }
+      ],
+      "powerW": 4.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Brightness-dependent decomposition is unavailable; 4 W represents the listed equipment requirement. Each input is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "ordeal_power",
+        "ordeal_supply"
+      ]
+    },
+    {
+      "id": "ordeal_ac",
+      "label": "ORDEAL AC",
+      "busId": "AC_B",
+      "breakerIds": [
+        "p11_cb_r01_c04"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "ordeal_earth_lunar",
+          "allowedPositions": [
+            "EARTH",
+            "LUNAR"
+          ]
+        }
+      ],
+      "powerW": 4.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Brightness-dependent decomposition is unavailable; 4 W represents the listed equipment requirement. Source specifies minimum 0.9 power factor; runtime consumes 4 W real-power equivalent through an ideal inverter and makes no RMS or reactive-current claim. Each input is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "ordeal_power",
+        "ordeal_supply"
+      ]
+    },
+    {
+      "id": "eps_displays",
+      "label": "EPS displays",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c08"
+      ],
+      "switchRequirements": [],
+      "powerW": 2.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Display branch powered state is used; selector position is not treated as an on/off switch.",
+      "evidenceIds": [
+        "eps_input_power",
+        "eps_display_supply"
+      ]
+    }
+  ],
+  "equipmentLoadEvidence": {
+    "path": "reference/electrical-load-evidence.json",
+    "sha256": "5c2cac8b74c6c3fa1e66ab9ebb99d15b19d129d81132278e068a56f80cf28e40",
+    "runtimeLoadCount": 20,
+    "completeVehicleLoadCoverage": false
+  }
+}

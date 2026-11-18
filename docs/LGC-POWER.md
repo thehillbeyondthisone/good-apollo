@@ -1,0 +1,28 @@
+# Lunar Guidance Computer power interruption
+
+Panel 11 breaker **PGNS LGC/DSKY** (4CB122) supplies the computer from the CDR DC bus. The LGC in turn supplies part of the DSKY's power and its timing signal. The branch also feeds parts of the power and servo assembly. The LM-7 handbook identifies a 7.5 A breaker. Combined operating draw requires separate evidence. The IMU standby heater and the IMU operate supply have their own breakers. [Apollo Operations Handbook, PGNS power distribution, §2.1.3.6.1](https://www.ibiblio.org/apollo/Documents/LMA790-3-LM-2.1.pdf) · [LM-7 and subsequent, Vol. I, Fig. 2.5-2 and breaker table (PDF pp. 381–383, 776)](https://apollojournals.org/afj/ap13fj/pdf-hr/a13-lm-aoh-v1-lm7-subs-300ppi.pdf#page=776) · [Local circuit mapping](../reference/electrical.json)
+
+## Evidence for the power cycle
+
+The Apollo 13 flight data file's PGNS malfunction flowchart directs the crew to open and reclose the panel 11 LGC/DSKY breaker when attempting to restore computer power. [Apollo 13 LM Malfunction Procedures, LGC and RESTART indications](https://www.ibiblio.org/apollo/Documents/Apollo%2013%20Malfunction%20Procedures.pdf)
+
+MIT exercised a Block II computer (C200) through more than 10,000 power cycles. The erasable memory checks found no failures attributable to the interruption. The report also observed unit-specific CDU counter changes at turn-on. The contents of ferrite cores can survive power removal even though live CPU state is lost. In the address map, octal `00000–00007` represent central flip-flop registers. Core storage begins at `00010`, including the words reserved for interrupt saves. [MIT Digital Development Memo 382, pp. 1–2](https://www.ibiblio.org/apollo/Documents/dd_memo_382.pdf) · [MIT computer subsystem final report R-700, Table 3-IV and §3.5.1](https://www.ibiblio.org/apollo/Documents/R-700.pdf)
+
+Block II power alarms can initiate a hardware restart, which clears output and interrupt state and enters the rope at octal `04000`. The LM131R1 listing shows that this entry reaches `GOPROG`, increments the software restart counter and processes eligible restart groups. The R-700 report gives 150–470 μs for the voltage alarm window and a nominal 250 ms inhibit after the oscillator starts. Standby retains scaler power with the switchable logic supplies off. The hardware RESTART lamp at full power restoration can depend on circuit state and unit characteristics. [MIT R-700, §3.6, printed p. 96](https://www.ibiblio.org/apollo/Documents/R-700.pdf) · [MIT Digital Development Memo 340](https://www.ibiblio.org/apollo/Documents/dd_memo_340.pdf) · [MIT Digital Development Memo 363, pp. 1–2](https://www.ibiblio.org/apollo/Documents/dd_memo_363.pdf) · [LM131R1 interrupt lead-in, p. 155](https://www.ibiblio.org/apollo/listings/LM131R1/INTERRUPT_LEAD_INS.agc.html) · [LM131R1 restart listing, p. 217](https://www.ibiblio.org/apollo/listings/LM131R1/FRESH_START_AND_RESTART.agc.html)
+
+## Simulator behavior
+
+The default stepped backend follows the modeled EPS state of 4CB122. Opening the breaker or removing its bus supply halts stepping the LGC and blanks the DSKY. Key presses made with the DSKY unavailable are ignored. The shared simulation clock and EPS accounting continue. On supply restoration the nominal 250 ms inhibit must elapse before the rope runs. The native adapter retains core words from bank 0 offset octal `0010` onward and all of banks 1–7. It resets transient state to upstream startup defaults and runs the actual LM131R1 rope from `04000`. The normal powered checkout starts with the LGC already energized.
+
+This models full supply interruption at the EPS state boundary. The fixed recovery interval approximates oscillator startup and the native reset approximates the hardware sequence. Brief voltage excursions, rail rise and fall, unit-specific CDU changes, and the hardware RESTART lamp's exact turn-on timing remain open. Standby keeps the upstream computer's own behavior. The external real-time backend provides the independent CPU reference with display/input gating and has no breaker-driven CPU power cycle.
+
+## Apollo 13 milestones
+
+| GET | Recorded guidance state |
+| --- | --- |
+| 057:51:17–057:51:50 | CAPCOM instructs the crew to close the panel 11 LGC/DSKY breaker for activation. [Air-to-ground transcript, day 3](https://www.apollojournals.org/afj/ap13fj/09day3-lifeboat.html) |
+| 082:06:30–082:07:05 | The crew reads back LGC/DSKY and IMU OPERATE open, with IMU STANDBY left closed for heaters. CAPCOM confirms the configuration. These are procedure/readback times. [Air-to-ground transcript, day 4](https://www.apollojournals.org/afj/ap13fj/13day4-leaving-moon.html) |
+| About 133:30 | The mission report places PGNS reactivation at 133½ hours. CAPCOM had authorized early LM power-up at 133:22:08. The exact LGC/DSKY breaker closure time is unresolved. [Apollo 13 Mission Report MSC-02680, §6.4.3, printed p. 6-7](https://apollojournals.org/alsj/a13/A13_MissionReport.pdf) · [Air-to-ground transcript, day 6](https://www.apollojournals.org/afj/ap13fj/25day6-thelastcoursecorrection.html) |
+| 135:17:38 | Mission Control requests the LGC erasable dump using Verb 74 before the planned update. [Air-to-ground transcript, day 6](https://www.apollojournals.org/afj/ap13fj/25day6-thelastcoursecorrection.html) |
+
+These milestones establish the guidance configuration and later use of the reactivated computer. A flight replay also needs the pre-interruption erasable contents, external guidance inputs and the corresponding electrical and mission states. The simulator starts from its checkout state, and GET labels in the switching sequence do not synchronize the LGC clock.

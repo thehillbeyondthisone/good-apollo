@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "realUpstreamCli": true,
+  "ropeSha256": "ae4f9e51ac9491c3da6462233936daeffc16277cd302c43a70b8459ebcd6cca5",
+  "flightPadloadApplied": false,
+  "port": 19857,
+  "args": [
+    "--exec=D:\\apollo-ref\\build\\agc\\LM131R1\\MAIN.agc.bin",
+    "--port=19857",
+    "--nodebug",
+    "--no-resume",
+    "--quiet",
+    "--dump-time=86400",
+    "--cd=D:\\apollo-ref\\build\\agc\\runtime\\protocol-test-5JUxTD"
+  ],
+  "runtime": "D:\\apollo-ref\\build\\agc\\runtime\\protocol-test-5JUxTD",
+  "checks": {
+    "baselineReleased": true,
+    "pressActiveLow": true,
+    "onlyProBitChangesOnPress": true,
+    "releaseRestoresBaseline": true,
+    "observerSnapshotsHaveNoMaskPackets": true
+  },
+  "baseline": {
+    "value": 32767,
+    "valueOctal": "77777",
+    "packets": [
+      {
+        "channel": 8,
+        "value": 2048,
+        "uBit": false
+      },
+      {
+        "channel": 8,
+        "value": 24832,
+        "uBit": false
+      },
+      {
+        "channel": 9,
+        "value": 8192,
+        "uBit": false
+      },
+      {
+        "channel": 11,
+        "value": 64,
+        "uBit": false
+      },
+      {
+        "channel": 24,
+        "value": 16383,
+        "uBit": false
+      },
+      {
+        "channel": 25,
+        "value": 32767,
+        "uBit": false
+      },
+      {
+        "channel": 26,
+        "value": 32767,
+        "uBit": false
+      }
+    ]
+  },
+  "pressed": {
+    "value": 24575,
+    "valueOctal": "57777",
+    "packets": [
+      {
+        "channel": 8,
+        "value": 2048,
+        "uBit": false
+      },
+      {
+        "channel": 8,
+        "value": 22528,
+        "uBit": false
+      },
+      {
+        "channel": 8,
+        "value": 24832,
+        "uBit": false
+      },
+      {
+        "channel": 9,
+        "value": 8192,
+        "uBit": false
+      },
+      {
+        "channel": 10,
+        "value": 1,
+        "uBit": false
+      },
+      {
+        "channel": 11,
+        "value": 64,
+        "uBit": false
+      },
+      {
+        "channel": 24,
+        "value": 16383,
+        "uBit": false
+      },
+      {
+        "channel": 25,
+        "value": 32767,
+        "uBit": false
+      },
+      {
+        "channel": 26,
+        "value": 24575,
+        "uBit": false
+      }
+    ]
+  },
+  "released": {
+    "value": 32767,
+    "valueOctal": "77777",
+    "packets": [
+      {
+        "channel": 8,
+        "value": 2048,
+        "uBit": false
+      },
+      {
+        "channel": 8,
+        "value": 22528,
+        "uBit": false
+      },
+      {
+        "channel": 8,
+        "value": 24832,
+        "uBit": false
+      },
+      {
+        "channel": 9,
+        "value": 8192,
+        "uBit": false
+      },
+      {
+        "channel": 10,
+        "value": 1,
+        "uBit": false
+      },
+      {
+        "channel": 11,
+        "value": 64,
+        "uBit": false
+      },
+      {
+        "channel": 24,
+        "value": 16383,
+        "uBit": false
+      },
+      {
+        "channel": 25,
+        "value": 32767,
+        "uBit": false
+      },
+      {
+        "channel": 26,
+        "value": 32767,
+        "uBit": false
+      }
+    ]
+  }
+}

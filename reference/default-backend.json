@@ -1,0 +1,9 @@
+{
+	"automaticSharedClock": true,
+	"checks": 10,
+	"defaultBackend": "stepped",
+	"failures": [],
+	"headsetTested": false,
+	"result": "PASS",
+	"schemaVersion": 1
+}

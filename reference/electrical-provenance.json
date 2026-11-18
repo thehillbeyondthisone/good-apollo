@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "sourceHashes": "Local integrity receipts, not publisher checksums",
+  "sourceDocuments": [
+    {
+      "title": "Apollo Operations Handbook, LM 7 and Subsequent, Vol 1 Subsystems Data (300 ppi) - the Aquarius-specific handbook",
+      "url": "https://apollojournals.org/afj/ap13fj/pdf-hr/a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+      "path": "D:\\apollo-ref\\lm-systems\\a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+      "bytes": 670840987,
+      "sha256": "1623f208023279cbe7de6aea14e95bd95fbc8c4e9d51791ff55e68ee04d338f2"
+    },
+    {
+      "title": "Flight Director log: LM current (amps) profile",
+      "url": "https://apollojournals.org/afj/ap13fj/pdf-hr/fdlog/09-a13-fdlog-lm-current-profile.pdf",
+      "path": "D:\\apollo-ref\\a13-procedures\\09-a13-fdlog-lm-current-profile.pdf",
+      "bytes": 3390045,
+      "sha256": "9d19d13411af0a5e73d4bde197e1e1b2ece8cf244dc2ad5b5a41521e7a4459d4"
+    },
+    {
+      "title": "Apollo 13 Mission Report MSC-02680 (hi-res)",
+      "url": "https://apollojournals.org/afj/ap13fj/pdf-hr/43-a13-mission-report.pdf",
+      "path": "D:\\apollo-ref\\a13-mission-data\\43-a13-mission-report.pdf",
+      "bytes": 63690215,
+      "sha256": "59ac80a7f8f324ee8bd548174ba51ab78ca371ea6321368dbf93b85311ede561"
+    },
+    {
+      "title": "Apollo 13 Mission Report (small copy for text search)",
+      "url": "https://apollojournals.org/afj/ap13fj/pdf/a13-mission-report-197007.pdf",
+      "path": "D:\\apollo-ref\\a13-mission-data\\a13-mission-report-197007.pdf",
+      "bytes": 8215483,
+      "sha256": "22d84aa2a6ea0f61956c88d5dcb629754a8c1c9472bce1ff3e639757088fa1fb"
+    }
+  ],
+  "electricalDefinitionSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+  "frozenControlsSha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "extraction": "Manual visual transcription of AOH Fig2.5-2 ratings/source buses, battery text, control tables and Mission Report electrical sections; scope and uncertainty in docs/ELECTRICAL.md",
+  "ratingsAreOperatingLoads": false,
+  "fullFlightValidationPassed": false,
+  "reportFiles": [
+    "output/electrical-core-tests.json",
+    "output/electrical-flight-residual.json",
+    "output/electrical-reported-budget.json"
+  ],
+  "inventoryEntries": 620,
+  "commandStateModel": "Physical CENTER detents retain separate ECA relay commands; explicit or sourced spring-return inputs restore released without erasing contactor state."
+}

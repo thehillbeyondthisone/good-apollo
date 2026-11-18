@@ -1,0 +1,170 @@
+{
+  "sourcePdf": "D:/apollo-ref/lm-systems/a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+  "pdfPage": 827,
+  "figure": "3-2",
+  "printedPage": "3-157/3-158",
+  "baseRenderSize": [
+    2376,
+    1134
+  ],
+  "highResolutionRenderSize": [
+    6336,
+    3024
+  ],
+  "panels": {
+    "1": {
+      "cropBasePixels": [
+        775,
+        53,
+        1085,
+        605
+      ],
+      "image": "reference/extracts/panel-1.png",
+      "pixelSize": [
+        826,
+        1472
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "2": {
+      "cropBasePixels": [
+        1382,
+        52,
+        1689,
+        605
+      ],
+      "image": "reference/extracts/panel-2.png",
+      "pixelSize": [
+        819,
+        1474
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "3": {
+      "cropBasePixels": [
+        919,
+        633,
+        1545,
+        794
+      ],
+      "image": "reference/extracts/panel-3.png",
+      "pixelSize": [
+        1669,
+        429
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "4": {
+      "cropBasePixels": [
+        1094,
+        847,
+        1364,
+        1028
+      ],
+      "image": "reference/extracts/panel-4.png",
+      "pixelSize": [
+        720,
+        482
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "5": {
+      "cropBasePixels": [
+        454,
+        818,
+        763,
+        1033
+      ],
+      "image": "reference/extracts/panel-5.png",
+      "pixelSize": [
+        824,
+        574
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "6": {
+      "cropBasePixels": [
+        1853,
+        817,
+        2119,
+        1029
+      ],
+      "image": "reference/extracts/panel-6.png",
+      "pixelSize": [
+        710,
+        565
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "8": {
+      "cropBasePixels": [
+        113,
+        632,
+        838,
+        796
+      ],
+      "image": "reference/extracts/panel-8.png",
+      "pixelSize": [
+        1934,
+        438
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "11": {
+      "cropBasePixels": [
+        115,
+        53,
+        670,
+        506
+      ],
+      "image": "reference/extracts/panel-11.png",
+      "pixelSize": [
+        1480,
+        1208
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "12": {
+      "cropBasePixels": [
+        1616,
+        632,
+        2346,
+        796
+      ],
+      "image": "reference/extracts/panel-12.png",
+      "pixelSize": [
+        1947,
+        438
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "14": {
+      "cropBasePixels": [
+        1724,
+        469,
+        2346,
+        582
+      ],
+      "image": "reference/extracts/panel-14.png",
+      "pixelSize": [
+        1659,
+        301
+      ],
+      "uvOrigin": "bottom-left"
+    },
+    "16": {
+      "cropBasePixels": [
+        1829,
+        53,
+        2347,
+        413
+      ],
+      "image": "reference/extracts/panel-16.png",
+      "pixelSize": [
+        1382,
+        960
+      ],
+      "uvOrigin": "bottom-left"
+    }
+  }
+}

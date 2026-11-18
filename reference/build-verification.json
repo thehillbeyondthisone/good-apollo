@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "checkedUtc": "2026-11-18T02:13:20.319Z",
+  "result": "PASS",
+  "mode": "Recorded-evidence and current-file verification",
+  "reportCount": 25,
+  "recordedChecks": 49144,
+  "reports": [
+    {
+      "file": "output/electrical-core-tests.json",
+      "checks": 606,
+      "sha256": "3b8a98d566d240547f99a6d77c73a6fb96fe8deb8d2e766b8360b65f2dbfed49"
+    },
+    {
+      "file": "reference/interaction-coverage.json",
+      "checks": 8585,
+      "sha256": "bfdf65353e15cf178949dae1fed654056a554321eecb28ddbd0f3e02c7d0ef77"
+    },
+    {
+      "file": "reference/systems-integration.json",
+      "checks": 83,
+      "sha256": "85983415595fc47b45490245cf7d51a8127b112cc04445ca6ff2b38be205e0d0"
+    },
+    {
+      "file": "reference/agc-integration.json",
+      "checks": 30,
+      "sha256": "a623f4278975b60a1e3f3d812f1e87a337713ef9faf5c82cf984e1ac8771dbec"
+    },
+    {
+      "file": "reference/agc-stepped-test.json",
+      "checks": 65,
+      "sha256": "943e35192efe40cdb9c3298234fe4ad650fd849f7e66c8c61bdbad93f8fa7402"
+    },
+    {
+      "file": "reference/agc-native-integration.json",
+      "checks": 55,
+      "sha256": "c314823fa731087d7b6457ef8e38c289d231c0a202124ff96ee5ddd308d911b3"
+    },
+    {
+      "file": "reference/checkpoint-integration.json",
+      "checks": 46,
+      "sha256": "2963b0ab8374087b06bdf2536291e6a660d4cf7a18c49661a4b4f23c0ddd5db1"
+    },
+    {
+      "file": "reference/default-backend.json",
+      "checks": 10,
+      "sha256": "dfe37735c241e6f355f6e42e08c7c6e01c7b32be00a1a89a46298e540257fd53"
+    },
+    {
+      "file": "reference/audio-lifecycle.json",
+      "checks": 48,
+      "sha256": "fb9958c53275e6d87a84345d3c5ce4c3fd5e468cec28d7e282e7e1c43dd2f0a0"
+    },
+    {
+      "file": "reference/xr-input-tests.json",
+      "checks": 64,
+      "sha256": "9f7f7db9341b65fe845aeb0ebb9d4cdad8c23a4dde23b0d0b89a4e94c30b1ddd"
+    },
+    {
+      "file": "reference/xr-target-tests.json",
+      "checks": 243,
+      "sha256": "3f24df9a65e9117d17824df704e0d14607bb50942d9ed3877fd5d56ac6da165a"
+    },
+    {
+      "file": "reference/cabin-batching-tests.json",
+      "checks": 35,
+      "sha256": "0e7f5a0fe2c87fe2e661c0c2ae3414f944ae8f61dade66a0722a01a7d5950fcf"
+    },
+    {
+      "file": "reference/interaction-batched.json",
+      "checks": 8585,
+      "sha256": "bfdf65353e15cf178949dae1fed654056a554321eecb28ddbd0f3e02c7d0ef77"
+    },
+    {
+      "file": "reference/mechanism-runtime-tests.json",
+      "checks": 104,
+      "sha256": "ea718c31934ea2fcbd005c4c08ea2290640416eebef0efb6f91fffe7e9bd344c"
+    },
+    {
+      "file": "reference/xr-action-map-tests.json",
+      "checks": 119,
+      "sha256": "e00dea21760d2353485d6ccf861d8d5af40efa8fc9a1f313bd6f6c976850161c"
+    },
+    {
+      "file": "reference/cabin-mechanisms-integration.json",
+      "checks": 90,
+      "sha256": "ad752eb6f4d750ef7399c11219a09aebbde4f6835d29fdcc66f27a9d8e224161"
+    },
+    {
+      "file": "output/equipment-load-tests.json",
+      "checks": 124,
+      "sha256": "4a4fb16851bc3ccc792b8a5333643de819006431155d78ee523ff4b96cf5a00a"
+    },
+    {
+      "file": "reference/equipment-load-integration.json",
+      "checks": 44,
+      "sha256": "64758e5d19f6c2e9cb2179c9fb056297634e0d0906233f7d9d447d26f023f13d"
+    },
+    {
+      "file": "reference/caution-warning-tests.json",
+      "checks": 346,
+      "sha256": "c25cd134c5a6a9613318143fd04de82b2d71637d299dfd2b90dec27b7f7a98dd"
+    },
+    {
+      "file": "reference/caution-warning-integration.json",
+      "checks": 154,
+      "sha256": "c07222d1a9e3a24a7776ea107472a6fcdd8d7c4a325ee0eee897cfbf357111d4"
+    },
+    {
+      "file": "output/electrical-accounting-tests.json",
+      "checks": 100,
+      "sha256": "8025dd3f347d5c4cd8bf3cf8579c8e2f04b98af82a28a4752bdff084bcaf3bd3"
+    },
+    {
+      "file": "output/electrical-sequence-tests.json",
+      "checks": 165,
+      "sha256": "cf399ab9a1ea72f0b393cdf913a46542e553df236301e084d0d8f284e6747f06"
+    },
+    {
+      "file": "reference/powerdown-integration.json",
+      "checks": 510,
+      "sha256": "ac6131775a29dabdf4063884fb5ddbff506173941de55f8d1788f66506a266f8"
+    },
+    {
+      "file": "output/electrical-history-tests.json",
+      "checks": 28863,
+      "sha256": "4aa0858aecf05f75c073d9bfa83c6e540cb646a69af6da2a2bf553701def048f"
+    },
+    {
+      "file": "output/electrical-flight-tests.json",
+      "checks": 70,
+      "sha256": "1f4e3acfb003025fee225d3d638eab100d0aa5b2ee9ec0279e1374059f313a5a"
+    }
+  ],
+  "inventory": {
+    "entries": 620,
+    "interactive": 485,
+    "sha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+    "gltfNodesVerified": 620,
+    "glbSha256": "604eb40b99c37de9515dd73e2eb9c80f460777599df67eef37471c5af67b9c07",
+    "mechanismLayoutSha256": "3debaf7f80408f6b8f6f5a3494c442ae4afe64d5788d5297d5cb0eb0f286a56c"
+  },
+  "cabinSurface": {
+    "normalMappedPrimitives": 562,
+    "materialsWithNormalMaps": 16
+  },
+  "native": {
+    "dllSha256": "a53332f77ea63a455600c2d8e4de0b275b62eac9c8579843829f2f3e5d4e6df6",
+    "ropeSha256": "ae4f9e51ac9491c3da6462233936daeffc16277cd302c43a70b8459ebcd6cca5",
+    "unchangedCpuInstructions": true,
+    "retainedErasablePowerRestart": true
+  },
+  "electricalMilestone": {
+    "result": "PASS - source loads, warning checkout, power-down replay, LGC restart and conserved export accounting",
+    "fullFlightGate": "OPEN",
+    "definitionSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+    "equipmentLoads": 20,
+    "equipmentEvidenceSha256": "5c2cac8b74c6c3fa1e66ab9ebb99d15b19d129d81132278e068a56f80cf28e40",
+    "flightAuditSha256": "90f962b5a1d92b46bcf094f775ea6edafea43dc04b4b5731a1764273dfc1ba6b",
+    "heldOutSpotChecks": 3,
+    "componentPredictionReportSha256": "6576bd525abe97a92d2b4718be720ce3b32f84ba117dc7f4f7bd49d1819a9a64",
+    "optionalResearchLoads": 31,
+    "currentConfigurations": 8,
+    "conditionalBatteryHistories": 3,
+    "powerDownSequenceSha256": "2769c170fbb1761a36b20cdff9a4599fa5def3b98c92b1241c2bdaf0377b0fec",
+    "powerDownEvents": 13,
+    "powerDownActions": 93,
+    "saveSchemaVersion": 2,
+    "oldElectricalCheckpointsCompatible": false
+  },
+  "defaultBackend": "stepped",
+  "desktop": {
+    "historicalInventoryEntries": 495,
+    "currentBuildCertified": false,
+    "measurement": {
+      "adapter": "NVIDIA GeForce RTX 4060",
+      "displayServer": "Windows",
+      "drawCalls": 1847,
+      "engine": "4.7.2-stable (official)",
+      "headsetTested": false,
+      "kind": "Uncapped rendered desktop benchmark; headset not tested",
+      "meanFpsEquivalent": 305.231153248083,
+      "meanFrameMs": 3.27620555555556,
+      "objects": 2508,
+      "p50FrameMs": 2.525,
+      "p95FrameMs": 6.477,
+      "p99FrameMs": 6.845,
+      "primitives": 105362,
+      "renderer": "gl_compatibility",
+      "sampleFrames": 360,
+      "schemaVersion": 1,
+      "viewport": [
+        1440,
+        900
+      ],
+      "vsyncMode": 0,
+      "wallSeconds": 2.318186,
+      "warmupFrames": 90
+    }
+  },
+  "cockpitSourceAudit": {
+    "file": "reference/control-source-audit.json",
+    "sha256": "130c60ab37e27876d18af67b74b0705831d1542a4deacb1f8a5fd27f5bb9a4cf",
+    "counts": {
+      "declaredEntries": 620,
+      "interactiveEntries": 485,
+      "outputEntries": 135,
+      "newManualCabinInputFunctions": 15,
+      "newMovableObjectStates": 20,
+      "detailedSourceLinked": 581,
+      "visuallyReviewedDetailRows": 581,
+      "figureMechanismEntries": 16,
+      "functionalDescriptionEntries": 21,
+      "assemblyProxyEntries": 2,
+      "sourceQualifiedEntries": 620,
+      "evidenceCategories": {
+        "candidate_assembly_proxy": 2,
+        "visual_figure": 16,
+        "visual_functional_description": 21,
+        "visual_table": 581
+      },
+      "pendingSourceEntries": 0,
+      "originalPanelEntriesReviewed": 495,
+      "overrideEntries": 497,
+      "cabinMechanismCandidatesDefined": 35,
+      "stowageFigureRowsDispositioned": 76
+    },
+    "wholeVehicleGate": "OPEN"
+  },
+  "headset": {
+    "result": "DEFERRED_BY_USER",
+    "gatePassed": false,
+    "current620GeometryTested": false,
+    "operatorReview": "output/xr-operator-review.json",
+    "note": "Initial controls/readability accepted; later missing rays reported. Minimal Touch-only map passes software checks but sustained hardware reliability is unconfirmed. Further headset testing deferred by explicit user request."
+  },
+  "steamVrCompositor": {
+    "file": "output/steamvr-compositor.json",
+    "sha256": "ef98efc41ac5bf791ac020c58ef34c898686d3d9981763eb0e8a21c4a41ca4bb",
+    "inventoryEntries": 585,
+    "inventorySha256": "2de418f4e1ff8057c478b0cc40f64f87f33364717ee43191eb8b72115a6c8fcb",
+    "currentBuildCertified": false,
+    "measurement": {
+      "schemaVersion": 1,
+      "kind": "SteamVR compositor read-only background measurement",
+      "interface": "IVRCompositor_029",
+      "startedUtc": "2026-11-17T16:08:38.811373+00:00",
+      "durationSeconds": 60,
+      "scenePid": 47320,
+      "counters": {
+        "presents": 5175,
+        "dropped": 3,
+        "reprojected": 0,
+        "startup_presents": 0,
+        "startup_dropped": 0,
+        "startup_reprojected": 0,
+        "loading_events": 0,
+        "loading_presents": 0,
+        "loading_dropped": 0,
+        "loading_reprojected": 0,
+        "timeout_events": 0,
+        "timeout_presents": 0,
+        "timeout_dropped": 0,
+        "timeout_reprojected": 0,
+        "submits": 5175,
+        "compositor_cpu_ms": 2643.6359980404377,
+        "compositor_gpu_ms": 65.92467265576124,
+        "target_frame_time_sum_raw": 57.50000139232725,
+        "application_cpu_ms": 22449.71969795227,
+        "application_gpu_ms": 26642.231874465942,
+        "depth_frames": 0
+      },
+      "sampledFrames": 5175,
+      "gpuMs": {
+        "samples": 5175,
+        "mean": 5.148257367046559,
+        "p95": 6.047359943389893,
+        "max": 8.752543449401855
+      },
+      "compositorGpuMs": {
+        "samples": 5175,
+        "mean": 0.012739067179857245,
+        "p95": 0.014047999866306782,
+        "max": 0.026623999699950218
+      },
+      "clientIntervalMs": {
+        "samples": 5175,
+        "mean": 4.3381100865608255,
+        "p95": 8.453700065612793,
+        "max": 24.4955997467041
+      },
+      "submittedFramesPerSecond": 86.25,
+      "reprojectedFraction": 0,
+      "droppedFraction": 0.0005797101449275362,
+      "scope": "Compositor counters for the validated Aquarius PID; does not measure wireless transport quality or every physical control.",
+      "source": "https://github.com/ValveSoftware/openvr/blob/master/headers/openvr_capi.h"
+    }
+  },
+  "openGates": [
+    "Complete vehicle inventory/mechanisms",
+    "Full electrical flight-profile validation",
+    "Flown erasable memory initialization",
+    "Sensor/engine/trajectory/life-support coupling",
+    "LGC voltage transient and hardware restart timing",
+    "Physical headset and manual usability validation"
+  ]
+}

@@ -1,0 +1,902 @@
+{
+  "schemaVersion": 1,
+  "title": "LM-7 partial source-valued equipment input-power evidence",
+  "status": "PARTIAL: twenty branch/state-gated real-power loads; not a full vehicle budget or independent flight validation",
+  "inventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "sources": [
+    {
+      "id": "lm7-aoh-v1",
+      "title": "Apollo Operations Handbook, LM 7 and Subsequent, Volume 1, LMA790-3-LM",
+      "path": "D:/apollo-ref/lm-systems/a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+      "sha256": "1623f208023279cbe7de6aea14e95bd95fbc8c4e9d51791ff55e68ee04d338f2",
+      "url": "https://apollojournals.org/afj/ap13fj/pdf-hr/a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+      "revision": "1 February 1970",
+      "pageNumbering": "One-based PDF pages; printed pages recorded independently"
+    }
+  ],
+  "modelBoundary": [
+    "Every runtime value is published equipment input watts. Breaker rated amperage is protection capacity and is never used to infer equipment draw.",
+    "These loads replace the aggregate load model only in an explicitly partial sourced-components mode. Never add them to the calibrated aggregate presets.",
+    "Published design/operating requirements are approximated as constant real power; they do not establish measured mission telemetry or a discharge curve.",
+    "All entries require an energized bus and their closed supply breaker. Switch requirements are additional AND gates; positions within one requirement are OR alternatives.",
+    "PRIM/SEC, antenna AUTO/SLEW and digital uplink modes are mutually exclusive because they share one source switch, not because their wattages were adjusted to match a total.",
+    "AC input watts contribute real power through the existing ideal inverter. No RMS apparent-current, inverter loss, efficiency or reactive-current model is introduced.",
+    "No unknown residual load is added. No watts or allocations were chosen to fit the 12 A, 30 A, 92.52 Ah discrepancy or any historical endpoint.",
+    "Individual equipment states are software operating abstractions constrained by sourced switch functions; missing equipment failure/duty-cycle details remain explicit."
+  ],
+  "evidence": [
+    {
+      "id": "comms_input_power",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 509,
+      "printedPage": "2.7-45",
+      "locator": "Table 2.7-5, Communications Subsystem - Performance and Design Data",
+      "review": "visual_complete_page",
+      "finding": "The columns explicitly distinguish D-C input watts and A-C input watts. Equipment-level requirements are not protective breaker ratings or RF output power.",
+      "classification": "equipment_input_power",
+      "rows": [
+        {
+          "equipment": "S-band transmitter-receiver",
+          "mode": "primary or secondary",
+          "dcW": 36.0,
+          "acW": 0
+        },
+        {
+          "equipment": "S-band power amplifier and diplexer",
+          "mode": "primary or secondary",
+          "dcW": 72.0,
+          "acW": 0
+        },
+        {
+          "equipment": "S-band steerable antenna electronics",
+          "mode": "slew",
+          "dcW": 7.6,
+          "acW": 27.9
+        },
+        {
+          "equipment": "S-band steerable antenna electronics",
+          "mode": "auto",
+          "dcW": 0.7,
+          "acW": 4.0
+        },
+        {
+          "equipment": "S-band steerable antenna heaters",
+          "mode": "on",
+          "dcW": 51.7,
+          "acW": 0
+        },
+        {
+          "equipment": "VHF A transmitter",
+          "mode": "voice transmitting",
+          "dcW": 30.0,
+          "acW": 0
+        },
+        {
+          "equipment": "VHF A transmitter",
+          "mode": "not transmitting",
+          "dcW": 3.5,
+          "acW": 0
+        },
+        {
+          "equipment": "VHF A receiver",
+          "mode": "on",
+          "dcW": 1.2,
+          "acW": 0
+        },
+        {
+          "equipment": "VHF B transmitter",
+          "mode": "voice transmitting",
+          "dcW": 28.9,
+          "acW": 0
+        },
+        {
+          "equipment": "VHF B transmitter",
+          "mode": "data",
+          "dcW": 31.7,
+          "acW": 0
+        },
+        {
+          "equipment": "VHF B transmitter",
+          "mode": "not transmitting",
+          "dcW": 3.5,
+          "acW": 0
+        },
+        {
+          "equipment": "VHF B receiver",
+          "mode": "on",
+          "dcW": 1.2,
+          "acW": 0
+        },
+        {
+          "equipment": "Ranging tone transfer assembly",
+          "mode": "on",
+          "dcW": 5.0,
+          "acW": 0
+        },
+        {
+          "equipment": "Premodulation processor",
+          "mode": "on",
+          "dcW": 4.3,
+          "acW": 0
+        },
+        {
+          "equipment": "Audio center (one)",
+          "mode": "on",
+          "dcW": 4.8,
+          "acW": 0
+        },
+        {
+          "equipment": "Digital uplink assembly",
+          "mode": "uplink data",
+          "dcW": 12.5,
+          "acW": 0
+        },
+        {
+          "equipment": "Digital uplink assembly",
+          "mode": "voice backup",
+          "dcW": 2.5,
+          "acW": 0
+        },
+        {
+          "equipment": "Biomedical sensors",
+          "mode": "on",
+          "dcW": 3.0,
+          "acW": 0
+        },
+        {
+          "equipment": "CS displays",
+          "mode": "on",
+          "dcW": 3.0,
+          "acW": 0
+        },
+        {
+          "equipment": "TV camera",
+          "mode": "on",
+          "dcW": 6.0,
+          "acW": 0
+        }
+      ]
+    },
+    {
+      "id": "sband_tr_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 782,
+      "printedPage": "3-112",
+      "locator": "Table 3-1, panel 12, 13S8",
+      "review": "visual_complete_page",
+      "finding": "PRIM selects primary converter through panel 16 primary T/R breaker from LMP DC; SEC selects secondary converter through panel 11 secondary T/R breaker from CDR DC; OFF interrupts both. Either powered selection enables the power amplifier."
+    },
+    {
+      "id": "sband_pa_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 783,
+      "printedPage": "3-113",
+      "locator": "Table 3-1, panel 12, 13S2",
+      "review": "visual_complete_page",
+      "finding": "PRIM selects amplifier power supply 1 from LMP DC; SEC selects power supply 2 from CDR DC. The transmitter-receiver selector must be PRIM or SEC to enable the amplifier. The 18.6 W and 14.8 W values in this control table are minimum RF output, not electrical input."
+    },
+    {
+      "id": "vhf_a_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 784,
+      "printedPage": "3-114",
+      "locator": "Table 3-1, panel 12, 13S7 and 13S10",
+      "review": "visual_complete_page",
+      "finding": "VHF A transmitter is supplied through its panel 16 LMP DC breaker; VHF A receiver ON supplies its regulator through the panel 11 CDR DC breaker; OFF interrupts receiver power."
+    },
+    {
+      "id": "vhf_b_biomed_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 785,
+      "printedPage": "3-115",
+      "locator": "Table 3-1, panel 12, 13S12, 13S15 and 13S3",
+      "review": "visual_complete_page",
+      "finding": "VHF B transmitter uses CDR DC; receiver uses LMP DC. BIOMED LEFT or RIGHT selects one suit biomedical supply through COMM PMP; OFF interrupts both. VHF B transmitter function wording is internally reversed relative to the VOICE/DATA row labels; transmit-mode loads are withheld."
+    },
+    {
+      "id": "antenna_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 786,
+      "printedPage": "3-116",
+      "locator": "Table 3-1, panel 12, 14S3",
+      "review": "visual_complete_page",
+      "finding": "AUTO and SLEW apply AC and DC antenna electronics power. OFF interrupts both supplies. DC is through panel 16 COMM S-BD ANT on LMP DC; AC is through panel 11 AC BUS B S-BD ANT."
+    },
+    {
+      "id": "dua_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 779,
+      "printedPage": "3-109",
+      "locator": "Table 3-1, panel 12, 13S16",
+      "review": "visual_complete_page",
+      "finding": "UPDATA LINK VOICE BU enables backup voice mode, DATA enables digital uplink, and OFF disables both. Supply is panel 11 COMM UP DATA LINK from CDR DC."
+    },
+    {
+      "id": "comms_branch_mapping",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 383,
+      "printedPage": "2.5-6A/2.5-6B",
+      "locator": "Figure 2.5-2, EPS functional diagram, communications branches",
+      "review": "visual_complete_page",
+      "finding": "Identified COMM PMP, COMM DISP and SE AUDIO branches are on LMP DC; CDR AUDIO and UP DATA LINK are on CDR DC. Branch labels are mapped to stable panel breaker IDs using the detailed inventory. Audio route/volume switches are not treated as power switches.",
+      "relatedPdfPages": [
+        381,
+        382
+      ],
+      "classification": "source_circuit_mapping"
+    },
+    {
+      "id": "ordeal_power",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 205,
+      "printedPage": "2.1-163",
+      "locator": "Table 2.1-25, Orbital Rate Display - Earth and Lunar",
+      "review": "visual_complete_page",
+      "finding": "ORDEAL requires 4 W DC and 4 W AC. AC supply is 115 +/- 2.5 V rms single phase 400 Hz; specified power factor is 0.9 minimum. DC supply is 28 +/- 3 V.",
+      "classification": "equipment_input_power",
+      "dcW": 4.0,
+      "acW": 4.0,
+      "minimumAcPowerFactor": 0.9
+    },
+    {
+      "id": "ordeal_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 822,
+      "printedPage": "3-152",
+      "locator": "Table 3-1, ORDEAL, 9S25",
+      "review": "visual_complete_page",
+      "finding": "EARTH and LUNAR select the scale factor with power applied; PWR OFF removes AC and DC. Supplies are CDR DC through FLIGHT DISPLAYS ORDEAL and AC BUS B through AC BUS B ORDEAL, both panel 11. Lighting brightness is separate and no per-brightness input-power decomposition is supplied."
+    },
+    {
+      "id": "eps_input_power",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 409,
+      "printedPage": "2.5-31",
+      "locator": "Table 2.5-3, EPS Performance and Design Data (continued)",
+      "review": "visual_complete_page",
+      "finding": "EPS displays require 2 W. Ascent ECAs list 10 W steady state and descent ECAs 20 W steady state; both list 84 W momentarily during battery switching. The plural ECA rows do not establish a per-box/per-bus partition.",
+      "classification": "equipment_input_power",
+      "epsDisplaysW": 2.0,
+      "ascentEcasSteadyW": 10.0,
+      "descentEcasSteadyW": 20.0,
+      "ecaSwitchingW": 84.0
+    },
+    {
+      "id": "eps_display_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 383,
+      "printedPage": "2.5-6A/2.5-6B",
+      "locator": "Figure 2.5-2, panel 16 EPS DISP branch",
+      "review": "visual_complete_page",
+      "finding": "The EPS display branch is supplied from LMP DC and corresponds to stable breaker p16_cb_r04_c08.",
+      "classification": "source_circuit_mapping"
+    },
+    {
+      "id": "cabin_fan",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 439,
+      "printedPage": "2.6-27",
+      "locator": "Section 2.6.3.1.7, Cabin Fan",
+      "review": "visual_complete_page",
+      "finding": "LM-7 cabin fan input is described as 35 W average and 110 W peak at 28 V. These are not a sourced constant-power operating mode or a thermal/mechanical duty cycle.",
+      "classification": "average_and_peak_equipment_input",
+      "averageW": 35.0,
+      "peakW": 110.0
+    },
+    {
+      "id": "suit_fans_unquantified",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 436,
+      "printedPage": "2.6-24",
+      "locator": "Suit fan functional description",
+      "review": "visual_complete_page",
+      "finding": "Describes 28 V brushless fan motors, airflow and speed, but does not quantify electrical operating watts or current.",
+      "classification": "voltage_only_not_draw"
+    },
+    {
+      "id": "coolant_pumps_unquantified",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 449,
+      "printedPage": "2.6-37",
+      "locator": "Coolant pump assembly functional description",
+      "review": "visual_complete_page",
+      "finding": "Describes three 28 V pump motors (two primary and one secondary), but does not quantify electrical operating watts or current.",
+      "classification": "voltage_only_not_draw"
+    },
+    {
+      "id": "ags_primary_design",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 204,
+      "printedPage": "2.1-162",
+      "locator": "Table 2.1-23, Abort Guidance Section",
+      "review": "visual_complete_page",
+      "finding": "AGS primary power lists 90 W DC and 3.5 W AC. Operating versus standby allocation, per-box allocation and the switched supply paths require further work before runtime use.",
+      "classification": "aggregate_design_requirement",
+      "dcW": 90.0,
+      "acW": 3.5
+    },
+    {
+      "id": "inverter_capacity",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 408,
+      "printedPage": "2.5-30",
+      "locator": "Table 2.5-3, Inverters",
+      "review": "visual_complete_page",
+      "finding": "Normal 0 to 350 VA output and 525 VA ten-minute overload are inverter capacities, not operating loss or idle consumption. No efficiency or idle draw is derived from them.",
+      "classification": "capacity_not_load"
+    },
+    {
+      "id": "lighting_voltage_only",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 636,
+      "printedPage": "2.10-12",
+      "locator": "Interior lighting performance table",
+      "review": "visual_complete_page",
+      "finding": "The power entries are supply voltages and frequencies, not input wattages. They do not quantify a lighting load.",
+      "classification": "voltage_only_not_draw"
+    }
+  ],
+  "runtimeLoads": [
+    {
+      "id": "sband_tr_prim",
+      "label": "S-band transmitter-receiver PRIM",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_s_band_xmtr_rcvr",
+          "allowedPositions": [
+            "PRIM"
+          ]
+        }
+      ],
+      "powerW": 36.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. The 36 W is the combined transmitter-receiver equipment requirement, counted once for the selected supply.",
+      "evidenceIds": [
+        "comms_input_power",
+        "sband_tr_supply"
+      ]
+    },
+    {
+      "id": "sband_tr_sec",
+      "label": "S-band transmitter-receiver SEC",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c11"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_s_band_xmtr_rcvr",
+          "allowedPositions": [
+            "SEC"
+          ]
+        }
+      ],
+      "powerW": 36.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. The 36 W is the combined transmitter-receiver equipment requirement, counted once for the selected supply.",
+      "evidenceIds": [
+        "comms_input_power",
+        "sband_tr_supply"
+      ]
+    },
+    {
+      "id": "sband_pa_prim",
+      "label": "S-band power amplifier and diplexer PRIM",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c05"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_pwr_ampl",
+          "allowedPositions": [
+            "PRIM"
+          ]
+        },
+        {
+          "controlId": "p12_s_band_xmtr_rcvr",
+          "allowedPositions": [
+            "PRIM",
+            "SEC"
+          ]
+        }
+      ],
+      "powerW": 72.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. 72 W is electrical input; RF output wattages are not substituted. Enable follows T/R selector position; internal cross-equipment loss-of-supply behavior is not independently quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "sband_pa_supply",
+        "sband_tr_supply"
+      ]
+    },
+    {
+      "id": "sband_pa_sec",
+      "label": "S-band power amplifier and diplexer SEC",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c12"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_pwr_ampl",
+          "allowedPositions": [
+            "SEC"
+          ]
+        },
+        {
+          "controlId": "p12_s_band_xmtr_rcvr",
+          "allowedPositions": [
+            "PRIM",
+            "SEC"
+          ]
+        }
+      ],
+      "powerW": 72.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. 72 W is electrical input; RF output wattages are not substituted. Enable follows T/R selector position; internal cross-equipment loss-of-supply behavior is not independently quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "sband_pa_supply",
+        "sband_tr_supply"
+      ]
+    },
+    {
+      "id": "sband_antenna_auto_dc",
+      "label": "S-band antenna electronics AUTO DC",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c07"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_track_mode",
+          "allowedPositions": [
+            "AUTO"
+          ]
+        }
+      ],
+      "powerW": 0.7,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Each supply is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "antenna_supply"
+      ]
+    },
+    {
+      "id": "sband_antenna_auto_ac",
+      "label": "S-band antenna electronics AUTO AC",
+      "busId": "AC_B",
+      "breakerIds": [
+        "p11_cb_r01_c03"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_track_mode",
+          "allowedPositions": [
+            "AUTO"
+          ]
+        }
+      ],
+      "powerW": 4.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. AC watts are real-power equivalent in the ideal inverter model; reactive current and power factor are not asserted. Each supply is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "antenna_supply"
+      ]
+    },
+    {
+      "id": "sband_antenna_slew_dc",
+      "label": "S-band antenna electronics SLEW DC",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c07"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_track_mode",
+          "allowedPositions": [
+            "SLEW"
+          ]
+        }
+      ],
+      "powerW": 7.6,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Each supply is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "antenna_supply"
+      ]
+    },
+    {
+      "id": "sband_antenna_slew_ac",
+      "label": "S-band antenna electronics SLEW AC",
+      "busId": "AC_B",
+      "breakerIds": [
+        "p11_cb_r01_c03"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_track_mode",
+          "allowedPositions": [
+            "SLEW"
+          ]
+        }
+      ],
+      "powerW": 27.9,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. AC watts are real-power equivalent in the ideal inverter model; reactive current and power factor are not asserted. Each supply is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "antenna_supply"
+      ]
+    },
+    {
+      "id": "vhf_a_receiver",
+      "label": "VHF A receiver",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c14"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_vhf_a_rcvr",
+          "allowedPositions": [
+            "ON"
+          ]
+        }
+      ],
+      "powerW": 1.2,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "vhf_a_supply"
+      ]
+    },
+    {
+      "id": "vhf_b_receiver",
+      "label": "VHF B receiver",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c04"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_vhf_b_rcvr",
+          "allowedPositions": [
+            "ON"
+          ]
+        }
+      ],
+      "powerW": 1.2,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "vhf_b_biomed_supply"
+      ]
+    },
+    {
+      "id": "premodulation_processor",
+      "label": "Premodulation processor",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c08"
+      ],
+      "switchRequirements": [],
+      "powerW": 4.3,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. On-state is represented by its energized, closed supply branch; no unestablished route, volume or display-selector power gate is invented.",
+      "evidenceIds": [
+        "comms_input_power",
+        "comms_branch_mapping"
+      ]
+    },
+    {
+      "id": "cdr_audio_center",
+      "label": "CDR audio center",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c15"
+      ],
+      "switchRequirements": [],
+      "powerW": 4.8,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. On-state is represented by its energized, closed supply branch; no unestablished route, volume or display-selector power gate is invented.",
+      "evidenceIds": [
+        "comms_input_power",
+        "comms_branch_mapping"
+      ]
+    },
+    {
+      "id": "lmp_audio_center",
+      "label": "LMP audio center",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c02"
+      ],
+      "switchRequirements": [],
+      "powerW": 4.8,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. On-state is represented by its energized, closed supply branch; no unestablished route, volume or display-selector power gate is invented.",
+      "evidenceIds": [
+        "comms_input_power",
+        "comms_branch_mapping"
+      ]
+    },
+    {
+      "id": "communications_displays",
+      "label": "Communications displays",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c01"
+      ],
+      "switchRequirements": [],
+      "powerW": 3.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. On-state is represented by its energized, closed supply branch; no unestablished route, volume or display-selector power gate is invented.",
+      "evidenceIds": [
+        "comms_input_power",
+        "comms_branch_mapping"
+      ]
+    },
+    {
+      "id": "digital_uplink_data",
+      "label": "Digital uplink assembly data",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c10"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_updata_link",
+          "allowedPositions": [
+            "DATA"
+          ]
+        }
+      ],
+      "powerW": 12.5,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "dua_supply"
+      ]
+    },
+    {
+      "id": "digital_uplink_voice_backup",
+      "label": "Digital uplink assembly voice backup",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c10"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_updata_link",
+          "allowedPositions": [
+            "VOICE-BU"
+          ]
+        }
+      ],
+      "powerW": 2.5,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified.",
+      "evidenceIds": [
+        "comms_input_power",
+        "dua_supply"
+      ]
+    },
+    {
+      "id": "selected_biomedical_sensors",
+      "label": "Selected crew biomedical sensors",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c08"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p12_telemetry_biomed",
+          "allowedPositions": [
+            "LEFT",
+            "RIGHT"
+          ]
+        }
+      ],
+      "powerW": 3.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. One selected suit source is counted; disconnected wearable interfaces and physiological sensor behavior are outside this partial model.",
+      "evidenceIds": [
+        "comms_input_power",
+        "vhf_b_biomed_supply"
+      ]
+    },
+    {
+      "id": "ordeal_dc",
+      "label": "ORDEAL DC",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r02_c16"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "ordeal_earth_lunar",
+          "allowedPositions": [
+            "EARTH",
+            "LUNAR"
+          ]
+        }
+      ],
+      "powerW": 4.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Brightness-dependent decomposition is unavailable; 4 W represents the listed equipment requirement. Each input is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "ordeal_power",
+        "ordeal_supply"
+      ]
+    },
+    {
+      "id": "ordeal_ac",
+      "label": "ORDEAL AC",
+      "busId": "AC_B",
+      "breakerIds": [
+        "p11_cb_r01_c04"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "ordeal_earth_lunar",
+          "allowedPositions": [
+            "EARTH",
+            "LUNAR"
+          ]
+        }
+      ],
+      "powerW": 4.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Brightness-dependent decomposition is unavailable; 4 W represents the listed equipment requirement. Source specifies minimum 0.9 power factor; runtime consumes 4 W real-power equivalent through an ideal inverter and makes no RMS or reactive-current claim. Each input is represented independently; partial-supply failure effects on the other input are not quantified.",
+      "evidenceIds": [
+        "ordeal_power",
+        "ordeal_supply"
+      ]
+    },
+    {
+      "id": "eps_displays",
+      "label": "EPS displays",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c08"
+      ],
+      "switchRequirements": [],
+      "powerW": 2.0,
+      "sourceId": "lm7-aoh-v1",
+      "qualification": "Handbook operating input requirement represented as a constant real-power load; voltage dependence, warm-up and unlisted transients are not quantified. Display branch powered state is used; selector position is not treated as an on/off switch.",
+      "evidenceIds": [
+        "eps_input_power",
+        "eps_display_supply"
+      ]
+    }
+  ],
+  "unsupportedModes": [
+    {
+      "id": "vhf_transmitter_modes",
+      "evidenceIds": [
+        "comms_input_power",
+        "vhf_a_supply",
+        "vhf_b_biomed_supply"
+      ],
+      "publishedInputW": {
+        "aVoice": 30.0,
+        "aIdle": 3.5,
+        "bVoice": 28.9,
+        "bData": 31.7,
+        "bIdle": 3.5
+      },
+      "reason": "No included VHF transmitter load: selector position alone cannot distinguish PTT/VOX/ranging/data carrier activity from not-transmitting. A fixed 3.5 W while keyed would be wrong.",
+      "rootNeeds": [
+        "Couple actual keying state to selected radio channel, PTT and VOX routing.",
+        "Establish VOICE/RNG carrier duty and VHF B DATA semantics before mode-dependent loading.",
+        "Resolve the reversed VHF B function wording on PDF 785 using an independent circuit/source."
+      ]
+    },
+    {
+      "id": "antenna_heater_duty",
+      "evidenceIds": [
+        "comms_input_power"
+      ],
+      "powerW": 51.7,
+      "reason": "Heater ON requirement is sourced; thermostat switching/duty and enabled thermal state are not established by a closed breaker."
+    },
+    {
+      "id": "ranging_tone_transfer",
+      "evidenceIds": [
+        "comms_input_power"
+      ],
+      "powerW": 5.0,
+      "reason": "ON requirement is sourced; exact supply and mode gates need independent circuit confirmation."
+    },
+    {
+      "id": "tv_camera",
+      "evidenceIds": [
+        "comms_input_power"
+      ],
+      "powerW": 6.0,
+      "reason": "Camera ON requirement is sourced; the camera local power control/interface is outside the current cabin inventory. COMM TV breaker alone does not prove camera ON."
+    },
+    {
+      "id": "eca_steady_and_switching",
+      "evidenceIds": [
+        "eps_input_power"
+      ],
+      "reason": "Plural ECA design rows do not establish per-box/per-bus allocation or switching duration; not split equally or multiplied by assumed box count."
+    },
+    {
+      "id": "cabin_fan",
+      "evidenceIds": [
+        "cabin_fan"
+      ],
+      "reason": "35 W average and 110 W peak are not a constant-power load/duty cycle. Motor/control supply paths also need resolved circuit-level gating."
+    },
+    {
+      "id": "suit_fans_and_coolant_pumps",
+      "evidenceIds": [
+        "suit_fans_unquantified",
+        "coolant_pumps_unquantified"
+      ],
+      "reason": "Operating watts/current absent in the reviewed LM-7 functional descriptions. 28 V supply and breaker ratings cannot establish draw."
+    },
+    {
+      "id": "ags_modes",
+      "evidenceIds": [
+        "ags_primary_design"
+      ],
+      "reason": "90 W DC plus 3.5 W AC is a combined primary design requirement; no proven standby/operate/per-box allocation included."
+    },
+    {
+      "id": "inverter_and_lighting",
+      "evidenceIds": [
+        "inverter_capacity",
+        "lighting_voltage_only"
+      ],
+      "reason": "VA output capacity and lighting supply voltages are not operating power draws; inverter idle/loss and dimmer load laws remain unknown."
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "lm7_cabin_fan_configuration",
+      "evidenceIds": [
+        "cabin_fan"
+      ],
+      "qualification": "Use the LM-7 35 W average / 110 W peak values. Later/general ECS descriptions can differ; their 62 W / 210 W values are not silently substituted."
+    },
+    {
+      "id": "sband_rf_vs_dc",
+      "evidenceIds": [
+        "sband_pa_supply",
+        "comms_input_power"
+      ],
+      "qualification": "Minimum RF output of 18.6 W primary or 14.8 W secondary is not the 72 W electrical input."
+    },
+    {
+      "id": "cross_supply_failures",
+      "qualification": "The source shows each supply independently. Modeling loss of one supply as suppressing another input requires additional evidence; no speculative cross-bus load gate is introduced."
+    }
+  ],
+  "validation": {
+    "runtimeLoadCount": 20,
+    "inputPowerUnit": "W real power",
+    "allStableControlIdsValid": true,
+    "allStatesValid": true,
+    "allSupplyPathsOnDeclaredBus": true,
+    "noBreakerRatingUsedAsDraw": true,
+    "noInferredResidualOrHistoricalFit": true,
+    "sourcePdfShaVerified": true,
+    "completeVehicleLoadCoverage": false,
+    "independentFlightValidationPassed": false
+  }
+}

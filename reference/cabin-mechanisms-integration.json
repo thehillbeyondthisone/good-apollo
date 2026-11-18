@@ -1,0 +1,18 @@
+{
+	"batchEvidenceQualification": "Test-only copies of an actual imported shared mesh under real moving mechanism nodes; current custom mechanism geometry may remain unbatched by production eligibility rules.",
+	"batchedSourcesExamined": 6,
+	"boundNodes": 620,
+	"checks": 90,
+	"consumablesPhysics": false,
+	"controlledBatchWitnesses": 6,
+	"failures": [],
+	"headsetTested": false,
+	"inventoryEntries": 620,
+	"kind": "Actual glTF cabin mechanism, electrical branch and native checkpoint integration",
+	"mechanismLayoutSha256": "3debaf7f80408f6b8f6f5a3494c442ae4afe64d5788d5297d5cb0eb0f286a56c",
+	"rayDiagnostics": [],
+	"result": "PASS",
+	"schemaVersion": 1,
+	"sourceInventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+	"wholeSessionRestore": true
+}

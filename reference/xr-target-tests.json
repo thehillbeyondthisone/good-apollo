@@ -1,0 +1,10 @@
+{
+	"checks": 243,
+	"failures": [],
+	"headsetTested": false,
+	"maximumNearbyAreas": 18,
+	"nearDistanceM": 0.055,
+	"queryHitLimit": 128,
+	"realCabinComparisons": 210,
+	"result": "PASS"
+}

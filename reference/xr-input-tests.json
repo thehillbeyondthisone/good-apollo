@@ -1,0 +1,9 @@
+{
+	"checks": 64,
+	"failures": [],
+	"headsetTested": false,
+	"kind": "Synthetic controller actions through the shared live interaction router",
+	"note": "Physical reach, legibility, comfort and compositor frame timing are not established by these tests.",
+	"result": "PASS",
+	"schemaVersion": 1
+}

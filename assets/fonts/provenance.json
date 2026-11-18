@@ -1,0 +1,7 @@
+{
+  "generator": "tools/build-segment-font.py",
+  "fontToolsVersion": "4.68.0",
+  "glyphSource": "Original procedural segment polygons; no third-party typeface.",
+  "limitation": "EL-style approximation, not a recovered manufacturing font.",
+  "sha256": "eccf847ff4f45c977e40c2de90cd6473a3ceffbb25626d99250678cd1b495d7a"
+}

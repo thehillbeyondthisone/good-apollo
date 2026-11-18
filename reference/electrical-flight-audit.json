@@ -1,0 +1,1545 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-17",
+  "status": "SOURCE CHRONOLOGY IMPROVED; INDEPENDENT FLIGHT VALIDATION OPEN",
+  "sourcePolicy": "GET and printed leaf are stable locators. Web line ranges are only the rendering retrieved during this review. Source text and figures were not modified.",
+  "sources": {
+    "mission_report": {
+      "title": "Apollo 13 Mission Report, MSC-02680",
+      "url": "https://ntrs.nasa.gov/citations/19710003598",
+      "copies": [
+        {
+          "path": "D:/apollo-ref/a13-mission-data/a13-mission-report-197007.pdf",
+          "available": true,
+          "bytes": 8215483,
+          "sha256": "22d84aa2a6ea0f61956c88d5dcb629754a8c1c9472bce1ff3e639757088fa1fb",
+          "hashMeaning": "Local download integrity receipt, not a publisher checksum"
+        },
+        {
+          "path": "D:/apollo-ref/a13-mission-data/43-a13-mission-report.pdf",
+          "available": true,
+          "bytes": 63690215,
+          "sha256": "59ac80a7f8f324ee8bd548174ba51ab78ca371ea6321368dbf93b85311ede561",
+          "hashMeaning": "Local download integrity receipt, not a publisher checksum"
+        }
+      ],
+      "reviewedPages": [
+        {
+          "copy": "small",
+          "pdfPages": [
+            45,
+            62,
+            63,
+            64,
+            6,
+            7
+          ],
+          "printedPages": [
+            "6-1",
+            "7-6",
+            "7-7",
+            "7-8"
+          ]
+        },
+        {
+          "copy": "high_resolution",
+          "pdfPages": [
+            37,
+            54,
+            55,
+            56
+          ],
+          "printedPages": [
+            "6-1",
+            "7-6",
+            "7-7",
+            "7-8"
+          ]
+        }
+      ],
+      "anomalyReview": {
+        "sections": [
+          "14.2.2",
+          "14.2.3"
+        ],
+        "smallCopyPdfPages": [
+          136,
+          137,
+          138,
+          140,
+          141
+        ],
+        "printedPages": [
+          "14-27",
+          "14-28",
+          "14-29",
+          "14-31",
+          "14-32"
+        ]
+      },
+      "chargeReserveLocator": "Section 7.1.6, printed 7-4 and Figure 7.1-1",
+      "review": "Complete rendered leaves visually read; main-body and replacement 7-7/7-8 compared, and Figure 14-16 read from the original scan.",
+      "qualification": "No corrected replacement for 6-1 found in the inspected Change 1 front matter."
+    },
+    "mission_ops_telmu": {
+      "title": "Mission Operations Report, Apollo 13, 28 April 1970, Appendix G TELMU Post Mission Report",
+      "url": "https://apollojournals.org/afj/ap13fj/pdf-hr/a13-mission-ops-report.pdf",
+      "copy": {
+        "path": "D:/apollo-ref/a13-mission-data/a13-mission-ops-report.pdf",
+        "available": true,
+        "bytes": 203720294,
+        "sha256": "b1a44d48ec4fd350b90caa0d6579c1eff7b0d69292a7a316cf8c5c6d0fd70545",
+        "hashMeaning": "Local download integrity receipt, not a publisher checksum",
+        "preferredStablePath": "D:/apollo-ref/a13-mission-data/a13-mission-ops-report.pdf",
+        "cachePath": "C:\\Users\\thisi\\OneDrive\\Documents\\repos\\goodapollo\\tmp\\pdfs\\electrical\\a13-mission-ops-report.pdf"
+      },
+      "reviewedPdfPages": [
+        235,
+        236,
+        237,
+        238,
+        239,
+        240
+      ],
+      "printedPages": [
+        "G-1",
+        "G-2",
+        "G-3",
+        "G-4",
+        "G-5",
+        "G-6"
+      ],
+      "review": "Full rendered pages visually read; original NASA Flight Control Division report, not later commentary."
+    },
+    "mission_ops_electrical": {
+      "title": "Mission Operations Report, Apollo 13, 28 April 1970, mission narrative and Appendix E EECOM",
+      "url": "https://apollojournals.org/alsj/a13/A13_MissionOpReport.pdf",
+      "printedNarrativePages": [
+        "III-32",
+        "III-36"
+      ],
+      "reviewedHighResolutionPdfPages": [
+        159,
+        162,
+        173,
+        175
+      ],
+      "printedAppendixPages": [
+        "E-9",
+        "E-12",
+        "E-20",
+        "E-21"
+      ],
+      "qualification": "EECOM calculated CM entry battery reserves and described the LM export configuration. The plotted actual CM loads in Figure 5 start after the final changeover and supply no direct samples of LM export."
+    },
+    "contingency": {
+      "title": "Apollo XIII LM-7 Contingency Checklist, revised 31 March 1970",
+      "copy": {
+        "path": "D:/apollo-ref/a13-procedures/78-a13-contingency-checklist.pdf",
+        "available": true,
+        "bytes": 28276163,
+        "sha256": "369ca23bd0292adc753b264ab6c8488dfdbf112907fe306575b02fa65b25f04b",
+        "hashMeaning": "Local download integrity receipt, not a publisher checksum"
+      },
+      "reviewedPdfPages": [
+        81,
+        82,
+        83,
+        84
+      ],
+      "printedPages": [
+        "PWR-5",
+        "PWR-6",
+        "PWR-7",
+        "PWR-8"
+      ],
+      "review": "Full-page visual review; printed baseline differs from in-flight voice amendments."
+    },
+    "fd_profile": {
+      "title": "Flight Director LM current-profile planning sheet",
+      "copy": {
+        "path": "D:/apollo-ref/a13-procedures/09-a13-fdlog-lm-current-profile.pdf",
+        "available": true,
+        "bytes": 3390045,
+        "sha256": "9d19d13411af0a5e73d4bde197e1e1b2ece8cf244dc2ad5b5a41521e7a4459d4",
+        "hashMeaning": "Local download integrity receipt, not a publisher checksum"
+      },
+      "reviewedPdfPages": [
+        1,
+        3
+      ],
+      "review": "Upright full-sheet visual review",
+      "qualification": "Planning/available profile; not measured telemetry. Solid LM and dashed CM lines are separately labeled. Do not combine lines without establishing accounting boundary."
+    },
+    "fj_pc2": {
+      "title": "Apollo 13 Flight Journal, Day 4 part 2, Leaving the Moon",
+      "url": "https://apollojournals.org/afj/ap13fj/13day4-leaving-moon.html",
+      "sourceType": "Contemporaneous air-to-ground and PAO transcript as presented in the journal",
+      "locators": [
+        "079:32:05",
+        "079:42:51",
+        "079:49:52",
+        "081:47",
+        "082:01-082:28"
+      ],
+      "webLineRangesAtReview": [
+        [
+          536,
+          568
+        ],
+        [
+          603,
+          658
+        ],
+        [
+          1602,
+          1808
+        ]
+      ]
+    },
+    "fj_manual_mcc": {
+      "title": "Apollo 13 Flight Journal, Day 5 part 3, Manual Course Correction Burn",
+      "url": "https://apollojournals.org/afj/ap13fj/19day5-themanualcoursecorrection.html",
+      "locators": [
+        "105:43:48",
+        "105:43:59",
+        "105:52:28",
+        "105:52:40",
+        "PAO 106:03"
+      ],
+      "sourceType": "Contemporaneous air-to-ground and PAO transcript"
+    },
+    "fj_battery_anomaly": {
+      "title": "Apollo 13 Flight Journal, Day 5 part 1, A Thump and Snowflakes in Space",
+      "url": "https://apollojournals.org/afj/ap13fj/17day5-thumpandsnowflakes.html",
+      "locators": [
+        "099:49:52\u2013099:55:08",
+        "101:01:48\u2013101:05:49"
+      ]
+    },
+    "fj_charge": {
+      "title": "Apollo 13 Flight Journal, Day 5 part 5, Starting the Battery Charge",
+      "url": "https://apollojournals.org/afj/ap13fj/21day5-batterycharge.html",
+      "locators": [
+        "110:57:23",
+        "111:06:54\u2013111:15:49",
+        "111:20:03\u2013111:20:45",
+        "111:38:15\u2013111:38:36",
+        "112:06:11",
+        "112:11:57",
+        "PAO 112:18",
+        "112:35:36",
+        "112:48:33",
+        "115:44:17",
+        "PAO 119:44"
+      ]
+    },
+    "fj_packing": {
+      "title": "Apollo 13 Flight Journal, Day 6 part 1, Packing Up",
+      "url": "https://apollojournals.org/afj/ap13fj/22day6-packingup.html",
+      "locators": [
+        "120:01:06",
+        "120:59:16",
+        "PAO 122:24",
+        "122:46:12\u2013122:51:33",
+        "123:06:21",
+        "123:11:41\u2013123:12:07",
+        "123:21:32\u2013123:22:17"
+      ]
+    },
+    "fj_reactivation": {
+      "title": "Apollo 13 Flight Journal, Day 6 part 2, The Reactivation Checklist",
+      "url": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html",
+      "locators": [
+        "125:53:31",
+        "125:54:19",
+        "125:57:51",
+        "126:02:41",
+        "127:11:09",
+        "128:02:47",
+        "128:15:50"
+      ]
+    },
+    "fj_rest": {
+      "title": "Apollo 13 Flight Journal, Day 6 part 3, Worn Out Crew",
+      "url": "https://apollojournals.org/afj/ap13fj/24day6-wornoutcrew.html",
+      "locators": [
+        "PAO 130:39"
+      ],
+      "webLineRangesAtReview": [
+        [
+          804,
+          806
+        ]
+      ]
+    },
+    "fj_final_powerup": {
+      "title": "Apollo 13 Flight Journal, Day 6 part 4, Last Course Correction",
+      "url": "https://apollojournals.org/afj/ap13fj/25day6-thelastcoursecorrection.html",
+      "locators": [
+        "132:30:30",
+        "132:31:02",
+        "133:30:43",
+        "133:31:32",
+        "PAO 133:35",
+        "PAO 133:55",
+        "PAO 134:42",
+        "PAO 135:52"
+      ],
+      "webLineRangesAtReview": [
+        [
+          49,
+          54
+        ],
+        [
+          245,
+          258
+        ],
+        [
+          314,
+          315
+        ],
+        [
+          456,
+          458
+        ],
+        [
+          694,
+          706
+        ]
+      ],
+      "sourceType": "Contemporaneous crew/CapCom and PAO reports; retrospective peak report gives no peak duration."
+    },
+    "fj_cm_powerup": {
+      "title": "Apollo 13 Flight Journal, Day 6 part 6, Odyssey Resurrected",
+      "url": "https://apollojournals.org/afj/ap13fj/27day6-odysseyresurrected.html",
+      "locators": [
+        "140:09:52\u2013140:11:34"
+      ]
+    },
+    "eps_experience": {
+      "title": "Apollo Experience Report: Lunar Module Electrical Power Subsystem, NASA TN D-6977",
+      "url": "https://ntrs.nasa.gov/api/citations/19720025198/downloads/19720025198.pdf",
+      "printedPages": [
+        "13",
+        "14"
+      ],
+      "qualification": "EPS telemetry normally sampled once per second; the report cites the Apollo 13 transient as a case where sampling was too slow."
+    },
+    "csm_news_reference": {
+      "title": "Apollo Spacecraft News Reference, North American Rockwell and NASA",
+      "url": "https://apollojournals.org/alsj/CSM_News_Reference_H_Missions.pdf",
+      "printedPages": [
+        "113",
+        "114"
+      ],
+      "qualification": "Design description for the shared DC input and three-phase AC boost of the CM battery charger."
+    },
+    "review_board": {
+      "title": "Apollo 13 Review Board, Appendix B, section B6",
+      "url": "https://ntrs.nasa.gov/api/citations/19700078726/downloads/19700078726.pdf",
+      "copy": {
+        "path": "C:\\Users\\thisi\\OneDrive\\Documents\\repos\\goodapollo\\tmp\\pdfs\\electrical\\review-board-appendix-b.pdf",
+        "available": true,
+        "bytes": 11004195,
+        "sha256": "2e55cde68a432897924d9899c5456c2db8e5c2d1198aa3017a00326efa9525a2",
+        "hashMeaning": "Local download integrity receipt, not a publisher checksum"
+      },
+      "textReviewedPdfPages": [
+        116,
+        118
+      ],
+      "printedPages": [
+        "B-102",
+        "B-104"
+      ],
+      "review": "Native text reviewed; not treated as an independently sampled telemetry series.",
+      "qualification": "Predicted post-burn 17 A versus achieved 12 A reinforces that planning and actual loads differ."
+    }
+  },
+  "currentAnchors": [
+    {
+      "id": "internal_power",
+      "get": "057:44:00",
+      "kind": "configuration",
+      "source": "mission_ops_telmu",
+      "pdfPage": 235,
+      "printedPage": "G-1",
+      "event": "LM on internal power by this approximate time; telemetry received 057:57.",
+      "getHours": 57.733333333333334,
+      "getSeconds": 207840
+    },
+    {
+      "id": "activation_load",
+      "getWindow": [
+        "057:44:00",
+        "060:40:00"
+      ],
+      "kind": "observed_range",
+      "currentA": [
+        45,
+        50
+      ],
+      "source": "mission_ops_telmu",
+      "pdfPage": 235,
+      "printedPage": "G-1",
+      "qualification": "Eventual initial activation load; exact start/end of this range are not given.",
+      "getWindowHours": [
+        57.733333333333334,
+        60.666666666666664
+      ]
+    },
+    {
+      "id": "initial_reduction",
+      "get": "060:40:00",
+      "kind": "observed_range",
+      "currentA": [
+        35,
+        40
+      ],
+      "source": "mission_ops_telmu",
+      "pdfPage": 236,
+      "printedPage": "G-2",
+      "getHours": 60.666666666666664,
+      "getSeconds": 218400
+    },
+    {
+      "id": "pc2_shutdown",
+      "get": "079:32:05",
+      "kind": "event",
+      "source": "fj_pc2",
+      "event": "Crew calls engine shutdown; full electrical powerdown is later.",
+      "getHours": 79.53472222222221,
+      "getSeconds": 286325
+    },
+    {
+      "id": "remaining_81h",
+      "get": "081:47:00",
+      "kind": "reported_capacity_estimate",
+      "remainingAh": 1498,
+      "metric": "LM remaining; exact reserve convention not specified in call",
+      "source": "fj_pc2",
+      "getHours": 81.78333333333333,
+      "getSeconds": 294420
+    },
+    {
+      "id": "deep_powerdown",
+      "get": "082:30:00",
+      "kind": "observed_average",
+      "currentA": 12.5,
+      "source": "mission_ops_telmu",
+      "pdfPage": 239,
+      "printedPage": "G-5",
+      "qualification": "Approximately this transition time; initial 28-50 A levels preceded it. No continuous 12.5 A telemetry trace is supplied.",
+      "getHours": 82.5,
+      "getSeconds": 297000
+    },
+    {
+      "id": "coast_hourly_summary",
+      "get": "096:00:00",
+      "kind": "observed_aggregate",
+      "currentA": 11.8,
+      "usableRemainingAh": 1312,
+      "source": "mission_ops_electrical",
+      "printedPage": "III-32",
+      "qualification": "Flight Director hourly summary of present draw and usable reserve before LM-to-CM transfer.",
+      "getHours": 96.0,
+      "getSeconds": 345600
+    },
+    {
+      "id": "descent_battery_current_surge_summary",
+      "get": "097:13:56",
+      "kind": "reported_peak",
+      "currentGreaterThanA": 100,
+      "durationSeconds": null,
+      "source": "mission_report",
+      "pdfPage": 45,
+      "printedPage": "6-1",
+      "qualification": "The section 6.2 summary does not identify an individual battery as the 100 A channel. Peak duration and signed current are not established.",
+      "getHours": 97.23222222222222,
+      "getSeconds": 350036
+    },
+    {
+      "id": "battery2_warning",
+      "get": "099:49:52",
+      "kind": "first_crew_report",
+      "source": "fj_battery_anomaly",
+      "alternateReportGets": [
+        {
+          "get": "099:51:00",
+          "source": "mission_ops_telmu",
+          "printedPage": "G-5"
+        },
+        {
+          "get": "099:51:09",
+          "source": "mission_report",
+          "printedPage": "14-29"
+        },
+        {
+          "get": "099:54:00",
+          "source": "mission_report",
+          "printedPage": "6-1"
+        }
+      ],
+      "event": "Lovell reports a Battery 2 warning and confirms the master alarm at 099:50:26.",
+      "qualification": "The first crew call establishes that a warning had already occurred, not its exact onset. The later indication was diagnosed as erroneous.",
+      "getHours": 99.83111111111111,
+      "getSeconds": 359392
+    },
+    {
+      "id": "manual_mcc_load",
+      "get": "105:18:28",
+      "kind": "observed_approximate_during_event",
+      "currentA": 25,
+      "source": "fj_manual_mcc",
+      "qualification": "PAO at106:03 describes approximately25 A during the manual course-correction burn; amplitude is approximate, duration not established here.",
+      "getHours": 105.30777777777777,
+      "getSeconds": 379108
+    },
+    {
+      "id": "post_manual_mcc",
+      "get": "106:03:00",
+      "kind": "observed_range",
+      "currentA": [
+        10,
+        12
+      ],
+      "source": "fj_manual_mcc",
+      "getHours": 106.05,
+      "getSeconds": 381780
+    },
+    {
+      "id": "cm_charge_capacity_plan",
+      "get": "111:15:49",
+      "kind": "planning_estimate",
+      "lmChargeCostAh": 120,
+      "cmChargeRestoredAh": 20,
+      "source": "fj_charge",
+      "qualification": "Charger input cost and restored CM charge have different boundaries; do not model a 1:1 Ah transfer.",
+      "getHours": 111.26361111111112,
+      "getSeconds": 400549
+    },
+    {
+      "id": "battery6_online",
+      "get": "111:57:00",
+      "kind": "configuration",
+      "batteryId": "bat6",
+      "source": "mission_ops_telmu",
+      "pdfPage": 240,
+      "printedPage": "G-6",
+      "getHours": 111.95,
+      "getSeconds": 403020
+    },
+    {
+      "id": "cm_link_connected",
+      "get": "112:05:00",
+      "kind": "configuration",
+      "exportCurrentA": 8,
+      "source": "mission_ops_telmu",
+      "pdfPage": 240,
+      "printedPage": "G-6",
+      "qualification": "Approximate charge draw; physical connection remained until140:00 but current was intermittent.",
+      "getHours": 112.08333333333333,
+      "getSeconds": 403500
+    },
+    {
+      "id": "cm_charge_started",
+      "get": "112:12:00",
+      "kind": "reported_event",
+      "source": "fj_charge",
+      "qualification": "PAO at112:18 identifies charging start; link connection and charger start are different events.",
+      "getHours": 112.2,
+      "getSeconds": 403920
+    },
+    {
+      "id": "charge_hourly_summary",
+      "get": "114:00:00",
+      "kind": "observed_aggregate",
+      "currentA": 19.2,
+      "usableRemainingAh": 1084.7,
+      "source": "mission_ops_electrical",
+      "printedPage": "III-36",
+      "qualification": "Flight Director hourly summary during the first Battery A charge interval.",
+      "getHours": 114.0,
+      "getSeconds": 410400
+    },
+    {
+      "id": "charge_period_current",
+      "get": "119:44:00",
+      "kind": "observed_aggregate",
+      "currentA": 17.9,
+      "usableRemainingAh": 974,
+      "source": "fj_charge",
+      "qualification": "PAO electrical consumables/current report during charging; do not add another CM load to a measured whole-source total.",
+      "getHours": 119.73333333333333,
+      "getSeconds": 431040
+    },
+    {
+      "id": "late_charge_period_current",
+      "get": "122:24:00",
+      "kind": "observed_approximate",
+      "currentA": 19,
+      "source": "fj_packing",
+      "qualification": "PAO reports current load about 19 A while Battery A charge was in progress, before the telemetry interruption.",
+      "getHours": 122.4,
+      "getSeconds": 440640
+    },
+    {
+      "id": "late_coast_low",
+      "get": "130:39:00",
+      "kind": "observed_range",
+      "currentA": [
+        10,
+        12
+      ],
+      "source": "fj_rest",
+      "getHours": 130.65,
+      "getSeconds": 470340
+    },
+    {
+      "id": "final_powerup_start",
+      "get": "133:29:00",
+      "kind": "reported_event",
+      "source": "fj_final_powerup",
+      "qualification": "Start time reported retrospectively at134:42; earlier than the planning sheet, not136:00.",
+      "getHours": 133.48333333333332,
+      "getSeconds": 480540
+    },
+    {
+      "id": "final_powerup_peak",
+      "getWindow": [
+        "133:29:00",
+        "134:42:00"
+      ],
+      "kind": "retrospective_peak",
+      "currentA": 70,
+      "source": "fj_final_powerup",
+      "durationSeconds": null,
+      "qualification": "Peak occurred before the134:42 report; neither duration nor exact timestamp established. Never integrate70 A over an invented duration.",
+      "getWindowHours": [
+        133.48333333333332,
+        134.7
+      ]
+    },
+    {
+      "id": "battery5_online",
+      "get": "133:30:00",
+      "kind": "configuration",
+      "batteryId": "bat5",
+      "source": "mission_ops_telmu",
+      "pdfPage": 240,
+      "printedPage": "G-6",
+      "getHours": 133.5,
+      "getSeconds": 480600
+    },
+    {
+      "id": "final_powerup_early",
+      "get": "133:35:00",
+      "kind": "observed_range",
+      "currentA": [
+        34,
+        35
+      ],
+      "source": "fj_final_powerup",
+      "qualification": "PAO statement between133:35:11 and133:35:41; time rounded to minute.",
+      "getHours": 133.58333333333334,
+      "getSeconds": 480900
+    },
+    {
+      "id": "final_powerup_45_50",
+      "get": "133:55:00",
+      "kind": "observed_range",
+      "currentA": [
+        45,
+        50
+      ],
+      "source": "fj_final_powerup",
+      "getHours": 133.91666666666666,
+      "getSeconds": 482100
+    },
+    {
+      "id": "final_plateau",
+      "get": "134:42:00",
+      "kind": "observed_approximate",
+      "currentA": 40,
+      "source": "fj_final_powerup",
+      "getHours": 134.7,
+      "getSeconds": 484920
+    },
+    {
+      "id": "final_plateau_confirmed",
+      "get": "135:52:00",
+      "kind": "observed_approximate",
+      "currentA": 40,
+      "source": "fj_final_powerup",
+      "getHours": 135.86666666666667,
+      "getSeconds": 489120
+    },
+    {
+      "id": "battery3_removed",
+      "get": "139:16:00",
+      "kind": "configuration_and_consumption",
+      "batteryId": "bat3",
+      "deliveredAh": 394,
+      "currentLessThanA": 1,
+      "source": "mission_ops_telmu",
+      "pdfPage": 240,
+      "printedPage": "G-6",
+      "getHours": 139.26666666666668,
+      "getSeconds": 501360
+    },
+    {
+      "id": "cm_internal_power",
+      "getWindow": [
+        "140:10:32",
+        "140:11:20"
+      ],
+      "kind": "reported_configuration_window",
+      "source": "fj_cm_powerup",
+      "qualification": "Crew calls the LM power breakers at the first time and tells Houston to check at the second. TELMU G-6 gives a rounded 140:00 switchover.",
+      "getWindowHours": [
+        140.17555555555555,
+        140.1888888888889
+      ]
+    },
+    {
+      "id": "jettison_usable",
+      "get": "141:30:00",
+      "kind": "reported_usable_capacity",
+      "usableRemainingAh": 189.6,
+      "source": "mission_ops_telmu",
+      "pdfPage": 237,
+      "printedPage": "G-3",
+      "qualification": "Usable reserve, not the Mission Report total remaining410 Ah.",
+      "getHours": 141.5,
+      "getSeconds": 509400
+    }
+  ],
+  "switchEvents": [
+    {
+      "get": "079:49:52",
+      "source": "fj_pc2",
+      "event": "Primary S-band power-amplifier breaker OPEN; selector retained PRIMARY.",
+      "evidenceType": "command and readback at079:50:10",
+      "endGet": null,
+      "getHours": 79.83111111111111,
+      "getSeconds": 287392
+    },
+    {
+      "get": "082:03:04",
+      "source": "fj_pc2",
+      "event": "ATCA PGNS breaker OPEN.",
+      "evidenceType": "crew confirms082:03:11",
+      "getHours": 82.05111111111111,
+      "getSeconds": 295384
+    },
+    {
+      "get": "082:06:30",
+      "source": "fj_pc2",
+      "event": "IMU STBY remains closed; LGC/DSKY and IMU OPR open.",
+      "evidenceType": "readback",
+      "getHours": 82.10833333333333,
+      "getSeconds": 295590
+    },
+    {
+      "get": "082:13:51",
+      "source": "fj_pc2",
+      "event": "RCS A/B-2 quad-heater breakers stay closed; panel3 heater switches OFF.",
+      "evidenceType": "amended control path, not all heater breakers open",
+      "getHours": 82.23083333333334,
+      "getSeconds": 296031
+    },
+    {
+      "get": "082:16:37",
+      "source": "fj_pc2",
+      "event": "Crew begins executing final powerdown.",
+      "evidenceType": "procedure transmission completed at082:16:28",
+      "getHours": 82.27694444444444,
+      "getSeconds": 296197
+    },
+    {
+      "get": "082:25:03",
+      "source": "fj_pc2",
+      "event": "TRACK and FLOOD breakers OPEN.",
+      "evidenceType": "crew confirmation after permission",
+      "getHours": 82.4175,
+      "getSeconds": 296703
+    },
+    {
+      "get": "099:52:13",
+      "source": "fj_battery_anomaly",
+      "event": "Panel 16 BAL LOAD cross-tie breaker OPEN.",
+      "evidenceType": "crew confirms",
+      "getHours": 99.87027777777777,
+      "getSeconds": 359533
+    },
+    {
+      "get": "099:53:42",
+      "source": "fj_battery_anomaly",
+      "event": "Descent battery 2 taken offline on ground request.",
+      "evidenceType": "crew reports operation",
+      "getHours": 99.89500000000001,
+      "getSeconds": 359622
+    },
+    {
+      "get": "099:55:08",
+      "source": "fj_battery_anomaly",
+      "event": "Panel 16 BAL LOAD cross-tie breaker CLOSED.",
+      "evidenceType": "crew confirms",
+      "getHours": 99.91888888888889,
+      "getSeconds": 359708
+    },
+    {
+      "get": "101:02:47",
+      "source": "fj_battery_anomaly",
+      "event": "Panel 16 BAL LOAD cross-tie breaker OPEN, then battery 2 back online. Master alarm and battery light return.",
+      "evidenceType": "crew reports operation and immediate indication",
+      "getHours": 101.04638888888888,
+      "getSeconds": 363767
+    },
+    {
+      "get": "101:05:49",
+      "source": "fj_battery_anomaly",
+      "event": "Panel 16 BAL LOAD cross-tie breaker CLOSED.",
+      "evidenceType": "crew confirms",
+      "getHours": 101.09694444444445,
+      "getSeconds": 363949
+    },
+    {
+      "get": "105:43:59",
+      "source": "fj_manual_mcc",
+      "event": "Crew proceeds with post-MCC powerdown after PTC assessment.",
+      "evidenceType": "crew readback, followed by audible operations and checklist calls",
+      "getHours": 105.73305555555555,
+      "getSeconds": 380639
+    },
+    {
+      "get": "105:52:28",
+      "source": "fj_manual_mcc",
+      "event": "Primary S-band power-amplifier breaker OPEN and low bit rate, with selector retained PRIMARY.",
+      "evidenceType": "command and crew intent at 105:52:40",
+      "getHours": 105.87444444444444,
+      "getSeconds": 381148
+    },
+    {
+      "get": "132:30:30",
+      "source": "fj_final_powerup",
+      "event": "Power-amplifier breaker CLOSE and normal voice requested for ranging.",
+      "confirmedGet": "132:31:02",
+      "plannedDurationSeconds": 900,
+      "actualEndGet": null,
+      "qualification": "15 minutes is requested duration, not measured stop time; no132:58 OFF event found on reviewed page.",
+      "getHours": 132.50833333333333,
+      "getSeconds": 477030
+    },
+    {
+      "get": "133:31:32",
+      "source": "fj_final_powerup",
+      "event": "Use checklist RCS heater steps for now; panel 11 heater breakers will be restored later in the breaker configuration.",
+      "evidenceType": "instruction in response to crew report that panel 11 breakers were out; later closure times unknown",
+      "getHours": 133.52555555555557,
+      "getSeconds": 480692
+    }
+  ],
+  "batteryTransient": {
+    "source": "mission_report",
+    "figure": "14-16",
+    "printedPage": "14-28",
+    "smallCopyPdfPage": 137,
+    "figureWindowGet": [
+      "097:13:52",
+      "097:13:58"
+    ],
+    "reportedStartGet": "097:13:53",
+    "reportedDurationApproxSeconds": 2,
+    "cadenceSource": "eps_experience",
+    "nominalTelemetrySamplesPerSecond": 1,
+    "graphReadingAllowance": {
+      "seconds": 0.1,
+      "volts": 0.5,
+      "amperes": 2,
+      "qualification": "Allowance for visually reading plotted markers and the grid. It excludes instrumentation and sampling uncertainty."
+    },
+    "selectedSamples": [
+      {
+        "get": "097:13:54.0",
+        "channel": "bat1",
+        "currentMagnitudeA": 37
+      },
+      {
+        "get": "097:13:54.1",
+        "channel": "bat2",
+        "plotOffScaleHigh": true,
+        "plotUpperLimitA": 40
+      },
+      {
+        "get": "097:13:54.8",
+        "channel": "bat3",
+        "currentMagnitudeA": 37
+      },
+      {
+        "get": "097:13:54.8",
+        "channel": "bat4",
+        "currentMagnitudeA": 30
+      },
+      {
+        "get": "097:13:55.0",
+        "channel": "bat2",
+        "plotOffScaleHigh": true,
+        "plotUpperLimitA": 40
+      },
+      {
+        "get": "097:13:55.1",
+        "channel": "cdr_dc",
+        "voltageV": 29
+      },
+      {
+        "get": "097:13:55.1",
+        "channel": "lmp_dc",
+        "voltageV": 27.6
+      }
+    ],
+    "section14Report": {
+      "bat2CurrentMagnitudeAtLeastA": 60,
+      "signedCurrentKnown": false,
+      "balanceLoadTrip": false,
+      "reverseCurrentIndication": false,
+      "batteryOvercurrentDisconnect": false,
+      "normalSharingReturnedWithinMinutes": 10
+    },
+    "integratedChargeAh": null,
+    "qualification": "Only plotted markers are sampled evidence. Channels are staggered and Battery 2 clips; the printed connecting lines do not supply intermediate values or an integrated charge."
+  },
+  "cmPowerTransfer": {
+    "routing": {
+      "source": "fj_charge",
+      "readupGet": [
+        "110:57:23",
+        "111:06:54",
+        "111:12:42",
+        "111:38:36"
+      ],
+      "connectedDestination": "CM Main B through the two CM panel 5 LM Power breakers",
+      "reversalSetup": {
+        "source": "mission_ops_electrical",
+        "printedPage": "E-9",
+        "configuration": "CM Battery B first supplied the LM control relays through Main B. Once the relays were set, the LM supplied CM Main B."
+      },
+      "chargerInputs": [
+        "CM Main B DC",
+        "CM Inverter 2 supplied by Main B, via CM AC Bus 2"
+      ],
+      "designSource": "csm_news_reference",
+      "currentLimitA": 15,
+      "currentLimitLocator": "CapCom 110:59:39, before execution",
+      "transferPathModelImplemented": false,
+      "qualification": "Flight procedure establishes the route and protection limit. The limit supplies neither a modeled trip curve nor a measured current."
+    },
+    "transitions": [
+      {
+        "id": "main_b_connected",
+        "source": "mission_ops_telmu",
+        "get": "112:05:00",
+        "evidence": "TELMU time. Crew reports power-up complete and requests charge Go at 112:06:11."
+      },
+      {
+        "id": "charge_a_start",
+        "source": "fj_charge",
+        "getWindow": [
+          "112:06:28",
+          "112:11:57"
+        ],
+        "evidence": "From Go to first positive charger reading. PAO rounds the start to 112:12."
+      },
+      {
+        "id": "charge_a_pause",
+        "source": "fj_packing",
+        "getWindow": [
+          "122:46:47",
+          "122:51:33"
+        ],
+        "evidence": "Crew departs to stop charging, then reports it secured."
+      },
+      {
+        "id": "cm_telemetry_acquired",
+        "source": "fj_packing",
+        "get": "123:06:21",
+        "evidence": "Houston confirms CM telemetry during the charging pause. Main B was supplied by the LM."
+      },
+      {
+        "id": "charge_a_restart",
+        "source": "fj_packing",
+        "getWindow": [
+          "123:18:11",
+          "123:21:32"
+        ],
+        "evidence": "Crew reports restart in progress, then confirms Battery A charging."
+      },
+      {
+        "id": "charge_b_start",
+        "source": "fj_reactivation",
+        "getWindow": [
+          "125:57:51",
+          "126:02:41"
+        ],
+        "evidence": "Crew begins the changeover, then reports Battery B on charge."
+      },
+      {
+        "id": "charge_b_stop",
+        "source": "fj_reactivation",
+        "getWindow": [
+          "127:11:09",
+          "128:02:47"
+        ],
+        "evidence": "Last positive reading included here to CapCom confirmation that the charge switch was already OFF. Exact stop time unresolved."
+      },
+      {
+        "id": "main_b_disconnected",
+        "source": "fj_cm_powerup",
+        "getWindow": [
+          "140:10:32",
+          "140:11:20"
+        ],
+        "evidence": "Crew callout at the LM power breakers and subsequent transfer verification. TELMU G-6 gives rounded 140:00."
+      }
+    ],
+    "chargerReadings": [
+      {
+        "get": "112:11:57",
+        "getSeconds": 403917,
+        "cmBattery": "A",
+        "batteryVoltageV": 34.3,
+        "chargerOutputCurrentA": 2.5,
+        "indicatedBatteryTerminalPowerW": 85.75,
+        "source": "fj_charge"
+      },
+      {
+        "get": "112:35:36",
+        "getSeconds": 405336,
+        "cmBattery": "A",
+        "batteryVoltageV": 35.0,
+        "chargerOutputCurrentA": 2.4,
+        "indicatedBatteryTerminalPowerW": 84.0,
+        "source": "fj_charge"
+      },
+      {
+        "get": "112:48:33",
+        "getSeconds": 406113,
+        "cmBattery": "A",
+        "batteryVoltageV": 37.8,
+        "chargerOutputCurrentA": 2.3,
+        "indicatedBatteryTerminalPowerW": 86.94,
+        "source": "fj_charge"
+      },
+      {
+        "get": "115:44:17",
+        "getSeconds": 416657,
+        "cmBattery": "A",
+        "batteryVoltageV": 39.2,
+        "chargerOutputCurrentA": 1.4,
+        "indicatedBatteryTerminalPowerW": 54.88,
+        "source": "fj_charge"
+      },
+      {
+        "get": "120:01:06",
+        "getSeconds": 432066,
+        "cmBattery": "A",
+        "batteryVoltageV": 39.4,
+        "chargerOutputCurrentA": 1.27,
+        "indicatedBatteryTerminalPowerW": 50.04,
+        "source": "fj_packing"
+      },
+      {
+        "get": "120:59:16",
+        "getSeconds": 435556,
+        "cmBattery": "A",
+        "batteryVoltageV": 39.5,
+        "chargerOutputCurrentA": 1.25,
+        "indicatedBatteryTerminalPowerW": 49.38,
+        "source": "fj_packing"
+      },
+      {
+        "get": "122:46:12",
+        "getSeconds": 441972,
+        "cmBattery": "A",
+        "batteryVoltageV": 39.4,
+        "chargerOutputCurrentA": 1.25,
+        "indicatedBatteryTerminalPowerW": 49.25,
+        "source": "fj_packing"
+      },
+      {
+        "get": "123:22:17",
+        "getSeconds": 444137,
+        "cmBattery": "A",
+        "batteryVoltageV": 39.4,
+        "chargerOutputCurrentA": 1.4,
+        "indicatedBatteryTerminalPowerW": 55.16,
+        "source": "fj_packing"
+      },
+      {
+        "get": "126:02:41",
+        "getSeconds": 453761,
+        "cmBattery": "B",
+        "batteryVoltageV": 39.6,
+        "chargerOutputCurrentA": 1.1,
+        "indicatedBatteryTerminalPowerW": 43.56,
+        "source": "fj_reactivation"
+      },
+      {
+        "get": "127:11:09",
+        "getSeconds": 457869,
+        "cmBattery": "B",
+        "batteryVoltageV": 39.4,
+        "chargerOutputCurrentA": 1.25,
+        "indicatedBatteryTerminalPowerW": 49.25,
+        "source": "fj_reactivation"
+      }
+    ],
+    "cmNetCapacityChange": {
+      "source": "mission_report",
+      "printedSection": "7.1.6",
+      "cmEntryBatteriesAvailableAtShutdownAh": 99,
+      "cmEntryBatteriesAvailableAfterChargeAh": 118,
+      "netCmCapacityIncreaseAh": 19,
+      "qualification": "Net change in reported available CM reserve. Integrated charger output and instantaneous efficiency are separate quantities."
+    },
+    "cmEECOMCrossCheck": {
+      "source": "mission_ops_electrical",
+      "printedPages": [
+        "E-9",
+        "E-12",
+        "E-21"
+      ],
+      "earlyTelemetry": {
+        "get": "102:00:00",
+        "supply": "CM Battery B",
+        "durationLessThanMinutes": 10
+      },
+      "laterTelemetry": {
+        "get": "123:00:00",
+        "supply": "LM via CM Main B",
+        "durationApproxMinutes": 7
+      },
+      "postChargeReserve": {
+        "get": "128:00:00",
+        "byBatteryAh": {
+          "A": 40.0,
+          "B": 40.0,
+          "C": 38.8
+        },
+        "totalAh": 118.8,
+        "qualification": "EECOM calculated reserves. Battery C was not charged. The Mission Report separately reports 118 Ah."
+      },
+      "preentryLoads": {
+        "lmSuppliedMainB": [
+          "CM RCS Ring 2 preheat",
+          "caution and warning",
+          "lighting"
+        ],
+        "batteryCSuppliedMainA": [
+          "CM RCS Ring 1 preheat"
+        ],
+        "qualification": "Time labels EI\u20136:30 to EI\u20132:30 are the EECOM summary. The actual load overlay in Figure 5 begins after the final LM disconnect. It is not an LM export waveform."
+      }
+    },
+    "qualification": "The reported 8 A charge draw is approximate LM input. Crew readouts are CM charger output. Neither these sparse readings nor the connected interval establish total charger output, charger efficiency, or a continuous export load."
+  },
+  "configurationIntervals": [
+    {
+      "startGet": "060:34:00",
+      "endGet": "063:40:00",
+      "state": "cross-ties open",
+      "source": "mission_ops_telmu",
+      "pdfPage": 239,
+      "printedPage": "G-5"
+    },
+    {
+      "startGet": "078:16:00",
+      "endGet": "080:00:00",
+      "state": "cross-ties open",
+      "source": "mission_ops_telmu",
+      "pdfPage": 239,
+      "printedPage": "G-5"
+    },
+    {
+      "endGet": "082:30:00",
+      "cdrToLmpBusPowerRatio": 4,
+      "qualification": "Ratio described until82:30; not necessarily invariant through every transient.",
+      "source": "mission_ops_telmu",
+      "pdfPage": 239,
+      "printedPage": "G-5"
+    },
+    {
+      "startGet": "099:53:42",
+      "endGet": "101:02:47",
+      "state": "Descent battery 2 manually disconnected",
+      "source": "fj_battery_anomaly",
+      "qualification": "Crew event reports. TELMU rounds the interval to about one hour."
+    },
+    {
+      "startGet": "112:05:00",
+      "endGet": "140:00:00",
+      "state": "LM connected to CM Main B; current intermittent",
+      "source": "mission_ops_telmu",
+      "pdfPage": 240,
+      "printedPage": "G-6",
+      "qualification": "Rounded summary interval; see cmPowerTransfer transitions for actual crew callouts."
+    }
+  ],
+  "planningProfile": {
+    "source": "fd_profile",
+    "pdfPage": 1,
+    "status": "PLANNING_ONLY_NOT_TELEMETRY",
+    "solidLineApproximateIntervals": [
+      {
+        "startGetHours": 120,
+        "endGetHours": 126.5,
+        "currentA": 11.9
+      },
+      {
+        "startGetHours": 126.5,
+        "endGetHours": 136,
+        "currentA": 14.7
+      },
+      {
+        "startGetHours": 136,
+        "endGetHours": 142.6,
+        "currentA": 40.7
+      }
+    ],
+    "intervalQualification": "Horizontal boundaries read approximately from plotted grid, not timestamped commands; late planned end is not actual LM jettison time.",
+    "reserveAnnotationsAh": {
+      "profilePad": 296,
+      "unusable": 209,
+      "usablePad": 87
+    },
+    "accountingCaution": "Dashed CM and solid LM lines are separately labeled. Do not integrate both as source current or add export without a declared boundary."
+  },
+  "checklistReconciliation": {
+    "baselineSource": "contingency",
+    "pdfPages": [
+      81,
+      82,
+      83,
+      84
+    ],
+    "printedPages": [
+      "PWR-5",
+      "PWR-6",
+      "PWR-7",
+      "PWR-8"
+    ],
+    "inFlightAmendmentSource": "fj_pc2",
+    "conclusion": "The stock rescue-orbit emergency checklist is a baseline, not the flown final configuration. Apply time-tagged voice amendments and distinguish read-up from execution.",
+    "unambiguousDifferences": [
+      "VHF removed from remaining functions; only one audio station retained.",
+      "PGNS was retained for PTC setup then removed at final deep powerdown.",
+      "IMU standby heater retained despite PGNS operate/DSKY off.",
+      "RCS A/B-2 heater breakers closed with panel3 switches off; do not infer heater state from breaker alone.",
+      "TRACK/FLOOD eventually opened after an initial instruction to leave lighting breakers closed."
+    ]
+  },
+  "accountingResolution": {
+    "status": "UNRESOLVED_SOURCE_BOUNDARY",
+    "established": [
+      "129Ah is reported LM-to-CM export across loads that include charging and pre-entry equipment. The reported CM battery reserve rose by 19Ah.",
+      "Section6.2 stage-delivery figures and section7.2.5 total-capacity figures do not close under one explicitly defined boundary.",
+      "TELMU189.6Ah usable reserve is distinct from Mission Report410Ah total remaining."
+    ],
+    "requiredEvidence": "Original per-battery integrated-current ledger or explicit author definition of stage-delivered charge, plus usable-capacity/reserve convention.",
+    "implementationRule": "Track LM housekeeping and CM export separately, debit both exactly once at the source, and compare only identically defined metrics/epochs."
+  },
+  "validationCriteria": [
+    {
+      "id": "chronology",
+      "criterion": "Represent final deep-powerdown execution near82:30 and final powerup start133:29; do not keep12A until136.",
+      "status": "SOURCE BASIS ESTABLISHED"
+    },
+    {
+      "id": "observation_vs_plan",
+      "criterion": "Tag30/12/12.5A summaries, individual current samples, planning40.7A and70A peak distinctly; never turn a peak into a duration.",
+      "status": "REQUIRED"
+    },
+    {
+      "id": "boundary",
+      "criterion": "Declare source-current, LM-housekeeping, CM-export, delivered and usable-reserve boundaries; no duplicate export subtraction.",
+      "status": "OPEN"
+    },
+    {
+      "id": "independence",
+      "criterion": "Use equipment-derived loads and actual switch history to predict held-out current/capacity anchors; observations used to choose aggregate load cannot count as independent validation.",
+      "status": "TARGETS RECORDED; MODEL COMPARISON OPEN"
+    },
+    {
+      "id": "tolerance",
+      "criterion": "Set tolerances before comparison from telemetry resolution, calibration, time uncertainty and documented graph-reading uncertainty. No NASA50Ah acceptance band has been found.",
+      "status": "OPEN"
+    },
+    {
+      "id": "battery_sharing",
+      "criterion": "Account for recorded unequal early bus sharing, battery5/6 connection times and battery3 withdrawal; equal sharing is not the flown history.",
+      "status": "OPEN"
+    },
+    {
+      "id": "conservation",
+      "criterion": "Retain exact deterministic Ah/Wh conservation and source exhaustion software tests separately from historical accuracy.",
+      "status": "SOFTWARE GATE SEPARATE"
+    }
+  ],
+  "heldOutTargets": {
+    "status": "AVAILABLE FOR INDEPENDENT COMPARISON; NO MODEL PASS CLAIMED",
+    "qualification": "Use only targets excluded from calibration of the model being evaluated. The existing aggregate scenarios already use some TELMU and PAO anchors.",
+    "componentModelEvaluated": true,
+    "componentModelScope": "Optional source-constrained LM-8 design-power proxy comparisons and conditional battery replay; not a complete LM-7 flight-current prediction.",
+    "componentModelReport": "output/electrical-flight-validation.json",
+    "componentModelManifest": "reference/electrical-flight-configurations.json",
+    "fullVehicleComponentModelValidated": false,
+    "componentModelBlocker": "Component subtotals are now evaluated separately from aggregate scenarios. LM-8 transfer uncertainty, historical starting battery allocations, omitted equipment, switching, thermal duties, unequal sharing and acceptance tolerances remain unresolved. Charger output, battery transient waveforms and usable reserves are not predicted.",
+    "targets": [
+      {
+        "id": "charging_source_draw",
+        "references": [
+          "charge_hourly_summary",
+          "charge_period_current",
+          "late_charge_period_current"
+        ],
+        "modelRequirement": "Complete LM loads and simultaneous CM export input at the source."
+      },
+      {
+        "id": "charger_output",
+        "references": [
+          "cmPowerTransfer.chargerReadings",
+          "cmPowerTransfer.cmNetCapacityChange"
+        ],
+        "modelRequirement": "CM input path, charger and entry battery state model."
+      },
+      {
+        "id": "battery_transient",
+        "references": [
+          "batteryTransient.selectedSamples",
+          "batteryTransient.section14Report"
+        ],
+        "modelRequirement": "Per-battery and bus transient dynamics, protection state and the observation cadence."
+      },
+      {
+        "id": "battery3_withdrawal",
+        "references": [
+          "battery3_removed"
+        ],
+        "modelRequirement": "Unequal source sharing dependent on tap, delivered charge and terminal voltage."
+      },
+      {
+        "id": "reserve",
+        "references": [
+          "jettison_usable",
+          "reportedBudget"
+        ],
+        "modelRequirement": "Documented usable versus total charge and consistent source accounting boundary."
+      }
+    ]
+  },
+  "nextGateRecommendation": "Use the new component-current and battery-history report to isolate missing demand and thermal sensitivity. Establish LM-7 applicability, thermostat/jet duty and missing full-mission switch history before assessing the held-out anchors with predeclared uncertainty. Resolve unequal battery sharing, initial history and export accounting before accepting reserve predictions. Full-flight validation remains OPEN.",
+  "profileAudit": {
+    "purpose": "Source-qualified chronology scenarios and uncertainty; not full flown-profile reproduction",
+    "artifact": "reference/electrical-flight-audit.json",
+    "initialAh": 2179,
+    "reportedRemainingAh": 410,
+    "validationPassed": false,
+    "independentValidationPassed": false,
+    "supersededLegacy": {
+      "id": "legacy_coarse_superseded",
+      "segments": [
+        {
+          "startGet": "058:00:00",
+          "endGet": "079:32:06",
+          "startGetHours": 58.0,
+          "endGetHours": 79.535,
+          "currentA": 30,
+          "useAh": 646.05,
+          "basis": "Mission Report aggregate approximated as constant; original audit endpoint79.535h"
+        },
+        {
+          "startGet": "079:32:06",
+          "endGet": "136:00:00",
+          "startGetHours": 79.535,
+          "endGetHours": 136.0,
+          "currentA": 12,
+          "useAh": 677.58,
+          "basis": "Superseded transition assumptions"
+        },
+        {
+          "startGet": "136:00:00",
+          "endGet": "141:30:00",
+          "startGetHours": 136.0,
+          "endGetHours": 141.5,
+          "currentA": 40.7,
+          "useAh": 223.85,
+          "basis": "Flight Director planning amplitude, not measured"
+        }
+      ],
+      "lmScenarioUseAh": 1547.48,
+      "cmTransferAh": 129,
+      "transferBoundary": "CM export added once to a scenario explicitly interpreting segment currents as LM housekeeping only; this interpretation is conditional.",
+      "predictedRemainingAh": 502.52,
+      "reportedTotalRemainingAh": 410,
+      "residualAh": 92.52,
+      "independentValidationPassed": false,
+      "note": "Reproduces the old92.52Ah residual for comparison only; known timing omissions invalidate it as a flown schedule."
+    },
+    "scenarios": [
+      {
+        "id": "late_boundary_sensitivity",
+        "segments": [
+          {
+            "startGet": "058:00:00",
+            "endGet": "079:32:06",
+            "startGetHours": 58.0,
+            "endGetHours": 79.535,
+            "currentA": 30,
+            "useAh": 646.05,
+            "basis": "Legacy initial assumption retained to isolate one change"
+          },
+          {
+            "startGet": "079:32:06",
+            "endGet": "133:29:00",
+            "startGetHours": 79.535,
+            "endGetHours": 133.48333333333332,
+            "currentA": 12,
+            "useAh": 647.38,
+            "basis": "Legacy low current, with actual final powerup start"
+          },
+          {
+            "startGet": "133:29:00",
+            "endGet": "141:30:00",
+            "startGetHours": 133.48333333333332,
+            "endGetHours": 141.5,
+            "currentA": 40.7,
+            "useAh": 326.278333,
+            "basis": "Planning amplitude retained as sensitivity, not observed constant"
+          }
+        ],
+        "lmScenarioUseAh": 1619.708333,
+        "cmTransferAh": 129,
+        "transferBoundary": "CM export added once to a scenario explicitly interpreting segment currents as LM housekeeping only; this interpretation is conditional.",
+        "predictedRemainingAh": 430.291667,
+        "reportedTotalRemainingAh": 410,
+        "residualAh": 20.291667,
+        "independentValidationPassed": false,
+        "note": "Only final boundary moved to133:29. Nearer reserve agreement is not an independent pass; early powerdown transition and ramp remain wrong/incomplete."
+      },
+      {
+        "id": "telmu_chronology_illustrative",
+        "segments": [
+          {
+            "startGet": "058:00:00",
+            "endGet": "082:30:00",
+            "startGetHours": 58.0,
+            "endGetHours": 82.5,
+            "currentA": 30,
+            "useAh": 735.0,
+            "basis": "Simplified30A average inside reported28-50A initial range"
+          },
+          {
+            "startGet": "082:30:00",
+            "endGet": "133:29:00",
+            "startGetHours": 82.5,
+            "endGetHours": 133.48333333333332,
+            "currentA": 12.5,
+            "useAh": 637.291667,
+            "basis": "TELMU powered-down average extended across unmeasured changes; assumption"
+          },
+          {
+            "startGet": "133:29:00",
+            "endGet": "141:30:00",
+            "startGetHours": 133.48333333333332,
+            "endGetHours": 141.5,
+            "currentA": 40,
+            "useAh": 320.666667,
+            "basis": "Observed later plateau applied as an illustrative constant; excludes unknown warmup shape"
+          }
+        ],
+        "lmScenarioUseAh": 1692.958334,
+        "cmTransferAh": 129,
+        "transferBoundary": "CM export added once to a scenario explicitly interpreting segment currents as LM housekeeping only; this interpretation is conditional.",
+        "predictedRemainingAh": 357.041666,
+        "reportedTotalRemainingAh": 410,
+        "residualAh": -52.958334,
+        "independentValidationPassed": false,
+        "note": "Chronology improved but not a reconstructed waveform. Aggregate anchors calibrate this scenario and therefore cannot independently validate it."
+      }
+    ],
+    "heldOutSpotChecks": {
+      "scenarioId": "telmu_chronology_illustrative",
+      "qualification": "These pre-export PAO references were not used to choose the illustrative scenario segments. The comparison checks the assumed aggregate against unused observations. The magnitude or stated range of each observation is approximate, and no acceptance tolerance or component-model pass is claimed.",
+      "acceptanceTolerance": null,
+      "comparisons": [
+        {
+          "anchorId": "coast_hourly_summary",
+          "get": "096:00:00",
+          "source": "mission_ops_electrical",
+          "referenceCurrentA": 11.8,
+          "predictedCurrentA": 12.5,
+          "predictedMinusReportedA": 0.7
+        },
+        {
+          "anchorId": "manual_mcc_load",
+          "get": "105:18:28",
+          "source": "fj_manual_mcc",
+          "referenceCurrentA": 25,
+          "predictedCurrentA": 12.5,
+          "predictedMinusReportedA": -12.5
+        },
+        {
+          "anchorId": "post_manual_mcc",
+          "get": "106:03:00",
+          "source": "fj_manual_mcc",
+          "referenceCurrentA": [
+            10,
+            12
+          ],
+          "predictedCurrentA": 12.5,
+          "outsideReportedRangeA": 0.5
+        }
+      ]
+    },
+    "timingSensitivityAh": 72.228333,
+    "warmupPeak": {
+      "peakA": 70,
+      "durationSeconds": null,
+      "integratedChargeAh": null,
+      "reason": "Only a peak is reported; duration is unknown. No70A rectangular interval is invented."
+    },
+    "nasaPublishedAcceptanceTolerance": null,
+    "acceptancePolicy": "No pass/fail tolerance is inferred from reserve agreement of an aggregate-calibrated scenario.",
+    "limitations": [
+      "Sparse aggregate observations are not a sampled current history.",
+      "58:00 is a rounded scenario starting epoch; internal power was present by57:44, and the exact2179Ah capacity epoch/per-battery allocation is not established.",
+      "CM export must not be added to a measured whole-source current that already includes it.",
+      "Initial unequal bus sharing, individual battery history and unusable reserve are not reproduced.",
+      "Heater cycles, course-correction peaks, comm changes and final ramp durations remain incomplete."
+    ]
+  },
+  "reportedBudget": {
+    "purpose": "Reported-total boundary hypotheses; not transient-model validation",
+    "artifact": "reference/electrical-flight-audit.json",
+    "reportedDescentDeliveredAh": 1434.7,
+    "reportedAscentDeliveredAh": 200,
+    "reportedStageDeliveredAh": 1634.7,
+    "reportedCmTransferAh": 129,
+    "reportedPowerupAvailableAh": 2179,
+    "ratedCapacityAh": 2192,
+    "reportedRemainingAh": 410,
+    "ratedCapacityMinusPowerupAh": 13,
+    "reportedUsableRemainingAh": 189.6,
+    "totalDepletionFromPowerupAh": 1769,
+    "stageDeliveredDifferenceAh": 134.3,
+    "remainingIfDeliveredIncludesCmAndUsesPowerupEpochAh": 544.3,
+    "remainingIfDeliveredExcludesCmAndUsesPowerupEpochAh": 415.3,
+    "remainingIfDeliveredIncludesCmAndUsesRatedEpochAh": 557.3,
+    "remainingIfDeliveredExcludesCmAndUsesRatedEpochAh": 428.3,
+    "residualIfCmSubtractedAgainAh": 5.3,
+    "transferAccountingResolved": false,
+    "independentValidationPassed": false,
+    "note": "No reviewed source explicitly defines whether section6.2 delivered totals exclude129Ah export. Near agreement after another subtraction is not proof. A model integrating complete source currents includes export once. Usable189.6Ah and total410Ah are different metrics."
+  }
+}

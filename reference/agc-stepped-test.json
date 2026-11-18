@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "Pinned exact rope context created",
+      "passed": true
+    },
+    {
+      "name": "Second simultaneous CPU is rejected",
+      "passed": true
+    },
+    {
+      "name": "Every DSKY/alarm output cycle/channel/value equals deterministic unchanged-core fixture",
+      "passed": true
+    },
+    {
+      "name": "Native adapter emits authentic V35 all-eight frame",
+      "passed": true
+    },
+    {
+      "name": "Lamp digits and hardware status equal genuine upstream CLI/TCP frame",
+      "passed": true
+    },
+    {
+      "name": "Lamp-test alarm clears on actual CPU schedule",
+      "passed": true
+    },
+    {
+      "name": "Pinned exact rope context created",
+      "passed": true
+    },
+    {
+      "name": "Three quarter-second steps equal exactly64000 physical machine cycles",
+      "passed": true
+    },
+    {
+      "name": "Subcycle quarter-nanosecond remainder is retained",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Checkpoint timing comes from validated staged payload rather than current live clock or wrapper metadata",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Authoritative checkpoint timing inspection cannot mutate CPU/globals/queue/time",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Restore and immediate save reproduce complete canonical bytes including pending queue/remainder",
+      "passed": true
+    },
+    {
+      "name": "Held PRO state survives native checkpoint without implicit normalization",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Restored CPU/hidden peripheral state replays bit-exact full checkpoint",
+      "passed": true
+    },
+    {
+      "name": "Queued and subsequent output events replay identically with exact cycle timestamps",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Corrupt timing inspection rejects payload and leaves output pointers unchanged",
+      "passed": true
+    },
+    {
+      "name": "Corrupt checksum rejected by validate and load",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Rejected checkpoint leaves live CPU/globals/queue/clock unchanged",
+      "passed": true
+    },
+    {
+      "name": "Unknown checkpoint schema rejected",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Unknown schema cannot partially mutate live state",
+      "passed": true
+    },
+    {
+      "name": "Different adapter build rejected",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Incompatible build cannot partially mutate live state",
+      "passed": true
+    },
+    {
+      "name": "Pinned exact rope context created",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Synthetic coarse XYZ and gyro peripheral outputs are active before hidden-state checkpoint",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Nonzero coarse/gyro hidden accumulators replay byte-exact state and output event schedule",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Restart fixture has prior time, fractional carry and real queued outputs",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Power restart zeros native timing and discards old output events",
+      "passed": true
+    },
+    {
+      "name": "Power restart releases old PRO input",
+      "passed": true
+    },
+    {
+      "name": "Power restart retains all physical erasable, including E0 interrupt storage and switched core",
+      "passed": true
+    },
+    {
+      "name": "Power restart clears the old accumulator and enters the octal 4000 hardware restart vector",
+      "passed": true
+    },
+    {
+      "name": "Power restart snapshot passes native validation",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Unchanged LM131R1 restart code increments the retained REDOCTR",
+      "passed": true
+    },
+    {
+      "name": "Pinned exact rope context created",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Power restart resets all serialized volatile state and preserves the exact fixed rope and parity",
+      "passed": true
+    },
+    {
+      "name": "Pinned exact rope context created",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Destroy/create resets the shared upstream static peripheral state",
+      "passed": true
+    },
+    {
+      "name": "Every startup machine-cycle boundary saves/validates/loads canonically across4096 cycles",
+      "passed": true
+    },
+    {
+      "name": "Pinned exact rope context created",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Restored non-power-of-two backlog grows to the exact262144-event limit",
+      "passed": true
+    },
+    {
+      "name": "One event beyond the declared queue limit reports a fault",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Faulted diagnostic checkpoints are rejected before usable-state restore",
+      "passed": true
+    },
+    {
+      "name": "Full checkpoint size available",
+      "passed": true
+    },
+    {
+      "name": "Rejected faulted checkpoint leaves live diagnostic state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Input mutations are rejected on a faulted live context",
+      "passed": true
+    },
+    {
+      "name": "A valid pre-fault checkpoint restores and PRO release succeeds",
+      "passed": true
+    }
+  ],
+  "checkCount": 65,
+  "flightPadloadApplied": false,
+  "cyclePeriodNanoseconds": "11718.75",
+  "cliFrameEquivalent": true,
+  "deterministicTraceEvents": 287,
+  "lampFrame": {
+    "cycle": 602748,
+    "rows": [
+      0,
+      3005,
+      6077,
+      7101,
+      9149,
+      12221,
+      13245,
+      16317,
+      17341,
+      19389,
+      21437,
+      23485,
+      25020,
+      0,
+      0,
+      0
+    ],
+    "channel11": 8317,
+    "channel13": 576,
+    "channel163": 473
+  },
+  "checkpointBytes": 96291,
+  "checkpointSha256": "fecc01aae1ce67d6cf94935706b37ef9a19072a1d767d6b83da82597616866b3",
+  "replayedCheckpointSha256": "81a53b670fa0c8824d8759ce67b193cbef68590fac948093a8637c940b144db9",
+  "replayOutputEvents": 321,
+  "syntheticPeripheralStressEvents": 58,
+  "syntheticPeripheralStressReplayPassed": true,
+  "startupCycleBoundaryCheckpointCount": 4096,
+  "restoredQueueLimitTested": 262144,
+  "faultedCheckpointLoadRejected": true,
+  "authoritativeCheckpointTimingValidated": true,
+  "powerRestartRetainsPhysicalErasable": true,
+  "powerRestartExecutesLm131r1Vector": true,
+  "build": {
+    "schemaVersion": 1,
+    "abiVersion": 1,
+    "upstreamCommit": "938e88d11caea1d72af72e53e6005282023f94c2",
+    "sourceHash": "fe91c8ca130eee089dea4c8db498bea949b781acff81c13292b536b74092883c",
+    "adapterBuildHash": "71e3f54359d6b9aca4dcb95c076a7009938f0cfaa4c88e1e80c5e6508ebe20cd",
+    "dllSha256": "a53332f77ea63a455600c2d8e4de0b275b62eac9c8579843829f2f3e5d4e6df6",
+    "cpuOriginalTextSha256": "87e1f3b6f9d2e99a2ce27552b9e640e9220a61eda8b0f714351810793ab229fe",
+    "cpuExposedTextSha256": "87e1f3b6f9d2e99a2ce27552b9e640e9220a61eda8b0f714351810793ab229fe",
+    "cpuInstructionBytesUnchanged": true,
+    "compiler": "D:\\apollo-ref\\toolchain\\llvm-mingw-20261104-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+    "flags": [
+      "-std=c11",
+      "-O0",
+      "-fno-lto",
+      "-DWIN32",
+      "-Wno-typedef-redefinition",
+      "-Wno-deprecated-declarations"
+    ],
+    "exposedStatics": [
+      "BurstOutput.CountCDUX",
+      "BurstOutput.CountCDUY",
+      "BurstOutput.CountCDUZ",
+      "CduChecker",
+      "CduFifos",
+      "GyroCount",
+      "GyroTimer",
+      "ImuCduCount",
+      "ImuChannel14",
+      "OldChannel14",
+      "TrapPIPA"
+    ],
+    "localDataSizes": {
+      "BurstOutput.CountCDUY": 4,
+      "DefaultClients": 10360,
+      "OldChannel14": 4,
+      "DefaultSockets": 40,
+      "ImuChannel14": 4,
+      "GyroCount": 4,
+      "BurstOutput.CountCDUZ": 4,
+      "CduFifos": 1608,
+      "GyroTimer": 4,
+      "TrapPIPA": 4,
+      "ImuCduCount": 8,
+      "BurstOutput.CountCDUX": 4,
+      "CduChecker": 4
+    },
+    "singleActiveContext": true,
+    "nanosecondsPerCycle": "11718.75",
+    "quarterNanosecondsPerCycle": 46875,
+    "flightPadloadApplied": false
+  }
+}

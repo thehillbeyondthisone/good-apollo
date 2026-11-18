@@ -1,0 +1,1524 @@
+{
+  "schemaVersion": 1,
+  "title": "Optional LM-8 input-power proxies for LM-7 flight-validation research",
+  "status": "PARTIAL / CROSS-VEHICLE PROXY / NOT INDEPENDENT FLIGHT VALIDATION",
+  "inventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "electricalDefinitionSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+  "sources": [
+    {
+      "id": "lm8-systems-handbook",
+      "title": "LM-8 Systems Handbook",
+      "path": "D:\\apollo-ref\\lm-systems\\HSI-208818.pdf",
+      "url": "https://www.ibiblio.org/apollo/Documents/HSI-208818.pdf",
+      "revision": "15 September 1970, LM-8 BASIC",
+      "sha256": "01ca5997b95e1181b1f1b71ef27ae1a27ce8a09c0cfbfe4415365540810ab863",
+      "applicability": "LM-8; every transferred LM-7 watt value is a declared proxy"
+    },
+    {
+      "id": "lm7-aoh-v1",
+      "title": "Apollo Operations Handbook, LM7 and Subsequent, Vol1",
+      "path": "D:\\apollo-ref\\lm-systems\\a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+      "url": "https://apollojournals.org/afj/ap13fj/pdf-hr/a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+      "revision": "1 February 1970",
+      "sha256": "1623f208023279cbe7de6aea14e95bd95fbc8c4e9d51791ff55e68ee04d338f2",
+      "applicability": "LM-7 switch/supply functions and heater element requirements"
+    }
+  ],
+  "modelBoundary": [
+    "Optional overlay only. The normal twenty-load LM-7 catalog is unchanged.",
+    "No input watts or allocations are chosen to reproduce 25 A, 12 A or a reserve endpoint.",
+    "Cross-vehicle transfer error and missing-power error have no established numeric bound.",
+    "Values are nominal branch inputs; constant-power representation is an approximation.",
+    "Heater availability and demand are separate. Candidates require explicit duty assumptions.",
+    "LM-7 values take precedence where sources overlap; conflicting LM-8 comms/audio/EPS-display values are withheld.",
+    "Unmodeled inverter losses and transient solenoid loads are not backfilled as residual watts.",
+    "Single-feed AEA constraints prevent duplicate debit; dual-feed sharing remains unresolved."
+  ],
+  "evidence": [
+    {
+      "id": "lm8_branch_table_63",
+      "sourceId": "lm8-systems-handbook",
+      "pdfPage": 63,
+      "printedPage": "5-7",
+      "locator": "Table 5-III, Circuit Breakers, LOAD AT 28 VDC OR 115 VAC / WATTS",
+      "review": "visual_complete_page",
+      "finding": "The equipment-input WATTS column is separate from breaker RATING (AMPS), AMPS and HEAT LOAD columns. The page explicitly says LM-8 BASIC. LM-7 equality is a transfer assumption, not established by this table."
+    },
+    {
+      "id": "lm8_branch_table_64",
+      "sourceId": "lm8-systems-handbook",
+      "pdfPage": 64,
+      "printedPage": "5-8",
+      "locator": "Table 5-III, Circuit Breakers, LOAD AT 28 VDC OR 115 VAC / WATTS",
+      "review": "visual_complete_page",
+      "finding": "The equipment-input WATTS column is separate from breaker RATING (AMPS), AMPS and HEAT LOAD columns. The page explicitly says LM-8 BASIC. LM-7 equality is a transfer assumption, not established by this table."
+    },
+    {
+      "id": "lm8_branch_table_65",
+      "sourceId": "lm8-systems-handbook",
+      "pdfPage": 65,
+      "printedPage": "5-9",
+      "locator": "Table 5-III, Circuit Breakers, LOAD AT 28 VDC OR 115 VAC / WATTS",
+      "review": "visual_complete_page",
+      "finding": "The equipment-input WATTS column is separate from breaker RATING (AMPS), AMPS and HEAT LOAD columns. The page explicitly says LM-8 BASIC. LM-7 equality is a transfer assumption, not established by this table."
+    },
+    {
+      "id": "lm8_branch_table_66",
+      "sourceId": "lm8-systems-handbook",
+      "pdfPage": 66,
+      "printedPage": "5-10",
+      "locator": "Table 5-III, Circuit Breakers, LOAD AT 28 VDC OR 115 VAC / WATTS",
+      "review": "visual_complete_page",
+      "finding": "The equipment-input WATTS column is separate from breaker RATING (AMPS), AMPS and HEAT LOAD columns. The page explicitly says LM-8 BASIC. LM-7 equality is a transfer assumption, not established by this table."
+    },
+    {
+      "id": "lm7_ecs_selectors",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 727,
+      "printedPage": "3-57",
+      "locator": "Table 3-1, 7S3 and 7S1",
+      "review": "visual_complete_page",
+      "finding": "GLYCOL selects primary pump 1 or 2; INST (SEC) selects instrumentation, not the secondary pump motor. SUIT FAN 1/2 selects its motor and OFF removes fan power. Automatic transfer after pump failure is not a normal selector state and is outside this overlay."
+    },
+    {
+      "id": "lm7_pump_branches",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 775,
+      "printedPage": "3-105",
+      "locator": "Table 3-1, 4CB117 and 4CB141",
+      "review": "visual_complete_page",
+      "finding": "Each primary glycol pump is supplied from CDR DC through its own breaker and GLYCOL PUMP switch. AUTO TRNFR is a relay-control branch, not a pump load."
+    },
+    {
+      "id": "lm7_ags_states",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 757,
+      "printedPage": "3-87",
+      "locator": "Table 3-1, 12S17 AGS STATUS",
+      "review": "visual_complete_page",
+      "finding": "OFF removes AGS operating power but retains ASA heater supply. STANDBY applies full ASA power and AEA warmup. OPERATE applies full ASA and AEA power. AEA warmup watts and thermostat duty are not established."
+    },
+    {
+      "id": "lm7_stab_branches",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 804,
+      "printedPage": "3-134",
+      "locator": "Table 3-1, 4CB28, 4CB79, 4CB82 and 4CB230",
+      "review": "visual_complete_page",
+      "finding": "LMP DC feeds AEA, ASA, ATCA power supply and AGS ATCA selection/bias branch. AEA has another CDR feed; ASA breaker also acts as its on/off supply."
+    },
+    {
+      "id": "lm7_stab_cdr_branches",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 772,
+      "printedPage": "3-102",
+      "locator": "Table 3-1, 4CB238 and 4CB81",
+      "review": "visual_complete_page",
+      "finding": "CDR DC provides AEA main supply and ATCA PGNS selection/bias supply. The table does not establish redundant AEA feed sharing."
+    },
+    {
+      "id": "lm7_deca_branch",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 773,
+      "printedPage": "3-103",
+      "locator": "Table 3-1, 4CB69 and 4CB80",
+      "review": "visual_complete_page",
+      "finding": "DECA PWR applies CDR DC to DECA for engine-on function and trim-fail circuit. ENG CONT supplies engine-related control functions; its operating draw is not proven constant by closing its breaker."
+    },
+    {
+      "id": "lm7_suit_delta_p_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 807,
+      "printedPage": "3-137",
+      "locator": "Table 3-1, 4CB120",
+      "review": "visual_complete_page",
+      "finding": "SUIT FAN DP supplies LMP DC to the suit fan differential-pressure sensor. Its electrical supply is not gated by the selected fan motor switch."
+    },
+    {
+      "id": "lm7_rcs_instrument_supply",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 802,
+      "printedPage": "3-132",
+      "locator": "Table 3-1, 4CB50, 4CB103 and 4CB121",
+      "review": "visual_complete_page",
+      "finding": "4CB50 supplies LMP DC to RCS TEMP/PRESS indicators and talkbacks. 4CB103 supplies LMP DC to main-propulsion temperature/pressure indicators and talkbacks. 4CB121 supplies LMP DC to the RCS propellant-quantity device. LM-8 Table 5-III assigns 4CB121 to CDR; that transfer is withheld."
+    },
+    {
+      "id": "lm7_coas_gate",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 766,
+      "printedPage": "3-96",
+      "locator": "Table 3-1, 16S14 COAS",
+      "review": "visual_complete_page",
+      "finding": "FWD or OVHD energizes the corresponding COAS connector from CDR DC through the FLIGHT DISPLAYS COAS breaker. OFF removes connector power. Brightness dependence is not quantified by the LM-8 maximum/nominal branch entry."
+    },
+    {
+      "id": "lm7_rcs_heater_elements",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 360,
+      "printedPage": "2.4-14",
+      "locator": "Section 2.4.3.4.2, Heaters",
+      "review": "visual_complete_page",
+      "finding": "Thirty-two heaters serve sixteen TCAs: two per TCA, one on each redundant bank. Each element is 17.5 W at 24 V. Four elements per quad/bank imply 70 W at 24 V. Primary thermostat setpoint is 140 +/- 8 F, redundant 147 +/- 7 F, with a 2 F deadband. Supply is described as 28 V DC.",
+      "elementsPerQuadBank": 4,
+      "elementRatedW": 17.5,
+      "elementRatedV": 24,
+      "quadBankRatedW": 70.0,
+      "primaryThermostatF": 140,
+      "primaryThermostatToleranceF": 8,
+      "redundantThermostatF": 147,
+      "redundantThermostatToleranceF": 7,
+      "deadbandF": 2
+    },
+    {
+      "id": "lm7_rcs_heater_gate",
+      "sourceId": "lm7-aoh-v1",
+      "pdfPage": 740,
+      "printedPage": "3-70",
+      "locator": "Table 3-1, 11S4 through 11S7",
+      "review": "visual_complete_page",
+      "finding": "Bank 1 provides automatic heater control without override. Bank 2 AUTO uses temperature control, OFF interrupts power, and MAN bypasses temperature control to hold 28 V on its heaters. Breaker closure is not thermostat demand."
+    }
+  ],
+  "runtimeLoads": [
+    {
+      "id": "flight_proxy_suit_fan_1",
+      "label": "Suit fan 1 (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c05"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p2_suit_fan",
+          "allowedPositions": [
+            "1"
+          ]
+        }
+      ],
+      "powerW": 163.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65",
+        "lm7_ecs_selectors"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Normal selected-fan operation; no fan failure or automatic transfer modeled.",
+      "sourceReferenceDesignation": "4CB138",
+      "sourcePdfPage": 65,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_suit_fan_2",
+      "label": "Suit fan 2 (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c15"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p2_suit_fan",
+          "allowedPositions": [
+            "2"
+          ]
+        }
+      ],
+      "powerW": 163.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65",
+        "lm7_ecs_selectors"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Normal selected-fan operation; no fan failure or automatic transfer modeled.",
+      "sourceReferenceDesignation": "4CB119",
+      "sourcePdfPage": 65,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_glycol_pump_1",
+      "label": "Primary glycol pump 1 (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c08"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p2_glycol_selector",
+          "allowedPositions": [
+            "PUMP 1"
+          ]
+        }
+      ],
+      "powerW": 30.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65",
+        "lm7_ecs_selectors",
+        "lm7_pump_branches"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Normal selected primary-pump operation; no failed-pump automatic transfer.",
+      "sourceReferenceDesignation": "4CB117",
+      "sourcePdfPage": 65,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_glycol_pump_2",
+      "label": "Primary glycol pump 2 (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c07"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p2_glycol_selector",
+          "allowedPositions": [
+            "PUMP 2"
+          ]
+        }
+      ],
+      "powerW": 30.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65",
+        "lm7_ecs_selectors",
+        "lm7_pump_branches"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Normal selected primary-pump operation; no failed-pump automatic transfer.",
+      "sourceReferenceDesignation": "4CB141",
+      "sourcePdfPage": 65,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_asa_electronics",
+      "label": "ASA operating electronics (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r02_c08"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "STANDBY",
+            "OPERATE"
+          ]
+        }
+      ],
+      "powerW": 41.1,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64",
+        "lm7_ags_states",
+        "lm7_stab_branches"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Only the ELECT row is included. The separate 253 W thermostat-controlled heater row is never included automatically.",
+      "sourceReferenceDesignation": "4CB79",
+      "sourcePdfPage": 64,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_aea_lmp",
+      "label": "AEA single LMP feed (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r02_c06"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        },
+        {
+          "controlId": "p11_cb_r03_c08",
+          "allowedPositions": [
+            "PULLED"
+          ]
+        }
+      ],
+      "powerW": 47.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_63",
+        "lm7_ags_states",
+        "lm7_stab_branches",
+        "lm7_stab_cdr_branches"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Conservative single-feed configuration only: other AEA breaker must be PULLED. Both feeds closed withholds this load because sharing is unresolved; it must not be read as a zero-power prediction. Standby warmup is withheld. No separate assumed DEDA draw is added.",
+      "sourceReferenceDesignation": "4CB28",
+      "sourcePdfPage": 63,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_aea_cdr",
+      "label": "AEA single CDR feed (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r03_c08"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p6_ags_status",
+          "allowedPositions": [
+            "OPERATE"
+          ]
+        },
+        {
+          "controlId": "p16_cb_r02_c06",
+          "allowedPositions": [
+            "PULLED"
+          ]
+        }
+      ],
+      "powerW": 47.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_ags_states",
+        "lm7_stab_branches",
+        "lm7_stab_cdr_branches"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Conservative single-feed configuration only: other AEA breaker must be PULLED. Both feeds closed withholds this load because sharing is unresolved; it must not be read as a zero-power prediction. Standby warmup is withheld. No separate assumed DEDA draw is added.",
+      "sourceReferenceDesignation": "4CB238",
+      "sourcePdfPage": 66,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_atca_pgns",
+      "label": "ATCA PGNS mode (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r02_c10"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p1_guid_cont",
+          "allowedPositions": [
+            "PGNS"
+          ]
+        }
+      ],
+      "powerW": 55.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64",
+        "lm7_stab_branches",
+        "lm7_stab_cdr_branches"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. The source mode distinction is selected by GUID CONT. This is the branch total; internal 800 Hz RGA/controller power is not added again. Failure/dead bias-supply mode consumption is not established.",
+      "sourceReferenceDesignation": "4CB82",
+      "sourcePdfPage": 64,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_atca_ags",
+      "label": "ATCA AGS mode (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r02_c10"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p1_guid_cont",
+          "allowedPositions": [
+            "AGS"
+          ]
+        }
+      ],
+      "powerW": 65.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64",
+        "lm7_stab_branches",
+        "lm7_stab_cdr_branches"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. The source mode distinction is selected by GUID CONT. This is the branch total; internal 800 Hz RGA/controller power is not added again. Failure/dead bias-supply mode consumption is not established.",
+      "sourceReferenceDesignation": "4CB82",
+      "sourcePdfPage": 64,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_deca",
+      "label": "DECA power (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r03_c15"
+      ],
+      "switchRequirements": [],
+      "powerW": 10.6,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64",
+        "lm7_deca_branch"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Closed branch represents the nominal equipment input; engine-on versus trim-fail decomposition is unavailable.",
+      "sourceReferenceDesignation": "4CB69",
+      "sourcePdfPage": 64,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_co2_sensor",
+      "label": "CO2 sensor (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c18"
+      ],
+      "switchRequirements": [],
+      "powerW": 1.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied branch model; missing component failure or sub-mode behavior remains outside this overlay.",
+      "sourceReferenceDesignation": "4CB84",
+      "sourcePdfPage": 64,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_ecs_display",
+      "label": "ECS display (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c10"
+      ],
+      "switchRequirements": [],
+      "powerW": 4.9,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied branch model; missing component failure or sub-mode behavior remains outside this overlay.",
+      "sourceReferenceDesignation": "4CB140",
+      "sourcePdfPage": 65,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_signal_conditioner_1",
+      "label": "Signal conditioner 1 (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r03_c07"
+      ],
+      "switchRequirements": [],
+      "powerW": 12.6,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied branch model; missing component failure or sub-mode behavior remains outside this overlay.",
+      "sourceReferenceDesignation": "4CB131",
+      "sourcePdfPage": 65,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_mission_timer",
+      "label": "Mission timer (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r02_c10"
+      ],
+      "switchRequirements": [],
+      "powerW": 2.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied branch model; missing component failure or sub-mode behavior remains outside this overlay.",
+      "sourceReferenceDesignation": "4CB159",
+      "sourcePdfPage": 65,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_des_eca_cdr",
+      "label": "Descent ECA CDR supply (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r05_c07"
+      ],
+      "switchRequirements": [],
+      "powerW": 10.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_63"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied branch model; missing component failure or sub-mode behavior remains outside this overlay.",
+      "sourceReferenceDesignation": "4CB10",
+      "sourcePdfPage": 63,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_des_eca_lmp",
+      "label": "Descent ECA LMP supply (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c13"
+      ],
+      "switchRequirements": [],
+      "powerW": 10.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_63"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied branch model; missing component failure or sub-mode behavior remains outside this overlay.",
+      "sourceReferenceDesignation": "4CB11",
+      "sourcePdfPage": 63,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_asc_eca_cdr",
+      "label": "Ascent ECA CDR supply (LM-8 proxy)",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r05_c09"
+      ],
+      "switchRequirements": [],
+      "powerW": 5.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_63"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied branch model; missing component failure or sub-mode behavior remains outside this overlay.",
+      "sourceReferenceDesignation": "4CB15",
+      "sourcePdfPage": 63,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_asc_eca_lmp",
+      "label": "Ascent ECA LMP supply (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c11"
+      ],
+      "switchRequirements": [],
+      "powerW": 5.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_63"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied branch model; missing component failure or sub-mode behavior remains outside this overlay.",
+      "sourceReferenceDesignation": "4CB14",
+      "sourcePdfPage": 63,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_suit_fan_delta_p",
+      "label": "Suit fan differential-pressure sensor (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r03_c16"
+      ],
+      "switchRequirements": [],
+      "powerW": 3.6,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65",
+        "lm7_suit_delta_p_supply"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied instrumentation branch. The LM-7 table establishes its direct LMP DC breaker supply; no inferred fan or engine activity gate is added.",
+      "sourceReferenceDesignation": "4CB120",
+      "sourcePdfPage": 65,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_rcs_temp_pressure_display",
+      "label": "RCS temperature/pressure display and flags (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r01_c11"
+      ],
+      "switchRequirements": [],
+      "powerW": 2.12,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64",
+        "lm7_rcs_instrument_supply"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied instrumentation branch. The LM-7 table establishes its direct LMP DC breaker supply; no inferred fan or engine activity gate is added.",
+      "sourceReferenceDesignation": "4CB50",
+      "sourcePdfPage": 64,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_main_prop_temp_pressure_display",
+      "label": "Main propulsion temperature/pressure display and flags (LM-8 proxy)",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r01_c14"
+      ],
+      "switchRequirements": [],
+      "powerW": 3.05,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64",
+        "lm7_rcs_instrument_supply"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. Nominal continuously supplied instrumentation branch. The LM-7 table establishes its direct LMP DC breaker supply; no inferred fan or engine activity gate is added.",
+      "sourceReferenceDesignation": "4CB103",
+      "sourcePdfPage": 64,
+      "vehicleApplicability": "LM-8 value / LM-7 transfer assumption",
+      "independentFlightValidation": false
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank1_quad1",
+      "label": "RCS bank 1 quad 1",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c04"
+      ],
+      "switchRequirements": [],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 1,
+      "quad": 1,
+      "manualDemandControl": null,
+      "fullDemandPositions": [],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank1_quad2",
+      "label": "RCS bank 1 quad 2",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c03"
+      ],
+      "switchRequirements": [],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 1,
+      "quad": 2,
+      "manualDemandControl": null,
+      "fullDemandPositions": [],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank1_quad3",
+      "label": "RCS bank 1 quad 3",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c02"
+      ],
+      "switchRequirements": [],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 1,
+      "quad": 3,
+      "manualDemandControl": null,
+      "fullDemandPositions": [],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank1_quad4",
+      "label": "RCS bank 1 quad 4",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c01"
+      ],
+      "switchRequirements": [],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 1,
+      "quad": 4,
+      "manualDemandControl": null,
+      "fullDemandPositions": [],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank2_quad1",
+      "label": "RCS bank 2 quad 1",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c01"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p3_rcs_sys_a_b_2_quad_1",
+          "allowedPositions": [
+            "AUTO",
+            "MAN"
+          ]
+        }
+      ],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 2,
+      "quad": 1,
+      "manualDemandControl": "p3_rcs_sys_a_b_2_quad_1",
+      "fullDemandPositions": [
+        "MAN"
+      ],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank2_quad2",
+      "label": "RCS bank 2 quad 2",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c02"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p3_rcs_sys_a_b_2_quad_2",
+          "allowedPositions": [
+            "AUTO",
+            "MAN"
+          ]
+        }
+      ],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 2,
+      "quad": 2,
+      "manualDemandControl": "p3_rcs_sys_a_b_2_quad_2",
+      "fullDemandPositions": [
+        "MAN"
+      ],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank2_quad3",
+      "label": "RCS bank 2 quad 3",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c03"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p3_rcs_sys_a_b_2_quad_3",
+          "allowedPositions": [
+            "AUTO",
+            "MAN"
+          ]
+        }
+      ],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 2,
+      "quad": 3,
+      "manualDemandControl": "p3_rcs_sys_a_b_2_quad_3",
+      "fullDemandPositions": [
+        "MAN"
+      ],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank2_quad4",
+      "label": "RCS bank 2 quad 4",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c04"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p3_rcs_sys_a_b_2_quad_4",
+          "allowedPositions": [
+            "AUTO",
+            "MAN"
+          ]
+        }
+      ],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 2,
+      "quad": 4,
+      "manualDemandControl": "p3_rcs_sys_a_b_2_quad_4",
+      "fullDemandPositions": [
+        "MAN"
+      ],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_asa_heater",
+      "label": "ASA thermostatic heater",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r02_c08"
+      ],
+      "switchRequirements": [],
+      "powerW": 253.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64",
+        "lm7_ags_states"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "qualificationNote": "AGS STATUS OFF retains ASA heater supply; do not gate heater availability on OPERATE. Heater power is thermostat-dependent."
+    },
+    {
+      "id": "flight_proxy_imu_standby_heater",
+      "label": "IMU standby heat",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c20"
+      ],
+      "switchRequirements": [],
+      "powerW": 109.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "qualificationNote": "Closed IMU STBY supply does not establish continuous 109 W thermal demand or flown temperature history."
+    }
+  ],
+  "heaterCandidates": [
+    {
+      "id": "flight_proxy_rcs_heater_bank1_quad1",
+      "label": "RCS bank 1 quad 1",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c04"
+      ],
+      "switchRequirements": [],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 1,
+      "quad": 1,
+      "manualDemandControl": null,
+      "fullDemandPositions": [],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank1_quad2",
+      "label": "RCS bank 1 quad 2",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c03"
+      ],
+      "switchRequirements": [],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 1,
+      "quad": 2,
+      "manualDemandControl": null,
+      "fullDemandPositions": [],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank1_quad3",
+      "label": "RCS bank 1 quad 3",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c02"
+      ],
+      "switchRequirements": [],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 1,
+      "quad": 3,
+      "manualDemandControl": null,
+      "fullDemandPositions": [],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank1_quad4",
+      "label": "RCS bank 1 quad 4",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c01"
+      ],
+      "switchRequirements": [],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 1,
+      "quad": 4,
+      "manualDemandControl": null,
+      "fullDemandPositions": [],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank2_quad1",
+      "label": "RCS bank 2 quad 1",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c01"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p3_rcs_sys_a_b_2_quad_1",
+          "allowedPositions": [
+            "AUTO",
+            "MAN"
+          ]
+        }
+      ],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 2,
+      "quad": 1,
+      "manualDemandControl": "p3_rcs_sys_a_b_2_quad_1",
+      "fullDemandPositions": [
+        "MAN"
+      ],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank2_quad2",
+      "label": "RCS bank 2 quad 2",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c02"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p3_rcs_sys_a_b_2_quad_2",
+          "allowedPositions": [
+            "AUTO",
+            "MAN"
+          ]
+        }
+      ],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 2,
+      "quad": 2,
+      "manualDemandControl": "p3_rcs_sys_a_b_2_quad_2",
+      "fullDemandPositions": [
+        "MAN"
+      ],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank2_quad3",
+      "label": "RCS bank 2 quad 3",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c03"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p3_rcs_sys_a_b_2_quad_3",
+          "allowedPositions": [
+            "AUTO",
+            "MAN"
+          ]
+        }
+      ],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 2,
+      "quad": 3,
+      "manualDemandControl": "p3_rcs_sys_a_b_2_quad_3",
+      "fullDemandPositions": [
+        "MAN"
+      ],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_rcs_heater_bank2_quad4",
+      "label": "RCS bank 2 quad 4",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r04_c04"
+      ],
+      "switchRequirements": [
+        {
+          "controlId": "p3_rcs_sys_a_b_2_quad_4",
+          "allowedPositions": [
+            "AUTO",
+            "MAN"
+          ]
+        }
+      ],
+      "powerW": 95.5,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_66",
+        "lm7_rcs_heater_elements",
+        "lm7_rcs_heater_gate"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "thermalBank": 2,
+      "quad": 4,
+      "manualDemandControl": "p3_rcs_sys_a_b_2_quad_4",
+      "fullDemandPositions": [
+        "MAN"
+      ],
+      "lm7ElementCalculation": {
+        "ratedW": 70.0,
+        "ratedV": 24.0,
+        "resistiveInferenceAt28VW": 95.2777777777778,
+        "qualification": "Resistance/temperature dependence is unmeasured; this calculation corroborates but does not replace LM-8 table95.5W."
+      }
+    },
+    {
+      "id": "flight_proxy_asa_heater",
+      "label": "ASA thermostatic heater",
+      "busId": "LMP_DC",
+      "breakerIds": [
+        "p16_cb_r02_c08"
+      ],
+      "switchRequirements": [],
+      "powerW": 253.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_64",
+        "lm7_ags_states"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "qualificationNote": "AGS STATUS OFF retains ASA heater supply; do not gate heater availability on OPERATE. Heater power is thermostat-dependent."
+    },
+    {
+      "id": "flight_proxy_imu_standby_heater",
+      "label": "IMU standby heat",
+      "busId": "CDR_DC",
+      "breakerIds": [
+        "p11_cb_r04_c20"
+      ],
+      "switchRequirements": [],
+      "powerW": 109.0,
+      "sourceId": "lm8-systems-handbook",
+      "evidenceIds": [
+        "lm8_branch_table_65"
+      ],
+      "qualification": "LM-8 BASIC branch input watts transferred to LM-7 as an explicit research proxy. LM-7 equality, flight initial conditions, warmup, voltage dependence and unlisted duty cycles are unverified. ON input only; a separate explicit demand fraction or measured thermal state is required. Included in the optional overlay only as a duty-controlled load; consumers must provide an explicit demand fraction.",
+      "nominalVoltageV": 28.0,
+      "demandFractionRange": [
+        0.0,
+        1.0
+      ],
+      "demandIsKnown": false,
+      "dutyControlled": true,
+      "qualificationNote": "Closed IMU STBY supply does not establish continuous 109 W thermal demand or flown temperature history."
+    }
+  ],
+  "uncertainDutyLoadIds": [
+    "flight_proxy_rcs_heater_bank1_quad1",
+    "flight_proxy_rcs_heater_bank1_quad2",
+    "flight_proxy_rcs_heater_bank1_quad3",
+    "flight_proxy_rcs_heater_bank1_quad4",
+    "flight_proxy_rcs_heater_bank2_quad1",
+    "flight_proxy_rcs_heater_bank2_quad2",
+    "flight_proxy_rcs_heater_bank2_quad3",
+    "flight_proxy_rcs_heater_bank2_quad4",
+    "flight_proxy_asa_heater",
+    "flight_proxy_imu_standby_heater"
+  ],
+  "excludedModes": [
+    {
+      "id": "rcs_quantity_bus_conflict",
+      "referenceDesignation": "4CB121",
+      "sourcePdfPage": 65,
+      "publishedW": 1.06,
+      "sourceBus": "CDR_DC",
+      "lm7GatePdfPage": 802,
+      "lm7GateBus": "LMP_DC",
+      "reason": "LM-8 input-power row assigns CDR while the LM-7 control table and modeled breaker assign LMP. Withheld pending cross-vehicle circuit adjudication; no silent bus transfer."
+    },
+    {
+      "id": "aea_dual_feed_and_warmup",
+      "reason": "Both AEA feeds closed has no known sharing; standby/warmup watts unavailable."
+    },
+    {
+      "id": "ags_ac",
+      "sourcePdfPage": 66,
+      "publishedW": 3.45,
+      "reason": "The AC input mode gate and partial-supply response require circuit review; not a switch-only draw."
+    },
+    {
+      "id": "atca_bias",
+      "sourcePdfPages": [
+        64,
+        66
+      ],
+      "publishedW": 2.0,
+      "reason": "PGNS/AGS selector and mode bias paths do not establish a constant branch operating law."
+    },
+    {
+      "id": "rcs_thrusters",
+      "sourcePdfPages": [
+        63,
+        64
+      ],
+      "publishedPerTcaW": 112.0,
+      "reason": "Actual jet commands and dwell times required; closed TCA breaker is not firing."
+    },
+    {
+      "id": "engine_control",
+      "sourcePdfPage": 64,
+      "publishedW": 10.5,
+      "publishedA": 0.28,
+      "reason": "Watts and amp columns disagree at28V; function/state consumption unresolved."
+    },
+    {
+      "id": "engine_arm_and_actuators",
+      "sourcePdfPages": [
+        63,
+        64,
+        66
+      ],
+      "reason": "Momentary, solenoid or engine-state duty not established."
+    },
+    {
+      "id": "coas_and_lighting",
+      "sourcePdfPage": 66,
+      "coasW": 8.4,
+      "reason": "COAS local rheostat/connector occupancy and light brightness/duty unquantified; no full-bright current assumed."
+    },
+    {
+      "id": "multi_bus_instrumentation",
+      "sourcePdfPages": [
+        63,
+        64,
+        65
+      ],
+      "entries": [
+        "SIG CONDR2 10.36W",
+        "CWEA11.48W",
+        "PCMTE11W",
+        "SIG SENSOR14W mated"
+      ],
+      "reason": "Table describes CDR AND LMP aggregate; no invented per-bus split."
+    },
+    {
+      "id": "pgs_computer_and_imu_operate",
+      "sourcePdfPage": 65,
+      "reason": "Power mode, standby and heater overlap unresolved; manual MCC kept LGC and IMU operate off."
+    },
+    {
+      "id": "lm8_document_discrepancies",
+      "sourcePdfPage": 65,
+      "entries": [
+        "EVENT TIMER/SE FDAI6.52W vs2.33A",
+        "ECS DISP4.9W vs1.77A"
+      ],
+      "reason": "Use printed watts only when included; never silently correct printed amp values."
+    }
+  ],
+  "uncertainty": {
+    "numericalTableResolution": "As printed:0.1W for most power rows; no calibration accuracy inferred.",
+    "crossVehicleTransferTolerance": null,
+    "thermalDutyKnown": false,
+    "currentObservationTolerancePredeclared": false,
+    "interpretation": "Decimal resolution is not an accuracy bound or historical acceptance tolerance."
+  },
+  "validation": {
+    "runtimeLoadCount": 31,
+    "fixedNominalLoadCount": 21,
+    "heaterCandidateCount": 10,
+    "allStableControlIdsValid": true,
+    "allSupplyPathsOnDeclaredBus": true,
+    "reviewedPrimarySourceHashesVerified": true,
+    "noBreakerRatingUsedAsDraw": true,
+    "noResidualOrHistoricalFit": true,
+    "completeVehicleLoadCoverage": false,
+    "independentFlightValidationPassed": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "purpose": "Reported-total boundary hypotheses; not transient-model validation",
+  "artifact": "reference/electrical-flight-audit.json",
+  "reportedDescentDeliveredAh": 1434.7,
+  "reportedAscentDeliveredAh": 200,
+  "reportedStageDeliveredAh": 1634.7,
+  "reportedCmTransferAh": 129,
+  "reportedPowerupAvailableAh": 2179,
+  "ratedCapacityAh": 2192,
+  "reportedRemainingAh": 410,
+  "ratedCapacityMinusPowerupAh": 13,
+  "reportedUsableRemainingAh": 189.6,
+  "totalDepletionFromPowerupAh": 1769,
+  "stageDeliveredDifferenceAh": 134.3,
+  "remainingIfDeliveredIncludesCmAndUsesPowerupEpochAh": 544.3,
+  "remainingIfDeliveredExcludesCmAndUsesPowerupEpochAh": 415.3,
+  "remainingIfDeliveredIncludesCmAndUsesRatedEpochAh": 557.3,
+  "remainingIfDeliveredExcludesCmAndUsesRatedEpochAh": 428.3,
+  "residualIfCmSubtractedAgainAh": 5.3,
+  "transferAccountingResolved": false,
+  "independentValidationPassed": false,
+  "note": "No reviewed source explicitly defines whether section6.2 delivered totals exclude129Ah export. Near agreement after another subtraction is not proof. A model integrating complete source currents includes export once. Usable189.6Ah and total410Ah are different metrics."
+}

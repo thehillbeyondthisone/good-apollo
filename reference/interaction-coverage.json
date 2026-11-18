@@ -1,0 +1,16 @@
+{
+	"boundNodes": 620,
+	"checks": 8585,
+	"coverageDenominator": "Current declared inventory scope only; not the complete spacecraft.",
+	"engineVersion": "4.7.2-stable (official)",
+	"failures": [],
+	"headsetTested": false,
+	"interactiveControls": 485,
+	"inventoryEntries": 620,
+	"maximumDistanceFromDesktopStartM": 2.10863041877747,
+	"movingActuators": 485,
+	"readOnlyInstruments": 135,
+	"result": "PASS",
+	"schemaVersion": 1,
+	"systemsSimulated": false
+}

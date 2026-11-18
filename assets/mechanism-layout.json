@@ -1,0 +1,1037 @@
+{
+  "schemaVersion": 1,
+  "frame": "Blender X right, Y forward, Z up; metres",
+  "qualification": "All placements and motion angles are provisional display proxies. Sourced mechanism states and exact numeric anchors are separate inventory evidence.",
+  "opticalTransmissionNote": "Deployed shades use a nearly opaque material; no calibrated optical/lighting transport is claimed.",
+  "controls": {
+    "shade_cdr": {
+      "positionBlenderM": [
+        -0.49,
+        0.985,
+        1.13
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "scale",
+        "axis": "y",
+        "values": [
+          0.025,
+          1
+        ],
+        "proxy": true
+      },
+      "shape": "forward_shade"
+    },
+    "shade_lmp": {
+      "positionBlenderM": [
+        0.49,
+        0.985,
+        1.13
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "scale",
+        "axis": "y",
+        "values": [
+          0.025,
+          1
+        ],
+        "proxy": true
+      },
+      "shape": "forward_shade"
+    },
+    "shade_docking": {
+      "positionBlenderM": [
+        -0.68,
+        0.575,
+        2.015
+      ],
+      "rotationBlenderDeg": [
+        180,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "scale",
+        "axis": "y",
+        "values": [
+          0.025,
+          1
+        ],
+        "proxy": true
+      },
+      "shape": "docking_shade"
+    },
+    "armrest_cdr_left": {
+      "positionBlenderM": [
+        -0.7188,
+        0.05,
+        0.84
+      ],
+      "rotationBlenderDeg": [
+        0,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "x",
+        "values": [
+          90,
+          30,
+          0,
+          -30,
+          -60,
+          -90
+        ],
+        "proxy": true
+      },
+      "shape": "armrest"
+    },
+    "armrest_cdr_right": {
+      "positionBlenderM": [
+        -0.39879999999999993,
+        0.05,
+        0.84
+      ],
+      "rotationBlenderDeg": [
+        0,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "x",
+        "values": [
+          90,
+          30,
+          0,
+          -30,
+          -60,
+          -90
+        ],
+        "proxy": true
+      },
+      "shape": "armrest"
+    },
+    "restraint_cdr_reel_lock": {
+      "positionBlenderM": [
+        -0.5588,
+        0.45,
+        0.58
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          50
+        ],
+        "proxy": true
+      },
+      "shape": "reel"
+    },
+    "armrest_lmp_left": {
+      "positionBlenderM": [
+        0.39879999999999993,
+        0.05,
+        0.84
+      ],
+      "rotationBlenderDeg": [
+        0,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "x",
+        "values": [
+          90,
+          30,
+          0,
+          -30,
+          -60,
+          -90
+        ],
+        "proxy": true
+      },
+      "shape": "armrest"
+    },
+    "armrest_lmp_right": {
+      "positionBlenderM": [
+        0.7188,
+        0.05,
+        0.84
+      ],
+      "rotationBlenderDeg": [
+        0,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "x",
+        "values": [
+          90,
+          30,
+          0,
+          -30,
+          -60,
+          -90
+        ],
+        "proxy": true
+      },
+      "shape": "armrest"
+    },
+    "restraint_lmp_reel_lock": {
+      "positionBlenderM": [
+        0.5588,
+        0.45,
+        0.58
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          50
+        ],
+        "proxy": true
+      },
+      "shape": "reel"
+    },
+    "restraint_cdr_docking_pin": {
+      "positionBlenderM": [
+        -0.6,
+        0.05,
+        0.62
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "translate",
+        "axis": "z",
+        "values": [
+          0,
+          0.035
+        ],
+        "proxy": true
+      },
+      "shape": "pin"
+    },
+    "coas_mount": {
+      "positionBlenderM": [
+        -0.58,
+        0.975,
+        1.53
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "poses",
+        "worldPositionsBlenderM": [
+          [
+            -0.58,
+            0.975,
+            1.53
+          ],
+          [
+            -0.46,
+            0.15,
+            1.34
+          ],
+          [
+            -0.68,
+            0.45,
+            1.965
+          ]
+        ],
+        "worldRotationsBlenderDeg": [
+          [
+            90,
+            0,
+            0
+          ],
+          [
+            90,
+            0,
+            0
+          ],
+          [
+            180,
+            0,
+            0
+          ]
+        ],
+        "proxy": true
+      },
+      "shape": "coas"
+    },
+    "coas_illumination": {
+      "positionBlenderM": [
+        -0.534,
+        0.85,
+        1.53
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          80,
+          160
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "coas_mount",
+      "shape": "knob"
+    },
+    "coas_barrel_lock": {
+      "positionBlenderM": [
+        -0.532,
+        0.94,
+        1.58
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          70
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "coas_mount",
+      "shape": "lock"
+    },
+    "coas_cap": {
+      "positionBlenderM": [
+        -0.58,
+        0.779,
+        1.53
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "translate",
+        "axis": "x",
+        "values": [
+          0,
+          0.079
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "coas_mount",
+      "shape": "cap"
+    },
+    "coas_filter": {
+      "positionBlenderM": [
+        -0.58,
+        0.775,
+        1.572
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "translate",
+        "axis": "x",
+        "values": [
+          0,
+          -0.09
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "coas_mount",
+      "shape": "filter"
+    },
+    "utility_cdr_lamp": {
+      "positionBlenderM": [
+        -0.23,
+        0.4,
+        0.52
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "poses",
+        "worldPositionsBlenderM": [
+          [
+            -0.23,
+            0.4,
+            0.52
+          ],
+          [
+            -0.7,
+            -0.02,
+            1.12
+          ],
+          [
+            -0.99,
+            0.38,
+            1.45
+          ]
+        ],
+        "proxy": true
+      },
+      "shape": "portable_lamp"
+    },
+    "utility_cdr_clamp": {
+      "positionBlenderM": [
+        -0.275,
+        0.4,
+        0.485
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          65
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "utility_cdr_lamp",
+      "shape": "clamp"
+    },
+    "utility_cdr_plug": {
+      "positionBlenderM": [
+        -0.47,
+        0.53,
+        1.96
+      ],
+      "rotationBlenderDeg": [
+        180,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "translate",
+        "axis": "z",
+        "values": [
+          0.025,
+          0
+        ],
+        "proxy": true
+      },
+      "shape": "connector"
+    },
+    "flood_overhead_cdr_aim": {
+      "positionBlenderM": [
+        -0.27,
+        0.77,
+        2.005
+      ],
+      "rotationBlenderDeg": [
+        180,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "x",
+        "values": [
+          -30,
+          0,
+          30
+        ],
+        "proxy": true
+      },
+      "shape": "reflector"
+    },
+    "umbilical_cdr_ptt": {
+      "positionBlenderM": [
+        -0.83,
+        -0.18,
+        0.94
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        20
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "shape": "ptt"
+    },
+    "utility_lmp_lamp": {
+      "positionBlenderM": [
+        0.23,
+        0.4,
+        0.52
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "poses",
+        "worldPositionsBlenderM": [
+          [
+            0.23,
+            0.4,
+            0.52
+          ],
+          [
+            0.7,
+            -0.02,
+            1.12
+          ],
+          [
+            0.99,
+            0.38,
+            1.45
+          ]
+        ],
+        "proxy": true
+      },
+      "shape": "portable_lamp"
+    },
+    "utility_lmp_clamp": {
+      "positionBlenderM": [
+        0.275,
+        0.4,
+        0.485
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          65
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "utility_lmp_lamp",
+      "shape": "clamp"
+    },
+    "utility_lmp_plug": {
+      "positionBlenderM": [
+        0.47,
+        0.53,
+        1.96
+      ],
+      "rotationBlenderDeg": [
+        180,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "translate",
+        "axis": "z",
+        "values": [
+          0.025,
+          0
+        ],
+        "proxy": true
+      },
+      "shape": "connector"
+    },
+    "flood_overhead_lmp_aim": {
+      "positionBlenderM": [
+        0.27,
+        0.77,
+        2.005
+      ],
+      "rotationBlenderDeg": [
+        180,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "x",
+        "values": [
+          -30,
+          0,
+          30
+        ],
+        "proxy": true
+      },
+      "shape": "reflector"
+    },
+    "umbilical_lmp_ptt": {
+      "positionBlenderM": [
+        0.83,
+        -0.18,
+        0.94
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        -20
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "shape": "ptt"
+    },
+    "water_dispenser_pose": {
+      "positionBlenderM": [
+        0.19,
+        -0.94,
+        0.97
+      ],
+      "rotationBlenderDeg": [
+        -90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "poses",
+        "worldPositionsBlenderM": [
+          [
+            0.19,
+            -0.94,
+            0.97
+          ],
+          [
+            0.08,
+            -0.35,
+            1.1
+          ]
+        ],
+        "proxy": true
+      },
+      "shape": "dispenser",
+      "targetLocalBlenderM": [
+        0,
+        0,
+        0.055
+      ],
+      "targetNormalLocalBlenderM": [
+        1,
+        0,
+        0
+      ]
+    },
+    "water_dispenser_trigger": {
+      "positionBlenderM": [
+        0.225,
+        -0.875,
+        0.97
+      ],
+      "rotationBlenderDeg": [
+        -90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "parentAssemblyId": "water_dispenser_pose",
+      "shape": "trigger"
+    },
+    "water_dispenser_cap": {
+      "positionBlenderM": [
+        0.19,
+        -0.82,
+        0.97
+      ],
+      "rotationBlenderDeg": [
+        -90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "translate",
+        "axis": "x",
+        "values": [
+          0,
+          -0.065
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "water_dispenser_pose",
+      "shape": "cap"
+    },
+    "tool_b_head_lock": {
+      "positionBlenderM": [
+        0.98,
+        -0.61,
+        0.62
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        -55
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "translate",
+        "axis": "z",
+        "values": [
+          0,
+          0.015
+        ],
+        "proxy": true
+      },
+      "shape": "tool_b"
+    },
+    "drogue_retention": {
+      "positionBlenderM": [
+        0.27,
+        -0.44,
+        1.96
+      ],
+      "rotationBlenderDeg": [
+        180,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          65
+        ],
+        "proxy": true
+      },
+      "shape": "assembly_retention"
+    },
+    "drogue_pose": {
+      "positionBlenderM": [
+        0,
+        -0.45,
+        1.97
+      ],
+      "rotationBlenderDeg": [
+        180,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "poses",
+        "worldPositionsBlenderM": [
+          [
+            0,
+            -0.45,
+            1.97
+          ],
+          [
+            0,
+            -0.1,
+            1.34
+          ],
+          [
+            -0.93,
+            -0.66,
+            0.6
+          ]
+        ],
+        "proxy": true
+      },
+      "shape": "drogue"
+    },
+    "hatch_forward_hinge_pin_set": {
+      "positionBlenderM": [
+        0.437,
+        0.98,
+        0.55
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "translate",
+        "axis": "z",
+        "values": [
+          0,
+          0.045
+        ],
+        "proxy": true
+      },
+      "shape": "pin_set"
+    },
+    "hatch_forward_antibacterial_filter": {
+      "positionBlenderM": [
+        0.3,
+        0.37,
+        0.35
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "poses",
+        "worldPositionsBlenderM": [
+          [
+            0.3,
+            0.37,
+            0.35
+          ],
+          [
+            0.23,
+            0.935,
+            0.58
+          ]
+        ],
+        "proxy": true
+      },
+      "shape": "antibacterial_filter"
+    },
+    "hammock_cdr": {
+      "positionBlenderM": [
+        -0.68,
+        -0.81,
+        0.25
+      ],
+      "rotationBlenderDeg": [
+        0,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "poses",
+        "worldPositionsBlenderM": [
+          [
+            -0.68,
+            -0.81,
+            0.25
+          ],
+          [
+            -0.24,
+            -0.1,
+            1.38
+          ]
+        ],
+        "worldRotationsBlenderDeg": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "proxy": true
+      },
+      "shape": "hammock",
+      "targetNormalLocalBlenderM": [
+        0,
+        1,
+        0
+      ]
+    },
+    "hammock_lmp": {
+      "positionBlenderM": [
+        -0.68,
+        -0.8,
+        0.385
+      ],
+      "rotationBlenderDeg": [
+        0,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "poses",
+        "worldPositionsBlenderM": [
+          [
+            -0.68,
+            -0.8,
+            0.385
+          ],
+          [
+            0,
+            -0.36,
+            0.86
+          ]
+        ],
+        "worldRotationsBlenderDeg": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            90
+          ]
+        ],
+        "proxy": true
+      },
+      "shape": "hammock",
+      "targetNormalLocalBlenderM": [
+        0,
+        1,
+        0
+      ]
+    },
+    "util_cdr": {
+      "positionBlenderM": [
+        -0.274,
+        0.34,
+        0.52
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          80,
+          160
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "utility_cdr_lamp",
+      "shape": "knob"
+    },
+    "util_lmp": {
+      "positionBlenderM": [
+        0.274,
+        0.34,
+        0.52
+      ],
+      "rotationBlenderDeg": [
+        90,
+        0,
+        0
+      ],
+      "geometryStatus": "provisional presentation proxy",
+      "renderPlacards": false,
+      "motion": {
+        "kind": "rotate",
+        "axis": "z",
+        "values": [
+          0,
+          80,
+          160
+        ],
+        "proxy": true
+      },
+      "parentAssemblyId": "utility_lmp_lamp",
+      "shape": "knob"
+    }
+  }
+}

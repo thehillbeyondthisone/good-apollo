@@ -1,0 +1,292 @@
+{
+  "result": "PASS",
+  "passed": true,
+  "checks": 70,
+  "failures": [],
+  "inventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "electricalSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+  "manifestSha256": "aa9170406b6a6b3fabfb007eda6e256deed81451d7b3c4ee710ab4bff521c951",
+  "independentFlightValidationPassed": false,
+  "cases": [
+    {
+      "name": "Software agreement never completes the flight gate",
+      "passed": true
+    },
+    {
+      "name": "Equipment watts predict source current without aggregate calibration",
+      "passed": true
+    },
+    {
+      "name": "Source switch branch removes its demand",
+      "passed": true
+    },
+    {
+      "name": "Explicit tolerance enables numerical assessment",
+      "passed": true
+    },
+    {
+      "name": "Valid fixture survives protection settling",
+      "passed": true
+    },
+    {
+      "name": "Static prediction settles one actual protection tick",
+      "passed": true
+    },
+    {
+      "name": "Time-tagged branch switching integrates 45 active minutes",
+      "passed": true
+    },
+    {
+      "name": "Independent Wh expectation for switched 32 W demand",
+      "passed": true
+    },
+    {
+      "name": "History source charge conservation",
+      "passed": true
+    },
+    {
+      "name": "History accounting Ah conservation",
+      "passed": true
+    },
+    {
+      "name": "History accounting Wh conservation",
+      "passed": true
+    },
+    {
+      "name": "Historical baseline is a report-only offset",
+      "passed": true
+    },
+    {
+      "name": "Historical baseline never contaminates conserved source ledger",
+      "passed": true
+    },
+    {
+      "name": "Before-events sample is not forced to zero by withdrawal",
+      "passed": true
+    },
+    {
+      "name": "After-events sample follows switch operation",
+      "passed": true
+    },
+    {
+      "name": "Sample phase is reported explicitly",
+      "passed": true
+    },
+    {
+      "name": "Unobserved history is not marked a pass",
+      "passed": true
+    },
+    {
+      "name": "Prediction-only time series requires no invented observation receipt",
+      "passed": true
+    },
+    {
+      "name": "Changing held-out current cannot alter prediction",
+      "passed": true
+    },
+    {
+      "name": "Changing held-out reserve cannot alter battery history",
+      "passed": true
+    },
+    {
+      "name": "Mismatch is reported without a fitted residual",
+      "passed": true
+    },
+    {
+      "name": "Missing tolerance remains unassessed",
+      "passed": true
+    },
+    {
+      "name": "Zero additional-load duty removes only overlay equipment",
+      "passed": true
+    },
+    {
+      "name": "Explicit fractional duty has independent watts prediction",
+      "passed": true
+    },
+    {
+      "name": "Duty assumptions change effective configuration fingerprint",
+      "passed": true
+    },
+    {
+      "name": "Overrating additional load exposes actual protective trip",
+      "passed": true
+    },
+    {
+      "name": "Comparison uses post-protection sustainable source current",
+      "passed": true
+    },
+    {
+      "name": "Pre-protection current remains inspectable",
+      "passed": true
+    },
+    {
+      "name": "Inventory-valid unmodeled configuration command is reported",
+      "passed": true
+    },
+    {
+      "name": "Inventory-valid unmodeled event command is reported",
+      "passed": true
+    },
+    {
+      "name": "Unmodeled command invents no demand",
+      "passed": true
+    },
+    {
+      "name": "Export contributes once to predicted source current",
+      "passed": true
+    },
+    {
+      "name": "Separate export ledger integrates explicit half-hour interval",
+      "passed": true
+    },
+    {
+      "name": "Export never increases LM equipment ledger",
+      "passed": true
+    },
+    {
+      "name": "Stale inventory fingerprints reject",
+      "passed": true
+    },
+    {
+      "name": "Stale electrical fingerprints reject",
+      "passed": true
+    },
+    {
+      "name": "Held-out observation cannot initialize configuration",
+      "passed": true
+    },
+    {
+      "name": "Input source cannot masquerade as held-out comparison",
+      "passed": true
+    },
+    {
+      "name": "Held-out observation cannot drive history event",
+      "passed": true
+    },
+    {
+      "name": "Held-out observation cannot initialize battery history",
+      "passed": true
+    },
+    {
+      "name": "Observed current cannot become an equipment draw",
+      "passed": true
+    },
+    {
+      "name": "Incomplete component scope cannot claim full vehicle coverage",
+      "passed": true
+    },
+    {
+      "name": "Unknown loads must be explicit",
+      "passed": true
+    },
+    {
+      "name": "Invalid switch positions reject",
+      "passed": true
+    },
+    {
+      "name": "Invalid positions reject even for unmodeled controls",
+      "passed": true
+    },
+    {
+      "name": "Unknown inventory controls never silently skip",
+      "passed": true
+    },
+    {
+      "name": "Aggregate calibration is prohibited in flight predictions",
+      "passed": true
+    },
+    {
+      "name": "Negative acceptance tolerance rejects",
+      "passed": true
+    },
+    {
+      "name": "Half-specified observation range rejects",
+      "passed": true
+    },
+    {
+      "name": "Partial initial battery allocation rejects",
+      "passed": true
+    },
+    {
+      "name": "Excess initial battery capacity rejects",
+      "passed": true
+    },
+    {
+      "name": "Historical delivered baseline requires compatible remaining-capacity inputs",
+      "passed": true
+    },
+    {
+      "name": "Events before replay epoch reject",
+      "passed": true
+    },
+    {
+      "name": "Out-of-order source events reject",
+      "passed": true
+    },
+    {
+      "name": "Metric/source scope mismatch rejects",
+      "passed": true
+    },
+    {
+      "name": "Observed historical sample requires an observation source",
+      "passed": true
+    },
+    {
+      "name": "Base load catalog cannot be rescaled by scenario duty",
+      "passed": true
+    },
+    {
+      "name": "Declared uncertain heater duty cannot silently default",
+      "passed": true
+    },
+    {
+      "name": "Only added equipment can be declared uncertain-duty",
+      "passed": true
+    },
+    {
+      "name": "Duty fraction above unity rejects",
+      "passed": true
+    },
+    {
+      "name": "Zero-duty scenarios cannot hide malformed overlay loads",
+      "passed": true
+    },
+    {
+      "name": "Unknown manifest fields reject rather than silently calibrate",
+      "passed": true
+    },
+    {
+      "name": "Real source manifest executes current and battery-history predictions",
+      "passed": true
+    },
+    {
+      "name": "Real manifest preserves open fidelity gate",
+      "passed": true
+    },
+    {
+      "name": "Real history conditional_mission_thermal_open: conserved Ah",
+      "passed": true
+    },
+    {
+      "name": "Real history conditional_mission_thermal_open: conserved Wh",
+      "passed": true
+    },
+    {
+      "name": "Real history conditional_mission_thermal_demand: conserved Ah",
+      "passed": true
+    },
+    {
+      "name": "Real history conditional_mission_thermal_demand: conserved Wh",
+      "passed": true
+    },
+    {
+      "name": "Real history incremental_coast_to_midcourse: conserved Ah",
+      "passed": true
+    },
+    {
+      "name": "Real history incremental_coast_to_midcourse: conserved Wh",
+      "passed": true
+    }
+  ]
+}

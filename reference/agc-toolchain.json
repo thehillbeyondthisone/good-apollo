@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "release": "20261104",
+  "compiler": "Clang 23.1.5",
+  "target": "x86_64-w64-windows-gnu",
+  "threadModel": "posix",
+  "releaseUrl": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20261104",
+  "archiveUrl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20261104/llvm-mingw-20261104-ucrt-x86_64.zip",
+  "archiveBytes": 191037046,
+  "archiveSha256": "552191b5754c49a5a20723276a6fc56541ea1922c4c50b7b669022333fc1b40f",
+  "digestSource": "Official GitHub release asset metadata",
+  "installRoot": "D:\\apollo-ref\\toolchain\\llvm-mingw-20261104-ucrt-x86_64",
+  "systemPathChanged": false
+}

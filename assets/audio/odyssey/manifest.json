@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "mission": "Apollo 13, Odyssey reactivation",
+  "source": {
+    "archive": "Apollo 13 in Real Time, restored NASA Mission Control headset audio",
+    "credit": "NASA original recordings. Restoration credited to Ben Feist and Jeremy Cooper.",
+    "archiveUrl": "https://apolloinrealtime.org/13/",
+    "tapeIndex": "https://apolloinrealtime.org/13/MOCRviz/data/tape_ranges.csv",
+    "tapes": {
+      "T716": {
+        "side": "HR1L",
+        "startGet": "114:13:16",
+        "channel": 15,
+        "url": "https://media.apolloinrealtime.org/A13/MOCR_audio/DA13_T716_HR1L_16khz_mp3_16/DA13_T716_HR1L_CH15.mp3",
+        "sha256": "4e2aa1aae24e84aa4e456687be13894abde30f7cb34301eb6b82b74d7199188b"
+      },
+      "T927": {
+        "side": "HR1U",
+        "startGet": "130:53:00",
+        "channel": 15,
+        "url": "https://media.apolloinrealtime.org/A13/MOCR_audio/DA13_T927_HR1U_16khz_mp3_16/DA13_T927_HR1U_CH15.mp3",
+        "sha256": "75bee09add1c70095edf5946981ef9629971d2e5f6b3061ab9a8b5a97cc2ef1b"
+      }
+    },
+    "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "usage": "The source site identifies its work as CC BY-NC-SA 3.0. The edited audio-only excerpts retain that attribution."
+  },
+  "edit": "Original speech trimmed, band limited, leveled and faded at excerpt boundaries. Mono 8 kHz PCM.",
+  "clips": {
+    "126:43:58": {
+      "file": "1264358.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45041,
+      "durationSeconds": 15.8,
+      "sha256": "075c4a3289ce1e4c703b3f95944d36a05a8bcc8a3c3c509d572311bebdd6fe01",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264358"
+    },
+    "126:44:25": {
+      "file": "1264425.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45068.45,
+      "durationSeconds": 8.8,
+      "sha256": "366410ccf8b69e4d5be2fc8d1ed4935adc8812ba2977ad9d77663f3d20256eec",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264425"
+    },
+    "126:45:26": {
+      "file": "1264526.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45127.15,
+      "durationSeconds": 12.35,
+      "sha256": "d1c056c9399e4042ef1ac0da1392a0d2140534e092c2a20a226f269c8532ef6f",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264526"
+    },
+    "126:44:47": {
+      "file": "1264447.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45089.95,
+      "durationSeconds": 7.7,
+      "sha256": "13ce78cb7f35a5eb76bd866b9c4137e154186b6f4a78ce0784354f4f26e962e0",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264447"
+    },
+    "126:46:28": {
+      "file": "1264628.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45192.2,
+      "durationSeconds": 11.5,
+      "sha256": "633406de4e279dbd4c65d8e66874157f61e7990fce665534405137ca9908c509",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264628"
+    },
+    "126:46:53": {
+      "file": "1264653.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45215.9,
+      "durationSeconds": 8.55,
+      "sha256": "38f9834497975886ccc4fe882352a5df6706228581a4a0c5e27ad7823c16065d",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264653"
+    },
+    "126:47:38": {
+      "file": "1264738.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45260.95,
+      "durationSeconds": 7.65,
+      "sha256": "54add38bfa521ece7ba081bd48f691a00ed66aa2edd870e982627ac564a922d3",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264738"
+    },
+    "126:48:00": {
+      "file": "1264800.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45282.95,
+      "durationSeconds": 7.4,
+      "sha256": "45445b5df4df4f6cc1f56eb3296b92a29e632b5e4e463d3c3ce5437880fc3f7d",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264800"
+    },
+    "126:48:19": {
+      "file": "1264819.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45301.9,
+      "durationSeconds": 7.75,
+      "sha256": "7771c7b4eeeabb2518983c64604299cc3a87edc5b08a6d248bf3e80a257b3a5b",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264819"
+    },
+    "126:48:45": {
+      "file": "1264845.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45327.95,
+      "durationSeconds": 7.7,
+      "sha256": "4d2d434e9f073a94435ac3f67b2b97a2c32863041460801f15e5810f99e07027",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1264845"
+    },
+    "126:50:29": {
+      "file": "1265029.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45431.95,
+      "durationSeconds": 6.75,
+      "sha256": "9ee274ca45fb1db31bfa4007a3825be9ecbb605f56eef4a61ccb371ba2d3515c",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265029"
+    },
+    "126:52:10": {
+      "file": "1265210.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45532.55,
+      "durationSeconds": 6.95,
+      "sha256": "dd24ed3397394138a4a72f1858e05f73163859490f2243fa58ce143be22ea522",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265210"
+    },
+    "126:52:27": {
+      "file": "1265227.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45550.6,
+      "durationSeconds": 3.75,
+      "sha256": "3ff0781bbbc30bf0101cdf2250b7ed85eee5d4ff720d2bc7316efe74a22a9a90",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265227"
+    },
+    "126:52:41": {
+      "file": "1265241.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45564.4,
+      "durationSeconds": 8,
+      "sha256": "c3331a3d036ee04fd448a295154c318c6485e5d9f80b9ac64387658d319e66b1",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265241"
+    },
+    "126:53:00": {
+      "file": "1265300.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45583.6,
+      "durationSeconds": 5.55,
+      "sha256": "86489b778ac8f2b11ff1da6d2ba491ac246c2d6e41ff23ff7fcaac4bde24c899",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265300"
+    },
+    "126:53:14": {
+      "file": "1265314.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45597.95,
+      "durationSeconds": 5.4,
+      "sha256": "929d71182c3be37e4d381c9c7980d1f14d3b7e64093341d438cdee5bcc09cc4d",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265314"
+    },
+    "126:53:51": {
+      "file": "1265351.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45632.5,
+      "durationSeconds": 7.4,
+      "sha256": "1f51eb3258ea808875a5b47538658dfbbfacfb898e4fa3d1e8c6311f86b7f5e6",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265351"
+    },
+    "126:54:09": {
+      "file": "1265409.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45650.2,
+      "durationSeconds": 10.8,
+      "sha256": "f96fee3ca8b51c76d24eca0d8d624a55a9a5d6575ff78beda3a5ff10140a0b13",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265409"
+    },
+    "126:55:06": {
+      "file": "1265506.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45708.6,
+      "durationSeconds": 9.4,
+      "sha256": "35f92100c8568425f7795396a19f531097ca0ddbc3d276263134dbcab9d1c998",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265506"
+    },
+    "126:55:28": {
+      "file": "1265528.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45730.75,
+      "durationSeconds": 6.75,
+      "sha256": "697a2de7d564fe57e5b073b8fce3ceef94afb4eba4d8a9a65fbb0b7bb7b89b6f",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265528"
+    },
+    "126:55:46": {
+      "file": "1265546.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45749.4,
+      "durationSeconds": 8.25,
+      "sha256": "44840126e1ed17d821e72dc8f3a26501041e7a534fdab0aa0cbb4a86815c260d",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265546"
+    },
+    "126:56:06": {
+      "file": "1265606.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45769.95,
+      "durationSeconds": 6.55,
+      "sha256": "36a377d299eeb439f0fc6561da8d2f9bec8b130ae70164bd5f121c0c51f08b0e",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265606"
+    },
+    "126:56:22": {
+      "file": "1265622.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 45784.95,
+      "durationSeconds": 11.75,
+      "sha256": "1ddc41931d54fc8dc73a19e7b62abaffb49f0ec200fdedd51cbb0ea7ade7cff0",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1265622"
+    },
+    "127:54:55": {
+      "file": "1275455.wav",
+      "speaker": "Ken Mattingly",
+      "tape": "T716",
+      "channel": 15,
+      "sourceStartSeconds": 49296.1,
+      "durationSeconds": 13.7,
+      "sha256": "b06759be535451fc1d2d4df1328b8c678cafd2c9db09efa2d4a5c5f767e92901",
+      "transcript": "https://apollojournals.org/afj/ap13fj/23day6-thereactivationchecklist.html#1275455"
+    },
+    "138:52:35": {
+      "file": "1385235.wav",
+      "speaker": "Joe Kerwin",
+      "tape": "T927",
+      "channel": 15,
+      "sourceStartSeconds": 28775.7,
+      "durationSeconds": 43.2,
+      "sha256": "052820d73c5b62da332d5c05cf851ad51127b93c6e853ac593c91b9d8ecd9d0c",
+      "transcript": "https://apollojournals.org/afj/ap13fj/27day6-odysseyresurrected.html#1385235"
+    },
+    "140:00:55": {
+      "file": "1400055.wav",
+      "speaker": "Joe Kerwin",
+      "tape": "T927",
+      "channel": 15,
+      "sourceStartSeconds": 32895.9,
+      "durationSeconds": 14.75,
+      "sha256": "7ce6ae4244aefe14df6be6ac7dcb10a0b7013271a218a3bf45c1d41ad69438ce",
+      "transcript": "https://apollojournals.org/afj/ap13fj/27day6-odysseyresurrected.html#1400055"
+    },
+    "140:09:52": {
+      "file": "1400952.wav",
+      "speaker": "Joe Kerwin",
+      "tape": "T927",
+      "channel": 15,
+      "sourceStartSeconds": 33411.9,
+      "durationSeconds": 4.2,
+      "sha256": "ceabee585efb07367b7215d8c037646fbcc093e7ad3efb9206bef9c488f023b2",
+      "transcript": "https://apollojournals.org/afj/ap13fj/27day6-odysseyresurrected.html#1400952"
+    },
+    "140:16:27": {
+      "file": "1401627.wav",
+      "speaker": "Joe Kerwin",
+      "tape": "T927",
+      "channel": 15,
+      "sourceStartSeconds": 33807.15,
+      "durationSeconds": 5.7,
+      "sha256": "49f55422c4d8249b626bdd9954371dd98def848b8682a035a18cf49b7bbabc86",
+      "transcript": "https://apollojournals.org/afj/ap13fj/27day6-odysseyresurrected.html#1401627"
+    },
+    "140:21:17": {
+      "file": "1402117.wav",
+      "speaker": "Joe Kerwin",
+      "tape": "T927",
+      "channel": 15,
+      "sourceStartSeconds": 34096.9,
+      "durationSeconds": 6.25,
+      "sha256": "14830606cf7ea71869b585a50c70e6b5f7782bd66be8f1dceccd1635228dc5b1",
+      "transcript": "https://apollojournals.org/afj/ap13fj/27day6-odysseyresurrected.html#1402117"
+    },
+    "140:22:45": {
+      "file": "1402245.wav",
+      "speaker": "Joe Kerwin",
+      "tape": "T927",
+      "channel": 15,
+      "sourceStartSeconds": 34187.9,
+      "durationSeconds": 6.4,
+      "sha256": "42fb155cc695ee6a2213be4402f397659735154b0e264a428c2ad0f2ba30b6bd",
+      "transcript": "https://apollojournals.org/afj/ap13fj/27day6-odysseyresurrected.html#1402245"
+    },
+    "140:27:44": {
+      "file": "1402744.wav",
+      "speaker": "Joe Kerwin",
+      "tape": "T927",
+      "channel": 15,
+      "sourceStartSeconds": 34488.9,
+      "durationSeconds": 6.55,
+      "sha256": "a15ac3860bd2f05bca0cbf1947a6aec0d8b2aaacba23c9888682cd6ba9f63f3b",
+      "transcript": "https://apollojournals.org/afj/ap13fj/27day6-odysseyresurrected.html#1402744"
+    }
+  }
+}

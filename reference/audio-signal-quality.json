@@ -1,0 +1,56 @@
+{
+  "result": "PASS",
+  "checks": 129,
+  "failures": [],
+  "loops": [
+    {
+      "name": "ventilation",
+      "boundaryStep": 0.0106506,
+      "ordinary995Step": 0.0535889
+    },
+    {
+      "name": "pump",
+      "boundaryStep": 0.0018616,
+      "ordinary995Step": 0.0050354
+    },
+    {
+      "name": "water",
+      "boundaryStep": 0.0020142,
+      "ordinary995Step": 0.0945447
+    }
+  ],
+  "audition": {
+    "durationSeconds": 38.017,
+    "sampleRate": 48000,
+    "peakDbfs": -9.04,
+    "segments": [
+      {
+        "name": "Original procedural",
+        "rmsDbfs": -70.08,
+        "peakDbfs": -47.77
+      },
+      {
+        "name": "New cabin",
+        "rmsDbfs": -35.21,
+        "peakDbfs": -12.75
+      },
+      {
+        "name": "CAPCOM with cabin",
+        "rmsDbfs": -29.17,
+        "peakDbfs": -9.04
+      },
+      {
+        "name": "Spin-down",
+        "rmsDbfs": -41.49,
+        "peakDbfs": -23.39
+      },
+      {
+        "name": "Unpowered cabin",
+        "rmsDbfs": -110.46,
+        "peakDbfs": -90.31
+      }
+    ]
+  },
+  "headsetListeningVerified": false,
+  "scope": "Signal and runtime evidence; not a subjective listening review"
+}

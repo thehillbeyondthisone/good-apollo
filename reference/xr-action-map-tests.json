@@ -1,0 +1,13 @@
+{
+	"actions": 11,
+	"bindings": 21,
+	"checks": 119,
+	"failures": [],
+	"headsetTested": false,
+	"kind": "Core Touch action-map structure; live controller reliability remains a hardware check",
+	"profiles": [
+		"/interaction_profiles/oculus/touch_controller"
+	],
+	"result": "PASS",
+	"schemaVersion": 1
+}

@@ -1,0 +1,69 @@
+{
+  "sourcePdf": "D:\\apollo-ref\\lm-systems\\a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+  "sourceSha256": "1623f208023279cbe7de6aea14e95bd95fbc8c4e9d51791ff55e68ee04d338f2",
+  "sourceHashType": "Local download integrity receipt, not publisher checksum",
+  "figure": "3-2",
+  "pdfPage": 827,
+  "printedPage": "3-157/3-158",
+  "inventorySha256": "05b78cbcafa8b3c74b9d1f546c50d828b02173014580c8f03f5d238040e6ed22",
+  "controls": 495,
+  "interactiveControls": 370,
+  "extractionScale": 4,
+  "files": [
+    {
+      "file": "reference/extracts/panel-1.png",
+      "bytes": 593747,
+      "sha256": "6330b082d9782b3d61c388c3dfb159e48451c42f5ecafe9b705752d1c989c0a3"
+    },
+    {
+      "file": "reference/extracts/panel-11.png",
+      "bytes": 464857,
+      "sha256": "60008e8642f07883548239ce1ee8ca81bd7f870f169b917365c25d73c3d6ac39"
+    },
+    {
+      "file": "reference/extracts/panel-12.png",
+      "bytes": 419412,
+      "sha256": "6eca175e94707aebfbb7cf8f72af682930175e92f8e280a766480f2ab3e8590e"
+    },
+    {
+      "file": "reference/extracts/panel-14.png",
+      "bytes": 308007,
+      "sha256": "d338dcdc3bfcff10feed422e92479a53174b3e87ad8e785ec9b3e688b1e15a9e"
+    },
+    {
+      "file": "reference/extracts/panel-16.png",
+      "bytes": 392334,
+      "sha256": "bffc89b4cc1b617ff90343959455429be95e099198344c6eb8b3fc6d6571d7fc"
+    },
+    {
+      "file": "reference/extracts/panel-2.png",
+      "bytes": 601497,
+      "sha256": "a4edaeeae3bb98f19830d0fd78c92df9f83576df10ca80286012d5449d24d75a"
+    },
+    {
+      "file": "reference/extracts/panel-3.png",
+      "bytes": 481940,
+      "sha256": "b0e2351f65413f066bb22af564a65bf3f88b598aaade40fcb69b676b536daef9"
+    },
+    {
+      "file": "reference/extracts/panel-4.png",
+      "bytes": 166572,
+      "sha256": "03fce993b39bef0db687237cd866ea71d5382481c2161fe0c7263a9b451c27c0"
+    },
+    {
+      "file": "reference/extracts/panel-5.png",
+      "bytes": 247474,
+      "sha256": "8720d8ab4a852ddab3bcf98dffd1983125d917593f310910068b6c9726fe5895"
+    },
+    {
+      "file": "reference/extracts/panel-6.png",
+      "bytes": 123207,
+      "sha256": "2b8fa54284a9866cc1e5998670d1066e1141ab20d5179fba12c49e7b14af6d81"
+    },
+    {
+      "file": "reference/extracts/panel-8.png",
+      "bytes": 283564,
+      "sha256": "a64ed7312853a7bea18336ae98ea82bbf35ac383a9a1a4c3024c318a89acb515"
+    }
+  ]
+}

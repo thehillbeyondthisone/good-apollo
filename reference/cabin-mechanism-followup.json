@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-17",
+  "title": "LM-7 cabin mechanisms and crew-provision evidence follow-up",
+  "status": "SOURCE EVIDENCE ONLY - not merged into the frozen 585-entry inventory",
+  "inventorySha256": "2de418f4e1ff8057c478b0cc40f64f87f33364717ee43191eb8b72115a6c8fcb",
+  "scope": {
+    "reviewedStowageFigureRows": 76,
+    "aftFigureRows": 31,
+    "forwardFigureRows": 45,
+    "meaning": "All numbered rows in AOH figures 2.11-15 and 2.11-16 have a disposition below. Rows are packages or assemblies, overlap between arrangements, and are not a count of independent controls.",
+    "wholeVehicleControlDenominatorEstablished": false,
+    "remainingReason": "Wearable/EVA hardware, CSM-side tunnel hardware, stowage closures and exact mechanism geometry require an explicit scope and additional drawings. The evidence establishes specific omitted mechanisms, not an exhaustive new vehicle control total.",
+    "noInventoryMutation": true
+  },
+  "sources": {
+    "aoh": {
+      "title": "Apollo Operations Handbook, LM 7 and Subsequent, Volume 1, LMA790-3-LM",
+      "date": "1970-02-01",
+      "file": "D:/apollo-ref/lm-systems/a13-lm-aoh-v1-lm7-subs-300ppi.pdf",
+      "pageNumbering": "pdfPage is one-based; printedPage is the printed handbook leaf",
+      "review": "Visual review of rendered pages; OCR was used only as a finding aid",
+      "renders": "tmp/pdfs/mechanisms/",
+      "applicabilityCaution": "The list of illustrations calls figure 2.11-16 an LM 6 arrangement. The foldout is dated 1 February 1970 and drawing 300LM7-2. Its placements are generic handbook evidence; the mission-specific list below adjudicates selected Apollo 13 stowage facts."
+    },
+    "controller_report": {
+      "title": "NASA TN D-7884, Apollo Experience Report, Crew Station Integration, Volume III, Spacecraft Hand Controller Development",
+      "date": "1975-03",
+      "url": "https://ntrs.nasa.gov/api/citations/19750010202/downloads/19750010202.pdf",
+      "localReviewCopy": "tmp/pdfs/mechanisms/nasa-tn-d7884-afj.pdf",
+      "review": "PDF pages 14-15 and 17-21 visually reviewed",
+      "acaMaximumEnvelope": {"pdfPage": 15, "printedPage": "8", "table": "III", "heightInches": 10.06, "lengthInches": 6.69, "widthInches": 4.0, "cableLengthInches": 36, "massIncludingCablesLb": 4.5},
+      "geometryCaution": "Table V is CM Block II THC, not LM TTCA. Generic appendix stop requirements do not replace LM-7 AOH values.",
+      "sourceConflicts": [
+        {"pdfPage": 17, "printedPage": "10", "field": "TTCA soft stop", "report": "53 degrees / 53 percent", "lm7Aoh": "51 degrees / 50.6 percent", "decision": "retain mission-era AOH"},
+        {"pdfPage": 19, "printedPage": "12", "field": "hard stop", "report": "generic appendix 11.5 degrees", "lm7Aoh": "13 degrees +/-1", "decision": "retain LM-specific AOH"}
+      ]
+    },
+    "as13_stowage": {
+      "title": "Apollo Stowage List, Mission AS 508 CM 109/LM-7, Apollo 13, Final Release",
+      "coverDate": "1970-04-21",
+      "url": "https://apollojournals.org/afj/ap13fj/pdf/as13b-stowage-list-final-197007.pdf",
+      "localReviewCopy": "tmp/pdfs/mechanisms/as13-stowage-19700421.pdf",
+      "review": "Cover and PDF pages 49, 56 and 58 visually reviewed",
+      "dateCaution": "The URL filename suggests July; the cover and reviewed leaves explicitly date the document 21 April 1970 and state that it documents the as-launched configuration, with the CM entry list revised.",
+      "facts": [
+        {"pdfPage": 49, "printedPage": "45", "item": "B1010", "fact": "One water dispenser/fire extinguisher, part 14-0131-01, on W20 hose at the ECS heat exchanger."},
+        {"pdfPage": 49, "printedPage": "45", "item": "B1011", "fact": "One emergency wrench B, V36-601400-21, in RHSSC."},
+        {"pdfPage": 56, "printedPage": "52", "item": "O3006", "fact": "Two utility lights with cord and clamp, LDW340-53053-3-6, one per interim-stowage pocket."},
+        {"pdfPage": 56, "printedPage": "52", "item": "O3007", "fact": "One interim stowage assembly installed in front of center instrument panel."},
+        {"pdfPage": 58, "printedPage": "54", "item": "O3049/O3050", "fact": "Two hammock assemblies stowed under LHSSC, one designated CDR."}
+      ]
+    }
+  },
+  "mechanismGroups": [
+    {
+      "id": "window_shades", "physicalCount": 3, "inventoryStatus": "absent",
+      "components": ["CDR forward shade", "LMP forward shade", "overhead docking shade"],
+      "sourceStates": ["rolled and secured at bottom", "unrolled, flattened against frame and secured with snap fasteners"],
+      "interaction": "Release or engage snap fasteners and roll/unroll flexible sheet; no sourced intermediate detents.",
+      "properties": {"approximateLightTransmittancePercent": 0.1, "materialAsPrinted": "Aclar with a deposit of Iconel"},
+      "evidence": [{"pdfPage": 660, "printedPage": "2.11-24", "section": "2.11.7.3"}, {"pdfPage": 664, "printedPage": "2.11-28", "figure": "2.11-16", "item": 2}],
+      "notEstablished": ["sheet outline dimensions", "number and coordinates of snap fasteners", "roll radius", "deployed collision envelope"]
+    },
+    {
+      "id": "armrests", "physicalCount": 4, "inventoryStatus": "absent",
+      "sourceStates": ["stowed fully up", "adjustment position 1", "adjustment position 2", "adjustment position 3", "adjustment position 4", "docking fully down"],
+      "interaction": "Spring-loaded detents hold the armrests. Downward force leaves stow; latch buttons in the forward area select other positions.",
+      "properties": {"maximumShockLoadLbf": 300, "shockDeflectionInchesAtMaximumLoad": 4, "shockDeflectionMeaning": "impact energy absorption, not normal adjustment travel"},
+      "evidence": [{"pdfPage": 655, "printedPage": "2.11-19", "section": "2.11.5.1"}, {"pdfPage": 656, "printedPage": "2.11-20"}, {"pdfPage": 664, "printedPage": "2.11-28", "item": 6}],
+      "notEstablished": ["six pose angles", "hinge positions", "button travel/force", "rest dimensions"]
+    },
+    {
+      "id": "crew_restraints", "physicalCount": 2, "inventoryStatus": "absent",
+      "sourceStates": ["reel unlocked", "reel locked against payout, with reeling-in still permitted"],
+      "interaction": "Two constant-force reel controls, harness hooks, docking ring/pin and ropes. Commander uses pin adjustment for the overhead COAS position.",
+      "location": "Lower right panel 5 and lower left panel 6",
+      "properties": {"approximateDownwardForceLbf": 30},
+      "evidence": [{"pdfPage": 656, "printedPage": "2.11-20", "figure": "2.11-9"}, {"pdfPage": 664, "printedPage": "2.11-28", "items": [5, 44, 45]}],
+      "notEstablished": ["reel-control placards or motion direction", "pin hole spacing", "rope payout length", "anchor coordinates"]
+    },
+    {
+      "id": "coas", "physicalCount": 1, "inventoryStatus": "panel 8 power selector present; local sight mechanisms absent",
+      "sourceStates": {"mount": ["left window position 1", "overhead docking window position 2"], "barrelLock": ["secured", "released"], "cap": ["fitted", "removed"]},
+      "interaction": "Remove cap and secure to mount. Rotate local intensity control clockwise until reticle appears, then adjust brightness. Figure identifies barrel lock and mounting track; snap-on filter is separately stowed.",
+      "dimensions": {"overallLengthInches": 8, "approximateMassLb": 1.5, "elevationScaleDegrees": [-10, 31.5], "scaleMeaning": "reticle graduation, not a sourced mounting hinge range"},
+      "evidence": [{"pdfPage": 657, "printedPage": "2.11-21", "figure": "2.11-10"}, {"pdfPage": 664, "printedPage": "2.11-28", "items": [1, 26, 28]}],
+      "notEstablished": ["brightness knob rotation range", "barrel-lock actuation angle", "track dimensions", "mount coordinates and alignment tolerance"]
+    },
+    {
+      "id": "portable_utility_lights", "physicalCount": 2, "inventoryStatus": "OFF/DIM/BRIGHT selectors present; lamps, plugs and clamps absent",
+      "sourceStates": ["stowed", "removed", "plugged into overhead utility panel", "clamped or repositioned"],
+      "interaction": "Portable lamp with cord and clamp. Position/orientation is a movable-object pose, not a fixed aiming knob with invented detents.",
+      "evidence": [{"pdfPage": 633, "printedPage": "2.10-9", "figure": "2.10-4"}, {"pdfPage": 664, "printedPage": "2.11-28", "item": 10}],
+      "missionSpecificEvidence": "as13_stowage O3006",
+      "notEstablished": ["clamp opening and lock details", "cord length", "lamp dimensions", "mechanical articulation limits"]
+    },
+    {
+      "id": "overhead_flood_reflectors", "physicalCount": 2, "inventoryStatus": "lighting switches/dimmers present; reflector aiming absent",
+      "interaction": "Rotate overhead floodlight reflectors. The handbook names two overhead and two forward fixtures, but explicitly attributes rotatable reflectors only to the overhead lights.",
+      "evidence": [{"pdfPage": 741, "printedPage": "3-71", "row": "16S6 FLOOD OVHD/FWD remarks"}],
+      "notEstablished": ["rotation axis", "angular range", "friction or locking mechanism", "reflector dimensions"]
+    },
+    {
+      "id": "oxygen_umbilical_ptt", "physicalCount": 2, "inventoryStatus": "absent; distinct from both ACA grip PTT entries",
+      "interaction": "PTT switches are named on the commander and LM pilot oxygen umbilical assemblies. Precise button form and stroke are not specified by this stowage row.",
+      "evidence": [{"pdfPage": 663, "printedPage": "2.11-27", "figure": "2.11-15", "item": 26}],
+      "notEstablished": ["switch drawing", "stroke/force", "part number and separate reference designator"]
+    },
+    {
+      "id": "umbilical_connections", "physicalCount": 2, "inventoryStatus": "ECS suit isolation valves present; crew quick-disconnect connections absent",
+      "interaction": "Separate oxygen, electrical and water umbilicals serve each astronaut. Oxygen uses two hoses, dual-passage ECS connector and separate supply/exhaust PGA hoses. ECS end stays attached when PGA disconnected.",
+      "dimensions": {"oxygenHoseInsideDiameterInches": 1.25, "pgaElbowDegrees": 70},
+      "evidence": [{"pdfPage": 653, "printedPage": "2.11-17", "sections": ["2.11.3.1", "2.11.3.2"]}, {"pdfPage": 663, "printedPage": "2.11-27", "items": [23, 24]}],
+      "notEstablished": ["connector release motion and collar angles", "hose lengths", "all connector coordinates"]
+    },
+    {
+      "id": "water_dispenser", "physicalCount": 1, "inventoryStatus": "absent",
+      "sourceStates": {"trigger": ["released", "pressed - supplies water"], "protectiveCap": ["fitted", "removed"], "stowage": ["bracketed", "handheld"]},
+      "interaction": "Coiled hose and trigger dispenser on mounting bracket; existing DES H2O or ASC H2O valve permits water flow. PDF446 explicitly identifies both as dispenser feeds, so no extra feed-valve definition is missing. Water is also used for fire extinguishing. Tool B is identified for use with the dispenser, but this section does not specify its exact servicing operation.",
+      "dimensions": {"approximateHoseExtensionInches": 72},
+      "evidence": [{"pdfPage": 446, "printedPage": "2.6-34", "sections": ["2.6.4.3.1", "2.6.4.3.2"]}, {"pdfPage": 653, "printedPage": "2.11-17", "section": "2.11.4.1"}, {"pdfPage": 654, "printedPage": "2.11-18", "section": "2.11.4.2"}, {"pdfPage": 659, "printedPage": "2.11-23"}, {"pdfPage": 663, "printedPage": "2.11-27", "item": 25}],
+      "missionSpecificEvidence": "as13_stowage B1010",
+      "notEstablished": ["trigger stroke/force", "bracket release geometry", "cap attachment geometry"]
+    },
+    {
+      "id": "emergency_tool_b", "physicalCount": 1, "inventoryStatus": "absent",
+      "sourceStates": ["head locked to drive shaft", "head released"],
+      "interaction": "Modified Allen-head L wrench with ball-lock head retention. Identified uses include probe/drogue, descent battery removal, CM hatch and dispenser.",
+      "dimensions": {"lengthInches": 6.25, "driveShaftLengthInches": 4.25, "hexDriveInches": 0.4375, "ratedTorqueInchLbf": 1475},
+      "evidence": [{"pdfPage": 659, "printedPage": "2.11-23", "figure": "2.11-12"}, {"pdfPage": 664, "printedPage": "2.11-28", "item": 21}],
+      "missionSpecificEvidence": "as13_stowage B1011",
+      "notEstablished": ["ball-lock release stroke", "head interchange steps", "shaft/handle diameters"]
+    },
+    {
+      "id": "docking_drogue", "physicalCount": 1, "inventoryStatus": "absent",
+      "sourceStates": ["secured in three tunnel mounting lugs", "released and removed", "stowed left of commander station"],
+      "interaction": "Handles release the three-section aluminum cone from tunnel mounts; removal is possible from either end of the tunnel. Three mounting lugs do not establish the exact count or travel of release handles.",
+      "evidence": [{"pdfPage": 658, "printedPage": "2.11-22", "section": "2.11.6.3"}, {"pdfPage": 663, "printedPage": "2.11-27", "item": 1}, {"pdfPage": 664, "printedPage": "2.11-28", "item": 43}],
+      "notEstablished": ["cone dimensions", "release-handle linkage/angles", "stowage restraints", "LM-side probe emergency release geometry"]
+    },
+    {
+      "id": "hatches_and_filter", "physicalCount": 2, "inventoryStatus": "11 hatch definitions present; quick-release hinge pins and antibacterial filter absent",
+      "interaction": "Forward hatch is inward swinging, cam-latched, has interior/exterior handles, emergency lockpin and quick-release hinge pins. Filter is stowed on its inside and fitted to relief/dump valve for lunar EVA depressurization. Overhead hatch unlatches by about 90 degrees counterclockwise inside, clockwise outside; cabin must first be depressurized.",
+      "dimensions": {"approximateForwardOpeningInches": [32, 32], "overheadInteriorUnlatchDegrees": 90, "maximumOverheadUnlatchTorqueInchLbf": 35, "tunnelDiameterInches": 32, "tunnelLengthInches": 16},
+      "evidence": [{"pdfPage": 24, "printedPage": "1-8"}, {"pdfPage": 25, "printedPage": "1-9"}, {"pdfPage": 26, "printedPage": "1-10", "figure": "1-8"}, {"pdfPage": 29, "printedPage": "1-13"}, {"pdfPage": 30, "printedPage": "1-14", "figure": "1-12"}],
+      "notEstablished": ["door opening angles", "hinge axes/coordinates", "quick-release pin travel", "filter fastening geometry"]
+    },
+    {
+      "id": "csm_tunnel_interfaces", "inventoryStatus": "absent; interface scope requires an explicit boundary",
+      "sourceStates": ["docking latches secured/released", "umbilical connected/disconnected", "CM pressure/thermal hatch installed/removed"],
+      "interaction": "Twelve final latches are on the CM docking ring. Electrical umbilical in LM tunnel can connect without drogue removal. CM forward pressure and thermal hatches have LM-side sockets; Tool B operates the thermal hatch socket. Three docking latches have thermal-hatch stops.",
+      "evidence": [{"pdfPage": 35, "printedPage": "1-19", "sections": ["1.5.1.1", "1.5.1.2"]}, {"pdfPage": 658, "printedPage": "2.11-22", "section": "2.11.6.4"}, {"pdfPage": 659, "printedPage": "2.11-23", "section": "2.11.6.6"}],
+      "notEstablished": ["latch handle strokes/angles", "deadfacing switch count and states", "probe removal tool steps", "all interface dimensions"]
+    },
+    {
+      "id": "stowage_retention", "inventoryStatus": "absent",
+      "interaction": "The two stowage foldouts identify bags, containers, straps, hooks, bungees and pockets. They establish package/area placement, not a count of every zipper, latch, buckle or closure. Initial and relocated arrangements overlap.",
+      "evidence": [{"pdfPage": 660, "printedPage": "2.11-24", "section": "2.11.8"}, {"pdfPage": 663, "printedPage": "2.11-27", "figure": "2.11-15"}, {"pdfPage": 664, "printedPage": "2.11-28", "figure": "2.11-16"}],
+      "notEstablished": ["closure count", "closure part numbers and kinematics", "container dimensions", "exact as-flown coordinates"]
+    },
+    {
+      "id": "hammocks", "physicalCount": 2, "inventoryStatus": "absent",
+      "interaction": "Stowed and deployed fabric crew-rest equipment; handbook row names hammocks but does not define attachment or deployment kinematics.",
+      "evidence": [{"pdfPage": 664, "printedPage": "2.11-28", "item": 35}],
+      "missionSpecificEvidence": "as13_stowage O3049/O3050",
+      "notEstablished": ["deployment steps", "anchor locations", "fabric/line dimensions", "hook details"]
+    },
+    {
+      "id": "fixed_supports", "inventoryStatus": "geometry not independently certified",
+      "interaction": "Four forward handgrips and two forward-window crash bars are passive supports. No movable input should be invented for them.",
+      "evidence": [{"pdfPage": 656, "printedPage": "2.11-20", "section": "2.11.5.2"}, {"pdfPage": 664, "printedPage": "2.11-28", "items": [3, 4]}],
+      "notEstablished": ["grip/bar dimensions", "load ratings", "exact coordinates"]
+    },
+    {
+      "id": "aca_controller_pair", "physicalCount": 2, "inventoryStatus": "8 functional inputs present; exact coupled physical model not certified",
+      "sourceValues": {"outOfDetentThresholdDegrees": 0.5, "directionThresholdDegrees": 2.5, "hardoverThresholdDegrees": 12, "proportionalGradientVoltsPerDegree": 0.28, "proportionalGradientIntervalDegrees": [1, 11], "softStopLabelDegrees": 10, "softStopToleranceDegrees": {"plus": 2, "minus": 0}, "hardStopLabelDegrees": 13, "hardStopToleranceDegrees": 1},
+      "interaction": "Three coupled rotations and grip PTT on each right-hand controller. Longitudinal axis approximately parallel to LM X; yaw about X, pitch about Y, roll about Z. Figure 2.1-40 provides stop dimensions but no complete envelope or mounting transform.",
+      "evidence": [{"pdfPage": 164, "printedPage": "2.1-122", "section": "2.1.4.5.1"}, {"pdfPage": 165, "printedPage": "2.1-123", "figure": "2.1-40"}, {"pdfPage": 820, "printedPage": "3-150", "rows": ["1A1/1A2", "15AS10/15BS10"]}],
+      "additionalEnvelopeEvidence": "controller_report Table III gives maximum external envelope, not a complete grip/base engineering drawing.",
+      "notEstablished": ["complete grip/base dimensioned shape", "mounting offsets", "digitized LM-specific torque curves", "all-axis soft/hard stop geometry", "independent neutral cant relative to vehicle axes"]
+    },
+    {
+      "id": "ttca_controller_pair", "physicalCount": 2, "inventoryStatus": "12 functional inputs present; exact coupled physical model not certified",
+      "sourceValues": {"throttleReferenceAngleDegrees": 0, "thrustPercentAtReference": 10, "throttleSoftStopDegrees": 51, "thrustPercentAtSoftStop": 50.6, "throttleMaximumDegrees": 66, "thrustPercentAtMaximum": 92.5, "jetNeutralMarkedDegrees": 33, "jetXAxisTravelMarkedDegrees": 9.5, "selectLeverPositionSeparationDegrees": 45, "outOfDetentDisplacementInches": 0.25, "minimumFrictionSettingForceLbf": [0.25, 1.0], "maximumFrictionSettingForceLbf": [2.5, 3.5], "frictionJumpDeadSpaceDegrees": 5},
+      "interaction": "One three-axis tee handle per crew station; THROTTLE/JETS selects X translation or descent throttle, retaining Y/Z translation. Friction control varies upward/downward movement force in throttle mode. Throttle response is nonlinear, with a 5-degree friction-jump interval at the breakpoint.",
+      "jetTravelCaution": "Independent visual crosscheck confirms the 9.5-degree dimension spans the two bounding jet-mode travel rays, with neutral between them. It is total indicated travel, not +/-9.5 each way. Symmetric +/-4.75 endpoints are an inference and are not established here.",
+      "evidence": [{"pdfPage": 56, "printedPage": "2.1-16", "figure": "2.1-10"}, {"pdfPage": 165, "printedPage": "2.1-123", "section": "2.1.4.5.2"}, {"pdfPage": 167, "printedPage": "2.1-125", "figure": "2.1-42"}, {"pdfPage": 183, "printedPage": "2.1-141", "figure": "2.1-52"}, {"pdfPage": 820, "printedPage": "3-150"}, {"pdfPage": 821, "printedPage": "3-151", "row": "1H3/1H4"}],
+      "notEstablished": ["full tee-handle/base dimensions", "Y/Z translational travel limits", "asymmetric or symmetric endpoints around jet neutral", "friction knob angle-to-force relationship", "digitized nonlinear throttle curve", "mounting coordinates"]
+    },
+    {
+      "id": "wearable_eva_hardware", "inventoryStatus": "not part of current 585 cockpit definitions; scope remains explicit",
+      "interaction": "Stowed PLSS remote units, PLSS, OPS, helmets, purge fittings and suit hardware contain their own controls. Do not claim whole-vehicle completeness by treating them as passive bags. PLSS remote unit has fan, pump, SSC mode and volume controls plus indicators; OPS has a manual oxygen shutoff coupled to heater and a momentary heater-test switch.",
+      "sourceStates": {"sscModes": ["B/A TM-1", "B/A", "OFF", "A/B", "B/A TM-2"], "waterDiverter": ["MINIMUM", "INTERMEDIATE", "MAXIMUM"]},
+      "evidence": [{"pdfPage": 648, "printedPage": "2.11-12"}, {"pdfPage": 649, "printedPage": "2.11-13"}, {"pdfPage": 651, "printedPage": "2.11-15"}, {"pdfPage": 652, "printedPage": "2.11-16"}, {"pdfPage": 653, "printedPage": "2.11-17"}],
+      "notEstablished": ["exhaustive wearable-control denominator", "all switch positions", "actuation dimensions", "all release fasteners"]
+    },
+    {
+      "id": "lm7_waste_collection", "inventoryStatus": "portable crew-provision items absent",
+      "interaction": "For LM 6 and subsequent, six 900-cc containers connect directly to PGA. Do not add the LM 5 long transfer hose and spring-loaded waste control valve to LM 7 solely because they share the preceding description and drawing.",
+      "evidence": [{"pdfPage": 654, "printedPage": "2.11-18", "section": "2.11.4.3.1"}, {"pdfPage": 655, "printedPage": "2.11-19"}],
+      "notEstablished": ["container connector release geometry", "bag closure mechanism"]
+    }
+  ],
+  "implementationCandidates": {
+    "status": "PROPOSED IDs only; do not merge during live VR capture",
+    "countingCaution": "Entries below are implementation functions/object states, not a newly certified physical-control denominator. Assembly proxies and multi-part mechanisms are explicitly labeled. Pose movement is an object interaction, not an extra rotary panel switch.",
+    "stateLabelsMeaning": "Upper-case labels below are software state names unless sourcePlacards is explicitly true. They must not be printed as invented spacecraft placards.",
+    "cabinInputs": [
+      {"candidateId": "shade_cdr", "group": "window_shades", "kind": "flexible_cover", "states": ["ROLLED", "DEPLOYED"], "relationship": "Deploy/unroll then engage frame snaps; release snaps before roll-up. Snap count is not sourced."},
+      {"candidateId": "shade_lmp", "group": "window_shades", "kind": "flexible_cover", "states": ["ROLLED", "DEPLOYED"], "relationship": "Same mechanism as commander shade."},
+      {"candidateId": "shade_docking", "group": "window_shades", "kind": "flexible_cover", "states": ["ROLLED", "DEPLOYED"], "relationship": "Same mechanism at overhead docking window; coordinate with COAS sightline."},
+      {"candidateId": "armrest_cdr_left", "group": "armrests", "kind": "detented_armrest", "states": ["STOWED_UP", "ADJUST_1", "ADJUST_2", "ADJUST_3", "ADJUST_4", "DOCKING_DOWN"], "relationship": "Detent release required for adjustment. Source explicitly permits downward force to leave stowage; forward-area latch buttons select other positions. Do not assume one separately countable button per armrest without drawing."},
+      {"candidateId": "armrest_cdr_right", "group": "armrests", "kind": "detented_armrest", "states": ["STOWED_UP", "ADJUST_1", "ADJUST_2", "ADJUST_3", "ADJUST_4", "DOCKING_DOWN"], "relationship": "Same armrest detent/release behavior."},
+      {"candidateId": "armrest_lmp_left", "group": "armrests", "kind": "detented_armrest", "states": ["STOWED_UP", "ADJUST_1", "ADJUST_2", "ADJUST_3", "ADJUST_4", "DOCKING_DOWN"], "relationship": "Same armrest detent/release behavior."},
+      {"candidateId": "armrest_lmp_right", "group": "armrests", "kind": "detented_armrest", "states": ["STOWED_UP", "ADJUST_1", "ADJUST_2", "ADJUST_3", "ADJUST_4", "DOCKING_DOWN"], "relationship": "Same armrest detent/release behavior."},
+      {"candidateId": "restraint_cdr_reel_lock", "group": "crew_restraints", "kind": "ratchet_lock", "states": ["UNLOCKED", "LOCKED"], "relationship": "LOCKED blocks rope payout, permits reeling in; do not freeze rope in both directions."},
+      {"candidateId": "restraint_lmp_reel_lock", "group": "crew_restraints", "kind": "ratchet_lock", "states": ["UNLOCKED", "LOCKED"], "relationship": "Same ratchet behavior."},
+      {"candidateId": "coas_illumination", "group": "coas", "kind": "continuous_knob", "range": "continuous; angular end stops not sourced", "relationship": "Clockwise raises reticle brightness. Powered by existing p8 COAS selection appropriate to mount; no numeric angle range is established."},
+      {"candidateId": "flood_overhead_cdr_aim", "group": "overhead_flood_reflectors", "kind": "reflector_rotation", "range": "rotatable; axis and limits unknown", "relationship": "Existing flood toggle/dimmer control emission; this mechanism changes beam aim."},
+      {"candidateId": "flood_overhead_lmp_aim", "group": "overhead_flood_reflectors", "kind": "reflector_rotation", "range": "rotatable; axis and limits unknown", "relationship": "Same distinction between aim and lighting power."},
+      {"candidateId": "umbilical_cdr_ptt", "group": "oxygen_umbilical_ptt", "kind": "ptt_switch", "states": ["RELEASED", "HELD"], "relationship": "Distinct physical actuator from aca_cdr_ptt; route to the same crew transmission command. Held/released behavior is a functional PTT interpretation; stowage row alone supplies no stroke or contact diagram."},
+      {"candidateId": "umbilical_lmp_ptt", "group": "oxygen_umbilical_ptt", "kind": "ptt_switch", "states": ["RELEASED", "HELD"], "relationship": "Distinct actuator from aca_lmp_ptt; same pilot transmission command."},
+      {"candidateId": "water_dispenser_trigger", "group": "water_dispenser", "kind": "trigger", "states": ["RELEASED", "HELD"], "relationship": "Press supplies water when existing ecs_des_h2o or ecs_asc_h2o feed is available (PDF446). Protective cap must be removed for use; flow is not a latching command."}
+    ],
+    "movableObjectAndRetentionStates": [
+      {"candidateId": "restraint_cdr_docking_pin", "group": "crew_restraints", "kind": "adjustment_pin", "states": ["ENGAGED", "WITHDRAWN"], "relationship": "Commander pin adjustment changes restraint geometry for overhead COAS use; hole count/positions unknown."},
+      {"candidateId": "coas_barrel_lock", "group": "coas", "kind": "mount_lock", "states": ["RELEASED", "SECURED"], "relationship": "Figure names barrel lock. Releasing it before mount relocation is mechanical inference, not a quantified source interlock."},
+      {"candidateId": "coas_mount", "group": "coas", "kind": "remountable_object", "states": ["LEFT_WINDOW", "DETACHED", "DOCKING_WINDOW"], "relationship": "LEFT_WINDOW and DOCKING_WINDOW are sourced positions; DETACHED is an intermediate object state. Mount lock/cap operations precede use."},
+      {"candidateId": "coas_cap", "group": "coas", "kind": "removable_cap", "states": ["FITTED", "REMOVED"], "relationship": "Cap removal exposes optical sight."},
+      {"candidateId": "coas_filter", "group": "coas", "kind": "snap_on_filter", "states": ["FITTED", "REMOVED"], "relationship": "Separate removable optical accessory; no invented hinge."},
+      {"candidateId": "utility_cdr_lamp", "group": "portable_utility_lights", "kind": "portable_pose", "states": ["STOWED", "FREE", "CLAMPED"], "relationship": "Move lamp when clamp released; range limited by cord/geometry once sourced. State abstraction is inferred from portability and clamp."},
+      {"candidateId": "utility_lmp_lamp", "group": "portable_utility_lights", "kind": "portable_pose", "states": ["STOWED", "FREE", "CLAMPED"], "relationship": "Same portable object behavior."},
+      {"candidateId": "utility_cdr_plug", "group": "portable_utility_lights", "kind": "electrical_connector", "states": ["DISCONNECTED", "CONNECTED"], "relationship": "Connected overhead plug plus existing util_cdr selector supplies lamp."},
+      {"candidateId": "utility_lmp_plug", "group": "portable_utility_lights", "kind": "electrical_connector", "states": ["DISCONNECTED", "CONNECTED"], "relationship": "Connected overhead plug plus existing util_lmp selector supplies lamp."},
+      {"candidateId": "utility_cdr_clamp", "group": "portable_utility_lights", "kind": "clamp", "states": ["RELEASED", "SECURED"], "relationship": "Secured clamp retains lamp pose; release mechanism geometry not established."},
+      {"candidateId": "utility_lmp_clamp", "group": "portable_utility_lights", "kind": "clamp", "states": ["RELEASED", "SECURED"], "relationship": "Same mechanical retention; no sourced screw angle or jaw range."},
+      {"candidateId": "water_dispenser_pose", "group": "water_dispenser", "kind": "tethered_portable_pose", "states": ["BRACKETED", "FREE"], "relationship": "Hose extends about 72 inches; source supplies no clamp-release geometry."},
+      {"candidateId": "water_dispenser_cap", "group": "water_dispenser", "kind": "protective_cap", "states": ["FITTED", "REMOVED"], "relationship": "Remove before nozzle use, replace after use; trigger remains separate."},
+      {"candidateId": "tool_b_head_lock", "group": "emergency_tool_b", "kind": "ball_lock", "states": ["RELEASED", "SECURED"], "relationship": "Secures wrench head on drive shaft; not a cockpit power switch."},
+      {"candidateId": "drogue_retention", "group": "docking_drogue", "kind": "assembly_proxy", "states": ["SECURED", "RELEASED"], "relationship": "Three mounting lugs, release handles; do not claim one real actuator or invent three handle count. Replace assembly proxy when linkage drawing is available."},
+      {"candidateId": "drogue_pose", "group": "docking_drogue", "kind": "removable_object", "states": ["IN_TUNNEL", "FREE", "STOWED"], "relationship": "Retention released before removal; tunnel clearance changes with object pose."},
+      {"candidateId": "hatch_forward_hinge_pin_set", "group": "hatches_and_filter", "kind": "maintenance_assembly_proxy", "states": ["INSERTED", "WITHDRAWN"], "relationship": "Quick-release pins permit hatch removal. Exact individual pin count/stroke not established in this ledger; do not merge with emergency latch lockpin."},
+      {"candidateId": "hatch_forward_antibacterial_filter", "group": "hatches_and_filter", "kind": "removable_filter", "states": ["STOWED", "FITTED_TO_DUMP"], "relationship": "Attach to forward dump valve for lunar EVA depressurization; distinct from relief valve unlock trigger."},
+      {"candidateId": "hammock_cdr", "group": "hammocks", "kind": "fabric_object", "states": ["STOWED", "DEPLOYED"], "relationship": "Actual hook/anchor operation remains unestablished; no invented latch."},
+      {"candidateId": "hammock_lmp", "group": "hammocks", "kind": "fabric_object", "states": ["STOWED", "DEPLOYED"], "relationship": "Same source limit on deployment details."}
+    ],
+    "scopeOrIdentityResolutionRequired": [
+      {"candidateFamily": "crew_umbilical_quick_disconnects", "group": "umbilical_connections", "reason": "Identify individual oxygen/electrical/water connector ends and retention before choosing count or IDs; ECS end remains attached in ordinary oxygen disconnect."},
+      {"candidateFamily": "stowage_closures", "group": "stowage_retention", "reason": "76 package rows do not establish every buckle, zipper or latch; no independent flight switch count can be inferred."},
+      {"candidateFamily": "csm_tunnel_latches_and_sockets", "group": "csm_tunnel_interfaces", "reason": "CM hardware accessible at LM interface; inclusion boundary and linkage data required."},
+      {"candidateFamily": "plss_ops_suit_controls", "group": "wearable_eva_hardware", "reason": "Actual manual controls, not passive stowage; separate wearable/EVA inventory needed if included."},
+      {"candidateFamily": "camera_controls_and_brackets", "group": "stowage_retention", "reason": "Package rows establish cameras and mounts, but not individual operation controls. Camera manuals required."}
+    ]
+  },
+  "stowageRowDispositions": {
+    "dispositionKey": {
+      "mechanism": "A specific movable cabin/interface mechanism is identified; see referenced mechanism group.",
+      "portable": "Loose article or consumable; generic pickup/stow can be modeled, but a unique flight-control input is not established.",
+      "wearable": "Suit/PLSS/OPS equipment with a separate wearable/EVA control scope.",
+      "retention": "Bag, container, strap or hose stowage; closure kinematics are not specified by this figure.",
+      "passive": "Fixed support or passive optical article; no movable flight input established.",
+      "existing": "Associated functional controls are already inventoried; this row describes the assembly or replacement article."
+    },
+    "aft": {
+      "pdfPage": 663, "printedPage": "2.11-27", "figure": "2.11-15",
+      "rows": [
+        {"item": 1, "name": "Docking drogue", "disposition": "mechanism", "group": "docking_drogue"},
+        {"item": 2, "name": "PLSS remote control units (2)", "disposition": "wearable"},
+        {"item": 3, "name": "Onboard data file", "disposition": "retention"},
+        {"item": 4, "name": "Crew log", "disposition": "portable"},
+        {"item": 5, "name": "LM procedures", "disposition": "portable"},
+        {"item": 6, "name": "LM medical kit", "disposition": "portable"},
+        {"item": 7, "name": "LM flight plan", "disposition": "portable"},
+        {"item": 8, "name": "LM descent aids", "disposition": "portable"},
+        {"item": 9, "name": "LM systems data", "disposition": "portable"},
+        {"item": 10, "name": "CDR checklist", "disposition": "portable"},
+        {"item": 11, "name": "LM hard suit EVA handbook", "disposition": "portable"},
+        {"item": 12, "name": "LM soft suit EVA handbook", "disposition": "portable"},
+        {"item": 13, "name": "PLSS", "disposition": "wearable"},
+        {"item": 14, "name": "Interim stowage bag", "disposition": "retention"},
+        {"item": 15, "name": "OPS (2) and SRC/OPS adapter", "disposition": "wearable"},
+        {"item": 16, "name": "Food, 2 packages", "disposition": "portable"},
+        {"item": 17, "name": "Food, 3 packages / 2 man days", "disposition": "portable"},
+        {"item": 18, "name": "PLSS condensate container", "disposition": "wearable"},
+        {"item": 19, "name": "Data storage electronics assembly", "disposition": "existing", "note": "DSEA functional controls already in numbered panels."},
+        {"item": 20, "name": "Lunar overshoes, purge fittings, PGA gas connector covers", "disposition": "wearable"},
+        {"item": 21, "name": "CDR helmet bag, visor, gloves, EMU maintenance kit", "disposition": "wearable"},
+        {"item": 22, "name": "Lunar sample contingency container", "disposition": "retention"},
+        {"item": 23, "name": "CDR oxygen umbilical assembly", "disposition": "mechanism", "group": "umbilical_connections"},
+        {"item": 24, "name": "LMP oxygen umbilical assembly", "disposition": "mechanism", "group": "umbilical_connections"},
+        {"item": 25, "name": "Water dispenser/fire-extinguishing assembly", "disposition": "mechanism", "group": "water_dispenser"},
+        {"item": 26, "name": "PTT switches on CDR/LMP oxygen umbilicals", "disposition": "mechanism", "group": "oxygen_umbilical_ptt"},
+        {"item": 27, "name": "LMP helmet bag, visor and gloves", "disposition": "wearable"},
+        {"item": 28, "name": "ECS LiOH cartridge", "disposition": "existing", "note": "Canister cover/vent/selector controls inventoried; cartridge removal is a maintenance object action."},
+        {"item": 29, "name": "PLSS LiOH cartridge", "disposition": "wearable"},
+        {"item": 30, "name": "LEC assembly", "disposition": "retention", "note": "Lunar equipment conveyor, not a flight control."},
+        {"item": 31, "name": "PLSS condensate hose stowage", "disposition": "retention"}
+      ]
+    },
+    "forward": {
+      "pdfPage": 664, "printedPage": "2.11-28", "figure": "2.11-16",
+      "rows": [
+        {"item": 1, "name": "COAS", "disposition": "mechanism", "group": "coas"},
+        {"item": 2, "name": "Window shades (3)", "disposition": "mechanism", "group": "window_shades"},
+        {"item": 3, "name": "Crash bars (2)", "disposition": "passive", "group": "fixed_supports"},
+        {"item": 4, "name": "Handgrips (4)", "disposition": "passive", "group": "fixed_supports"},
+        {"item": 5, "name": "Restraint reel controls (2)", "disposition": "mechanism", "group": "crew_restraints"},
+        {"item": 6, "name": "Armrests (4)", "disposition": "mechanism", "group": "armrests"},
+        {"item": 7, "name": "16-mm data acquisition camera, lens, magazine, power cable", "disposition": "portable", "note": "Camera controls and mounting bracket require a separate camera scope; stowage row alone does not enumerate them."},
+        {"item": 8, "name": "Interim stowage bag", "disposition": "retention"},
+        {"item": 9, "name": "Camera mount brackets (2), bracket bag, retractable tether", "disposition": "retention"},
+        {"item": 10, "name": "Utility light assemblies (2)", "disposition": "mechanism", "group": "portable_utility_lights"},
+        {"item": 11, "name": "Two dust caps and ACA shorting plug", "disposition": "portable"},
+        {"item": 12, "name": "Temporary stowage bag", "disposition": "retention"},
+        {"item": 13, "name": "Bungee cords", "disposition": "retention"},
+        {"item": 14, "name": "Mirror", "disposition": "passive"},
+        {"item": 15, "name": "16-mm data acquisition magazine", "disposition": "portable"},
+        {"item": 16, "name": "70-mm camera handle, EVA lanyard strap and hook", "disposition": "retention"},
+        {"item": 17, "name": "Polarizing filter, camera tether, surface cameras/magazines/accessories", "disposition": "portable"},
+        {"item": 18, "name": "Interim stowage straps", "disposition": "retention"},
+        {"item": 19, "name": "Right-hand side console", "disposition": "retention", "note": "RHSSC stowage, not a new numbered-panel control count."},
+        {"item": 20, "name": "70-mm Hasselblad camera bag and film magazine", "disposition": "retention"},
+        {"item": 21, "name": "Emergency Tool B", "disposition": "mechanism", "group": "emergency_tool_b"},
+        {"item": 22, "name": "LM utility towel assembly", "disposition": "portable"},
+        {"item": 23, "name": "Monocular", "disposition": "passive"},
+        {"item": 24, "name": "Small urine collection assembly", "disposition": "portable", "group": "lm7_waste_collection"},
+        {"item": 25, "name": "Emesis bag, OPS/PGA straps, defecation collection devices", "disposition": "portable"},
+        {"item": 26, "name": "COAS spare light bulb", "disposition": "portable"},
+        {"item": 27, "name": "AOT eyeguard, high-density and polarizing filters", "disposition": "portable", "note": "AOT functional controls already inventoried; these are removable accessories."},
+        {"item": 28, "name": "COAS snap-on filter", "disposition": "portable", "group": "coas"},
+        {"item": 29, "name": "Pilot preference kit", "disposition": "portable"},
+        {"item": 30, "name": "PLSS batteries (2)", "disposition": "wearable"},
+        {"item": 31, "name": "PLSS LiOH cartridges (2)", "disposition": "wearable"},
+        {"item": 32, "name": "Urine bags (8), lunar disposal grouping", "disposition": "portable", "note": "This generic disposal grouping is not the LM-7 six-container primary-system quantity."},
+        {"item": 33, "name": "Defecation devices and food waste bag", "disposition": "portable"},
+        {"item": 34, "name": "PLSS remote control units", "disposition": "wearable"},
+        {"item": 35, "name": "Hammocks", "disposition": "mechanism", "group": "hammocks"},
+        {"item": 36, "name": "PGA gas connector covers and contingency sample container", "disposition": "retention"},
+        {"item": 37, "name": "70-mm camera and accessories", "disposition": "portable"},
+        {"item": 38, "name": "Remote control unit interim stowage loops", "disposition": "retention"},
+        {"item": 39, "name": "PLSS batteries (2), interim stowage", "disposition": "wearable"},
+        {"item": 40, "name": "Jettison bags", "disposition": "retention"},
+        {"item": 41, "name": "Helmet stowage bags (2)", "disposition": "retention"},
+        {"item": 42, "name": "PLSS", "disposition": "wearable"},
+        {"item": 43, "name": "Docking drogue, stowed", "disposition": "mechanism", "group": "docking_drogue"},
+        {"item": 44, "name": "Docking restraint rings", "disposition": "mechanism", "group": "crew_restraints"},
+        {"item": 45, "name": "Restraint cables and hooks", "disposition": "mechanism", "group": "crew_restraints"}
+      ]
+    }
+  },
+  "sourceGapLedger": [
+    {"id": "measured_cabin_geometry", "status": "OPEN", "established": "Cylinder 92-inch diameter, 42-inch depth; stations 44 inches apart; deck approximately 36 by 55 inches. Panel angular constraints independently recorded in CONTROL-AUDIT.md.", "evidence": [{"pdfPage": 22, "printedPage": "1-6"}, {"pdfPage": 24, "printedPage": "1-8"}], "needed": "Dimensioned station/panel drawings, not scaling the perspective stowage artwork."},
+    {"id": "closure_details", "status": "OPEN", "established": "Every one of the 76 stowage rows has a disposition.", "needed": "Assembly-level drawings for closure count, latch/zipper/buckle geometry and precise attachment locations."},
+    {"id": "controller_geometry", "status": "PARTIAL SOURCE CLOSURE", "established": "Stop labels, command thresholds, throttle angles and friction-force endpoints are sourced. NASA TN D-7884 supplies ACA maximum envelope and LM torque plot. Independent review reads the TTCA 9.5-degree arc as total travel, not each direction; ACA 10-degree label is soft stop, not mounting cant.", "needed": "Dimensioned ACA/TTCA engineering shapes; TTCA envelope; digitized LM-specific torque/response curves; individual TTCA jet endpoints and ACA mounting transform."},
+    {"id": "portable_light_aiming", "status": "SOURCE CATEGORY RESOLVED; GEOMETRY OPEN", "established": "Portable corded/clamped lamps; overhead flood reflectors separately rotate.", "needed": "Lamp/clamp dimensions and articulation limits; overhead reflector axes/ranges."},
+    {"id": "mission_configuration", "status": "PARTIAL SOURCE CLOSURE", "established": "Selected loose equipment corroborated by Apollo 13 final as-launched stowage list.", "needed": "Whole mission-list reconciliation and time-dependent in-flight rearrangement if that is in simulator scope."},
+    {"id": "scope_boundary", "status": "OPEN", "established": "Wearable/EVA and CSM interface mechanisms exist and are distinguished from current cockpit definitions.", "needed": "Declare whether every wearable control, camera control and CSM-side tunnel interface is included before claiming a vehicle-wide denominator."}
+  ]
+}

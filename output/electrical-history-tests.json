@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "checks": 28863,
+  "failures": [],
+  "electricalSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+  "inventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+  "scope": "Electrical-only stable-span equivalence, explicit initial battery charge, protection/depletion boundaries and conserved ledgers. No historical flight validation is claimed."
+}

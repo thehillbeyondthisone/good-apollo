@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "recordedUtc": "2026-11-17T15:50:04.0740282Z",
+  "sessionStartedUtc": "2026-11-17T15:47:22Z",
+  "inventorySha256": "2de418f4e1ff8057c478b0cc40f64f87f33364717ee43191eb8b72115a6c8fcb",
+  "feedback": "Controls work and labels are readable",
+  "source": "User response during the live SteamVR session",
+  "exercisedControlsAccepted": true,
+  "legibilityAcceptedForTestedViews": true,
+  "completePhysicalReachAudit": false,
+  "everyControlAndPositionVerified": false,
+  "compositorTimingVerified": false,
+  "gatePassed": false,
+  "optimizedViewFeedback": "controllers not working; rays are missing",
+  "optimizedControllerAcceptance": "FAILED - fixing SteamVR binding reload loop",
+  "finalSessionFeedback": "The game has worked flawlessly for the most part; user is done testing and requests future headset testing much later.",
+  "furtherHeadsetTesting": "Deferred by explicit user request; continue development with automated and desktop checks.",
+  "controllerFixStatus": "Touch-only map implemented and structurally verified; sustained hardware behavior unconfirmed.",
+  "current620GeometryPhysicallyTested": false
+}

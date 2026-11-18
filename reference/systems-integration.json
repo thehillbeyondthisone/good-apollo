@@ -1,0 +1,11 @@
+{
+	"checks": 83,
+	"clockCoupling": "EPS fixed ticks; AGC external real time",
+	"electricalFidelity": "aggregate-calibrated partial model; not independent flight validation",
+	"failures": [],
+	"flightPadloadApplied": false,
+	"headsetTested": false,
+	"realAgcCabinLampTestPassed": true,
+	"result": "PASS",
+	"schemaVersion": 1
+}

@@ -1,0 +1,15 @@
+{
+	"batching": {
+		"controlsWithBatchedHardware": 403,
+		"enabled": true,
+		"estimatedDrawInstancesSaved": 1374,
+		"groups": 34,
+		"scope": "Shared opaque rigid hardware; artwork/readouts/output materials excluded",
+		"sources": 1408
+	},
+	"checks": 35,
+	"failures": [],
+	"headsetTested": false,
+	"renderedComparisonPerformed": false,
+	"result": "PASS"
+}

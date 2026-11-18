@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "checkedDate": "2026-11-17",
+  "repositories": [
+    {
+      "name": "virtualagc",
+      "url": "https://github.com/virtualagc/virtualagc.git",
+      "branch": "master",
+      "commit": "938e88d11caea1d72af72e53e6005282023f94c2",
+      "shallow": true,
+      "clean": true,
+      "path": "D:\\apollo-ref\\source\\virtualagc"
+    },
+    {
+      "name": "NASSP",
+      "url": "https://github.com/orbiternassp/NASSP.git",
+      "branch": "Orbiter2016",
+      "commit": "a4ed25511e626823f9c83b457cf9371375b82094",
+      "shallow": true,
+      "clean": true,
+      "path": "D:\\apollo-ref\\source\\NASSP"
+    }
+  ],
+  "build": {
+    "toolchain": "Portable LLVM-MinGW 20261104, Clang 23.1.5, x64, C99",
+    "root": "D:\\apollo-ref\\build\\agc",
+    "assemblerCompatibility": "No source changes with primary Clang build; alternate MSVC build uses disposable syntax-only assembler fixes",
+    "flightSourceChanged": false,
+    "cpuCoreChanged": false,
+    "ropeBytes": 73728,
+    "ropeSha256": "ae4f9e51ac9491c3da6462233936daeffc16277cd302c43a70b8459ebcd6cca5",
+    "referenceRope": "LM131R1/Luminary131PlusLM131R1ModuleDump.bin",
+    "referenceRopeMatches": true
+  },
+  "lampTest": {
+    "status": "passed",
+    "exitCode": 0,
+    "result": {
+      "passed": true,
+      "sawAllEightDigits": true,
+      "testAlarmCleared": true,
+      "lampFrameCycle": 602748,
+      "lampChannel11": 8317,
+      "lampChannel13": 576,
+      "lampChannel163": 473,
+      "lampRows": [
+        0,
+        3005,
+        6077,
+        7101,
+        9149,
+        12221,
+        13245,
+        16317,
+        17341,
+        19389,
+        21437,
+        23485,
+        25020,
+        0,
+        0,
+        0
+      ],
+      "finalRows": [
+        0,
+        3005,
+        6077,
+        7101,
+        9149,
+        12221,
+        13245,
+        16317,
+        17341,
+        19389,
+        21437,
+        23221,
+        24576,
+        0,
+        0,
+        0
+      ],
+      "finalChannel11": 8192,
+      "finalChannel13": 64,
+      "finalChannel163": 129,
+      "cycles": 1173326,
+      "parityFail": 0,
+      "hardwareAlarms": 0
+    },
+    "initialState": "Upstream agc_engine_init defaults and zero erasable RAM; no mission padload",
+    "diagnosis": "Earlier fixture omitted the channel-7 peripheral superbank latch; matching upstream SocketAPI behavior fixed it. CPU and rope unchanged.",
+    "trace": "D:\\apollo-ref\\build\\agc\\lamp-test.csv",
+    "resultPath": "D:\\apollo-ref\\build\\agc\\lamp-result.json",
+    "cliResult": {
+      "passed": true,
+      "ropeSha256": "ae4f9e51ac9491c3da6462233936daeffc16277cd302c43a70b8459ebcd6cca5",
+      "args": [
+        "--exec=D:\\apollo-ref\\build\\agc\\LM131R1\\MAIN.agc.bin",
+        "--port=19837",
+        "--nodebug",
+        "--no-resume",
+        "--dump-time=3600",
+        "--show-alarms",
+        "--cd=D:\\apollo-ref\\build\\agc\\runtime\\cli-test-k2wFNU"
+      ],
+      "runtime": "D:\\apollo-ref\\build\\agc\\runtime\\cli-test-k2wFNU",
+      "initialization": "upstream defaults; zero erasable test initialization",
+      "flightPadloadApplied": false,
+      "lampFrame": {
+        "rows": [
+          0,
+          3005,
+          6077,
+          7101,
+          9149,
+          12221,
+          13245,
+          16317,
+          17341,
+          19389,
+          21437,
+          23485,
+          25020,
+          0,
+          0,
+          0
+        ],
+        "channels": {
+          "5": 0,
+          "6": 0,
+          "8": 23485,
+          "9": 8317,
+          "10": 1,
+          "11": 576,
+          "12": 0,
+          "24": 16383,
+          "25": 32767,
+          "26": 32767,
+          "27": 32767,
+          "28": 20480,
+          "29": 0,
+          "115": 473
+        }
+      },
+      "finalRows": [
+        0,
+        3005,
+        6077,
+        7101,
+        9149,
+        12221,
+        13245,
+        16317,
+        17341,
+        19389,
+        21437,
+        23221,
+        24576,
+        0,
+        0,
+        0
+      ],
+      "finalChannels": {
+        "5": 0,
+        "6": 0,
+        "8": 0,
+        "9": 8192,
+        "10": 1,
+        "11": 64,
+        "12": 0,
+        "24": 16383,
+        "25": 32767,
+        "26": 32767,
+        "27": 24575,
+        "28": 0,
+        "29": 0,
+        "115": 129
+      },
+      "packetCount": 2071,
+      "inputs": [
+        {
+          "time": 1794899844208,
+          "name": "VERB",
+          "code": 17
+        },
+        {
+          "time": 1794899844472,
+          "name": "3",
+          "code": 3
+        },
+        {
+          "time": 1794899844722,
+          "name": "7",
+          "code": 7
+        },
+        {
+          "time": 1794899844986,
+          "name": "ENTR",
+          "code": 28
+        },
+        {
+          "time": 1794899845249,
+          "name": "0",
+          "code": 16
+        },
+        {
+          "time": 1794899845513,
+          "name": "0",
+          "code": 16
+        },
+        {
+          "time": 1794899845778,
+          "name": "ENTR",
+          "code": 28
+        },
+        {
+          "time": 1794899847043,
+          "name": "VERB",
+          "code": 17
+        },
+        {
+          "time": 1794899847306,
+          "name": "3",
+          "code": 3
+        },
+        {
+          "time": 1794899847556,
+          "name": "5",
+          "code": 5
+        },
+        {
+          "time": 1794899847820,
+          "name": "ENTR",
+          "code": 28
+        }
+      ]
+    }
+  },
+  "padloadResearch": {
+    "status": "unresolved-source-candidates",
+    "approvedForLoading": false,
+    "candidateWords": 272,
+    "symbolGroups": 174,
+    "handbookMatchingReadings": 261,
+    "unresolvedHandbookReadings": 11,
+    "memoV71MatchingWords": 180,
+    "v71Words": 182,
+    "findings": "docs/AGC-PADLOAD-SOURCES.md",
+    "dataset": "reference/lm131r1-prelaunch.json",
+    "evidence": "reference/extracts/agc-padload/evidence.json"
+  },
+  "steppedAdapter": {
+    "build": "reference/agc-stepped-build.json",
+    "tests": "reference/agc-stepped-test.json",
+    "documentation": "docs/AGC-STEPPED.md",
+    "status": "native-tests-passed-pending-Godot-integration",
+    "flightPadloadApplied": false
+  }
+}

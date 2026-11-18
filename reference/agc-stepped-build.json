@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "abiVersion": 1,
+  "upstreamCommit": "938e88d11caea1d72af72e53e6005282023f94c2",
+  "sourceHash": "fe91c8ca130eee089dea4c8db498bea949b781acff81c13292b536b74092883c",
+  "adapterBuildHash": "71e3f54359d6b9aca4dcb95c076a7009938f0cfaa4c88e1e80c5e6508ebe20cd",
+  "dllSha256": "a53332f77ea63a455600c2d8e4de0b275b62eac9c8579843829f2f3e5d4e6df6",
+  "cpuOriginalTextSha256": "87e1f3b6f9d2e99a2ce27552b9e640e9220a61eda8b0f714351810793ab229fe",
+  "cpuExposedTextSha256": "87e1f3b6f9d2e99a2ce27552b9e640e9220a61eda8b0f714351810793ab229fe",
+  "cpuInstructionBytesUnchanged": true,
+  "compiler": "D:\\apollo-ref\\toolchain\\llvm-mingw-20261104-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+  "flags": [
+    "-std=c11",
+    "-O0",
+    "-fno-lto",
+    "-DWIN32",
+    "-Wno-typedef-redefinition",
+    "-Wno-deprecated-declarations"
+  ],
+  "exposedStatics": [
+    "BurstOutput.CountCDUX",
+    "BurstOutput.CountCDUY",
+    "BurstOutput.CountCDUZ",
+    "CduChecker",
+    "CduFifos",
+    "GyroCount",
+    "GyroTimer",
+    "ImuCduCount",
+    "ImuChannel14",
+    "OldChannel14",
+    "TrapPIPA"
+  ],
+  "localDataSizes": {
+    "BurstOutput.CountCDUY": 4,
+    "DefaultClients": 10360,
+    "OldChannel14": 4,
+    "DefaultSockets": 40,
+    "ImuChannel14": 4,
+    "GyroCount": 4,
+    "BurstOutput.CountCDUZ": 4,
+    "CduFifos": 1608,
+    "GyroTimer": 4,
+    "TrapPIPA": 4,
+    "ImuCduCount": 8,
+    "BurstOutput.CountCDUX": 4,
+    "CduChecker": 4
+  },
+  "singleActiveContext": true,
+  "nanosecondsPerCycle": "11718.75",
+  "quarterNanosecondsPerCycle": 46875,
+  "flightPadloadApplied": false
+}

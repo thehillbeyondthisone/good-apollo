@@ -1,0 +1,17 @@
+{
+	"checks": 510,
+	"completeFlownConfiguration": false,
+	"electricalSha256": "55ee8cace567b9f408aed0c4ac68ee378c01f5a178c749555b3d6fd8ed3bbd0b",
+	"failures": [],
+	"headsetTested": false,
+	"independentFlightValidationPassed": false,
+	"inventorySha256": "9a9c57df158fb784c750ec855352d65128e0d46b5f44647bd18313204bde4026",
+	"kind": "Hands-on desktop power-down, cooling and complete native checkpoint integration",
+	"lgcPowerCycleModeled": true,
+	"mappedActions": 93,
+	"result": "PASS",
+	"schemaVersion": 1,
+	"separateCmExportCheckpoint": true,
+	"sequenceSha256": "2769c170fbb1761a36b20cdff9a4599fa5def3b98c92b1241c2bdaf0377b0fec",
+	"sourceEvents": 13
+}
